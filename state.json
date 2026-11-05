@@ -12,40 +12,21 @@
  },
  "seq": 68,
  "nextLineage": 17,
- "journal": {
-  "seq": 68,
-  "op": {
-   "kind": "build",
-   "n": 68,
-   "base": "773946f3b6331d03ca0e2407e9a64393dea5ab1f",
-   "pins": [
-    {
-     "pr": 21,
-     "head": "5837520ee80ed42990eefecff5b93e512518f0c7"
-    }
-   ],
-   "depth": 0,
-   "lineage": 16,
-   "source": {
-    "kind": "candidates"
-   },
-   "rebuild": false
-  },
-  "reserved": true,
-  "at": "2026-11-05T17:45:07.705Z",
-  "checkpoint": {
-   "survivors": [
-    {
-     "pr": 21,
-     "head": "5837520ee80ed42990eefecff5b93e512518f0c7"
-    }
-   ],
-   "dropped": [],
-   "chainHead": "418519efbe515875c8644b15ac370d509c162033"
-  },
-  "tries": 0
+ "journal": null,
+ "active": {
+  "n": 68,
+  "base": "773946f3b6331d03ca0e2407e9a64393dea5ab1f",
+  "head": "418519efbe515875c8644b15ac370d509c162033",
+  "depth": 0,
+  "prs": [
+   21
+  ],
+  "lineage": 16,
+  "rerun": null,
+  "rerunAt": null,
+  "cancels": [],
+  "builtAt": "2026-11-05T17:45:25.045Z"
  },
- "active": null,
  "auth": {
   "21": {
    "head": "5837520ee80ed42990eefecff5b93e512518f0c7",
@@ -225,6 +206,17 @@
    "kind": "unlabel",
    "pr": 21,
    "label": "qlander:solo"
+  },
+  {
+   "id": "db:68",
+   "kind": "deleteRef",
+   "ref": "qlander-build/68"
+  },
+  {
+   "id": "c:21:q:68",
+   "kind": "comment",
+   "pr": 21,
+   "body": "Queued in batch 68 at `5837520ee80ed42990eefecff5b93e512518f0c7` (`queue/68`, on main `773946f3b6331d03ca0e2407e9a64393dea5ab1f`)."
   }
  ],
  "history": [
