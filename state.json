@@ -10,19 +10,76 @@
    "job": "Queue tick"
   }
  },
- "seq": 7,
- "nextLineage": 3,
- "journal": null,
+ "seq": 8,
+ "nextLineage": 4,
+ "journal": {
+  "seq": 8,
+  "op": {
+   "kind": "build",
+   "n": 8,
+   "base": "00634289d90eb27c8a9b40dc84695efa4a63e412",
+   "pins": [
+    {
+     "pr": 5,
+     "head": "d5d7c889cc7d426a5ee35ca07b81300fa0347fd7"
+    }
+   ],
+   "depth": 0,
+   "lineage": 3,
+   "source": {
+    "kind": "candidates"
+   },
+   "rebuild": false
+  },
+  "reserved": true,
+  "at": "2026-11-05T12:20:36.699Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": null,
- "auth": {},
+ "auth": {
+  "5": {
+   "head": "d5d7c889cc7d426a5ee35ca07b81300fa0347fd7",
+   "baseRepoId": 1446564086,
+   "policy": "v2:aea7ed1c665b7cd9",
+   "policyPr": false,
+   "admittedAt": "2026-11-05T12:20:36.699Z",
+   "labelledAt": "2026-11-05T12:20:09Z",
+   "evidence": [
+    "run 42026183997",
+    "review evidence not required (v1: reviewed from the agents' VM; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett"
+  },
+  "6": {
+   "head": "eb27886261203c33b0741ff2800cb85defc4d9e4",
+   "baseRepoId": 1446564086,
+   "policy": "v2:aea7ed1c665b7cd9",
+   "policyPr": false,
+   "admittedAt": "2026-11-05T12:20:36.699Z",
+   "labelledAt": "2026-11-05T12:20:14Z",
+   "evidence": [
+    "run 42026192451",
+    "review evidence not required (v1: reviewed from the agents' VM; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett"
+  }
+ },
  "pending": [],
  "solo": [],
- "operatorSolo": [],
+ "operatorSolo": [
+  5
+ ],
  "lineages": {
   "1": {
    "runs": 1
   },
   "2": {
+   "runs": 1
+  },
+  "3": {
    "runs": 1
   }
  },
@@ -34,22 +91,46 @@
   {
    "at": "2026-11-05T12:15:25.028Z",
    "cost": 1
+  },
+  {
+   "at": "2026-11-05T12:20:36.699Z",
+   "cost": 1
   }
  ],
  "redStreak": 0,
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-05T12:19:04.069Z",
- "verify": [
+ "verify": [],
+ "outbox": [
   {
-   "pr": 4,
-   "pin": "78ac78c19cdebacffe738c88570e5dca7174e021",
-   "landedIn": "00634289d90eb27c8a9b40dc84695efa4a63e412",
-   "since": "2026-11-05T12:19:04.069Z",
-   "ticks": 0,
-   "notified": false
+   "id": "u:7:op:35238850670",
+   "kind": "unready",
+   "pr": 7
+  },
+  {
+   "id": "c:7:op:35238850670",
+   "kind": "comment",
+   "pr": 7,
+   "body": "Removed from the landing queue by an operator."
+  },
+  {
+   "id": "cmd:35238850670",
+   "kind": "unlabel",
+   "pr": 7,
+   "label": "qlander:bounce"
+  },
+  {
+   "id": "cmd:35238858041",
+   "kind": "unlabel",
+   "pr": 5,
+   "label": "qlander:solo"
+  },
+  {
+   "id": "u:4:v:78ac78c19cdebacffe738c88570e5dca7174e021",
+   "kind": "unready",
+   "pr": 4
   }
  ],
- "outbox": [],
  "history": [
   {
    "n": 1,
@@ -75,10 +156,21 @@
  ],
  "epochBranch": "qlander-epoch/queue",
  "eligibleSince": {
-  "4": {
-   "head": "78ac78c19cdebacffe738c88570e5dca7174e021",
-   "labelledAt": "2026-11-05T12:15:03Z",
-   "since": "2026-11-05T12:15:25.028Z"
+  "5": {
+   "head": "d5d7c889cc7d426a5ee35ca07b81300fa0347fd7",
+   "labelledAt": "2026-11-05T12:20:09Z",
+   "since": "2026-11-05T12:20:36.699Z"
+  },
+  "6": {
+   "head": "eb27886261203c33b0741ff2800cb85defc4d9e4",
+   "labelledAt": "2026-11-05T12:20:14Z",
+   "since": "2026-11-05T12:20:36.699Z"
+  }
+ },
+ "held": {
+  "3": {
+   "head": "c8333c2dfcaaa5e8a8f92ffd997f811d36fb5d41",
+   "since": "2026-11-05T12:20:36.699Z"
   }
  }
 }
