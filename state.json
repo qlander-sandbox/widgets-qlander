@@ -75,7 +75,8 @@
    "id": "c:8:landed:14",
    "kind": "comment",
    "pr": 8,
-   "body": "Landed in main at `dc1ebb8c012f2056d27f8c28059498d927fbbf25` (batch 14, pin `706dafe34eb87cde313395cce9f8007b741fc3bb`)."
+   "body": "Landed in main at `dc1ebb8c012f2056d27f8c28059498d927fbbf25` (batch 14, pin `706dafe34eb87cde313395cce9f8007b741fc3bb`).",
+   "sentAt": "2026-11-05T12:35:24.304Z"
   },
   {
    "id": "d:14",
