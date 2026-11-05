@@ -12,40 +12,21 @@
  },
  "seq": 10,
  "nextLineage": 5,
- "journal": {
-  "seq": 10,
-  "op": {
-   "kind": "build",
-   "n": 10,
-   "base": "d5177d145d6f6ed3b3fa0b830b258bef3810ad75",
-   "pins": [
-    {
-     "pr": 6,
-     "head": "eb27886261203c33b0741ff2800cb85defc4d9e4"
-    }
-   ],
-   "depth": 0,
-   "lineage": 4,
-   "source": {
-    "kind": "candidates"
-   },
-   "rebuild": false
-  },
-  "reserved": true,
-  "at": "2026-11-05T12:24:59.602Z",
-  "checkpoint": {
-   "survivors": [
-    {
-     "pr": 6,
-     "head": "eb27886261203c33b0741ff2800cb85defc4d9e4"
-    }
-   ],
-   "dropped": [],
-   "chainHead": "bc3da35cf9782cc115a19bb62069a0a3caf16f72"
-  },
-  "tries": 0
+ "journal": null,
+ "active": {
+  "n": 10,
+  "base": "d5177d145d6f6ed3b3fa0b830b258bef3810ad75",
+  "head": "bc3da35cf9782cc115a19bb62069a0a3caf16f72",
+  "depth": 0,
+  "prs": [
+   6
+  ],
+  "lineage": 4,
+  "rerun": null,
+  "rerunAt": null,
+  "cancels": [],
+  "builtAt": "2026-11-05T12:25:21.333Z"
  },
- "active": null,
  "auth": {
   "6": {
    "head": "eb27886261203c33b0741ff2800cb85defc4d9e4",
@@ -106,6 +87,17 @@
    "id": "u:5:v:d5d7c889cc7d426a5ee35ca07b81300fa0347fd7",
    "kind": "unready",
    "pr": 5
+  },
+  {
+   "id": "db:10",
+   "kind": "deleteRef",
+   "ref": "qlander-build/10"
+  },
+  {
+   "id": "c:6:q:10",
+   "kind": "comment",
+   "pr": 6,
+   "body": "Queued in batch 10 at `eb27886261203c33b0741ff2800cb85defc4d9e4` (`queue/10`, on main `d5177d145d6f6ed3b3fa0b830b258bef3810ad75`)."
   }
  ],
  "history": [
