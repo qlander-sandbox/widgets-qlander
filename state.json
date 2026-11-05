@@ -10,9 +10,39 @@
    "job": "Queue tick"
   }
  },
- "seq": 27,
+ "seq": 28,
  "nextLineage": 9,
- "journal": null,
+ "journal": {
+  "seq": 28,
+  "op": {
+   "kind": "build",
+   "n": 28,
+   "base": "25d02858cc7d33252f381efbbec43417487da284",
+   "pins": [
+    {
+     "pr": 11,
+     "head": "93fffbbd1a048f06157483ba7830b2933888ed2c"
+    }
+   ],
+   "depth": 1,
+   "lineage": 8,
+   "source": {
+    "kind": "pending",
+    "item": {
+     "prs": [
+      11
+     ],
+     "depth": 1,
+     "lineage": 8
+    }
+   },
+   "rebuild": false
+  },
+  "reserved": true,
+  "at": "2026-11-05T13:06:59.697Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": null,
  "auth": {
   "11": {
@@ -30,15 +60,7 @@
    "author": "brett"
   }
  },
- "pending": [
-  {
-   "prs": [
-    11
-   ],
-   "depth": 1,
-   "lineage": 8
-  }
- ],
+ "pending": [],
  "solo": [],
  "operatorSolo": [],
  "lineages": {
@@ -64,7 +86,7 @@
    "runs": 1
   },
   "8": {
-   "runs": 3
+   "runs": 4
   }
  },
  "window": [
@@ -106,6 +128,10 @@
   },
   {
    "at": "2026-11-05T13:01:32.883Z",
+   "cost": 1
+  },
+  {
+   "at": "2026-11-05T13:06:59.697Z",
    "cost": 1
   }
  ],
@@ -221,12 +247,6 @@
    "head": "93fffbbd1a048f06157483ba7830b2933888ed2c",
    "labelledAt": "2026-11-05T12:56:57Z",
    "since": "2026-11-05T12:57:18.827Z"
-  }
- },
- "held": {
-  "11": {
-   "head": "93fffbbd1a048f06157483ba7830b2933888ed2c",
-   "since": "2026-11-05T13:05:32.209Z"
   }
  }
 }
