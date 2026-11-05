@@ -12,48 +12,9 @@
  },
  "seq": 15,
  "nextLineage": 6,
- "journal": {
-  "seq": 15,
-  "op": {
-   "kind": "land",
-   "before": "bc3da35cf9782cc115a19bb62069a0a3caf16f72",
-   "after": "dc1ebb8c012f2056d27f8c28059498d927fbbf25"
-  },
-  "reserved": false,
-  "at": "2026-11-05T12:35:11.013Z",
-  "checkpoint": null,
-  "tries": 0
- },
- "active": {
-  "n": 14,
-  "base": "bc3da35cf9782cc115a19bb62069a0a3caf16f72",
-  "head": "dc1ebb8c012f2056d27f8c28059498d927fbbf25",
-  "depth": 0,
-  "prs": [
-   8
-  ],
-  "lineage": 5,
-  "rerun": null,
-  "rerunAt": null,
-  "cancels": [],
-  "builtAt": "2026-11-05T12:32:14.563Z"
- },
- "auth": {
-  "8": {
-   "head": "706dafe34eb87cde313395cce9f8007b741fc3bb",
-   "baseRepoId": 1446564086,
-   "policy": "v2:aea7ed1c665b7cd9",
-   "policyPr": false,
-   "admittedAt": "2026-11-05T12:31:56.789Z",
-   "labelledAt": "2026-11-05T12:29:21Z",
-   "evidence": [
-    "run 42027865950",
-    "review evidence not required (v1: reviewed from the agents' VM; ready by a write-access user)"
-   ],
-   "reviewRun": null,
-   "author": "brett"
-  }
- },
+ "journal": null,
+ "active": null,
+ "auth": {},
  "pending": [],
  "solo": [],
  "operatorSolo": [],
@@ -98,9 +59,30 @@
  ],
  "redStreak": 0,
  "bounceStreak": 0,
- "lastLandedAt": "2026-11-05T12:28:27.774Z",
- "verify": [],
- "outbox": [],
+ "lastLandedAt": "2026-11-05T12:35:22.462Z",
+ "verify": [
+  {
+   "pr": 8,
+   "pin": "706dafe34eb87cde313395cce9f8007b741fc3bb",
+   "landedIn": "dc1ebb8c012f2056d27f8c28059498d927fbbf25",
+   "since": "2026-11-05T12:35:22.462Z",
+   "ticks": 0,
+   "notified": false
+  }
+ ],
+ "outbox": [
+  {
+   "id": "c:8:landed:14",
+   "kind": "comment",
+   "pr": 8,
+   "body": "Landed in main at `dc1ebb8c012f2056d27f8c28059498d927fbbf25` (batch 14, pin `706dafe34eb87cde313395cce9f8007b741fc3bb`)."
+  },
+  {
+   "id": "d:14",
+   "kind": "deleteRef",
+   "ref": "queue/14"
+  }
+ ],
  "history": [
   {
    "n": 1,
@@ -142,6 +124,16 @@
    "head": "bc3da35cf9782cc115a19bb62069a0a3caf16f72",
    "note": "main d5177d145d6f6ed3b3fa0b830b258bef3810ad75 -> bc3da35cf9782cc115a19bb62069a0a3caf16f72",
    "at": "2026-11-05T12:28:27.774Z"
+  },
+  {
+   "n": 14,
+   "outcome": "landed",
+   "prs": [
+    8
+   ],
+   "head": "dc1ebb8c012f2056d27f8c28059498d927fbbf25",
+   "note": "main bc3da35cf9782cc115a19bb62069a0a3caf16f72 -> dc1ebb8c012f2056d27f8c28059498d927fbbf25",
+   "at": "2026-11-05T12:35:22.462Z"
   }
  ],
  "epochBranch": "qlander-epoch/queue",
