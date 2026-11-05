@@ -76,15 +76,7 @@
  "bounceStreak": 0,
  "lastLandedAt": null,
  "verify": [],
- "outbox": [
-  {
-   "id": "c:2:q:1",
-   "kind": "comment",
-   "pr": 2,
-   "body": "Queued in batch 1 at `888240dce7111f79a9627c22e42fe98db23adbe9` (`queue/1`, on main `18894eb18591ccb9dfc7dc6883f1aee10711dfb5`).",
-   "sentAt": "2026-11-05T12:07:27.830Z"
-  }
- ],
+ "outbox": [],
  "history": [],
  "epochBranch": "qlander-epoch/queue",
  "eligibleSince": {
