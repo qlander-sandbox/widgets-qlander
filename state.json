@@ -98,20 +98,7 @@
  "bounceStreak": 1,
  "lastLandedAt": "2026-11-05T13:05:00.175Z",
  "verify": [],
- "outbox": [
-  {
-   "id": "c:11:bounce:28",
-   "kind": "comment",
-   "pr": 11,
-   "body": "Bounced from the landing queue: batch 28 (this PR alone, at `93fffbbd1a048f06157483ba7830b2933888ed2c`, on top of main `25d02858cc7d33252f381efbbec43417487da284`) failed, and failed again on a rerun.\n\n- [test](https://github.com/qlander-sandbox/widgets/actions/runs/42032950826/job/127265346642)\n\nFix it and re-add `ready`.",
-   "sentAt": "2026-11-05T13:11:32.701Z"
-  },
-  {
-   "id": "d:28",
-   "kind": "deleteRef",
-   "ref": "queue/28"
-  }
- ],
+ "outbox": [],
  "history": [
   {
    "n": 1,
