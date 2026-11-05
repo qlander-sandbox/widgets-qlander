@@ -16,12 +16,16 @@
   "seq": 43,
   "op": {
    "kind": "rerun",
-   "runs": [
+   "runs": [],
+   "done": [],
+   "requested": [
     {
      "runId": 42037849907,
-     "attempt": 1
+     "attempt": 1,
+     "at": "2026-11-05T13:43:34.425Z"
     }
-   ]
+   ],
+   "everSent": true
   },
   "reserved": true,
   "at": "2026-11-05T13:43:25.927Z",
