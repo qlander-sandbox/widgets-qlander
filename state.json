@@ -10,22 +10,67 @@
    "job": "Queue tick"
   }
  },
- "seq": 5,
- "nextLineage": 2,
- "journal": null,
+ "seq": 6,
+ "nextLineage": 3,
+ "journal": {
+  "seq": 6,
+  "op": {
+   "kind": "build",
+   "n": 6,
+   "base": "3adc2e90679f3355c2727f53a801c83d77d9b30e",
+   "pins": [
+    {
+     "pr": 4,
+     "head": "78ac78c19cdebacffe738c88570e5dca7174e021"
+    }
+   ],
+   "depth": 0,
+   "lineage": 2,
+   "source": {
+    "kind": "candidates"
+   },
+   "rebuild": false
+  },
+  "reserved": true,
+  "at": "2026-11-05T12:15:25.028Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": null,
- "auth": {},
+ "auth": {
+  "4": {
+   "head": "78ac78c19cdebacffe738c88570e5dca7174e021",
+   "baseRepoId": 1446564086,
+   "policy": "v2:aea7ed1c665b7cd9",
+   "policyPr": false,
+   "admittedAt": "2026-11-05T12:15:25.028Z",
+   "labelledAt": "2026-11-05T12:15:03Z",
+   "evidence": [
+    "run 42025509235",
+    "review evidence not required (v1: reviewed from the agents' VM; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett"
+  }
+ },
  "pending": [],
  "solo": [],
  "operatorSolo": [],
  "lineages": {
   "1": {
    "runs": 1
+  },
+  "2": {
+   "runs": 1
   }
  },
  "window": [
   {
    "at": "2026-11-05T12:07:07.770Z",
+   "cost": 1
+  },
+  {
+   "at": "2026-11-05T12:15:25.028Z",
    "cost": 1
   }
  ],
@@ -47,5 +92,12 @@
    "at": "2026-11-05T12:10:35.774Z"
   }
  ],
- "epochBranch": "qlander-epoch/queue"
+ "epochBranch": "qlander-epoch/queue",
+ "eligibleSince": {
+  "4": {
+   "head": "78ac78c19cdebacffe738c88570e5dca7174e021",
+   "labelledAt": "2026-11-05T12:15:03Z",
+   "since": "2026-11-05T12:15:25.028Z"
+  }
+ }
 }
