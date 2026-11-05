@@ -12,40 +12,21 @@
  },
  "seq": 53,
  "nextLineage": 15,
- "journal": {
-  "seq": 53,
-  "op": {
-   "kind": "build",
-   "n": 53,
-   "base": "dc2a222b31b5acc8bd574e43944865b40098e9ca",
-   "pins": [
-    {
-     "pr": 19,
-     "head": "14083252337b73ec92cf6905f2a303cfa0c240b7"
-    }
-   ],
-   "depth": 0,
-   "lineage": 14,
-   "source": {
-    "kind": "candidates"
-   },
-   "rebuild": false
-  },
-  "reserved": true,
-  "at": "2026-11-05T14:34:47.366Z",
-  "checkpoint": {
-   "survivors": [
-    {
-     "pr": 19,
-     "head": "14083252337b73ec92cf6905f2a303cfa0c240b7"
-    }
-   ],
-   "dropped": [],
-   "chainHead": "a48fc3548d8220f8be442844565a5a566b8b90c7"
-  },
-  "tries": 0
+ "journal": null,
+ "active": {
+  "n": 53,
+  "base": "dc2a222b31b5acc8bd574e43944865b40098e9ca",
+  "head": "a48fc3548d8220f8be442844565a5a566b8b90c7",
+  "depth": 0,
+  "prs": [
+   19
+  ],
+  "lineage": 14,
+  "rerun": null,
+  "rerunAt": null,
+  "cancels": [],
+  "builtAt": "2026-11-05T14:35:05.318Z"
  },
- "active": null,
  "auth": {
   "19": {
    "head": "14083252337b73ec92cf6905f2a303cfa0c240b7",
@@ -203,7 +184,19 @@
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-05T13:51:50.112Z",
  "verify": [],
- "outbox": [],
+ "outbox": [
+  {
+   "id": "db:53",
+   "kind": "deleteRef",
+   "ref": "qlander-build/53"
+  },
+  {
+   "id": "c:19:q:53",
+   "kind": "comment",
+   "pr": 19,
+   "body": "Queued in batch 53 at `14083252337b73ec92cf6905f2a303cfa0c240b7` (`queue/53`, on main `dc2a222b31b5acc8bd574e43944865b40098e9ca`)."
+  }
+ ],
  "history": [
   {
    "n": 1,
