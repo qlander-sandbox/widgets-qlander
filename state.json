@@ -37,7 +37,20 @@
   },
   "reserved": true,
   "at": "2026-11-05T12:57:18.827Z",
-  "checkpoint": null,
+  "checkpoint": {
+   "survivors": [
+    {
+     "pr": 10,
+     "head": "863ac83ca7db45b79bbdd41fc8af58780fee2c36"
+    },
+    {
+     "pr": 11,
+     "head": "93fffbbd1a048f06157483ba7830b2933888ed2c"
+    }
+   ],
+   "dropped": [],
+   "chainHead": "1898c220bd031bc18902c8553a26c81529552faa"
+  },
   "tries": 0
  },
  "active": null,
