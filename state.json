@@ -89,7 +89,8 @@
    "id": "c:9:landed:21",
    "kind": "comment",
    "pr": 9,
-   "body": "Landed in main at `c93556381c987d057a7860434d8ed0753ff0c3eb` (batch 21, pin `fb83e32925cbed0f92b3a44f8ca7acd93b327b13`)."
+   "body": "Landed in main at `c93556381c987d057a7860434d8ed0753ff0c3eb` (batch 21, pin `fb83e32925cbed0f92b3a44f8ca7acd93b327b13`).",
+   "sentAt": "2026-11-05T12:56:05.174Z"
   },
   {
    "id": "d:21",
