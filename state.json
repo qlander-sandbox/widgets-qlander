@@ -12,40 +12,21 @@
  },
  "seq": 21,
  "nextLineage": 8,
- "journal": {
-  "seq": 21,
-  "op": {
-   "kind": "build",
-   "n": 21,
-   "base": "4071f45efe0019449633f1b0168ea0eb8179e4fb",
-   "pins": [
-    {
-     "pr": 9,
-     "head": "fb83e32925cbed0f92b3a44f8ca7acd93b327b13"
-    }
-   ],
-   "depth": 0,
-   "lineage": 7,
-   "source": {
-    "kind": "candidates"
-   },
-   "rebuild": false
-  },
-  "reserved": true,
-  "at": "2026-11-05T12:52:30.818Z",
-  "checkpoint": {
-   "survivors": [
-    {
-     "pr": 9,
-     "head": "fb83e32925cbed0f92b3a44f8ca7acd93b327b13"
-    }
-   ],
-   "dropped": [],
-   "chainHead": "c93556381c987d057a7860434d8ed0753ff0c3eb"
-  },
-  "tries": 0
+ "journal": null,
+ "active": {
+  "n": 21,
+  "base": "4071f45efe0019449633f1b0168ea0eb8179e4fb",
+  "head": "c93556381c987d057a7860434d8ed0753ff0c3eb",
+  "depth": 0,
+  "prs": [
+   9
+  ],
+  "lineage": 7,
+  "rerun": null,
+  "rerunAt": null,
+  "cancels": [],
+  "builtAt": "2026-11-05T12:52:43.742Z"
  },
- "active": null,
  "auth": {
   "9": {
    "head": "fb83e32925cbed0f92b3a44f8ca7acd93b327b13",
@@ -122,7 +103,19 @@
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-05T12:50:34.885Z",
  "verify": [],
- "outbox": [],
+ "outbox": [
+  {
+   "id": "db:21",
+   "kind": "deleteRef",
+   "ref": "qlander-build/21"
+  },
+  {
+   "id": "c:9:q:21",
+   "kind": "comment",
+   "pr": 9,
+   "body": "Queued in batch 21 at `fb83e32925cbed0f92b3a44f8ca7acd93b327b13` (`queue/21`, on main `4071f45efe0019449633f1b0168ea0eb8179e4fb`)."
+  }
+ ],
  "history": [
   {
    "n": 1,
