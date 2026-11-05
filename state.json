@@ -194,32 +194,11 @@
    ]
   },
   {
-   "id": "cmd:35245201094",
-   "kind": "unlabel",
-   "pr": 16,
-   "label": "qlander:solo"
-  },
-  {
-   "id": "cmd:35245207888",
-   "kind": "unlabel",
-   "pr": 16,
-   "label": "qlander:unsolo"
-  },
-  {
-   "id": "u:15:v:3d1ae080a2067ac0db0935d0b9a5ba3267580cc9",
-   "kind": "unready",
-   "pr": 15
-  },
-  {
-   "id": "db:38",
-   "kind": "deleteRef",
-   "ref": "qlander-build/38"
-  },
-  {
    "id": "c:16:q:38",
    "kind": "comment",
    "pr": 16,
-   "body": "Queued in batch 38 at `a8af9a5effd96ca072cca7ce7f76500c4665cccd` (`queue/38`, on main `dc9fe4858c3049e9ddaa975572cc4f92d5926a1d`)."
+   "body": "Queued in batch 38 at `a8af9a5effd96ca072cca7ce7f76500c4665cccd` (`queue/38`, on main `dc9fe4858c3049e9ddaa975572cc4f92d5926a1d`).",
+   "sentAt": "2026-11-05T13:31:29.968Z"
   },
   {
    "id": "c:17:q:38",
