@@ -91,15 +91,11 @@
  "verify": [],
  "outbox": [
   {
-   "id": "db:14",
-   "kind": "deleteRef",
-   "ref": "qlander-build/14"
-  },
-  {
    "id": "c:8:q:14",
    "kind": "comment",
    "pr": 8,
-   "body": "Queued in batch 14 at `706dafe34eb87cde313395cce9f8007b741fc3bb` (`queue/14`, on main `bc3da35cf9782cc115a19bb62069a0a3caf16f72`)."
+   "body": "Queued in batch 14 at `706dafe34eb87cde313395cce9f8007b741fc3bb` (`queue/14`, on main `bc3da35cf9782cc115a19bb62069a0a3caf16f72`).",
+   "sentAt": "2026-11-05T12:32:16.726Z"
   }
  ],
  "history": [
