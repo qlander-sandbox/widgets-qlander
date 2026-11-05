@@ -170,18 +170,7 @@
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-05T17:48:34.395Z",
  "verify": [],
- "outbox": [
-  {
-   "id": "u:21:v:5837520ee80ed42990eefecff5b93e512518f0c7",
-   "kind": "unready",
-   "pr": 21
-  },
-  {
-   "id": "p:70",
-   "kind": "pause",
-   "reason": "window budget of 24 runs per 24h used"
-  }
- ],
+ "outbox": [],
  "history": [
   {
    "n": 1,
