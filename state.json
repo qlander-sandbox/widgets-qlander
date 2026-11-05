@@ -150,20 +150,11 @@
    ]
   },
   {
-   "id": "d:31",
-   "kind": "deleteRef",
-   "ref": "queue/31"
-  },
-  {
-   "id": "db:32",
-   "kind": "deleteRef",
-   "ref": "qlander-build/32"
-  },
-  {
    "id": "c:13:q:32",
    "kind": "comment",
    "pr": 13,
-   "body": "Queued in batch 32 at `75f0585d0b0f9cdbaf1ed7188835de28df3e13d9` (`queue/32`, on main `25d02858cc7d33252f381efbbec43417487da284`)."
+   "body": "Queued in batch 32 at `75f0585d0b0f9cdbaf1ed7188835de28df3e13d9` (`queue/32`, on main `25d02858cc7d33252f381efbbec43417487da284`).",
+   "sentAt": "2026-11-05T13:16:41.135Z"
   }
  ],
  "history": [
