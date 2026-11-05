@@ -10,39 +10,41 @@
    "job": "Queue tick"
   }
  },
- "seq": 35,
+ "seq": 36,
  "nextLineage": 11,
- "journal": null,
- "active": {
-  "n": 35,
-  "base": "7d3dbce1280cafb00abcd8a8bec7f23df2e3926a",
-  "head": "9208191c7b09ac3aafcd6eb43cbc6b62bd25a5ce",
-  "depth": 0,
-  "prs": [
-   14,
-   15
-  ],
-  "lineage": 10,
-  "rerun": null,
-  "rerunAt": null,
-  "cancels": [],
-  "builtAt": "2026-11-05T13:22:59.706Z"
- },
- "auth": {
-  "14": {
-   "head": "071aa015b8d7bfb8582eb44e38d00536e86c9237",
-   "baseRepoId": 1446564086,
-   "policy": "v2:aea7ed1c665b7cd9",
-   "policyPr": false,
-   "admittedAt": "2026-11-05T13:22:36.075Z",
-   "labelledAt": "2026-11-05T13:22:10Z",
-   "evidence": [
-    "run 42035100281",
-    "review evidence not required (v1: reviewed from the agents' VM; ready by a write-access user)"
+ "journal": {
+  "seq": 36,
+  "op": {
+   "kind": "build",
+   "n": 36,
+   "base": "7d3dbce1280cafb00abcd8a8bec7f23df2e3926a",
+   "pins": [
+    {
+     "pr": 15,
+     "head": "3d1ae080a2067ac0db0935d0b9a5ba3267580cc9"
+    }
    ],
-   "reviewRun": null,
-   "author": "brett"
+   "depth": 0,
+   "lineage": 10,
+   "source": {
+    "kind": "pending",
+    "item": {
+     "prs": [
+      15
+     ],
+     "depth": 0,
+     "lineage": 10
+    }
+   },
+   "rebuild": false
   },
+  "reserved": true,
+  "at": "2026-11-05T13:25:53.985Z",
+  "checkpoint": null,
+  "tries": 0
+ },
+ "active": null,
+ "auth": {
   "15": {
    "head": "3d1ae080a2067ac0db0935d0b9a5ba3267580cc9",
    "baseRepoId": 1446564086,
@@ -90,7 +92,7 @@
    "runs": 2
   },
   "10": {
-   "runs": 1
+   "runs": 2
   }
  },
  "window": [
@@ -153,6 +155,10 @@
   {
    "at": "2026-11-05T13:22:36.075Z",
    "cost": 1
+  },
+  {
+   "at": "2026-11-05T13:25:53.985Z",
+   "cost": 1
   }
  ],
  "redStreak": 0,
@@ -170,6 +176,36 @@
    "seen": [
     42033851027
    ]
+  },
+  {
+   "id": "u:14:op:35244481816",
+   "kind": "unready",
+   "pr": 14
+  },
+  {
+   "id": "c:14:op:35244481816",
+   "kind": "comment",
+   "pr": 14,
+   "body": "Removed from the landing queue by an operator."
+  },
+  {
+   "id": "x:35",
+   "kind": "cancelRuns",
+   "ref": "queue/35",
+   "head": "9208191c7b09ac3aafcd6eb43cbc6b62bd25a5ce",
+   "until": "2026-11-05T13:55:53.985Z",
+   "giveUpAt": "2026-11-05T19:25:53.985Z"
+  },
+  {
+   "id": "d:35",
+   "kind": "deleteRef",
+   "ref": "queue/35"
+  },
+  {
+   "id": "cmd:35244481816",
+   "kind": "unlabel",
+   "pr": 14,
+   "label": "qlander:bounce"
   }
  ],
  "history": [
@@ -309,6 +345,17 @@
    "head": "7d3dbce1280cafb00abcd8a8bec7f23df2e3926a",
    "note": "main 25d02858cc7d33252f381efbbec43417487da284 -> 7d3dbce1280cafb00abcd8a8bec7f23df2e3926a",
    "at": "2026-11-05T13:19:56.804Z"
+  },
+  {
+   "n": 35,
+   "outcome": "abandoned",
+   "prs": [
+    14,
+    15
+   ],
+   "head": "9208191c7b09ac3aafcd6eb43cbc6b62bd25a5ce",
+   "note": "operator bounced #14",
+   "at": "2026-11-05T13:25:53.985Z"
   }
  ],
  "epochBranch": "qlander-epoch/queue",
