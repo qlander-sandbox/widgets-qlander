@@ -156,7 +156,8 @@
    "id": "c:15:landed:36",
    "kind": "comment",
    "pr": 15,
-   "body": "Landed in main at `dc9fe4858c3049e9ddaa975572cc4f92d5926a1d` (batch 36, pin `3d1ae080a2067ac0db0935d0b9a5ba3267580cc9`)."
+   "body": "Landed in main at `dc9fe4858c3049e9ddaa975572cc4f92d5926a1d` (batch 36, pin `3d1ae080a2067ac0db0935d0b9a5ba3267580cc9`).",
+   "sentAt": "2026-11-05T13:29:22.508Z"
   },
   {
    "id": "d:36",
