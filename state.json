@@ -129,18 +129,6 @@
    "seen": [
     42033851027
    ]
-  },
-  {
-   "id": "c:13:landed:32",
-   "kind": "comment",
-   "pr": 13,
-   "body": "Landed in main at `7d3dbce1280cafb00abcd8a8bec7f23df2e3926a` (batch 32, pin `75f0585d0b0f9cdbaf1ed7188835de28df3e13d9`).",
-   "sentAt": "2026-11-05T13:19:58.880Z"
-  },
-  {
-   "id": "d:32",
-   "kind": "deleteRef",
-   "ref": "queue/32"
   }
  ],
  "history": [
