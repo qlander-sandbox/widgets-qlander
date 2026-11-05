@@ -93,39 +93,11 @@
  "verify": [],
  "outbox": [
   {
-   "id": "c:7:op:35238850670",
-   "kind": "comment",
-   "pr": 7,
-   "body": "Removed from the landing queue by an operator.",
-   "sentAt": "2026-11-05T12:21:07.958Z"
-  },
-  {
-   "id": "cmd:35238850670",
-   "kind": "unlabel",
-   "pr": 7,
-   "label": "qlander:bounce"
-  },
-  {
-   "id": "cmd:35238858041",
-   "kind": "unlabel",
-   "pr": 5,
-   "label": "qlander:solo"
-  },
-  {
-   "id": "u:4:v:78ac78c19cdebacffe738c88570e5dca7174e021",
-   "kind": "unready",
-   "pr": 4
-  },
-  {
-   "id": "db:8",
-   "kind": "deleteRef",
-   "ref": "qlander-build/8"
-  },
-  {
    "id": "c:5:q:8",
    "kind": "comment",
    "pr": 5,
-   "body": "Queued in batch 8 at `d5d7c889cc7d426a5ee35ca07b81300fa0347fd7` (`queue/8`, on main `00634289d90eb27c8a9b40dc84695efa4a63e412`)."
+   "body": "Queued in batch 8 at `d5d7c889cc7d426a5ee35ca07b81300fa0347fd7` (`queue/8`, on main `00634289d90eb27c8a9b40dc84695efa4a63e412`).",
+   "sentAt": "2026-11-05T12:21:07.958Z"
   }
  ],
  "history": [
