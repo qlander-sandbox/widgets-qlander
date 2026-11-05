@@ -10,9 +10,20 @@
    "job": "Queue tick"
   }
  },
- "seq": 36,
+ "seq": 37,
  "nextLineage": 11,
- "journal": null,
+ "journal": {
+  "seq": 37,
+  "op": {
+   "kind": "land",
+   "before": "7d3dbce1280cafb00abcd8a8bec7f23df2e3926a",
+   "after": "dc9fe4858c3049e9ddaa975572cc4f92d5926a1d"
+  },
+  "reserved": false,
+  "at": "2026-11-05T13:29:08.781Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": {
   "n": 36,
   "base": "7d3dbce1280cafb00abcd8a8bec7f23df2e3926a",
@@ -324,11 +335,6 @@
  ],
  "epochBranch": "qlander-epoch/queue",
  "eligibleSince": {
-  "14": {
-   "head": "071aa015b8d7bfb8582eb44e38d00536e86c9237",
-   "labelledAt": "2026-11-05T13:22:10Z",
-   "since": "2026-11-05T13:22:36.075Z"
-  },
   "15": {
    "head": "3d1ae080a2067ac0db0935d0b9a5ba3267580cc9",
    "labelledAt": "2026-11-05T13:22:12Z",
