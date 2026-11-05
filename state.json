@@ -10,7 +10,7 @@
    "job": "Queue tick"
   }
  },
- "seq": 26,
+ "seq": 27,
  "nextLineage": 9,
  "journal": null,
  "active": null,
@@ -112,17 +112,14 @@
  "redStreak": 0,
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-05T13:05:00.175Z",
- "verify": [
+ "verify": [],
+ "outbox": [
   {
-   "pr": 10,
-   "pin": "863ac83ca7db45b79bbdd41fc8af58780fee2c36",
-   "landedIn": "25d02858cc7d33252f381efbbec43417487da284",
-   "since": "2026-11-05T13:05:00.175Z",
-   "ticks": 0,
-   "notified": false
+   "id": "u:10:v:863ac83ca7db45b79bbdd41fc8af58780fee2c36",
+   "kind": "unready",
+   "pr": 10
   }
  ],
- "outbox": [],
  "history": [
   {
    "n": 1,
@@ -226,15 +223,16 @@
  ],
  "epochBranch": "qlander-epoch/queue",
  "eligibleSince": {
-  "10": {
-   "head": "863ac83ca7db45b79bbdd41fc8af58780fee2c36",
-   "labelledAt": "2026-11-05T12:56:55Z",
-   "since": "2026-11-05T12:57:18.827Z"
-  },
   "11": {
    "head": "93fffbbd1a048f06157483ba7830b2933888ed2c",
    "labelledAt": "2026-11-05T12:56:57Z",
    "since": "2026-11-05T12:57:18.827Z"
+  }
+ },
+ "held": {
+  "11": {
+   "head": "93fffbbd1a048f06157483ba7830b2933888ed2c",
+   "since": "2026-11-05T13:05:32.209Z"
   }
  }
 }
