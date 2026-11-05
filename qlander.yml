@@ -13,13 +13,16 @@ version: 1
 
 # This repo (the control repo): where the tick runs and its state lives.
 control:
-  repo: your-org/your-repo-qlander # CHANGE ME: owner/name of this repo
-  repoId: 1 # CHANGE ME: gh api repos/<owner>/<name> --jq .id
+  repo: qlander-sandbox/widgets-qlander # CHANGE ME: owner/name of this repo
+  repoId: 1446564233 # CHANGE ME: gh api repos/<owner>/<name> --jq .id
+  mainProtection:
+    requiredApprovals: 0
+    lastPushApproval: false
 
 # The repo whose main qlander lands PRs on.
 target:
-  repo: your-org/your-repo # CHANGE ME
-  repoId: 2 # CHANGE ME: gh api repos/<owner>/<name> --jq .id
+  repo: qlander-sandbox/widgets # CHANGE ME
+  repoId: 1446564086 # CHANGE ME: gh api repos/<owner>/<name> --jq .id
   main: main
 
 # GitHub-hosted runners, with the epoch fence (docs/deployment.md §3.3, §3.4).
@@ -75,8 +78,8 @@ queue:
     paths:
       - .github/**
     approvers: # login AND id must both match
-      - login: your-login # CHANGE ME
-        id: 1 # CHANGE ME: gh api users/<login> --jq .id
+      - login: brett
+        id: 523
   # The full suite a queue/<n> batch must pass before main moves to it.
   preLanding:
     - path: .github/workflows/ci.yml # CHANGE ME
@@ -114,7 +117,7 @@ queue:
 # main commits. Off until you enable it; checks-green qualifies a commit
 # whose preLanding jobs all passed on main.
 release:
-  enabled: false
+  enabled: true
   dryRun: true
   branch: release
   stateBranch: qlander-release-state

@@ -30,7 +30,7 @@ permissions: {}
 jobs:
   watchdog:
     name: Watchdog
-    if: github.ref == 'refs/heads/main' && github.repository_id == 1
+    if: github.ref == 'refs/heads/main' && github.repository_id == 1446564233
     runs-on: ubuntu-latest
     timeout-minutes: 5
     concurrency:
@@ -41,7 +41,7 @@ jobs:
       issues: write # the alert issues and the status issue
       actions: read # tick.yml's state, runs, jobs and job logs
     steps:
-      - name: Check out your-repo-qlander
+      - name: Check out widgets-qlander
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           persist-credentials: false
