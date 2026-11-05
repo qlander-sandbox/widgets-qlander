@@ -188,13 +188,6 @@
    "seen": [
     42035270272
    ]
-  },
-  {
-   "id": "c:18:q:45",
-   "kind": "comment",
-   "pr": 18,
-   "body": "Queued in batch 45 at `3a47537658c8765e7ba912622d7515b68fcebbbd` (`queue/45`, on main `d9ffcd72e524266ea94f897f5066dfa5e43b1b4c`).",
-   "sentAt": "2026-11-05T13:48:44.951Z"
   }
  ],
  "history": [
