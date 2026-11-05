@@ -164,34 +164,11 @@
    ]
   },
   {
-   "id": "f:42",
-   "kind": "flaky",
-   "n": 42,
-   "at": "2026-11-05T13:46:41.959Z",
-   "giveUpAt": "2026-11-06T13:46:41.959Z",
-   "runs": [
-    {
-     "runId": 42037849907,
-     "attempt": 1
-    }
-   ],
-   "items": [
-    {
-     "key": "test",
-     "byJob": true,
-     "job": "test",
-     "url": "https://github.com/qlander-sandbox/widgets/actions/runs/42037849907/job/127280550911"
-    }
-   ],
-   "done": [
-    "job:test"
-   ]
-  },
-  {
    "id": "c:12:landed:42",
    "kind": "comment",
    "pr": 12,
-   "body": "Landed in main at `d9ffcd72e524266ea94f897f5066dfa5e43b1b4c` (batch 42, pin `b2c1b70c474cd5a2bc20fef39427fdc2575e3d0e`)."
+   "body": "Landed in main at `d9ffcd72e524266ea94f897f5066dfa5e43b1b4c` (batch 42, pin `b2c1b70c474cd5a2bc20fef39427fdc2575e3d0e`).",
+   "sentAt": "2026-11-05T13:46:55.475Z"
   },
   {
    "id": "d:42",
