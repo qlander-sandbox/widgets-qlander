@@ -10,9 +10,32 @@
    "job": "Queue tick"
   }
  },
- "seq": 20,
- "nextLineage": 7,
- "journal": null,
+ "seq": 21,
+ "nextLineage": 8,
+ "journal": {
+  "seq": 21,
+  "op": {
+   "kind": "build",
+   "n": 21,
+   "base": "4071f45efe0019449633f1b0168ea0eb8179e4fb",
+   "pins": [
+    {
+     "pr": 9,
+     "head": "fb83e32925cbed0f92b3a44f8ca7acd93b327b13"
+    }
+   ],
+   "depth": 0,
+   "lineage": 7,
+   "source": {
+    "kind": "candidates"
+   },
+   "rebuild": false
+  },
+  "reserved": true,
+  "at": "2026-11-05T12:52:30.818Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": null,
  "auth": {
   "9": {
@@ -51,6 +74,9 @@
   },
   "6": {
    "runs": 1
+  },
+  "7": {
+   "runs": 1
   }
  },
  "window": [
@@ -76,6 +102,10 @@
   },
   {
    "at": "2026-11-05T12:47:06.833Z",
+   "cost": 1
+  },
+  {
+   "at": "2026-11-05T12:52:30.818Z",
    "cost": 1
   }
  ],
@@ -153,12 +183,6 @@
    "head": "fb83e32925cbed0f92b3a44f8ca7acd93b327b13",
    "labelledAt": "2026-11-05T12:46:44Z",
    "since": "2026-11-05T12:47:06.833Z"
-  }
- },
- "held": {
-  "9": {
-   "head": "fb83e32925cbed0f92b3a44f8ca7acd93b327b13",
-   "since": "2026-11-05T12:51:08.507Z"
   }
  }
 }
