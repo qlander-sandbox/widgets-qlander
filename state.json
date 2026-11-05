@@ -10,9 +10,32 @@
    "job": "Queue tick"
   }
  },
- "seq": 9,
- "nextLineage": 4,
- "journal": null,
+ "seq": 10,
+ "nextLineage": 5,
+ "journal": {
+  "seq": 10,
+  "op": {
+   "kind": "build",
+   "n": 10,
+   "base": "d5177d145d6f6ed3b3fa0b830b258bef3810ad75",
+   "pins": [
+    {
+     "pr": 6,
+     "head": "eb27886261203c33b0741ff2800cb85defc4d9e4"
+    }
+   ],
+   "depth": 0,
+   "lineage": 4,
+   "source": {
+    "kind": "candidates"
+   },
+   "rebuild": false
+  },
+  "reserved": true,
+  "at": "2026-11-05T12:24:59.602Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": null,
  "auth": {
   "6": {
@@ -32,9 +55,7 @@
  },
  "pending": [],
  "solo": [],
- "operatorSolo": [
-  5
- ],
+ "operatorSolo": [],
  "lineages": {
   "1": {
    "runs": 1
@@ -43,6 +64,9 @@
    "runs": 1
   },
   "3": {
+   "runs": 1
+  },
+  "4": {
    "runs": 1
   }
  },
@@ -58,22 +82,23 @@
   {
    "at": "2026-11-05T12:20:36.699Z",
    "cost": 1
+  },
+  {
+   "at": "2026-11-05T12:24:59.602Z",
+   "cost": 1
   }
  ],
  "redStreak": 0,
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-05T12:24:17.508Z",
- "verify": [
+ "verify": [],
+ "outbox": [
   {
-   "pr": 5,
-   "pin": "d5d7c889cc7d426a5ee35ca07b81300fa0347fd7",
-   "landedIn": "d5177d145d6f6ed3b3fa0b830b258bef3810ad75",
-   "since": "2026-11-05T12:24:17.508Z",
-   "ticks": 0,
-   "notified": false
+   "id": "u:5:v:d5d7c889cc7d426a5ee35ca07b81300fa0347fd7",
+   "kind": "unready",
+   "pr": 5
   }
  ],
- "outbox": [],
  "history": [
   {
    "n": 1,
@@ -109,15 +134,16 @@
  ],
  "epochBranch": "qlander-epoch/queue",
  "eligibleSince": {
-  "5": {
-   "head": "d5d7c889cc7d426a5ee35ca07b81300fa0347fd7",
-   "labelledAt": "2026-11-05T12:20:09Z",
-   "since": "2026-11-05T12:20:36.699Z"
-  },
   "6": {
    "head": "eb27886261203c33b0741ff2800cb85defc4d9e4",
    "labelledAt": "2026-11-05T12:20:14Z",
    "since": "2026-11-05T12:20:36.699Z"
+  }
+ },
+ "held": {
+  "3": {
+   "head": "c8333c2dfcaaa5e8a8f92ffd997f811d36fb5d41",
+   "since": "2026-11-05T12:24:59.602Z"
   }
  }
 }
