@@ -182,6 +182,9 @@
      "job": "test",
      "url": "https://github.com/qlander-sandbox/widgets/actions/runs/42037849907/job/127280550911"
     }
+   ],
+   "done": [
+    "job:test"
    ]
   },
   {
