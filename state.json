@@ -10,9 +10,20 @@
    "job": "Queue tick"
   }
  },
- "seq": 39,
+ "seq": 40,
  "nextLineage": 12,
- "journal": null,
+ "journal": {
+  "seq": 40,
+  "op": {
+   "kind": "land",
+   "before": "dc9fe4858c3049e9ddaa975572cc4f92d5926a1d",
+   "after": "304224a5cb3692bf8cb597353ac2822745018e3a"
+  },
+  "reserved": false,
+  "at": "2026-11-05T13:35:29.896Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": {
   "n": 38,
   "base": "dc9fe4858c3049e9ddaa975572cc4f92d5926a1d",
@@ -31,14 +42,7 @@
   ],
   "rerunAt": "2026-11-05T13:34:36.416Z",
   "cancels": [],
-  "builtAt": "2026-11-05T13:31:28.214Z",
-  "redJobs": [
-   {
-    "name": "test",
-    "url": "https://github.com/qlander-sandbox/widgets/actions/runs/42036515361/job/127275968798",
-    "id": 127275968798
-   }
-  ]
+  "builtAt": "2026-11-05T13:31:28.214Z"
  },
  "auth": {
   "16": {
@@ -208,6 +212,27 @@
    "seen": [
     42035270272
    ]
+  },
+  {
+   "id": "f:38",
+   "kind": "flaky",
+   "n": 38,
+   "at": "2026-11-05T13:35:29.896Z",
+   "giveUpAt": "2026-11-06T13:35:29.896Z",
+   "runs": [
+    {
+     "runId": 42036515361,
+     "attempt": 1
+    }
+   ],
+   "items": [
+    {
+     "key": "test",
+     "byJob": true,
+     "job": "test",
+     "url": "https://github.com/qlander-sandbox/widgets/actions/runs/42036515361/job/127275968798"
+    }
+   ]
   }
  ],
  "history": [
@@ -368,6 +393,30 @@
    "head": "dc9fe4858c3049e9ddaa975572cc4f92d5926a1d",
    "note": "main 7d3dbce1280cafb00abcd8a8bec7f23df2e3926a -> dc9fe4858c3049e9ddaa975572cc4f92d5926a1d",
    "at": "2026-11-05T13:29:20.344Z"
+  },
+  {
+   "n": 38,
+   "outcome": "flaky",
+   "prs": [
+    16,
+    17
+   ],
+   "head": "304224a5cb3692bf8cb597353ac2822745018e3a",
+   "note": "the rerun passed; the first attempt failed test",
+   "failedJobs": [
+    {
+     "name": "test",
+     "url": "https://github.com/qlander-sandbox/widgets/actions/runs/42036515361/job/127275968798",
+     "id": 127275968798
+    }
+   ],
+   "runs": [
+    {
+     "runId": 42036515361,
+     "attempt": 1
+    }
+   ],
+   "at": "2026-11-05T13:35:29.896Z"
   }
  ],
  "epochBranch": "qlander-epoch/queue",
@@ -382,5 +431,15 @@
    "labelledAt": "2026-11-05T13:30:43Z",
    "since": "2026-11-05T13:31:06.148Z"
   }
- }
+ },
+ "flakes": [
+  {
+   "at": "2026-11-05T13:35:29.896Z",
+   "n": 38,
+   "count": 1,
+   "keys": [
+    "test"
+   ]
+  }
+ ]
 }
