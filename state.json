@@ -127,20 +127,11 @@
  "verify": [],
  "outbox": [
   {
-   "id": "u:9:v:fb83e32925cbed0f92b3a44f8ca7acd93b327b13",
-   "kind": "unready",
-   "pr": 9
-  },
-  {
-   "id": "db:23",
-   "kind": "deleteRef",
-   "ref": "qlander-build/23"
-  },
-  {
    "id": "c:10:q:23",
    "kind": "comment",
    "pr": 10,
-   "body": "Queued in batch 23 at `863ac83ca7db45b79bbdd41fc8af58780fee2c36` (`queue/23`, on main `c93556381c987d057a7860434d8ed0753ff0c3eb`)."
+   "body": "Queued in batch 23 at `863ac83ca7db45b79bbdd41fc8af58780fee2c36` (`queue/23`, on main `c93556381c987d057a7860434d8ed0753ff0c3eb`).",
+   "sentAt": "2026-11-05T12:57:43.552Z"
   },
   {
    "id": "c:11:q:23",
