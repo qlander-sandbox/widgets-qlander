@@ -162,18 +162,6 @@
    "seen": [
     42035270272
    ]
-  },
-  {
-   "id": "c:12:landed:42",
-   "kind": "comment",
-   "pr": 12,
-   "body": "Landed in main at `d9ffcd72e524266ea94f897f5066dfa5e43b1b4c` (batch 42, pin `b2c1b70c474cd5a2bc20fef39427fdc2575e3d0e`).",
-   "sentAt": "2026-11-05T13:46:55.475Z"
-  },
-  {
-   "id": "d:42",
-   "kind": "deleteRef",
-   "ref": "queue/42"
   }
  ],
  "history": [
