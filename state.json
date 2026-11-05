@@ -17,14 +17,13 @@
   "op": {
    "kind": "rerun",
    "runs": [],
-   "done": [],
-   "requested": [
+   "done": [
     {
      "runId": 42036515361,
-     "attempt": 1,
-     "at": "2026-11-05T13:34:31.475Z"
+     "attempt": 1
     }
    ],
+   "requested": [],
    "everSent": true
   },
   "reserved": true,
