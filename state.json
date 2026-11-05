@@ -10,11 +10,49 @@
    "job": "Queue tick"
   }
  },
- "seq": 52,
- "nextLineage": 14,
- "journal": null,
+ "seq": 53,
+ "nextLineage": 15,
+ "journal": {
+  "seq": 53,
+  "op": {
+   "kind": "build",
+   "n": 53,
+   "base": "dc2a222b31b5acc8bd574e43944865b40098e9ca",
+   "pins": [
+    {
+     "pr": 19,
+     "head": "14083252337b73ec92cf6905f2a303cfa0c240b7"
+    }
+   ],
+   "depth": 0,
+   "lineage": 14,
+   "source": {
+    "kind": "candidates"
+   },
+   "rebuild": false
+  },
+  "reserved": true,
+  "at": "2026-11-05T14:34:47.366Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": null,
- "auth": {},
+ "auth": {
+  "19": {
+   "head": "14083252337b73ec92cf6905f2a303cfa0c240b7",
+   "baseRepoId": 1446564086,
+   "policy": "v2:aea7ed1c665b7cd9",
+   "policyPr": false,
+   "admittedAt": "2026-11-05T14:34:47.366Z",
+   "labelledAt": "2026-11-05T14:01:02Z",
+   "evidence": [
+    "run 42040912995",
+    "review evidence not required (v1: reviewed from the agents' VM; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett"
+  }
+ },
  "pending": [],
  "solo": [],
  "operatorSolo": [],
@@ -56,6 +94,9 @@
    "runs": 2
   },
   "13": {
+   "runs": 1
+  },
+  "14": {
    "runs": 1
   }
  },
@@ -142,6 +183,10 @@
   },
   {
    "at": "2026-11-05T13:48:25.876Z",
+   "cost": 1
+  },
+  {
+   "at": "2026-11-05T14:34:47.366Z",
    "cost": 1
   }
  ],
@@ -406,5 +451,12 @@
     "test"
    ]
   }
- ]
+ ],
+ "eligibleSince": {
+  "19": {
+   "head": "14083252337b73ec92cf6905f2a303cfa0c240b7",
+   "labelledAt": "2026-11-05T14:01:02Z",
+   "since": "2026-11-05T14:34:47.366Z"
+  }
+ }
 }
