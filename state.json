@@ -10,51 +10,11 @@
    "job": "Queue tick"
   }
  },
- "seq": 29,
+ "seq": 30,
  "nextLineage": 9,
  "journal": null,
- "active": {
-  "n": 28,
-  "base": "25d02858cc7d33252f381efbbec43417487da284",
-  "head": "a3b70483df42fd4099019dc689eb5521e53eb8c9",
-  "depth": 1,
-  "prs": [
-   11
-  ],
-  "lineage": 8,
-  "rerun": [
-   {
-    "runId": 42032950826,
-    "attempt": 1
-   }
-  ],
-  "rerunAt": "2026-11-05T13:10:35.259Z",
-  "cancels": [],
-  "builtAt": "2026-11-05T13:07:17.161Z",
-  "redJobs": [
-   {
-    "name": "test",
-    "url": "https://github.com/qlander-sandbox/widgets/actions/runs/42032950826/job/127263702473",
-    "id": 127263702473
-   }
-  ]
- },
- "auth": {
-  "11": {
-   "head": "93fffbbd1a048f06157483ba7830b2933888ed2c",
-   "baseRepoId": 1446564086,
-   "policy": "v2:aea7ed1c665b7cd9",
-   "policyPr": false,
-   "admittedAt": "2026-11-05T12:57:18.827Z",
-   "labelledAt": "2026-11-05T12:56:57Z",
-   "evidence": [
-    "run 42031410921",
-    "review evidence not required (v1: reviewed from the agents' VM; ready by a write-access user)"
-   ],
-   "reviewRun": null,
-   "author": "brett"
-  }
- },
+ "active": null,
+ "auth": {},
  "pending": [],
  "solo": [],
  "operatorSolo": [],
@@ -134,11 +94,28 @@
    "cost": 1
   }
  ],
- "redStreak": 0,
- "bounceStreak": 0,
+ "redStreak": 1,
+ "bounceStreak": 1,
  "lastLandedAt": "2026-11-05T13:05:00.175Z",
  "verify": [],
- "outbox": [],
+ "outbox": [
+  {
+   "id": "u:11:bounce:28",
+   "kind": "unready",
+   "pr": 11
+  },
+  {
+   "id": "c:11:bounce:28",
+   "kind": "comment",
+   "pr": 11,
+   "body": "Bounced from the landing queue: batch 28 (this PR alone, at `93fffbbd1a048f06157483ba7830b2933888ed2c`, on top of main `25d02858cc7d33252f381efbbec43417487da284`) failed, and failed again on a rerun.\n\n- [test](https://github.com/qlander-sandbox/widgets/actions/runs/42032950826/job/127265346642)\n\nFix it and re-add `ready`."
+  },
+  {
+   "id": "d:28",
+   "kind": "deleteRef",
+   "ref": "queue/28"
+  }
+ ],
  "history": [
   {
    "n": 1,
@@ -238,6 +215,23 @@
    "head": "25d02858cc7d33252f381efbbec43417487da284",
    "note": "main c93556381c987d057a7860434d8ed0753ff0c3eb -> 25d02858cc7d33252f381efbbec43417487da284",
    "at": "2026-11-05T13:05:00.175Z"
+  },
+  {
+   "n": 28,
+   "outcome": "bounced",
+   "prs": [
+    11
+   ],
+   "head": "a3b70483df42fd4099019dc689eb5521e53eb8c9",
+   "note": "required checks failed",
+   "failedJobs": [
+    {
+     "name": "test",
+     "url": "https://github.com/qlander-sandbox/widgets/actions/runs/42032950826/job/127265346642",
+     "id": 127265346642
+    }
+   ],
+   "at": "2026-11-05T13:11:23.251Z"
   }
  ],
  "epochBranch": "qlander-epoch/queue",
