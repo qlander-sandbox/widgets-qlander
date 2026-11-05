@@ -172,17 +172,11 @@
    ]
   },
   {
-   "id": "c:16:landed:38",
-   "kind": "comment",
-   "pr": 16,
-   "body": "Landed in main at `304224a5cb3692bf8cb597353ac2822745018e3a` (batch 38, pin `a8af9a5effd96ca072cca7ce7f76500c4665cccd`).",
-   "sentAt": "2026-11-05T13:35:45.434Z"
-  },
-  {
    "id": "c:17:landed:38",
    "kind": "comment",
    "pr": 17,
-   "body": "Landed in main at `304224a5cb3692bf8cb597353ac2822745018e3a` (batch 38, pin `1912dbd16a5faedb2b0530589efdef4315036309`)."
+   "body": "Landed in main at `304224a5cb3692bf8cb597353ac2822745018e3a` (batch 38, pin `1912dbd16a5faedb2b0530589efdef4315036309`).",
+   "sentAt": "2026-11-05T13:35:45.434Z"
   },
   {
    "id": "d:38",
