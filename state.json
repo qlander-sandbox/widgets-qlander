@@ -10,7 +10,7 @@
    "job": "Queue tick"
   }
  },
- "seq": 16,
+ "seq": 17,
  "nextLineage": 6,
  "journal": null,
  "active": null,
@@ -61,7 +61,14 @@
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-05T12:35:22.462Z",
  "verify": [],
- "outbox": [],
+ "outbox": [
+  {
+   "id": "c:3:wait:approval:c8333c2dfcaaa5e8a8f92ffd997f811d36fb5d41",
+   "kind": "comment",
+   "pr": 3,
+   "body": "Labelled `ready` but not queued: CI-policy change needs a SHA-bound approval. This PR changes CI policy, so it lands only once one of `brett` posts a comment whose whole body is:\n\n```\n/qlander approve-policy c8333c2dfcaaa5e8a8f92ffd997f811d36fb5d41\n```\n\nA push moves the head and needs a new approval."
+  }
+ ],
  "history": [
   {
    "n": 1,
@@ -115,11 +122,5 @@
    "at": "2026-11-05T12:35:22.462Z"
   }
  ],
- "epochBranch": "qlander-epoch/queue",
- "held": {
-  "3": {
-   "head": "c8333c2dfcaaa5e8a8f92ffd997f811d36fb5d41",
-   "since": "2026-11-05T12:44:23.007Z"
-  }
- }
+ "epochBranch": "qlander-epoch/queue"
 }
