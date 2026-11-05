@@ -112,15 +112,11 @@
  "verify": [],
  "outbox": [
   {
-   "id": "db:18",
-   "kind": "deleteRef",
-   "ref": "qlander-build/18"
-  },
-  {
    "id": "c:3:q:18",
    "kind": "comment",
    "pr": 3,
-   "body": "Queued in batch 18 at `c8333c2dfcaaa5e8a8f92ffd997f811d36fb5d41` (`queue/18`, on main `dc1ebb8c012f2056d27f8c28059498d927fbbf25`)."
+   "body": "Queued in batch 18 at `c8333c2dfcaaa5e8a8f92ffd997f811d36fb5d41` (`queue/18`, on main `dc1ebb8c012f2056d27f8c28059498d927fbbf25`).",
+   "sentAt": "2026-11-05T12:47:29.207Z"
   }
  ],
  "history": [
