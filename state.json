@@ -1,6 +1,15 @@
 {
  "v": 5,
- "lease": null,
+ "lease": {
+  "owner": "42024395686.1.5e4de819",
+  "until": "2026-11-05T12:15:03.000Z",
+  "acquiredAt": "2026-11-05T12:07:03.000Z",
+  "executor": {
+   "runId": 42024395686,
+   "attempt": 1,
+   "job": "Queue tick"
+  }
+ },
  "seq": 0,
  "nextLineage": 1,
  "journal": null,
@@ -16,5 +25,6 @@
  "lastLandedAt": null,
  "verify": [],
  "outbox": [],
- "history": []
+ "history": [],
+ "epochBranch": "qlander-epoch/queue"
 }
