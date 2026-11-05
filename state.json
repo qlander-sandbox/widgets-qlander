@@ -10,39 +10,41 @@
    "job": "Queue tick"
   }
  },
- "seq": 31,
+ "seq": 32,
  "nextLineage": 10,
- "journal": null,
- "active": {
-  "n": 31,
-  "base": "25d02858cc7d33252f381efbbec43417487da284",
-  "head": "214a9d62945bb6b9340d93f512b2bf4449d8e643",
-  "depth": 0,
-  "prs": [
-   12,
-   13
-  ],
-  "lineage": 9,
-  "rerun": null,
-  "rerunAt": null,
-  "cancels": [],
-  "builtAt": "2026-11-05T13:13:23.333Z"
- },
- "auth": {
-  "12": {
-   "head": "06a1a6ef4aa8b90f45be502937dade356d886698",
-   "baseRepoId": 1446564086,
-   "policy": "v2:aea7ed1c665b7cd9",
-   "policyPr": false,
-   "admittedAt": "2026-11-05T13:13:02.568Z",
-   "labelledAt": "2026-11-05T13:12:37Z",
-   "evidence": [
-    "run 42033691096",
-    "review evidence not required (v1: reviewed from the agents' VM; ready by a write-access user)"
+ "journal": {
+  "seq": 32,
+  "op": {
+   "kind": "build",
+   "n": 32,
+   "base": "25d02858cc7d33252f381efbbec43417487da284",
+   "pins": [
+    {
+     "pr": 13,
+     "head": "75f0585d0b0f9cdbaf1ed7188835de28df3e13d9"
+    }
    ],
-   "reviewRun": null,
-   "author": "brett"
+   "depth": 0,
+   "lineage": 9,
+   "source": {
+    "kind": "pending",
+    "item": {
+     "prs": [
+      13
+     ],
+     "depth": 0,
+     "lineage": 9
+    }
+   },
+   "rebuild": false
   },
+  "reserved": true,
+  "at": "2026-11-05T13:16:19.356Z",
+  "checkpoint": null,
+  "tries": 0
+ },
+ "active": null,
+ "auth": {
   "13": {
    "head": "75f0585d0b0f9cdbaf1ed7188835de28df3e13d9",
    "baseRepoId": 1446564086,
@@ -87,7 +89,7 @@
    "runs": 5
   },
   "9": {
-   "runs": 1
+   "runs": 2
   }
  },
  "window": [
@@ -142,13 +144,42 @@
   {
    "at": "2026-11-05T13:13:02.568Z",
    "cost": 1
+  },
+  {
+   "at": "2026-11-05T13:16:19.356Z",
+   "cost": 1
   }
  ],
  "redStreak": 1,
  "bounceStreak": 1,
  "lastLandedAt": "2026-11-05T13:05:00.175Z",
  "verify": [],
- "outbox": [],
+ "outbox": [
+  {
+   "id": "u:12:moved:06a1a6ef4aa8b90f45be502937dade356d886698",
+   "kind": "unready",
+   "pr": 12
+  },
+  {
+   "id": "c:12:moved:06a1a6ef4aa8b90f45be502937dade356d886698",
+   "kind": "comment",
+   "pr": 12,
+   "body": "Removed from the landing queue: head moved from 06a1a6ef4aa8b90f45be502937dade356d886698 to b2c1b70c474cd5a2bc20fef39427fdc2575e3d0e. It must qualify again (fast lane and review on the new head, then `ready`)."
+  },
+  {
+   "id": "x:31",
+   "kind": "cancelRuns",
+   "ref": "queue/31",
+   "head": "214a9d62945bb6b9340d93f512b2bf4449d8e643",
+   "until": "2026-11-05T13:46:19.356Z",
+   "giveUpAt": "2026-11-05T19:16:19.356Z"
+  },
+  {
+   "id": "d:31",
+   "kind": "deleteRef",
+   "ref": "queue/31"
+  }
+ ],
  "history": [
   {
    "n": 1,
@@ -265,15 +296,21 @@
     }
    ],
    "at": "2026-11-05T13:11:23.251Z"
+  },
+  {
+   "n": 31,
+   "outcome": "abandoned",
+   "prs": [
+    12,
+    13
+   ],
+   "head": "214a9d62945bb6b9340d93f512b2bf4449d8e643",
+   "note": "revalidation dropped #12",
+   "at": "2026-11-05T13:16:19.356Z"
   }
  ],
  "epochBranch": "qlander-epoch/queue",
  "eligibleSince": {
-  "12": {
-   "head": "06a1a6ef4aa8b90f45be502937dade356d886698",
-   "labelledAt": "2026-11-05T13:12:37Z",
-   "since": "2026-11-05T13:13:02.568Z"
-  },
   "13": {
    "head": "75f0585d0b0f9cdbaf1ed7188835de28df3e13d9",
    "labelledAt": "2026-11-05T13:12:39Z",
