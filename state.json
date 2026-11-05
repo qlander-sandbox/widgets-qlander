@@ -174,7 +174,8 @@
    "id": "c:18:landed:45",
    "kind": "comment",
    "pr": 18,
-   "body": "Landed in main at `dc2a222b31b5acc8bd574e43944865b40098e9ca` (batch 45, pin `3a47537658c8765e7ba912622d7515b68fcebbbd`)."
+   "body": "Landed in main at `dc2a222b31b5acc8bd574e43944865b40098e9ca` (batch 45, pin `3a47537658c8765e7ba912622d7515b68fcebbbd`).",
+   "sentAt": "2026-11-05T13:51:52.045Z"
   },
   {
    "id": "d:45",
