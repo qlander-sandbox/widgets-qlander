@@ -10,11 +10,63 @@
    "job": "Queue tick"
   }
  },
- "seq": 17,
- "nextLineage": 6,
- "journal": null,
+ "seq": 18,
+ "nextLineage": 7,
+ "journal": {
+  "seq": 18,
+  "op": {
+   "kind": "build",
+   "n": 18,
+   "base": "dc1ebb8c012f2056d27f8c28059498d927fbbf25",
+   "pins": [
+    {
+     "pr": 3,
+     "head": "c8333c2dfcaaa5e8a8f92ffd997f811d36fb5d41"
+    }
+   ],
+   "depth": 0,
+   "lineage": 6,
+   "source": {
+    "kind": "candidates"
+   },
+   "rebuild": false
+  },
+  "reserved": true,
+  "at": "2026-11-05T12:47:06.833Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": null,
- "auth": {},
+ "auth": {
+  "3": {
+   "head": "c8333c2dfcaaa5e8a8f92ffd997f811d36fb5d41",
+   "baseRepoId": 1446564086,
+   "policy": "v2:aea7ed1c665b7cd9",
+   "policyPr": true,
+   "admittedAt": "2026-11-05T12:47:06.833Z",
+   "labelledAt": "2026-11-05T12:12:51Z",
+   "evidence": [
+    "run 42025505027",
+    "review evidence not required (v1: reviewed from the agents' VM; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett"
+  },
+  "9": {
+   "head": "fb83e32925cbed0f92b3a44f8ca7acd93b327b13",
+   "baseRepoId": 1446564086,
+   "policy": "v2:aea7ed1c665b7cd9",
+   "policyPr": false,
+   "admittedAt": "2026-11-05T12:47:06.833Z",
+   "labelledAt": "2026-11-05T12:46:44Z",
+   "evidence": [
+    "run 42029978757",
+    "review evidence not required (v1: reviewed from the agents' VM; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett"
+  }
+ },
  "pending": [],
  "solo": [],
  "operatorSolo": [],
@@ -32,6 +84,9 @@
    "runs": 1
   },
   "5": {
+   "runs": 1
+  },
+  "6": {
    "runs": 1
   }
  },
@@ -54,6 +109,10 @@
   },
   {
    "at": "2026-11-05T12:31:56.789Z",
+   "cost": 1
+  },
+  {
+   "at": "2026-11-05T12:47:06.833Z",
    "cost": 1
   }
  ],
@@ -115,5 +174,17 @@
    "at": "2026-11-05T12:35:22.462Z"
   }
  ],
- "epochBranch": "qlander-epoch/queue"
+ "epochBranch": "qlander-epoch/queue",
+ "eligibleSince": {
+  "3": {
+   "head": "c8333c2dfcaaa5e8a8f92ffd997f811d36fb5d41",
+   "labelledAt": "2026-11-05T12:12:51Z",
+   "since": "2026-11-05T12:47:06.833Z"
+  },
+  "9": {
+   "head": "fb83e32925cbed0f92b3a44f8ca7acd93b327b13",
+   "labelledAt": "2026-11-05T12:46:44Z",
+   "since": "2026-11-05T12:47:06.833Z"
+  }
+ }
 }
