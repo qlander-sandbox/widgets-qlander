@@ -10,7 +10,7 @@
    "job": "Queue tick"
   }
  },
- "seq": 33,
+ "seq": 34,
  "nextLineage": 10,
  "journal": null,
  "active": null,
@@ -108,16 +108,7 @@
  "redStreak": 0,
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-05T13:19:56.804Z",
- "verify": [
-  {
-   "pr": 13,
-   "pin": "75f0585d0b0f9cdbaf1ed7188835de28df3e13d9",
-   "landedIn": "7d3dbce1280cafb00abcd8a8bec7f23df2e3926a",
-   "since": "2026-11-05T13:19:56.804Z",
-   "ticks": 0,
-   "notified": false
-  }
- ],
+ "verify": [],
  "outbox": [
   {
    "id": "x:31",
@@ -129,6 +120,11 @@
    "seen": [
     42033851027
    ]
+  },
+  {
+   "id": "u:13:v:75f0585d0b0f9cdbaf1ed7188835de28df3e13d9",
+   "kind": "unready",
+   "pr": 13
   }
  ],
  "history": [
@@ -270,12 +266,5 @@
    "at": "2026-11-05T13:19:56.804Z"
   }
  ],
- "epochBranch": "qlander-epoch/queue",
- "eligibleSince": {
-  "13": {
-   "head": "75f0585d0b0f9cdbaf1ed7188835de28df3e13d9",
-   "labelledAt": "2026-11-05T13:12:39Z",
-   "since": "2026-11-05T13:13:02.568Z"
-  }
- }
+ "epochBranch": "qlander-epoch/queue"
 }
