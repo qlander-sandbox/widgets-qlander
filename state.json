@@ -12,48 +12,9 @@
  },
  "seq": 33,
  "nextLineage": 10,
- "journal": {
-  "seq": 33,
-  "op": {
-   "kind": "land",
-   "before": "25d02858cc7d33252f381efbbec43417487da284",
-   "after": "7d3dbce1280cafb00abcd8a8bec7f23df2e3926a"
-  },
-  "reserved": false,
-  "at": "2026-11-05T13:19:46.521Z",
-  "checkpoint": null,
-  "tries": 0
- },
- "active": {
-  "n": 32,
-  "base": "25d02858cc7d33252f381efbbec43417487da284",
-  "head": "7d3dbce1280cafb00abcd8a8bec7f23df2e3926a",
-  "depth": 0,
-  "prs": [
-   13
-  ],
-  "lineage": 9,
-  "rerun": null,
-  "rerunAt": null,
-  "cancels": [],
-  "builtAt": "2026-11-05T13:16:38.337Z"
- },
- "auth": {
-  "13": {
-   "head": "75f0585d0b0f9cdbaf1ed7188835de28df3e13d9",
-   "baseRepoId": 1446564086,
-   "policy": "v2:aea7ed1c665b7cd9",
-   "policyPr": false,
-   "admittedAt": "2026-11-05T13:13:02.568Z",
-   "labelledAt": "2026-11-05T13:12:39Z",
-   "evidence": [
-    "run 42033699798",
-    "review evidence not required (v1: reviewed from the agents' VM; ready by a write-access user)"
-   ],
-   "reviewRun": null,
-   "author": "brett"
-  }
- },
+ "journal": null,
+ "active": null,
+ "auth": {},
  "pending": [],
  "solo": [],
  "operatorSolo": [],
@@ -144,10 +105,19 @@
    "cost": 1
   }
  ],
- "redStreak": 1,
- "bounceStreak": 1,
- "lastLandedAt": "2026-11-05T13:05:00.175Z",
- "verify": [],
+ "redStreak": 0,
+ "bounceStreak": 0,
+ "lastLandedAt": "2026-11-05T13:19:56.804Z",
+ "verify": [
+  {
+   "pr": 13,
+   "pin": "75f0585d0b0f9cdbaf1ed7188835de28df3e13d9",
+   "landedIn": "7d3dbce1280cafb00abcd8a8bec7f23df2e3926a",
+   "since": "2026-11-05T13:19:56.804Z",
+   "ticks": 0,
+   "notified": false
+  }
+ ],
  "outbox": [
   {
    "id": "x:31",
@@ -159,6 +129,17 @@
    "seen": [
     42033851027
    ]
+  },
+  {
+   "id": "c:13:landed:32",
+   "kind": "comment",
+   "pr": 13,
+   "body": "Landed in main at `7d3dbce1280cafb00abcd8a8bec7f23df2e3926a` (batch 32, pin `75f0585d0b0f9cdbaf1ed7188835de28df3e13d9`)."
+  },
+  {
+   "id": "d:32",
+   "kind": "deleteRef",
+   "ref": "queue/32"
   }
  ],
  "history": [
@@ -288,6 +269,16 @@
    "head": "214a9d62945bb6b9340d93f512b2bf4449d8e643",
    "note": "revalidation dropped #12",
    "at": "2026-11-05T13:16:19.356Z"
+  },
+  {
+   "n": 32,
+   "outcome": "landed",
+   "prs": [
+    13
+   ],
+   "head": "7d3dbce1280cafb00abcd8a8bec7f23df2e3926a",
+   "note": "main 25d02858cc7d33252f381efbbec43417487da284 -> 7d3dbce1280cafb00abcd8a8bec7f23df2e3926a",
+   "at": "2026-11-05T13:19:56.804Z"
   }
  ],
  "epochBranch": "qlander-epoch/queue",
