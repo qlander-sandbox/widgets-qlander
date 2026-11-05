@@ -10,7 +10,7 @@
    "job": "Queue tick"
   }
  },
- "seq": 73,
+ "seq": 74,
  "nextLineage": 17,
  "journal": null,
  "active": null,
@@ -170,7 +170,13 @@
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-05T17:48:34.395Z",
  "verify": [],
- "outbox": [],
+ "outbox": [
+  {
+   "id": "p:74",
+   "kind": "pause",
+   "reason": "window budget of 24 runs per 24h used"
+  }
+ ],
  "history": [
   {
    "n": 1,
