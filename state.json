@@ -12,68 +12,9 @@
  },
  "seq": 40,
  "nextLineage": 12,
- "journal": {
-  "seq": 40,
-  "op": {
-   "kind": "land",
-   "before": "dc9fe4858c3049e9ddaa975572cc4f92d5926a1d",
-   "after": "304224a5cb3692bf8cb597353ac2822745018e3a"
-  },
-  "reserved": false,
-  "at": "2026-11-05T13:35:29.896Z",
-  "checkpoint": null,
-  "tries": 0
- },
- "active": {
-  "n": 38,
-  "base": "dc9fe4858c3049e9ddaa975572cc4f92d5926a1d",
-  "head": "304224a5cb3692bf8cb597353ac2822745018e3a",
-  "depth": 0,
-  "prs": [
-   16,
-   17
-  ],
-  "lineage": 11,
-  "rerun": [
-   {
-    "runId": 42036515361,
-    "attempt": 1
-   }
-  ],
-  "rerunAt": "2026-11-05T13:34:36.416Z",
-  "cancels": [],
-  "builtAt": "2026-11-05T13:31:28.214Z"
- },
- "auth": {
-  "16": {
-   "head": "a8af9a5effd96ca072cca7ce7f76500c4665cccd",
-   "baseRepoId": 1446564086,
-   "policy": "v2:aea7ed1c665b7cd9",
-   "policyPr": false,
-   "admittedAt": "2026-11-05T13:31:06.148Z",
-   "labelledAt": "2026-11-05T13:30:35Z",
-   "evidence": [
-    "run 42036328162",
-    "review evidence not required (v1: reviewed from the agents' VM; ready by a write-access user)"
-   ],
-   "reviewRun": null,
-   "author": "brett"
-  },
-  "17": {
-   "head": "1912dbd16a5faedb2b0530589efdef4315036309",
-   "baseRepoId": 1446564086,
-   "policy": "v2:aea7ed1c665b7cd9",
-   "policyPr": false,
-   "admittedAt": "2026-11-05T13:31:06.148Z",
-   "labelledAt": "2026-11-05T13:30:43Z",
-   "evidence": [
-    "run 42036339017",
-    "review evidence not required (v1: reviewed from the agents' VM; ready by a write-access user)"
-   ],
-   "reviewRun": null,
-   "author": "brett"
-  }
- },
+ "journal": null,
+ "active": null,
+ "auth": {},
  "pending": [],
  "solo": [],
  "operatorSolo": [],
@@ -188,8 +129,25 @@
  ],
  "redStreak": 0,
  "bounceStreak": 0,
- "lastLandedAt": "2026-11-05T13:29:20.344Z",
- "verify": [],
+ "lastLandedAt": "2026-11-05T13:35:43.092Z",
+ "verify": [
+  {
+   "pr": 16,
+   "pin": "a8af9a5effd96ca072cca7ce7f76500c4665cccd",
+   "landedIn": "304224a5cb3692bf8cb597353ac2822745018e3a",
+   "since": "2026-11-05T13:35:43.092Z",
+   "ticks": 0,
+   "notified": false
+  },
+  {
+   "pr": 17,
+   "pin": "1912dbd16a5faedb2b0530589efdef4315036309",
+   "landedIn": "304224a5cb3692bf8cb597353ac2822745018e3a",
+   "since": "2026-11-05T13:35:43.092Z",
+   "ticks": 0,
+   "notified": false
+  }
+ ],
  "outbox": [
   {
    "id": "x:31",
@@ -233,6 +191,23 @@
      "url": "https://github.com/qlander-sandbox/widgets/actions/runs/42036515361/job/127275968798"
     }
    ]
+  },
+  {
+   "id": "c:16:landed:38",
+   "kind": "comment",
+   "pr": 16,
+   "body": "Landed in main at `304224a5cb3692bf8cb597353ac2822745018e3a` (batch 38, pin `a8af9a5effd96ca072cca7ce7f76500c4665cccd`)."
+  },
+  {
+   "id": "c:17:landed:38",
+   "kind": "comment",
+   "pr": 17,
+   "body": "Landed in main at `304224a5cb3692bf8cb597353ac2822745018e3a` (batch 38, pin `1912dbd16a5faedb2b0530589efdef4315036309`)."
+  },
+  {
+   "id": "d:38",
+   "kind": "deleteRef",
+   "ref": "queue/38"
   }
  ],
  "history": [
@@ -417,6 +392,17 @@
     }
    ],
    "at": "2026-11-05T13:35:29.896Z"
+  },
+  {
+   "n": 38,
+   "outcome": "landed",
+   "prs": [
+    16,
+    17
+   ],
+   "head": "304224a5cb3692bf8cb597353ac2822745018e3a",
+   "note": "main dc9fe4858c3049e9ddaa975572cc4f92d5926a1d -> 304224a5cb3692bf8cb597353ac2822745018e3a",
+   "at": "2026-11-05T13:35:43.092Z"
   }
  ],
  "epochBranch": "qlander-epoch/queue",
