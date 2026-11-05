@@ -10,9 +10,20 @@
    "job": "Queue tick"
   }
  },
- "seq": 43,
+ "seq": 44,
  "nextLineage": 13,
- "journal": null,
+ "journal": {
+  "seq": 44,
+  "op": {
+   "kind": "land",
+   "before": "304224a5cb3692bf8cb597353ac2822745018e3a",
+   "after": "d9ffcd72e524266ea94f897f5066dfa5e43b1b4c"
+  },
+  "reserved": false,
+  "at": "2026-11-05T13:46:41.959Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": {
   "n": 42,
   "base": "304224a5cb3692bf8cb597353ac2822745018e3a",
@@ -30,14 +41,7 @@
   ],
   "rerunAt": "2026-11-05T13:43:39.325Z",
   "cancels": [],
-  "builtAt": "2026-11-05T13:40:26.676Z",
-  "redJobs": [
-   {
-    "name": "test",
-    "url": "https://github.com/qlander-sandbox/widgets/actions/runs/42037849907/job/127280550911",
-    "id": 127280550911
-   }
-  ]
+  "builtAt": "2026-11-05T13:40:26.676Z"
  },
  "auth": {
   "12": {
@@ -192,6 +196,27 @@
    "giveUpAt": "2026-11-05T19:25:53.985Z",
    "seen": [
     42035270272
+   ]
+  },
+  {
+   "id": "f:42",
+   "kind": "flaky",
+   "n": 42,
+   "at": "2026-11-05T13:46:41.959Z",
+   "giveUpAt": "2026-11-06T13:46:41.959Z",
+   "runs": [
+    {
+     "runId": 42037849907,
+     "attempt": 1
+    }
+   ],
+   "items": [
+    {
+     "key": "test",
+     "byJob": true,
+     "job": "test",
+     "url": "https://github.com/qlander-sandbox/widgets/actions/runs/42037849907/job/127280550911"
+    }
    ]
   }
  ],
@@ -388,6 +413,29 @@
    "head": "304224a5cb3692bf8cb597353ac2822745018e3a",
    "note": "main dc9fe4858c3049e9ddaa975572cc4f92d5926a1d -> 304224a5cb3692bf8cb597353ac2822745018e3a",
    "at": "2026-11-05T13:35:43.092Z"
+  },
+  {
+   "n": 42,
+   "outcome": "flaky",
+   "prs": [
+    12
+   ],
+   "head": "d9ffcd72e524266ea94f897f5066dfa5e43b1b4c",
+   "note": "the rerun passed; the first attempt failed test",
+   "failedJobs": [
+    {
+     "name": "test",
+     "url": "https://github.com/qlander-sandbox/widgets/actions/runs/42037849907/job/127280550911",
+     "id": 127280550911
+    }
+   ],
+   "runs": [
+    {
+     "runId": 42037849907,
+     "attempt": 1
+    }
+   ],
+   "at": "2026-11-05T13:46:41.959Z"
   }
  ],
  "epochBranch": "qlander-epoch/queue",
@@ -395,6 +443,14 @@
   {
    "at": "2026-11-05T13:35:29.896Z",
    "n": 38,
+   "count": 1,
+   "keys": [
+    "test"
+   ]
+  },
+  {
+   "at": "2026-11-05T13:46:41.959Z",
+   "n": 42,
    "count": 1,
    "keys": [
     "test"
