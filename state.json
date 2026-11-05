@@ -10,9 +10,24 @@
    "job": "Queue tick"
   }
  },
- "seq": 28,
+ "seq": 29,
  "nextLineage": 9,
- "journal": null,
+ "journal": {
+  "seq": 29,
+  "op": {
+   "kind": "rerun",
+   "runs": [
+    {
+     "runId": 42032950826,
+     "attempt": 1
+    }
+   ]
+  },
+  "reserved": true,
+  "at": "2026-11-05T13:10:20.885Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": {
   "n": 28,
   "base": "25d02858cc7d33252f381efbbec43417487da284",
@@ -25,7 +40,14 @@
   "rerun": null,
   "rerunAt": null,
   "cancels": [],
-  "builtAt": "2026-11-05T13:07:17.161Z"
+  "builtAt": "2026-11-05T13:07:17.161Z",
+  "redJobs": [
+   {
+    "name": "test",
+    "url": "https://github.com/qlander-sandbox/widgets/actions/runs/42032950826/job/127263702473",
+    "id": 127263702473
+   }
+  ]
  },
  "auth": {
   "11": {
@@ -69,7 +91,7 @@
    "runs": 1
   },
   "8": {
-   "runs": 4
+   "runs": 5
   }
  },
  "window": [
@@ -115,6 +137,10 @@
   },
   {
    "at": "2026-11-05T13:06:59.697Z",
+   "cost": 1
+  },
+  {
+   "at": "2026-11-05T13:10:20.885Z",
    "cost": 1
   }
  ],
