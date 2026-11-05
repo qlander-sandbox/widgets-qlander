@@ -10,36 +10,40 @@
    "job": "Queue tick"
   }
  },
- "seq": 24,
+ "seq": 25,
  "nextLineage": 9,
- "journal": null,
- "active": {
-  "n": 23,
-  "base": "c93556381c987d057a7860434d8ed0753ff0c3eb",
-  "head": "1898c220bd031bc18902c8553a26c81529552faa",
-  "depth": 0,
-  "prs": [
-   10,
-   11
-  ],
-  "lineage": 8,
-  "rerun": [
-   {
-    "runId": 42031547621,
-    "attempt": 1
-   }
-  ],
-  "rerunAt": "2026-11-05T13:00:48.894Z",
-  "cancels": [],
-  "builtAt": "2026-11-05T12:57:41.133Z",
-  "redJobs": [
-   {
-    "name": "test",
-    "url": "https://github.com/qlander-sandbox/widgets/actions/runs/42031547621/job/127258987093",
-    "id": 127258987093
-   }
-  ]
+ "journal": {
+  "seq": 25,
+  "op": {
+   "kind": "build",
+   "n": 25,
+   "base": "c93556381c987d057a7860434d8ed0753ff0c3eb",
+   "pins": [
+    {
+     "pr": 10,
+     "head": "863ac83ca7db45b79bbdd41fc8af58780fee2c36"
+    }
+   ],
+   "depth": 1,
+   "lineage": 8,
+   "source": {
+    "kind": "pending",
+    "item": {
+     "prs": [
+      10
+     ],
+     "depth": 1,
+     "lineage": 8
+    }
+   },
+   "rebuild": false
+  },
+  "reserved": true,
+  "at": "2026-11-05T13:01:32.883Z",
+  "checkpoint": null,
+  "tries": 0
  },
+ "active": null,
  "auth": {
   "10": {
    "head": "863ac83ca7db45b79bbdd41fc8af58780fee2c36",
@@ -70,7 +74,15 @@
    "author": "brett"
   }
  },
- "pending": [],
+ "pending": [
+  {
+   "prs": [
+    11
+   ],
+   "depth": 1,
+   "lineage": 8
+  }
+ ],
  "solo": [],
  "operatorSolo": [],
  "lineages": {
@@ -96,7 +108,7 @@
    "runs": 1
   },
   "8": {
-   "runs": 2
+   "runs": 3
   }
  },
  "window": [
@@ -135,13 +147,23 @@
   {
    "at": "2026-11-05T13:00:32.515Z",
    "cost": 1
+  },
+  {
+   "at": "2026-11-05T13:01:32.883Z",
+   "cost": 1
   }
  ],
- "redStreak": 0,
+ "redStreak": 1,
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-05T12:56:02.639Z",
  "verify": [],
- "outbox": [],
+ "outbox": [
+  {
+   "id": "d:23",
+   "kind": "deleteRef",
+   "ref": "queue/23"
+  }
+ ],
  "history": [
   {
    "n": 1,
@@ -213,6 +235,24 @@
    "head": "c93556381c987d057a7860434d8ed0753ff0c3eb",
    "note": "main 4071f45efe0019449633f1b0168ea0eb8179e4fb -> c93556381c987d057a7860434d8ed0753ff0c3eb",
    "at": "2026-11-05T12:56:02.639Z"
+  },
+  {
+   "n": 23,
+   "outcome": "split",
+   "prs": [
+    10,
+    11
+   ],
+   "head": "1898c220bd031bc18902c8553a26c81529552faa",
+   "note": "required checks failed",
+   "failedJobs": [
+    {
+     "name": "test",
+     "url": "https://github.com/qlander-sandbox/widgets/actions/runs/42031547621/job/127260467968",
+     "id": 127260467968
+    }
+   ],
+   "at": "2026-11-05T13:01:32.883Z"
   }
  ],
  "epochBranch": "qlander-epoch/queue",
