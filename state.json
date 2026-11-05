@@ -190,15 +190,11 @@
    ]
   },
   {
-   "id": "db:42",
-   "kind": "deleteRef",
-   "ref": "qlander-build/42"
-  },
-  {
    "id": "c:12:q:42",
    "kind": "comment",
    "pr": 12,
-   "body": "Queued in batch 42 at `b2c1b70c474cd5a2bc20fef39427fdc2575e3d0e` (`queue/42`, on main `304224a5cb3692bf8cb597353ac2822745018e3a`)."
+   "body": "Queued in batch 42 at `b2c1b70c474cd5a2bc20fef39427fdc2575e3d0e` (`queue/42`, on main `304224a5cb3692bf8cb597353ac2822745018e3a`).",
+   "sentAt": "2026-11-05T13:40:28.739Z"
   }
  ],
  "history": [
