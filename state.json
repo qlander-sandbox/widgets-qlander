@@ -10,11 +10,67 @@
    "job": "Queue tick"
   }
  },
- "seq": 37,
- "nextLineage": 11,
- "journal": null,
+ "seq": 38,
+ "nextLineage": 12,
+ "journal": {
+  "seq": 38,
+  "op": {
+   "kind": "build",
+   "n": 38,
+   "base": "dc9fe4858c3049e9ddaa975572cc4f92d5926a1d",
+   "pins": [
+    {
+     "pr": 16,
+     "head": "a8af9a5effd96ca072cca7ce7f76500c4665cccd"
+    },
+    {
+     "pr": 17,
+     "head": "1912dbd16a5faedb2b0530589efdef4315036309"
+    }
+   ],
+   "depth": 0,
+   "lineage": 11,
+   "source": {
+    "kind": "candidates"
+   },
+   "rebuild": false
+  },
+  "reserved": true,
+  "at": "2026-11-05T13:31:06.148Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": null,
- "auth": {},
+ "auth": {
+  "16": {
+   "head": "a8af9a5effd96ca072cca7ce7f76500c4665cccd",
+   "baseRepoId": 1446564086,
+   "policy": "v2:aea7ed1c665b7cd9",
+   "policyPr": false,
+   "admittedAt": "2026-11-05T13:31:06.148Z",
+   "labelledAt": "2026-11-05T13:30:35Z",
+   "evidence": [
+    "run 42036328162",
+    "review evidence not required (v1: reviewed from the agents' VM; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett"
+  },
+  "17": {
+   "head": "1912dbd16a5faedb2b0530589efdef4315036309",
+   "baseRepoId": 1446564086,
+   "policy": "v2:aea7ed1c665b7cd9",
+   "policyPr": false,
+   "admittedAt": "2026-11-05T13:31:06.148Z",
+   "labelledAt": "2026-11-05T13:30:43Z",
+   "evidence": [
+    "run 42036339017",
+    "review evidence not required (v1: reviewed from the agents' VM; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett"
+  }
+ },
  "pending": [],
  "solo": [],
  "operatorSolo": [],
@@ -48,6 +104,9 @@
   },
   "10": {
    "runs": 2
+  },
+  "11": {
+   "runs": 1
   }
  },
  "window": [
@@ -114,21 +173,16 @@
   {
    "at": "2026-11-05T13:25:53.985Z",
    "cost": 1
+  },
+  {
+   "at": "2026-11-05T13:31:06.148Z",
+   "cost": 1
   }
  ],
  "redStreak": 0,
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-05T13:29:20.344Z",
- "verify": [
-  {
-   "pr": 15,
-   "pin": "3d1ae080a2067ac0db0935d0b9a5ba3267580cc9",
-   "landedIn": "dc9fe4858c3049e9ddaa975572cc4f92d5926a1d",
-   "since": "2026-11-05T13:29:20.344Z",
-   "ticks": 0,
-   "notified": false
-  }
- ],
+ "verify": [],
  "outbox": [
   {
    "id": "x:31",
@@ -151,6 +205,23 @@
    "seen": [
     42035270272
    ]
+  },
+  {
+   "id": "cmd:35245201094",
+   "kind": "unlabel",
+   "pr": 16,
+   "label": "qlander:solo"
+  },
+  {
+   "id": "cmd:35245207888",
+   "kind": "unlabel",
+   "pr": 16,
+   "label": "qlander:unsolo"
+  },
+  {
+   "id": "u:15:v:3d1ae080a2067ac0db0935d0b9a5ba3267580cc9",
+   "kind": "unready",
+   "pr": 15
   }
  ],
  "history": [
@@ -315,10 +386,15 @@
  ],
  "epochBranch": "qlander-epoch/queue",
  "eligibleSince": {
-  "15": {
-   "head": "3d1ae080a2067ac0db0935d0b9a5ba3267580cc9",
-   "labelledAt": "2026-11-05T13:22:12Z",
-   "since": "2026-11-05T13:22:36.075Z"
+  "16": {
+   "head": "a8af9a5effd96ca072cca7ce7f76500c4665cccd",
+   "labelledAt": "2026-11-05T13:30:35Z",
+   "since": "2026-11-05T13:31:06.148Z"
+  },
+  "17": {
+   "head": "1912dbd16a5faedb2b0530589efdef4315036309",
+   "labelledAt": "2026-11-05T13:30:43Z",
+   "since": "2026-11-05T13:31:06.148Z"
   }
  }
 }
