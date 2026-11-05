@@ -10,11 +10,67 @@
    "job": "Queue tick"
   }
  },
- "seq": 34,
- "nextLineage": 10,
- "journal": null,
+ "seq": 35,
+ "nextLineage": 11,
+ "journal": {
+  "seq": 35,
+  "op": {
+   "kind": "build",
+   "n": 35,
+   "base": "7d3dbce1280cafb00abcd8a8bec7f23df2e3926a",
+   "pins": [
+    {
+     "pr": 14,
+     "head": "071aa015b8d7bfb8582eb44e38d00536e86c9237"
+    },
+    {
+     "pr": 15,
+     "head": "3d1ae080a2067ac0db0935d0b9a5ba3267580cc9"
+    }
+   ],
+   "depth": 0,
+   "lineage": 10,
+   "source": {
+    "kind": "candidates"
+   },
+   "rebuild": false
+  },
+  "reserved": true,
+  "at": "2026-11-05T13:22:36.075Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": null,
- "auth": {},
+ "auth": {
+  "14": {
+   "head": "071aa015b8d7bfb8582eb44e38d00536e86c9237",
+   "baseRepoId": 1446564086,
+   "policy": "v2:aea7ed1c665b7cd9",
+   "policyPr": false,
+   "admittedAt": "2026-11-05T13:22:36.075Z",
+   "labelledAt": "2026-11-05T13:22:10Z",
+   "evidence": [
+    "run 42035100281",
+    "review evidence not required (v1: reviewed from the agents' VM; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett"
+  },
+  "15": {
+   "head": "3d1ae080a2067ac0db0935d0b9a5ba3267580cc9",
+   "baseRepoId": 1446564086,
+   "policy": "v2:aea7ed1c665b7cd9",
+   "policyPr": false,
+   "admittedAt": "2026-11-05T13:22:36.075Z",
+   "labelledAt": "2026-11-05T13:22:12Z",
+   "evidence": [
+    "run 42035115339",
+    "review evidence not required (v1: reviewed from the agents' VM; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett"
+  }
+ },
  "pending": [],
  "solo": [],
  "operatorSolo": [],
@@ -45,6 +101,9 @@
   },
   "9": {
    "runs": 2
+  },
+  "10": {
+   "runs": 1
   }
  },
  "window": [
@@ -102,6 +161,10 @@
   },
   {
    "at": "2026-11-05T13:16:19.356Z",
+   "cost": 1
+  },
+  {
+   "at": "2026-11-05T13:22:36.075Z",
    "cost": 1
   }
  ],
@@ -261,5 +324,17 @@
    "at": "2026-11-05T13:19:56.804Z"
   }
  ],
- "epochBranch": "qlander-epoch/queue"
+ "epochBranch": "qlander-epoch/queue",
+ "eligibleSince": {
+  "14": {
+   "head": "071aa015b8d7bfb8582eb44e38d00536e86c9237",
+   "labelledAt": "2026-11-05T13:22:10Z",
+   "since": "2026-11-05T13:22:36.075Z"
+  },
+  "15": {
+   "head": "3d1ae080a2067ac0db0935d0b9a5ba3267580cc9",
+   "labelledAt": "2026-11-05T13:22:12Z",
+   "since": "2026-11-05T13:22:36.075Z"
+  }
+ }
 }
