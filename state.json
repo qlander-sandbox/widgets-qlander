@@ -12,48 +12,22 @@
  },
  "seq": 38,
  "nextLineage": 12,
- "journal": {
-  "seq": 38,
-  "op": {
-   "kind": "build",
-   "n": 38,
-   "base": "dc9fe4858c3049e9ddaa975572cc4f92d5926a1d",
-   "pins": [
-    {
-     "pr": 16,
-     "head": "a8af9a5effd96ca072cca7ce7f76500c4665cccd"
-    },
-    {
-     "pr": 17,
-     "head": "1912dbd16a5faedb2b0530589efdef4315036309"
-    }
-   ],
-   "depth": 0,
-   "lineage": 11,
-   "source": {
-    "kind": "candidates"
-   },
-   "rebuild": false
-  },
-  "reserved": true,
-  "at": "2026-11-05T13:31:06.148Z",
-  "checkpoint": {
-   "survivors": [
-    {
-     "pr": 16,
-     "head": "a8af9a5effd96ca072cca7ce7f76500c4665cccd"
-    },
-    {
-     "pr": 17,
-     "head": "1912dbd16a5faedb2b0530589efdef4315036309"
-    }
-   ],
-   "dropped": [],
-   "chainHead": "304224a5cb3692bf8cb597353ac2822745018e3a"
-  },
-  "tries": 0
+ "journal": null,
+ "active": {
+  "n": 38,
+  "base": "dc9fe4858c3049e9ddaa975572cc4f92d5926a1d",
+  "head": "304224a5cb3692bf8cb597353ac2822745018e3a",
+  "depth": 0,
+  "prs": [
+   16,
+   17
+  ],
+  "lineage": 11,
+  "rerun": null,
+  "rerunAt": null,
+  "cancels": [],
+  "builtAt": "2026-11-05T13:31:28.214Z"
  },
- "active": null,
  "auth": {
   "16": {
    "head": "a8af9a5effd96ca072cca7ce7f76500c4665cccd",
@@ -235,6 +209,23 @@
    "id": "u:15:v:3d1ae080a2067ac0db0935d0b9a5ba3267580cc9",
    "kind": "unready",
    "pr": 15
+  },
+  {
+   "id": "db:38",
+   "kind": "deleteRef",
+   "ref": "qlander-build/38"
+  },
+  {
+   "id": "c:16:q:38",
+   "kind": "comment",
+   "pr": 16,
+   "body": "Queued in batch 38 at `a8af9a5effd96ca072cca7ce7f76500c4665cccd` (`queue/38`, on main `dc9fe4858c3049e9ddaa975572cc4f92d5926a1d`)."
+  },
+  {
+   "id": "c:17:q:38",
+   "kind": "comment",
+   "pr": 17,
+   "body": "Queued in batch 38 at `1912dbd16a5faedb2b0530589efdef4315036309` (`queue/38`, on main `dc9fe4858c3049e9ddaa975572cc4f92d5926a1d`)."
   }
  ],
  "history": [
