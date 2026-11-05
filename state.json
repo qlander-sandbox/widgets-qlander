@@ -181,20 +181,7 @@
    "notified": false
   }
  ],
- "outbox": [
-  {
-   "id": "c:21:landed:68",
-   "kind": "comment",
-   "pr": 21,
-   "body": "Landed in main at `418519efbe515875c8644b15ac370d509c162033` (batch 68, pin `5837520ee80ed42990eefecff5b93e512518f0c7`).",
-   "sentAt": "2026-11-05T17:48:36.596Z"
-  },
-  {
-   "id": "d:68",
-   "kind": "deleteRef",
-   "ref": "queue/68"
-  }
- ],
+ "outbox": [],
  "history": [
   {
    "n": 1,
