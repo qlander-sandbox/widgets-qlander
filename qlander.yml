@@ -43,6 +43,7 @@ lease:
 queue:
   landing:
     mode: linear
+    author: author
   stateBranch: qlander-state # in this repo
   refs: # in the target
     queuePrefix: queue/
