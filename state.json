@@ -10,11 +10,50 @@
    "job": "Queue tick"
   }
  },
- "seq": 100,
- "nextLineage": 23,
- "journal": null,
+ "seq": 101,
+ "nextLineage": 24,
+ "journal": {
+  "seq": 101,
+  "op": {
+   "kind": "build",
+   "n": 101,
+   "base": "6ebea7216b5532989a8bc4949e3d94de59c6b386",
+   "pins": [
+    {
+     "pr": 47,
+     "head": "c018cb2917776281aa4a531006abda3714fb0308"
+    }
+   ],
+   "depth": 0,
+   "lineage": 23,
+   "source": {
+    "kind": "candidates"
+   },
+   "rebuild": false
+  },
+  "reserved": true,
+  "at": "2026-11-06T19:49:57.267Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": null,
- "auth": {},
+ "auth": {
+  "47": {
+   "head": "c018cb2917776281aa4a531006abda3714fb0308",
+   "baseRepoId": 1446564086,
+   "policy": "v2:47a83550af4a8517",
+   "policyPr": false,
+   "admittedAt": "2026-11-06T19:49:57.267Z",
+   "labelledAt": "2026-11-06T19:49:34Z",
+   "evidence": [
+    "run 42282994846",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "au-1"
+  }
+ },
  "pending": [],
  "solo": [],
  "operatorSolo": [],
@@ -84,6 +123,9 @@
   },
   "22": {
    "runs": 1
+  },
+  "23": {
+   "runs": 1
   }
  },
  "window": [
@@ -130,6 +172,10 @@
   {
    "at": "2026-11-06T19:40:30.905Z",
    "cost": 1
+  },
+  {
+   "at": "2026-11-06T19:49:57.267Z",
+   "cost": 1
   }
  ],
  "redStreak": 0,
@@ -147,6 +193,12 @@
    "seen": [
     42280564550
    ]
+  },
+  {
+   "id": "cmd:35384444907",
+   "kind": "unlabel",
+   "pr": 47,
+   "label": "qlander:go"
   }
  ],
  "history": [
@@ -544,5 +596,12 @@
     "test"
    ]
   }
- ]
+ ],
+ "eligibleSince": {
+  "47": {
+   "head": "c018cb2917776281aa4a531006abda3714fb0308",
+   "labelledAt": "2026-11-06T19:49:34Z",
+   "since": "2026-11-06T19:49:57.267Z"
+  }
+ }
 }
