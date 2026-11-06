@@ -164,18 +164,6 @@
    "seen": [
     42280564550
    ]
-  },
-  {
-   "id": "c:47:landed:101",
-   "kind": "comment",
-   "pr": 47,
-   "body": "Landed in main at `3fe7acbc82a9c321b12777b825b13f920d6da7b6` (batch 101, pin `c018cb2917776281aa4a531006abda3714fb0308`, squashed as `3fe7acbc82a9c321b12777b825b13f920d6da7b6`, which its branch now points at).",
-   "sentAt": "2026-11-06T19:53:26.433Z"
-  },
-  {
-   "id": "d:101",
-   "kind": "deleteRef",
-   "ref": "queue/101"
   }
  ],
  "history": [
