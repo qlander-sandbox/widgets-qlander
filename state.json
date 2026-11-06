@@ -269,21 +269,11 @@
  "verify": [],
  "outbox": [
   {
-   "id": "cmd:35397526786",
-   "kind": "unlabel",
-   "pr": 90,
-   "label": "qlander:solo"
-  },
-  {
-   "id": "db:156",
-   "kind": "deleteRef",
-   "ref": "qlander-build/156"
-  },
-  {
    "id": "c:90:q:156",
    "kind": "comment",
    "pr": 90,
-   "body": "Queued in batch 156 at `274587b94ce8c82eb23387085a9720a926bddeb3` (`queue/156`, on main `50634c77ed51723a54035c3b7ed83726498761d6`)."
+   "body": "Queued in batch 156 at `274587b94ce8c82eb23387085a9720a926bddeb3` (`queue/156`, on main `50634c77ed51723a54035c3b7ed83726498761d6`).",
+   "sentAt": "2026-11-06T22:52:50.624Z"
   }
  ],
  "history": [
