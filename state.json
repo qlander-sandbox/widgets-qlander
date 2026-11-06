@@ -171,22 +171,11 @@
  "verify": [],
  "outbox": [
   {
-   "id": "c:40:force:f7583efb1fbc31c3ee586968bc760111516b9e8a:90039dd55daf",
-   "kind": "comment",
-   "pr": 40,
-   "body": "Labelled `ready` but not queued: this queue lands linear, which moves the PR's head branch `lin-gg` to its squashed commit, and that branch has non_fast_forward in ruleset \"zz-pr-branches-nff\" (26717897), which the queue App cannot bypass. Let the queue App bypass that rule for this branch (bypass mode \"always\"), or push the change from a branch it does not cover. `ready` stays on: the PR is queued once the rule allows it.",
-   "sentAt": "2026-11-06T19:08:29.136Z"
-  },
-  {
-   "id": "u:37:conflict:84",
-   "kind": "unready",
-   "pr": 37
-  },
-  {
    "id": "c:37:conflict:84",
    "kind": "comment",
    "pr": 37,
-   "body": "Not queued: `6e33fc6c1465a78cf889da5ff784c2380ac6c162` conflicts with main plus the PRs ahead of it in batch 84. Update the branch and re-add `ready`."
+   "body": "Not queued: `6e33fc6c1465a78cf889da5ff784c2380ac6c162` conflicts with main plus the PRs ahead of it in batch 84. Update the branch and re-add `ready`.",
+   "sentAt": "2026-11-06T19:08:29.136Z"
   },
   {
    "id": "db:84",
