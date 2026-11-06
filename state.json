@@ -10,7 +10,7 @@
    "job": "Queue tick"
   }
  },
- "seq": 164,
+ "seq": 165,
  "nextLineage": 37,
  "journal": null,
  "active": null,
@@ -244,7 +244,14 @@
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-06T23:05:08.432Z",
  "verify": [],
- "outbox": [],
+ "outbox": [
+  {
+   "id": "cmd:35398405903",
+   "kind": "unlabel",
+   "pr": 93,
+   "label": "qlander:solo"
+  }
+ ],
  "history": [
   {
    "n": 1,
@@ -849,12 +856,5 @@
   "274587b94ce8",
   "bd847eb93f26",
   "e48d5da09105"
- ],
- "eligibleSince": {
-  "93": {
-   "head": "1b6b005af9a4afa511dcb1c5a124e20b476cbbd6",
-   "labelledAt": "2026-11-06T23:05:36Z",
-   "since": "2026-11-06T23:05:53.464Z"
-  }
- }
+ ]
 }
