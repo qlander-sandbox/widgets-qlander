@@ -128,20 +128,7 @@
    "admitted": "f7583efb1fbc31c3ee586968bc760111516b9e8a"
   }
  ],
- "outbox": [
-  {
-   "id": "c:40:landed:93",
-   "kind": "comment",
-   "pr": 40,
-   "body": "Landed in main at `9aaa80f2f32819c3953cdc051faf3c3893704e49` (batch 93, pin `f7583efb1fbc31c3ee586968bc760111516b9e8a`, squashed as `9aaa80f2f32819c3953cdc051faf3c3893704e49`, which its branch now points at).",
-   "sentAt": "2026-11-06T19:30:48.324Z"
-  },
-  {
-   "id": "d:93",
-   "kind": "deleteRef",
-   "ref": "queue/93"
-  }
- ],
+ "outbox": [],
  "history": [
   {
    "n": 1,
