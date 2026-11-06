@@ -171,22 +171,11 @@
  "verify": [],
  "outbox": [
   {
-   "id": "c:37:conflict:84",
-   "kind": "comment",
-   "pr": 37,
-   "body": "Not queued: `6e33fc6c1465a78cf889da5ff784c2380ac6c162` conflicts with main plus the PRs ahead of it in batch 84. Update the branch and re-add `ready`.",
-   "sentAt": "2026-11-06T19:08:29.136Z"
-  },
-  {
-   "id": "db:84",
-   "kind": "deleteRef",
-   "ref": "qlander-build/84"
-  },
-  {
    "id": "c:36:q:84",
    "kind": "comment",
    "pr": 36,
-   "body": "Queued in batch 84 at `ae28d6fd9627e472e9c179ec7e0665349c7f4774` (`queue/84`, on main `010676465085af9068d8b5f3259dfc3428535b72`)."
+   "body": "Queued in batch 84 at `ae28d6fd9627e472e9c179ec7e0665349c7f4774` (`queue/84`, on main `010676465085af9068d8b5f3259dfc3428535b72`).",
+   "sentAt": "2026-11-06T19:08:29.136Z"
   },
   {
    "id": "c:38:q:84",
