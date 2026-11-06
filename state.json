@@ -153,19 +153,7 @@
    "admitted": "c018cb2917776281aa4a531006abda3714fb0308"
   }
  ],
- "outbox": [
-  {
-   "id": "x:95",
-   "kind": "cancelRuns",
-   "ref": "queue/95",
-   "head": "283d9dcd12b0b5e739d0ad974787ac160638f3c5",
-   "until": "2026-11-06T20:05:36.833Z",
-   "giveUpAt": "2026-11-07T01:35:36.833Z",
-   "seen": [
-    42280564550
-   ]
-  }
- ],
+ "outbox": [],
  "history": [
   {
    "n": 1,
