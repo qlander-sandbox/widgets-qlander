@@ -12,55 +12,29 @@
  },
  "seq": 90,
  "nextLineage": 20,
- "journal": {
-  "seq": 90,
-  "op": {
-   "kind": "build",
-   "n": 90,
-   "base": "e37407984101146414c92b3582b0c95e869ad072",
-   "pins": [
-    {
-     "pr": 42,
-     "head": "5a7f391b8bf3021ce3adc3810b3a2b16204e45e0"
-    }
-   ],
-   "depth": 1,
-   "lineage": 19,
-   "source": {
-    "kind": "pending",
-    "item": {
-     "prs": [
-      42
-     ],
-     "depth": 1,
-     "lineage": 19
-    }
-   },
-   "rebuild": false
-  },
-  "reserved": true,
-  "at": "2026-11-06T19:21:54.796Z",
-  "checkpoint": {
-   "survivors": [
-    {
-     "pr": 42,
-     "head": "5a7f391b8bf3021ce3adc3810b3a2b16204e45e0"
-    }
-   ],
-   "dropped": [],
-   "chainHead": "f8e32a91c37dc2d79168822507a484f1f7d7ff0d",
-   "stack": [
-    {
-     "pr": 42,
-     "commit": "f8e32a91c37dc2d79168822507a484f1f7d7ff0d",
-     "parent": "e37407984101146414c92b3582b0c95e869ad072",
-     "tree": "1f228b11368b0832a93f7e4cfcda7462bf7eecb5"
-    }
-   ]
-  },
-  "tries": 0
+ "journal": null,
+ "active": {
+  "n": 90,
+  "base": "e37407984101146414c92b3582b0c95e869ad072",
+  "head": "f8e32a91c37dc2d79168822507a484f1f7d7ff0d",
+  "depth": 1,
+  "prs": [
+   42
+  ],
+  "lineage": 19,
+  "rerun": null,
+  "rerunAt": null,
+  "cancels": [],
+  "builtAt": "2026-11-06T19:22:16.370Z",
+  "stack": [
+   {
+    "pr": 42,
+    "commit": "f8e32a91c37dc2d79168822507a484f1f7d7ff0d",
+    "parent": "e37407984101146414c92b3582b0c95e869ad072",
+    "tree": "1f228b11368b0832a93f7e4cfcda7462bf7eecb5"
+   }
+  ]
  },
- "active": null,
  "auth": {
   "40": {
    "head": "f7583efb1fbc31c3ee586968bc760111516b9e8a",
@@ -205,6 +179,17 @@
    "id": "d:88",
    "kind": "deleteRef",
    "ref": "queue/88"
+  },
+  {
+   "id": "db:90",
+   "kind": "deleteRef",
+   "ref": "qlander-build/90"
+  },
+  {
+   "id": "c:42:q:90",
+   "kind": "comment",
+   "pr": 42,
+   "body": "Queued in batch 90 at `5a7f391b8bf3021ce3adc3810b3a2b16204e45e0` (`queue/90`, on main `e37407984101146414c92b3582b0c95e869ad072`)."
   }
  ],
  "history": [
