@@ -171,16 +171,11 @@
  "verify": [],
  "outbox": [
   {
-   "id": "cmd:35381208163",
-   "kind": "unlabel",
-   "pr": 39,
-   "label": "qlander:go"
-  },
-  {
    "id": "c:40:force:f7583efb1fbc31c3ee586968bc760111516b9e8a:90039dd55daf",
    "kind": "comment",
    "pr": 40,
-   "body": "Labelled `ready` but not queued: this queue lands linear, which moves the PR's head branch `lin-gg` to its squashed commit, and that branch has non_fast_forward in ruleset \"zz-pr-branches-nff\" (26717897), which the queue App cannot bypass. Let the queue App bypass that rule for this branch (bypass mode \"always\"), or push the change from a branch it does not cover. `ready` stays on: the PR is queued once the rule allows it."
+   "body": "Labelled `ready` but not queued: this queue lands linear, which moves the PR's head branch `lin-gg` to its squashed commit, and that branch has non_fast_forward in ruleset \"zz-pr-branches-nff\" (26717897), which the queue App cannot bypass. Let the queue App bypass that rule for this branch (bypass mode \"always\"), or push the change from a branch it does not cover. `ready` stays on: the PR is queued once the rule allows it.",
+   "sentAt": "2026-11-06T19:08:29.136Z"
   },
   {
    "id": "u:37:conflict:84",
