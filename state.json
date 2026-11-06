@@ -225,17 +225,11 @@
  ],
  "outbox": [
   {
-   "id": "c:82:v:0fab477d4a568f316e5e9dac30a140eddfade1cb:closed",
-   "kind": "comment",
-   "pr": 82,
-   "body": "Landed revision `7cc325832b78bf48dfdb6911dcd477ac16838298` in main as `0fab477d4a568f316e5e9dac30a140eddfade1cb` (`0fab477d4a568f316e5e9dac30a140eddfade1cb`), but GitHub closed this PR without marking it merged. Its change is on main; nothing is lost and nothing needs doing.",
-   "sentAt": "2026-11-06T22:24:33.953Z"
-  },
-  {
    "id": "c:86:landed:128",
    "kind": "comment",
    "pr": 86,
-   "body": "Landed in main at `f2c11b84c08d7609dd611da30d85f766cd083c72` (batch 128, pin `f7402cc40b13b70f1fbd47aee3939cc72462b206`, squashed as `ca4a71359fea2a202bd3fa7457167f47e0b60607`, which its branch now points at)."
+   "body": "Landed in main at `f2c11b84c08d7609dd611da30d85f766cd083c72` (batch 128, pin `f7402cc40b13b70f1fbd47aee3939cc72462b206`, squashed as `ca4a71359fea2a202bd3fa7457167f47e0b60607`, which its branch now points at).",
+   "sentAt": "2026-11-06T22:24:33.953Z"
   },
   {
    "id": "c:87:landed:128",
