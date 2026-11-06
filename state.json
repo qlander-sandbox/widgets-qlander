@@ -10,38 +10,40 @@
    "job": "Queue tick"
   }
  },
- "seq": 109,
+ "seq": 110,
  "nextLineage": 25,
- "journal": null,
- "active": {
-  "n": 108,
-  "base": "1531e419b4509e1741274d895f3a4199aa1c1d87",
-  "head": "d5b93dd953ee6d778f017dd4f2c8218aee73e490",
-  "depth": 0,
-  "prs": [
-   54,
-   55
-  ],
-  "lineage": 24,
-  "rerun": null,
-  "rerunAt": null,
-  "cancels": [],
-  "builtAt": "2026-11-06T20:21:50.187Z",
-  "stack": [
-   {
-    "pr": 54,
-    "commit": "1437eeaedbf54a6dd79d6f474ace595c0b5626ee",
-    "parent": "1531e419b4509e1741274d895f3a4199aa1c1d87",
-    "tree": "5bd8ec2fea59fbf5e798eb2ba49b06f408be2fb7"
+ "journal": {
+  "seq": 110,
+  "op": {
+   "kind": "build",
+   "n": 110,
+   "base": "1531e419b4509e1741274d895f3a4199aa1c1d87",
+   "pins": [
+    {
+     "pr": 54,
+     "head": "6dcdf952c3a0910f1919e78a9e858bfda8149614"
+    }
+   ],
+   "depth": 0,
+   "lineage": 24,
+   "source": {
+    "kind": "pending",
+    "item": {
+     "prs": [
+      54
+     ],
+     "depth": 0,
+     "lineage": 24
+    }
    },
-   {
-    "pr": 55,
-    "commit": "d5b93dd953ee6d778f017dd4f2c8218aee73e490",
-    "parent": "1437eeaedbf54a6dd79d6f474ace595c0b5626ee",
-    "tree": "5e576047d034ea412df0a0f2389245ce1ea631f4"
-   }
-  ]
+   "rebuild": false
+  },
+  "reserved": true,
+  "at": "2026-11-06T20:26:21.879Z",
+  "checkpoint": null,
+  "tries": 0
  },
+ "active": null,
  "auth": {
   "54": {
    "head": "6dcdf952c3a0910f1919e78a9e858bfda8149614",
@@ -57,21 +59,6 @@
    "reviewRun": null,
    "author": "brett",
    "headRef": "zc-a"
-  },
-  "55": {
-   "head": "fdf5e92d30cb2cf5b4dc040be5ac0492148f36c7",
-   "baseRepoId": 1446564086,
-   "policy": "v2:4270d7379bfe4917",
-   "policyPr": false,
-   "admittedAt": "2026-11-06T20:07:35.587Z",
-   "labelledAt": "2026-11-06T20:07:10Z",
-   "evidence": [
-    "run 42285528853",
-    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
-   ],
-   "reviewRun": null,
-   "author": "brett",
-   "headRef": "zb-b"
   }
  },
  "pending": [],
@@ -148,7 +135,7 @@
    "runs": 1
   },
   "24": {
-   "runs": 3
+   "runs": 4
   }
  },
  "window": [
@@ -211,6 +198,10 @@
   {
    "at": "2026-11-06T20:21:27.500Z",
    "cost": 1
+  },
+  {
+   "at": "2026-11-06T20:26:21.879Z",
+   "cost": 1
   }
  ],
  "redStreak": 0,
@@ -228,6 +219,19 @@
    "seen": [
     42285711925
    ]
+  },
+  {
+   "id": "x:108",
+   "kind": "cancelRuns",
+   "ref": "queue/108",
+   "head": "d5b93dd953ee6d778f017dd4f2c8218aee73e490",
+   "until": "2026-11-06T20:56:21.879Z",
+   "giveUpAt": "2026-11-07T02:26:21.879Z"
+  },
+  {
+   "id": "d:108",
+   "kind": "deleteRef",
+   "ref": "queue/108"
   }
  ],
  "history": [
@@ -638,6 +642,17 @@
    "head": "94c40f2e5a9f9ecde543a7fb0bf26cfad4e25507",
    "note": "main moved from 5e419368f28e0995219bc6cb19651a70f6c7f93f to 1531e419b4509e1741274d895f3a4199aa1c1d87",
    "at": "2026-11-06T20:21:27.500Z"
+  },
+  {
+   "n": 108,
+   "outcome": "abandoned",
+   "prs": [
+    54,
+    55
+   ],
+   "head": "d5b93dd953ee6d778f017dd4f2c8218aee73e490",
+   "note": "revalidation dropped #55",
+   "at": "2026-11-06T20:26:21.879Z"
   }
  ],
  "epochBranch": "qlander-epoch/queue",
@@ -663,11 +678,6 @@
   "54": {
    "head": "6dcdf952c3a0910f1919e78a9e858bfda8149614",
    "labelledAt": "2026-11-06T20:07:08Z",
-   "since": "2026-11-06T20:07:35.587Z"
-  },
-  "55": {
-   "head": "fdf5e92d30cb2cf5b4dc040be5ac0492148f36c7",
-   "labelledAt": "2026-11-06T20:07:10Z",
    "since": "2026-11-06T20:07:35.587Z"
   }
  }
