@@ -10,9 +10,24 @@
    "job": "Queue tick"
   }
  },
- "seq": 86,
+ "seq": 87,
  "nextLineage": 20,
- "journal": null,
+ "journal": {
+  "seq": 87,
+  "op": {
+   "kind": "rerun",
+   "runs": [
+    {
+     "runId": 42277770088,
+     "attempt": 1
+    }
+   ]
+  },
+  "reserved": true,
+  "at": "2026-11-06T19:16:29.969Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": {
   "n": 86,
   "base": "e37407984101146414c92b3582b0c95e869ad072",
@@ -40,9 +55,31 @@
     "parent": "64ab3edc668489cca13a1c024ddf8247845b9d7f",
     "tree": "ebc1439ee618292b53ecb0d9aab2a4450669a311"
    }
+  ],
+  "redJobs": [
+   {
+    "name": "test",
+    "url": "https://github.com/qlander-sandbox/widgets/actions/runs/42277770088/job/128098485486",
+    "id": 128098485486
+   }
   ]
  },
  "auth": {
+  "40": {
+   "head": "f7583efb1fbc31c3ee586968bc760111516b9e8a",
+   "baseRepoId": 1446564086,
+   "policy": "v2:4270d7379bfe4917",
+   "policyPr": false,
+   "admittedAt": "2026-11-06T19:16:29.969Z",
+   "labelledAt": "2026-11-06T19:07:25Z",
+   "evidence": [
+    "run 42276683400",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lin-gg"
+  },
   "41": {
    "head": "cd92270ea9dd8a34249cccfe52adb2c0100c8389",
    "baseRepoId": 1446564086,
@@ -133,7 +170,7 @@
    "runs": 1
   },
   "19": {
-   "runs": 1
+   "runs": 2
   }
  },
  "window": [
@@ -147,6 +184,10 @@
   },
   {
    "at": "2026-11-06T19:13:15.055Z",
+   "cost": 1
+  },
+  {
+   "at": "2026-11-06T19:16:29.969Z",
    "cost": 1
   }
  ],
@@ -466,6 +507,11 @@
   }
  ],
  "eligibleSince": {
+  "40": {
+   "head": "f7583efb1fbc31c3ee586968bc760111516b9e8a",
+   "labelledAt": "2026-11-06T19:07:25Z",
+   "since": "2026-11-06T19:16:29.969Z"
+  },
   "41": {
    "head": "cd92270ea9dd8a34249cccfe52adb2c0100c8389",
    "labelledAt": "2026-11-06T19:12:47Z",
@@ -474,12 +520,6 @@
   "42": {
    "head": "5a7f391b8bf3021ce3adc3810b3a2b16204e45e0",
    "labelledAt": "2026-11-06T19:12:49Z",
-   "since": "2026-11-06T19:13:15.055Z"
-  }
- },
- "held": {
-  "40": {
-   "head": "f7583efb1fbc31c3ee586968bc760111516b9e8a",
    "since": "2026-11-06T19:13:15.055Z"
   }
  }
