@@ -10,15 +10,54 @@
    "job": "Queue tick"
   }
  },
- "seq": 123,
- "nextLineage": 28,
- "journal": null,
+ "seq": 124,
+ "nextLineage": 29,
+ "journal": {
+  "seq": 124,
+  "op": {
+   "kind": "build",
+   "n": 124,
+   "base": "f4b1745e04d0bc2b9628a2fb648059af8102d987",
+   "pins": [
+    {
+     "pr": 84,
+     "head": "5a4f8555afa276ceadef2bc668206675fa6b0e4f"
+    }
+   ],
+   "depth": 0,
+   "lineage": 28,
+   "source": {
+    "kind": "candidates"
+   },
+   "rebuild": false
+  },
+  "reserved": true,
+  "at": "2026-11-06T22:11:58.595Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": null,
- "auth": {},
+ "auth": {
+  "84": {
+   "head": "5a4f8555afa276ceadef2bc668206675fa6b0e4f",
+   "baseRepoId": 1446564086,
+   "policy": "v2:4270d7379bfe4917",
+   "policyPr": false,
+   "admittedAt": "2026-11-06T22:11:58.595Z",
+   "labelledAt": "2026-11-06T22:11:37Z",
+   "evidence": [
+    "run 42302754774",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lf-g3-2"
+  }
+ },
  "pending": [],
  "solo": [],
  "operatorSolo": [
-  83
+  84
  ],
  "lineages": {
   "1": {
@@ -101,6 +140,9 @@
   },
   "27": {
    "runs": 1
+  },
+  "28": {
+   "runs": 1
   }
  },
  "window": [
@@ -179,6 +221,10 @@
   {
    "at": "2026-11-06T22:07:28.194Z",
    "cost": 1
+  },
+  {
+   "at": "2026-11-06T22:11:58.595Z",
+   "cost": 1
   }
  ],
  "redStreak": 0,
@@ -193,18 +239,21 @@
    "ticks": 0,
    "notified": false,
    "admitted": "7cc325832b78bf48dfdb6911dcd477ac16838298"
-  },
-  {
-   "pr": 83,
-   "pin": "f4b1745e04d0bc2b9628a2fb648059af8102d987",
-   "landedIn": "f4b1745e04d0bc2b9628a2fb648059af8102d987",
-   "since": "2026-11-06T22:10:53.937Z",
-   "ticks": 0,
-   "notified": false,
-   "admitted": "5ecb9562808ea42d07270ff06cee8d555e572594"
   }
  ],
- "outbox": [],
+ "outbox": [
+  {
+   "id": "cmd:35394919412",
+   "kind": "unlabel",
+   "pr": 84,
+   "label": "qlander:solo"
+  },
+  {
+   "id": "u:83:v:f4b1745e04d0bc2b9628a2fb648059af8102d987",
+   "kind": "unready",
+   "pr": 83
+  }
+ ],
  "history": [
   {
    "n": 1,
@@ -696,10 +745,10 @@
   }
  ],
  "eligibleSince": {
-  "83": {
-   "head": "5ecb9562808ea42d07270ff06cee8d555e572594",
-   "labelledAt": "2026-11-06T22:07:07Z",
-   "since": "2026-11-06T22:07:28.194Z"
+  "84": {
+   "head": "5a4f8555afa276ceadef2bc668206675fa6b0e4f",
+   "labelledAt": "2026-11-06T22:11:37Z",
+   "since": "2026-11-06T22:11:58.595Z"
   }
  },
  "squashed": [
