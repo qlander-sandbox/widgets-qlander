@@ -33,7 +33,24 @@
   },
   "reserved": true,
   "at": "2026-11-06T19:40:30.905Z",
-  "checkpoint": null,
+  "checkpoint": {
+   "survivors": [
+    {
+     "pr": 46,
+     "head": "1c557627e0fd9d407b2c69e518cf31600f95acc4"
+    }
+   ],
+   "dropped": [],
+   "chainHead": "6ebea7216b5532989a8bc4949e3d94de59c6b386",
+   "stack": [
+    {
+     "pr": 46,
+     "commit": "6ebea7216b5532989a8bc4949e3d94de59c6b386",
+     "parent": "00f76ca7c02100f0a98652db37ecb84ec2071358",
+     "tree": "6f1f965cb0ded419e5eee5dfce08c92eda99b13e"
+    }
+   ]
+  },
   "tries": 0
  },
  "active": null,
