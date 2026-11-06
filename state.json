@@ -165,27 +165,11 @@
  "verify": [],
  "outbox": [
   {
-   "id": "c:41:bounce:88",
-   "kind": "comment",
-   "pr": 41,
-   "body": "Bounced from the landing queue: batch 88 (this PR alone, at `cd92270ea9dd8a34249cccfe52adb2c0100c8389`, on top of main `e37407984101146414c92b3582b0c95e869ad072`) failed, and failed again on a rerun.\n\n- [test](https://github.com/qlander-sandbox/widgets/actions/runs/42278390009/job/128102195018)\n\nFix it and re-add `ready`.",
-   "sentAt": "2026-11-06T19:22:18.541Z"
-  },
-  {
-   "id": "d:88",
-   "kind": "deleteRef",
-   "ref": "queue/88"
-  },
-  {
-   "id": "db:90",
-   "kind": "deleteRef",
-   "ref": "qlander-build/90"
-  },
-  {
    "id": "c:42:q:90",
    "kind": "comment",
    "pr": 42,
-   "body": "Queued in batch 90 at `5a7f391b8bf3021ce3adc3810b3a2b16204e45e0` (`queue/90`, on main `e37407984101146414c92b3582b0c95e869ad072`)."
+   "body": "Queued in batch 90 at `5a7f391b8bf3021ce3adc3810b3a2b16204e45e0` (`queue/90`, on main `e37407984101146414c92b3582b0c95e869ad072`).",
+   "sentAt": "2026-11-06T19:22:18.541Z"
   }
  ],
  "history": [
