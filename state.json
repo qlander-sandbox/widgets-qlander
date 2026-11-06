@@ -10,11 +10,88 @@
    "job": "Queue tick"
   }
  },
- "seq": 102,
- "nextLineage": 24,
- "journal": null,
+ "seq": 103,
+ "nextLineage": 25,
+ "journal": {
+  "seq": 103,
+  "op": {
+   "kind": "build",
+   "n": 103,
+   "base": "5e419368f28e0995219bc6cb19651a70f6c7f93f",
+   "pins": [
+    {
+     "pr": 54,
+     "head": "6dcdf952c3a0910f1919e78a9e858bfda8149614"
+    },
+    {
+     "pr": 55,
+     "head": "fdf5e92d30cb2cf5b4dc040be5ac0492148f36c7"
+    },
+    {
+     "pr": 56,
+     "head": "ea1fff2aa08f641ebbd75ea894d8197622daf121"
+    }
+   ],
+   "depth": 0,
+   "lineage": 24,
+   "source": {
+    "kind": "candidates"
+   },
+   "rebuild": false
+  },
+  "reserved": true,
+  "at": "2026-11-06T20:07:35.587Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": null,
- "auth": {},
+ "auth": {
+  "54": {
+   "head": "6dcdf952c3a0910f1919e78a9e858bfda8149614",
+   "baseRepoId": 1446564086,
+   "policy": "v2:4270d7379bfe4917",
+   "policyPr": false,
+   "admittedAt": "2026-11-06T20:07:35.587Z",
+   "labelledAt": "2026-11-06T20:07:08Z",
+   "evidence": [
+    "run 42285519653",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "zc-a"
+  },
+  "55": {
+   "head": "fdf5e92d30cb2cf5b4dc040be5ac0492148f36c7",
+   "baseRepoId": 1446564086,
+   "policy": "v2:4270d7379bfe4917",
+   "policyPr": false,
+   "admittedAt": "2026-11-06T20:07:35.587Z",
+   "labelledAt": "2026-11-06T20:07:10Z",
+   "evidence": [
+    "run 42285528853",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "zb-b"
+  },
+  "56": {
+   "head": "ea1fff2aa08f641ebbd75ea894d8197622daf121",
+   "baseRepoId": 1446564086,
+   "policy": "v2:4270d7379bfe4917",
+   "policyPr": false,
+   "admittedAt": "2026-11-06T20:07:35.587Z",
+   "labelledAt": "2026-11-06T20:07:12Z",
+   "evidence": [
+    "run 42285540402",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "zb-c"
+  }
+ },
  "pending": [],
  "solo": [],
  "operatorSolo": [],
@@ -87,6 +164,9 @@
   },
   "23": {
    "runs": 1
+  },
+  "24": {
+   "runs": 1
   }
  },
  "window": [
@@ -137,23 +217,24 @@
   {
    "at": "2026-11-06T19:49:57.267Z",
    "cost": 1
+  },
+  {
+   "at": "2026-11-06T20:07:35.587Z",
+   "cost": 1
   }
  ],
  "redStreak": 0,
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-06T19:53:24.394Z",
- "verify": [
+ "verify": [],
+ "outbox": [
   {
-   "pr": 47,
-   "pin": "3fe7acbc82a9c321b12777b825b13f920d6da7b6",
-   "landedIn": "3fe7acbc82a9c321b12777b825b13f920d6da7b6",
-   "since": "2026-11-06T19:53:24.394Z",
-   "ticks": 0,
-   "notified": false,
-   "admitted": "c018cb2917776281aa4a531006abda3714fb0308"
+   "id": "cmd:35385770010",
+   "kind": "unlabel",
+   "pr": 54,
+   "label": "qlander:go"
   }
  ],
- "outbox": [],
  "history": [
   {
    "n": 1,
@@ -561,10 +642,20 @@
   }
  ],
  "eligibleSince": {
-  "47": {
-   "head": "c018cb2917776281aa4a531006abda3714fb0308",
-   "labelledAt": "2026-11-06T19:49:34Z",
-   "since": "2026-11-06T19:49:57.267Z"
+  "54": {
+   "head": "6dcdf952c3a0910f1919e78a9e858bfda8149614",
+   "labelledAt": "2026-11-06T20:07:08Z",
+   "since": "2026-11-06T20:07:35.587Z"
+  },
+  "55": {
+   "head": "fdf5e92d30cb2cf5b4dc040be5ac0492148f36c7",
+   "labelledAt": "2026-11-06T20:07:10Z",
+   "since": "2026-11-06T20:07:35.587Z"
+  },
+  "56": {
+   "head": "ea1fff2aa08f641ebbd75ea894d8197622daf121",
+   "labelledAt": "2026-11-06T20:07:12Z",
+   "since": "2026-11-06T20:07:35.587Z"
   }
  }
 }
