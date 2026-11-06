@@ -157,15 +157,11 @@
  "verify": [],
  "outbox": [
   {
-   "id": "db:93",
-   "kind": "deleteRef",
-   "ref": "qlander-build/93"
-  },
-  {
    "id": "c:40:q:93",
    "kind": "comment",
    "pr": 40,
-   "body": "Queued in batch 93 at `f7583efb1fbc31c3ee586968bc760111516b9e8a` (`queue/93`, on main `f8e32a91c37dc2d79168822507a484f1f7d7ff0d`)."
+   "body": "Queued in batch 93 at `f7583efb1fbc31c3ee586968bc760111516b9e8a` (`queue/93`, on main `f8e32a91c37dc2d79168822507a484f1f7d7ff0d`).",
+   "sentAt": "2026-11-06T19:27:36.679Z"
   }
  ],
  "history": [
