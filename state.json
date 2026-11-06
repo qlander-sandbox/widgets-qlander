@@ -255,21 +255,11 @@
  "verify": [],
  "outbox": [
   {
-   "id": "cmd:35395845454",
-   "kind": "unlabel",
-   "pr": 88,
-   "label": "qlander:solo"
-  },
-  {
-   "id": "db:131",
-   "kind": "deleteRef",
-   "ref": "qlander-build/131"
-  },
-  {
    "id": "c:88:q:131",
    "kind": "comment",
    "pr": 88,
-   "body": "Queued in batch 131 at `f2ee2041702935ba61dd2c1245b014003902aad5` (`queue/131`, on main `f2c11b84c08d7609dd611da30d85f766cd083c72`)."
+   "body": "Queued in batch 131 at `f2ee2041702935ba61dd2c1245b014003902aad5` (`queue/131`, on main `f2c11b84c08d7609dd611da30d85f766cd083c72`).",
+   "sentAt": "2026-11-06T22:26:07.281Z"
   }
  ],
  "history": [
