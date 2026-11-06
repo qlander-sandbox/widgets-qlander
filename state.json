@@ -242,15 +242,7 @@
    "admitted": "7cc325832b78bf48dfdb6911dcd477ac16838298"
   }
  ],
- "outbox": [
-  {
-   "id": "c:84:q:124",
-   "kind": "comment",
-   "pr": 84,
-   "body": "Queued in batch 124 at `5a4f8555afa276ceadef2bc668206675fa6b0e4f` (`queue/124`, on main `f4b1745e04d0bc2b9628a2fb648059af8102d987`).",
-   "sentAt": "2026-11-06T22:12:21.048Z"
-  }
- ],
+ "outbox": [],
  "history": [
   {
    "n": 1,
