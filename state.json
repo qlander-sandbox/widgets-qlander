@@ -10,9 +10,28 @@
    "job": "Queue tick"
   }
  },
- "seq": 159,
+ "seq": 160,
  "nextLineage": 35,
- "journal": null,
+ "journal": {
+  "seq": 160,
+  "op": {
+   "kind": "land",
+   "before": "05283fb788dcc830a9abc1582af8ec2b90104448",
+   "after": "95570092a39e93a6ceec4eecd28f9f9d4461bb80",
+   "heads": [
+    {
+     "pr": 91,
+     "ref": "lf-g7-base",
+     "before": "bd847eb93f26eee90ad85775e8970280dc4b7c21",
+     "after": "95570092a39e93a6ceec4eecd28f9f9d4461bb80"
+    }
+   ]
+  },
+  "reserved": false,
+  "at": "2026-11-06T23:00:13.500Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": {
   "n": 159,
   "base": "05283fb788dcc830a9abc1582af8ec2b90104448",
