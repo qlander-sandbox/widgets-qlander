@@ -168,15 +168,11 @@
  "verify": [],
  "outbox": [
   {
-   "id": "u:44:moved:8874aa70a7411f08d3e4d6a1ee616ebace08be9c",
-   "kind": "unready",
-   "pr": 44
-  },
-  {
    "id": "c:44:moved:8874aa70a7411f08d3e4d6a1ee616ebace08be9c",
    "kind": "comment",
    "pr": 44,
-   "body": "Removed from the landing queue: head moved from 8874aa70a7411f08d3e4d6a1ee616ebace08be9c to a74df2459d25ddee40207f83739a5e176ffd1457. It must qualify again (fast lane and review on the new head, then `ready`)."
+   "body": "Removed from the landing queue: head moved from 8874aa70a7411f08d3e4d6a1ee616ebace08be9c to a74df2459d25ddee40207f83739a5e176ffd1457. It must qualify again (fast lane and review on the new head, then `ready`).",
+   "sentAt": "2026-11-06T19:35:59.212Z"
   },
   {
    "id": "x:95",
