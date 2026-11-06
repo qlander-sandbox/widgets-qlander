@@ -10,11 +10,50 @@
    "job": "Queue tick"
   }
  },
- "seq": 97,
- "nextLineage": 22,
- "journal": null,
+ "seq": 98,
+ "nextLineage": 23,
+ "journal": {
+  "seq": 98,
+  "op": {
+   "kind": "build",
+   "n": 98,
+   "base": "00f76ca7c02100f0a98652db37ecb84ec2071358",
+   "pins": [
+    {
+     "pr": 46,
+     "head": "1c557627e0fd9d407b2c69e518cf31600f95acc4"
+    }
+   ],
+   "depth": 0,
+   "lineage": 22,
+   "source": {
+    "kind": "candidates"
+   },
+   "rebuild": false
+  },
+  "reserved": true,
+  "at": "2026-11-06T19:40:30.905Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": null,
- "auth": {},
+ "auth": {
+  "46": {
+   "head": "1c557627e0fd9d407b2c69e518cf31600f95acc4",
+   "baseRepoId": 1446564086,
+   "policy": "v2:4270d7379bfe4917",
+   "policyPr": false,
+   "admittedAt": "2026-11-06T19:40:30.905Z",
+   "labelledAt": "2026-11-06T19:40:08Z",
+   "evidence": [
+    "run 42281607609",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "zc-1"
+  }
+ },
  "pending": [],
  "solo": [],
  "operatorSolo": [],
@@ -81,6 +120,9 @@
   },
   "21": {
    "runs": 2
+  },
+  "22": {
+   "runs": 1
   }
  },
  "window": [
@@ -123,22 +165,16 @@
   {
    "at": "2026-11-06T19:35:36.833Z",
    "cost": 1
+  },
+  {
+   "at": "2026-11-06T19:40:30.905Z",
+   "cost": 1
   }
  ],
  "redStreak": 0,
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-06T19:39:09.498Z",
- "verify": [
-  {
-   "pr": 45,
-   "pin": "00f76ca7c02100f0a98652db37ecb84ec2071358",
-   "landedIn": "00f76ca7c02100f0a98652db37ecb84ec2071358",
-   "since": "2026-11-06T19:39:09.498Z",
-   "ticks": 0,
-   "notified": false,
-   "admitted": "975929a6d249fed9aa2e7565cfc7514310db2ace"
-  }
- ],
+ "verify": [],
  "outbox": [
   {
    "id": "x:95",
@@ -150,6 +186,12 @@
    "seen": [
     42280564550
    ]
+  },
+  {
+   "id": "cmd:35383731886",
+   "kind": "unlabel",
+   "pr": 46,
+   "label": "qlander:go"
   }
  ],
  "history": [
@@ -539,10 +581,10 @@
   }
  ],
  "eligibleSince": {
-  "45": {
-   "head": "975929a6d249fed9aa2e7565cfc7514310db2ace",
-   "labelledAt": "2026-11-06T19:32:01Z",
-   "since": "2026-11-06T19:32:22.890Z"
+  "46": {
+   "head": "1c557627e0fd9d407b2c69e518cf31600f95acc4",
+   "labelledAt": "2026-11-06T19:40:08Z",
+   "since": "2026-11-06T19:40:30.905Z"
   }
  }
 }
