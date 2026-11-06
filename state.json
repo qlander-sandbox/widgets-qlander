@@ -12,86 +12,43 @@
  },
  "seq": 84,
  "nextLineage": 19,
- "journal": {
-  "seq": 84,
-  "op": {
-   "kind": "build",
-   "n": 84,
-   "base": "010676465085af9068d8b5f3259dfc3428535b72",
-   "pins": [
-    {
-     "pr": 36,
-     "head": "ae28d6fd9627e472e9c179ec7e0665349c7f4774"
-    },
-    {
-     "pr": 37,
-     "head": "6e33fc6c1465a78cf889da5ff784c2380ac6c162"
-    },
-    {
-     "pr": 38,
-     "head": "70d5dc6724be67ad90b3a769f563dccd64dc8271"
-    },
-    {
-     "pr": 39,
-     "head": "c60eb8ad210e5ebcbc8b5f0deb9859a74cfc3577"
-    }
-   ],
-   "depth": 0,
-   "lineage": 18,
-   "source": {
-    "kind": "candidates"
+ "journal": null,
+ "active": {
+  "n": 84,
+  "base": "010676465085af9068d8b5f3259dfc3428535b72",
+  "head": "e37407984101146414c92b3582b0c95e869ad072",
+  "depth": 0,
+  "prs": [
+   36,
+   38,
+   39
+  ],
+  "lineage": 18,
+  "rerun": null,
+  "rerunAt": null,
+  "cancels": [],
+  "builtAt": "2026-11-06T19:08:26.791Z",
+  "stack": [
+   {
+    "pr": 36,
+    "commit": "165a04636b30e590ce7f19d38182c0fa56a4be75",
+    "parent": "010676465085af9068d8b5f3259dfc3428535b72",
+    "tree": "8125cce8eb48f23d020c05ac21e7355db49cc4a3"
    },
-   "rebuild": false
-  },
-  "reserved": true,
-  "at": "2026-11-06T19:07:49.429Z",
-  "checkpoint": {
-   "survivors": [
-    {
-     "pr": 36,
-     "head": "ae28d6fd9627e472e9c179ec7e0665349c7f4774"
-    },
-    {
-     "pr": 38,
-     "head": "70d5dc6724be67ad90b3a769f563dccd64dc8271"
-    },
-    {
-     "pr": 39,
-     "head": "c60eb8ad210e5ebcbc8b5f0deb9859a74cfc3577"
-    }
-   ],
-   "dropped": [
-    {
-     "pr": 37,
-     "pin": "6e33fc6c1465a78cf889da5ff784c2380ac6c162",
-     "outcome": "conflict"
-    }
-   ],
-   "chainHead": "e37407984101146414c92b3582b0c95e869ad072",
-   "stack": [
-    {
-     "pr": 36,
-     "commit": "165a04636b30e590ce7f19d38182c0fa56a4be75",
-     "parent": "010676465085af9068d8b5f3259dfc3428535b72",
-     "tree": "8125cce8eb48f23d020c05ac21e7355db49cc4a3"
-    },
-    {
-     "pr": 38,
-     "commit": "9c0d892249ae8a32c85c64c9f42a320e1298baaf",
-     "parent": "165a04636b30e590ce7f19d38182c0fa56a4be75",
-     "tree": "e696fda5af957578da1cc1c0275777fd1e6d1788"
-    },
-    {
-     "pr": 39,
-     "commit": "e37407984101146414c92b3582b0c95e869ad072",
-     "parent": "9c0d892249ae8a32c85c64c9f42a320e1298baaf",
-     "tree": "74c9225049593c4e422297dfd72cf3b23f78ace9"
-    }
-   ]
-  },
-  "tries": 0
+   {
+    "pr": 38,
+    "commit": "9c0d892249ae8a32c85c64c9f42a320e1298baaf",
+    "parent": "165a04636b30e590ce7f19d38182c0fa56a4be75",
+    "tree": "e696fda5af957578da1cc1c0275777fd1e6d1788"
+   },
+   {
+    "pr": 39,
+    "commit": "e37407984101146414c92b3582b0c95e869ad072",
+    "parent": "9c0d892249ae8a32c85c64c9f42a320e1298baaf",
+    "tree": "74c9225049593c4e422297dfd72cf3b23f78ace9"
+   }
+  ]
  },
- "active": null,
  "auth": {
   "36": {
    "head": "ae28d6fd9627e472e9c179ec7e0665349c7f4774",
@@ -107,21 +64,6 @@
    "reviewRun": null,
    "author": "brett",
    "headRef": "z-conf-1"
-  },
-  "37": {
-   "head": "6e33fc6c1465a78cf889da5ff784c2380ac6c162",
-   "baseRepoId": 1446564086,
-   "policy": "v2:4270d7379bfe4917",
-   "policyPr": false,
-   "admittedAt": "2026-11-06T19:07:49.429Z",
-   "labelledAt": "2026-11-06T19:07:20Z",
-   "evidence": [
-    "run 42276653650",
-    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
-   ],
-   "reviewRun": null,
-   "author": "brett",
-   "headRef": "z-conf-2"
   },
   "38": {
    "head": "70d5dc6724be67ad90b3a769f563dccd64dc8271",
@@ -239,6 +181,40 @@
    "kind": "comment",
    "pr": 40,
    "body": "Labelled `ready` but not queued: this queue lands linear, which moves the PR's head branch `lin-gg` to its squashed commit, and that branch has non_fast_forward in ruleset \"zz-pr-branches-nff\" (26717897), which the queue App cannot bypass. Let the queue App bypass that rule for this branch (bypass mode \"always\"), or push the change from a branch it does not cover. `ready` stays on: the PR is queued once the rule allows it."
+  },
+  {
+   "id": "u:37:conflict:84",
+   "kind": "unready",
+   "pr": 37
+  },
+  {
+   "id": "c:37:conflict:84",
+   "kind": "comment",
+   "pr": 37,
+   "body": "Not queued: `6e33fc6c1465a78cf889da5ff784c2380ac6c162` conflicts with main plus the PRs ahead of it in batch 84. Update the branch and re-add `ready`."
+  },
+  {
+   "id": "db:84",
+   "kind": "deleteRef",
+   "ref": "qlander-build/84"
+  },
+  {
+   "id": "c:36:q:84",
+   "kind": "comment",
+   "pr": 36,
+   "body": "Queued in batch 84 at `ae28d6fd9627e472e9c179ec7e0665349c7f4774` (`queue/84`, on main `010676465085af9068d8b5f3259dfc3428535b72`)."
+  },
+  {
+   "id": "c:38:q:84",
+   "kind": "comment",
+   "pr": 38,
+   "body": "Queued in batch 84 at `70d5dc6724be67ad90b3a769f563dccd64dc8271` (`queue/84`, on main `010676465085af9068d8b5f3259dfc3428535b72`)."
+  },
+  {
+   "id": "c:39:q:84",
+   "kind": "comment",
+   "pr": 39,
+   "body": "Queued in batch 84 at `c60eb8ad210e5ebcbc8b5f0deb9859a74cfc3577` (`queue/84`, on main `010676465085af9068d8b5f3259dfc3428535b72`)."
   }
  ],
  "history": [
