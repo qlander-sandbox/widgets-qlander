@@ -10,7 +10,7 @@
    "job": "Queue tick"
   }
  },
- "seq": 78,
+ "seq": 79,
  "nextLineage": 17,
  "journal": null,
  "active": null,
@@ -68,16 +68,7 @@
    "runs": 1
   }
  },
- "window": [
-  {
-   "at": "2026-11-05T17:10:55.364Z",
-   "cost": 1
-  },
-  {
-   "at": "2026-11-05T17:45:07.705Z",
-   "cost": 1
-  }
- ],
+ "window": [],
  "redStreak": 0,
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-05T17:48:34.395Z",
