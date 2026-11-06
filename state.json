@@ -10,14 +10,55 @@
    "job": "Queue tick"
   }
  },
- "seq": 130,
- "nextLineage": 31,
- "journal": null,
+ "seq": 131,
+ "nextLineage": 32,
+ "journal": {
+  "seq": 131,
+  "op": {
+   "kind": "build",
+   "n": 131,
+   "base": "f2c11b84c08d7609dd611da30d85f766cd083c72",
+   "pins": [
+    {
+     "pr": 88,
+     "head": "f2ee2041702935ba61dd2c1245b014003902aad5"
+    }
+   ],
+   "depth": 0,
+   "lineage": 31,
+   "source": {
+    "kind": "candidates"
+   },
+   "rebuild": false
+  },
+  "reserved": true,
+  "at": "2026-11-06T22:25:46.283Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": null,
- "auth": {},
+ "auth": {
+  "88": {
+   "head": "f2ee2041702935ba61dd2c1245b014003902aad5",
+   "baseRepoId": 1446564086,
+   "policy": "v2:4270d7379bfe4917",
+   "policyPr": false,
+   "admittedAt": "2026-11-06T22:25:46.283Z",
+   "labelledAt": "2026-11-06T22:25:25Z",
+   "evidence": [
+    "run 42304562659",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lf-g5-base"
+  }
+ },
  "pending": [],
  "solo": [],
- "operatorSolo": [],
+ "operatorSolo": [
+  88
+ ],
  "lineages": {
   "1": {
    "runs": 1
@@ -107,6 +148,9 @@
    "runs": 1
   },
   "30": {
+   "runs": 1
+  },
+  "31": {
    "runs": 1
   }
  },
@@ -198,13 +242,24 @@
   {
    "at": "2026-11-06T22:21:03.209Z",
    "cost": 1
+  },
+  {
+   "at": "2026-11-06T22:25:46.283Z",
+   "cost": 1
   }
  ],
  "redStreak": 0,
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-06T22:24:30.724Z",
  "verify": [],
- "outbox": [],
+ "outbox": [
+  {
+   "id": "cmd:35395845454",
+   "kind": "unlabel",
+   "pr": 88,
+   "label": "qlander:solo"
+  }
+ ],
  "history": [
   {
    "n": 1,
@@ -744,5 +799,12 @@
   "952330fdc690",
   "f7402cc40b13",
   "24d2602cbbc1"
- ]
+ ],
+ "eligibleSince": {
+  "88": {
+   "head": "f2ee2041702935ba61dd2c1245b014003902aad5",
+   "labelledAt": "2026-11-06T22:25:25Z",
+   "since": "2026-11-06T22:25:46.283Z"
+  }
+ }
 }
