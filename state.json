@@ -12,48 +12,29 @@
  },
  "seq": 93,
  "nextLineage": 21,
- "journal": {
-  "seq": 93,
-  "op": {
-   "kind": "build",
-   "n": 93,
-   "base": "f8e32a91c37dc2d79168822507a484f1f7d7ff0d",
-   "pins": [
-    {
-     "pr": 40,
-     "head": "f7583efb1fbc31c3ee586968bc760111516b9e8a"
-    }
-   ],
-   "depth": 0,
-   "lineage": 20,
-   "source": {
-    "kind": "candidates"
-   },
-   "rebuild": false
-  },
-  "reserved": true,
-  "at": "2026-11-06T19:27:19.273Z",
-  "checkpoint": {
-   "survivors": [
-    {
-     "pr": 40,
-     "head": "f7583efb1fbc31c3ee586968bc760111516b9e8a"
-    }
-   ],
-   "dropped": [],
-   "chainHead": "9aaa80f2f32819c3953cdc051faf3c3893704e49",
-   "stack": [
-    {
-     "pr": 40,
-     "commit": "9aaa80f2f32819c3953cdc051faf3c3893704e49",
-     "parent": "f8e32a91c37dc2d79168822507a484f1f7d7ff0d",
-     "tree": "aab2d5e46c4cc914e06751e1fa2c3fff14959d2d"
-    }
-   ]
-  },
-  "tries": 0
+ "journal": null,
+ "active": {
+  "n": 93,
+  "base": "f8e32a91c37dc2d79168822507a484f1f7d7ff0d",
+  "head": "9aaa80f2f32819c3953cdc051faf3c3893704e49",
+  "depth": 0,
+  "prs": [
+   40
+  ],
+  "lineage": 20,
+  "rerun": null,
+  "rerunAt": null,
+  "cancels": [],
+  "builtAt": "2026-11-06T19:27:34.751Z",
+  "stack": [
+   {
+    "pr": 40,
+    "commit": "9aaa80f2f32819c3953cdc051faf3c3893704e49",
+    "parent": "f8e32a91c37dc2d79168822507a484f1f7d7ff0d",
+    "tree": "aab2d5e46c4cc914e06751e1fa2c3fff14959d2d"
+   }
+  ]
  },
- "active": null,
  "auth": {
   "40": {
    "head": "f7583efb1fbc31c3ee586968bc760111516b9e8a",
@@ -174,7 +155,19 @@
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-06T19:25:23.081Z",
  "verify": [],
- "outbox": [],
+ "outbox": [
+  {
+   "id": "db:93",
+   "kind": "deleteRef",
+   "ref": "qlander-build/93"
+  },
+  {
+   "id": "c:40:q:93",
+   "kind": "comment",
+   "pr": 40,
+   "body": "Queued in batch 93 at `f7583efb1fbc31c3ee586968bc760111516b9e8a` (`queue/93`, on main `f8e32a91c37dc2d79168822507a484f1f7d7ff0d`)."
+  }
+ ],
  "history": [
   {
    "n": 1,
