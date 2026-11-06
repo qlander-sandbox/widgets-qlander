@@ -165,15 +165,11 @@
  "verify": [],
  "outbox": [
   {
-   "id": "u:41:bounce:88",
-   "kind": "unready",
-   "pr": 41
-  },
-  {
    "id": "c:41:bounce:88",
    "kind": "comment",
    "pr": 41,
-   "body": "Bounced from the landing queue: batch 88 (this PR alone, at `cd92270ea9dd8a34249cccfe52adb2c0100c8389`, on top of main `e37407984101146414c92b3582b0c95e869ad072`) failed, and failed again on a rerun.\n\n- [test](https://github.com/qlander-sandbox/widgets/actions/runs/42278390009/job/128102195018)\n\nFix it and re-add `ready`."
+   "body": "Bounced from the landing queue: batch 88 (this PR alone, at `cd92270ea9dd8a34249cccfe52adb2c0100c8389`, on top of main `e37407984101146414c92b3582b0c95e869ad072`) failed, and failed again on a rerun.\n\n- [test](https://github.com/qlander-sandbox/widgets/actions/runs/42278390009/job/128102195018)\n\nFix it and re-add `ready`.",
+   "sentAt": "2026-11-06T19:22:18.541Z"
   },
   {
    "id": "d:88",
