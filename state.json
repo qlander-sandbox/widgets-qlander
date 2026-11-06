@@ -12,51 +12,32 @@
  },
  "seq": 126,
  "nextLineage": 30,
- "journal": {
-  "seq": 126,
-  "op": {
-   "kind": "build",
-   "n": 126,
-   "base": "684eea3e3477caf06638640c14c4db75e3b1eee5",
-   "pins": [
-    {
-     "pr": 85,
-     "head": "952330fdc69033f573bf2999b018ac66be1a7534"
-    }
-   ],
-   "depth": 0,
-   "lineage": 29,
-   "source": {
-    "kind": "candidates"
-   },
-   "rebuild": false
-  },
-  "reserved": true,
-  "at": "2026-11-06T22:16:27.205Z",
-  "checkpoint": {
-   "survivors": [
-    {
-     "pr": 85,
-     "head": "952330fdc69033f573bf2999b018ac66be1a7534"
-    }
-   ],
-   "dropped": [],
-   "chainHead": "bb1211b9666156d466935a499c599d2501e3b065",
-   "stack": [
-    {
-     "pr": 85,
-     "commit": "bb1211b9666156d466935a499c599d2501e3b065",
-     "parent": "684eea3e3477caf06638640c14c4db75e3b1eee5",
-     "tree": "e6647e021f4563bd50a9d5fbc6db0a1e01bf87de",
-     "own": [
-      "952330fdc690"
-     ]
-    }
-   ]
-  },
-  "tries": 0
+ "journal": null,
+ "active": {
+  "n": 126,
+  "base": "684eea3e3477caf06638640c14c4db75e3b1eee5",
+  "head": "bb1211b9666156d466935a499c599d2501e3b065",
+  "depth": 0,
+  "prs": [
+   85
+  ],
+  "lineage": 29,
+  "rerun": null,
+  "rerunAt": null,
+  "cancels": [],
+  "builtAt": "2026-11-06T22:16:44.557Z",
+  "stack": [
+   {
+    "pr": 85,
+    "commit": "bb1211b9666156d466935a499c599d2501e3b065",
+    "parent": "684eea3e3477caf06638640c14c4db75e3b1eee5",
+    "tree": "e6647e021f4563bd50a9d5fbc6db0a1e01bf87de",
+    "own": [
+     "952330fdc690"
+    ]
+   }
+  ]
  },
- "active": null,
  "auth": {
   "85": {
    "head": "952330fdc69033f573bf2999b018ac66be1a7534",
@@ -279,6 +260,17 @@
    "id": "u:84:v:684eea3e3477caf06638640c14c4db75e3b1eee5",
    "kind": "unready",
    "pr": 84
+  },
+  {
+   "id": "db:126",
+   "kind": "deleteRef",
+   "ref": "qlander-build/126"
+  },
+  {
+   "id": "c:85:q:126",
+   "kind": "comment",
+   "pr": 85,
+   "body": "Queued in batch 126 at `952330fdc69033f573bf2999b018ac66be1a7534` (`queue/126`, on main `684eea3e3477caf06638640c14c4db75e3b1eee5`)."
   }
  ],
  "history": [
