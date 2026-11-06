@@ -150,18 +150,6 @@
    "seen": [
     42280564550
    ]
-  },
-  {
-   "id": "c:45:landed:96",
-   "kind": "comment",
-   "pr": 45,
-   "body": "Landed in main at `00f76ca7c02100f0a98652db37ecb84ec2071358` (batch 96, pin `975929a6d249fed9aa2e7565cfc7514310db2ace`, squashed as `00f76ca7c02100f0a98652db37ecb84ec2071358`, which its branch now points at).",
-   "sentAt": "2026-11-06T19:39:11.604Z"
-  },
-  {
-   "id": "d:96",
-   "kind": "deleteRef",
-   "ref": "queue/96"
   }
  ],
  "history": [
