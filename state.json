@@ -244,14 +244,7 @@
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-06T23:05:08.432Z",
  "verify": [],
- "outbox": [
-  {
-   "id": "cmd:35398405903",
-   "kind": "unlabel",
-   "pr": 93,
-   "label": "qlander:solo"
-  }
- ],
+ "outbox": [],
  "history": [
   {
    "n": 1,
