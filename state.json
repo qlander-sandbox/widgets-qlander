@@ -10,43 +10,40 @@
    "job": "Queue tick"
   }
  },
- "seq": 89,
+ "seq": 90,
  "nextLineage": 20,
- "journal": null,
- "active": {
-  "n": 88,
-  "base": "e37407984101146414c92b3582b0c95e869ad072",
-  "head": "f3d9ec5b14277121e952e9b38530c8c844bd046f",
-  "depth": 1,
-  "prs": [
-   41
-  ],
-  "lineage": 19,
-  "rerun": [
-   {
-    "runId": 42278390009,
-    "attempt": 1
-   }
-  ],
-  "rerunAt": "2026-11-06T19:21:09.269Z",
-  "cancels": [],
-  "builtAt": "2026-11-06T19:17:57.975Z",
-  "stack": [
-   {
-    "pr": 41,
-    "commit": "f3d9ec5b14277121e952e9b38530c8c844bd046f",
-    "parent": "e37407984101146414c92b3582b0c95e869ad072",
-    "tree": "0d63d14726be2dbe838fb28633976dff77d270f1"
-   }
-  ],
-  "redJobs": [
-   {
-    "name": "test",
-    "url": "https://github.com/qlander-sandbox/widgets/actions/runs/42278390009/job/128100614290",
-    "id": 128100614290
-   }
-  ]
+ "journal": {
+  "seq": 90,
+  "op": {
+   "kind": "build",
+   "n": 90,
+   "base": "e37407984101146414c92b3582b0c95e869ad072",
+   "pins": [
+    {
+     "pr": 42,
+     "head": "5a7f391b8bf3021ce3adc3810b3a2b16204e45e0"
+    }
+   ],
+   "depth": 1,
+   "lineage": 19,
+   "source": {
+    "kind": "pending",
+    "item": {
+     "prs": [
+      42
+     ],
+     "depth": 1,
+     "lineage": 19
+    }
+   },
+   "rebuild": false
+  },
+  "reserved": true,
+  "at": "2026-11-06T19:21:54.796Z",
+  "checkpoint": null,
+  "tries": 0
  },
+ "active": null,
  "auth": {
   "40": {
    "head": "f7583efb1fbc31c3ee586968bc760111516b9e8a",
@@ -62,21 +59,6 @@
    "reviewRun": null,
    "author": "brett",
    "headRef": "lin-gg"
-  },
-  "41": {
-   "head": "cd92270ea9dd8a34249cccfe52adb2c0100c8389",
-   "baseRepoId": 1446564086,
-   "policy": "v2:4270d7379bfe4917",
-   "policyPr": false,
-   "admittedAt": "2026-11-06T19:13:15.055Z",
-   "labelledAt": "2026-11-06T19:12:47Z",
-   "evidence": [
-    "run 42277578350",
-    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
-   ],
-   "reviewRun": null,
-   "author": "brett",
-   "headRef": "zr-red"
   },
   "42": {
    "head": "5a7f391b8bf3021ce3adc3810b3a2b16204e45e0",
@@ -94,15 +76,7 @@
    "headRef": "zr-peer"
   }
  },
- "pending": [
-  {
-   "prs": [
-    42
-   ],
-   "depth": 1,
-   "lineage": 19
-  }
- ],
+ "pending": [],
  "solo": [],
  "operatorSolo": [],
  "lineages": {
@@ -161,7 +135,7 @@
    "runs": 1
   },
   "19": {
-   "runs": 4
+   "runs": 5
   }
  },
  "window": [
@@ -188,13 +162,34 @@
   {
    "at": "2026-11-06T19:20:49.969Z",
    "cost": 1
+  },
+  {
+   "at": "2026-11-06T19:21:54.796Z",
+   "cost": 1
   }
  ],
- "redStreak": 1,
- "bounceStreak": 0,
+ "redStreak": 2,
+ "bounceStreak": 1,
  "lastLandedAt": "2026-11-06T19:11:33.360Z",
  "verify": [],
- "outbox": [],
+ "outbox": [
+  {
+   "id": "u:41:bounce:88",
+   "kind": "unready",
+   "pr": 41
+  },
+  {
+   "id": "c:41:bounce:88",
+   "kind": "comment",
+   "pr": 41,
+   "body": "Bounced from the landing queue: batch 88 (this PR alone, at `cd92270ea9dd8a34249cccfe52adb2c0100c8389`, on top of main `e37407984101146414c92b3582b0c95e869ad072`) failed, and failed again on a rerun.\n\n- [test](https://github.com/qlander-sandbox/widgets/actions/runs/42278390009/job/128102195018)\n\nFix it and re-add `ready`."
+  },
+  {
+   "id": "d:88",
+   "kind": "deleteRef",
+   "ref": "queue/88"
+  }
+ ],
  "history": [
   {
    "n": 1,
@@ -502,6 +497,23 @@
     }
    ],
    "at": "2026-11-06T19:17:37.336Z"
+  },
+  {
+   "n": 88,
+   "outcome": "bounced",
+   "prs": [
+    41
+   ],
+   "head": "f3d9ec5b14277121e952e9b38530c8c844bd046f",
+   "note": "required checks failed",
+   "failedJobs": [
+    {
+     "name": "test",
+     "url": "https://github.com/qlander-sandbox/widgets/actions/runs/42278390009/job/128102195018",
+     "id": 128102195018
+    }
+   ],
+   "at": "2026-11-06T19:21:54.796Z"
   }
  ],
  "epochBranch": "qlander-epoch/queue",
