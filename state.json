@@ -246,26 +246,11 @@
  "verify": [],
  "outbox": [
   {
-   "id": "cmd:35398338150",
-   "kind": "unlabel",
-   "pr": 93,
-   "label": "qlander:solo"
-  },
-  {
-   "id": "u:92:v:6db3f1b8b88553cd7cf65455fc97e58f8c769571",
-   "kind": "unready",
-   "pr": 92
-  },
-  {
-   "id": "u:93:squashed:164",
-   "kind": "unready",
-   "pr": 93
-  },
-  {
    "id": "c:93:squashed:164",
    "kind": "comment",
    "pr": 93,
-   "body": "Not queued: `1b6b005af9a4afa511dcb1c5a124e20b476cbbd6` carries `e48d5da09105fe97928bd3fa43e47a09fe15fc94`, which already landed squashed as part of another PR. A merge now would start from before that commit, so anything this PR undoes of it would silently not land. Rebase only this PR's own commits onto main, `git rebase --onto origin/main e48d5da09105fe97928bd3fa43e47a09fe15fc94 <branch>`, and re-add `ready`."
+   "body": "Not queued: `1b6b005af9a4afa511dcb1c5a124e20b476cbbd6` carries `e48d5da09105fe97928bd3fa43e47a09fe15fc94`, which already landed squashed as part of another PR. A merge now would start from before that commit, so anything this PR undoes of it would silently not land. Rebase only this PR's own commits onto main, `git rebase --onto origin/main e48d5da09105fe97928bd3fa43e47a09fe15fc94 <branch>`, and re-add `ready`.",
+   "sentAt": "2026-11-06T23:06:07.809Z"
   },
   {
    "id": "db:164",
