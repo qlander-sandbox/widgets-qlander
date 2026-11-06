@@ -10,45 +10,45 @@
    "job": "Queue tick"
   }
  },
- "seq": 104,
+ "seq": 105,
  "nextLineage": 25,
- "journal": null,
- "active": {
-  "n": 103,
-  "base": "5e419368f28e0995219bc6cb19651a70f6c7f93f",
-  "head": "57340df073d8a773b87beb9aa33caf5e7791fa1c",
-  "depth": 0,
-  "prs": [
-   54,
-   55,
-   56
-  ],
-  "lineage": 24,
-  "rerun": null,
-  "rerunAt": null,
-  "cancels": [],
-  "builtAt": "2026-11-06T20:08:03.046Z",
-  "stack": [
-   {
-    "pr": 54,
-    "commit": "35511437940168818161c3f234d103f2087fa2e2",
-    "parent": "5e419368f28e0995219bc6cb19651a70f6c7f93f",
-    "tree": "5bd8ec2fea59fbf5e798eb2ba49b06f408be2fb7"
+ "journal": {
+  "seq": 105,
+  "op": {
+   "kind": "build",
+   "n": 105,
+   "base": "5e419368f28e0995219bc6cb19651a70f6c7f93f",
+   "pins": [
+    {
+     "pr": 54,
+     "head": "6dcdf952c3a0910f1919e78a9e858bfda8149614"
+    },
+    {
+     "pr": 55,
+     "head": "fdf5e92d30cb2cf5b4dc040be5ac0492148f36c7"
+    }
+   ],
+   "depth": 0,
+   "lineage": 24,
+   "source": {
+    "kind": "pending",
+    "item": {
+     "prs": [
+      54,
+      55
+     ],
+     "depth": 0,
+     "lineage": 24
+    }
    },
-   {
-    "pr": 55,
-    "commit": "c37cfd9a78abb6e761c2b9a76f3cee60f6e64bce",
-    "parent": "35511437940168818161c3f234d103f2087fa2e2",
-    "tree": "5e576047d034ea412df0a0f2389245ce1ea631f4"
-   },
-   {
-    "pr": 56,
-    "commit": "57340df073d8a773b87beb9aa33caf5e7791fa1c",
-    "parent": "c37cfd9a78abb6e761c2b9a76f3cee60f6e64bce",
-    "tree": "b4856276c6e5f77aa0d99a0c979991611e834501"
-   }
-  ]
+   "rebuild": false
+  },
+  "reserved": true,
+  "at": "2026-11-06T20:14:13.207Z",
+  "checkpoint": null,
+  "tries": 0
  },
+ "active": null,
  "auth": {
   "54": {
    "head": "6dcdf952c3a0910f1919e78a9e858bfda8149614",
@@ -79,21 +79,6 @@
    "reviewRun": null,
    "author": "brett",
    "headRef": "zb-b"
-  },
-  "56": {
-   "head": "ea1fff2aa08f641ebbd75ea894d8197622daf121",
-   "baseRepoId": 1446564086,
-   "policy": "v2:4270d7379bfe4917",
-   "policyPr": false,
-   "admittedAt": "2026-11-06T20:07:35.587Z",
-   "labelledAt": "2026-11-06T20:07:12Z",
-   "evidence": [
-    "run 42285540402",
-    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
-   ],
-   "reviewRun": null,
-   "author": "brett",
-   "headRef": "zb-c"
   }
  },
  "pending": [],
@@ -170,7 +155,7 @@
    "runs": 1
   },
   "24": {
-   "runs": 1
+   "runs": 2
   }
  },
  "window": [
@@ -225,13 +210,42 @@
   {
    "at": "2026-11-06T20:07:35.587Z",
    "cost": 1
+  },
+  {
+   "at": "2026-11-06T20:14:13.207Z",
+   "cost": 1
   }
  ],
  "redStreak": 0,
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-06T19:53:24.394Z",
  "verify": [],
- "outbox": [],
+ "outbox": [
+  {
+   "id": "u:56:moved:ea1fff2aa08f641ebbd75ea894d8197622daf121",
+   "kind": "unready",
+   "pr": 56
+  },
+  {
+   "id": "c:56:moved:ea1fff2aa08f641ebbd75ea894d8197622daf121",
+   "kind": "comment",
+   "pr": 56,
+   "body": "Removed from the landing queue: head moved from ea1fff2aa08f641ebbd75ea894d8197622daf121 to 129bf788ffee269cfd24c20496b8aa470b108674. It must qualify again (fast lane and review on the new head, then `ready`)."
+  },
+  {
+   "id": "x:103",
+   "kind": "cancelRuns",
+   "ref": "queue/103",
+   "head": "57340df073d8a773b87beb9aa33caf5e7791fa1c",
+   "until": "2026-11-06T20:44:13.207Z",
+   "giveUpAt": "2026-11-07T02:14:13.207Z"
+  },
+  {
+   "id": "d:103",
+   "kind": "deleteRef",
+   "ref": "queue/103"
+  }
+ ],
  "history": [
   {
    "n": 1,
@@ -617,6 +631,18 @@
    "head": "3fe7acbc82a9c321b12777b825b13f920d6da7b6",
    "note": "main 6ebea7216b5532989a8bc4949e3d94de59c6b386 -> 3fe7acbc82a9c321b12777b825b13f920d6da7b6",
    "at": "2026-11-06T19:53:24.394Z"
+  },
+  {
+   "n": 103,
+   "outcome": "abandoned",
+   "prs": [
+    54,
+    55,
+    56
+   ],
+   "head": "57340df073d8a773b87beb9aa33caf5e7791fa1c",
+   "note": "revalidation dropped #56",
+   "at": "2026-11-06T20:14:13.207Z"
   }
  ],
  "epochBranch": "qlander-epoch/queue",
@@ -647,11 +673,6 @@
   "55": {
    "head": "fdf5e92d30cb2cf5b4dc040be5ac0492148f36c7",
    "labelledAt": "2026-11-06T20:07:10Z",
-   "since": "2026-11-06T20:07:35.587Z"
-  },
-  "56": {
-   "head": "ea1fff2aa08f641ebbd75ea894d8197622daf121",
-   "labelledAt": "2026-11-06T20:07:12Z",
    "since": "2026-11-06T20:07:35.587Z"
   }
  }
