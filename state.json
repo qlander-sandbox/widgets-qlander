@@ -57,7 +57,105 @@
   },
   "reserved": true,
   "at": "2026-11-06T23:12:20.668Z",
-  "checkpoint": null,
+  "checkpoint": {
+   "survivors": [
+    {
+     "pr": 94,
+     "head": "947704aa5753ec6af983717cc73d767d4099753d"
+    },
+    {
+     "pr": 95,
+     "head": "09f671908c61253188204e2174c3be594c811083"
+    },
+    {
+     "pr": 96,
+     "head": "ee301e34f6cb1a2a0917da35cb699d480ed65213"
+    },
+    {
+     "pr": 97,
+     "head": "44e5ed0f4f546e3a92eefe47383746038ba9af31"
+    },
+    {
+     "pr": 98,
+     "head": "ab2b1d3951ede502b8480e337f6622e371f9993c"
+    },
+    {
+     "pr": 99,
+     "head": "0866b1be47dbd010ca32ecbdf083c9b58a30d6bd"
+    },
+    {
+     "pr": 100,
+     "head": "23f6e634cb657ea0746865dda41fa92dea5bb6af"
+    }
+   ],
+   "dropped": [],
+   "chainHead": "360c050c2d945f4855280b14cbd36d5e463087dc",
+   "stack": [
+    {
+     "pr": 94,
+     "commit": "b0f1b98e5bce8510bc9d96c7054dd90cdae9b5ff",
+     "parent": "540976916079a91d02a7f38417ec4cdf82d6f297",
+     "tree": "210eff91332fa28d17d4b34a4ba1bb1df704d6eb",
+     "own": [
+      "947704aa5753"
+     ]
+    },
+    {
+     "pr": 95,
+     "commit": "f82e6edf1c5bbc10d5c18f00cf45bcfd60efd019",
+     "parent": "b0f1b98e5bce8510bc9d96c7054dd90cdae9b5ff",
+     "tree": "4cbcc8d7e95d51805f546dbe7c705415431771f2",
+     "own": [
+      "09f671908c61"
+     ]
+    },
+    {
+     "pr": 96,
+     "commit": "7fc8bbc15241f9ad5097d72e41833d125c5ae78b",
+     "parent": "f82e6edf1c5bbc10d5c18f00cf45bcfd60efd019",
+     "tree": "1d3bca9629230b87c80db7607a625365a3ba99eb",
+     "own": [
+      "ee301e34f6cb"
+     ]
+    },
+    {
+     "pr": 97,
+     "commit": "a2fd06a869edb655aae9d81eb36ebacdf7fa2662",
+     "parent": "7fc8bbc15241f9ad5097d72e41833d125c5ae78b",
+     "tree": "13099d500b3a17f9cd5dc5b4d1b2f2a86e2d07c5",
+     "own": [
+      "44e5ed0f4f54"
+     ]
+    },
+    {
+     "pr": 98,
+     "commit": "309357d1f4b08807e1dd5dae12aa97889c2e4a8b",
+     "parent": "a2fd06a869edb655aae9d81eb36ebacdf7fa2662",
+     "tree": "a40a833ba5904914241d7b8497452a2892246fd1",
+     "own": [
+      "ab2b1d3951ed"
+     ]
+    },
+    {
+     "pr": 99,
+     "commit": "3e9507f9f575ead2a3a03c107cae0260d0a4ac89",
+     "parent": "309357d1f4b08807e1dd5dae12aa97889c2e4a8b",
+     "tree": "ccebf4062f3ef3d03c8852d7eaf1a4ab64cba4ff",
+     "own": [
+      "0866b1be47db"
+     ]
+    },
+    {
+     "pr": 100,
+     "commit": "360c050c2d945f4855280b14cbd36d5e463087dc",
+     "parent": "3e9507f9f575ead2a3a03c107cae0260d0a4ac89",
+     "tree": "928dfeae37db26a95d85bb993f8e359f6076bacf",
+     "own": [
+      "23f6e634cb65"
+     ]
+    }
+   ]
+  },
   "tries": 0
  },
  "active": null,
