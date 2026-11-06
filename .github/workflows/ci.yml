@@ -42,7 +42,7 @@ jobs:
           read -r relversion relasset relsum < .github/qlander-release.txt
           [[ "$relasset" =~ ^[A-Za-z0-9][A-Za-z0-9._+-]*\.js$ ]]
           timeout 20 curl --fail --silent --show-error --location --proto '=https' --tlsv1.2 --retry 5 --retry-all-errors --connect-timeout 5 --speed-limit 1024 --speed-time 10 \
-            --output "$dir/$relasset" "https://github.com/qlander-sandbox/widgets-qlander/releases/download/v${relversion}/${relasset}"
+            --output "$dir/$relasset" "https://github.com/brett/qlander/releases/download/v${relversion}/${relasset}"
           (cd "$dir" && echo "${relsum}  ${relasset}" | sha256sum -c -)
           "$bun" "$dir/$relasset" validate --config qlander.yml
           "$bun" "$dir/$relasset" render --check --config qlander.yml
