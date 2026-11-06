@@ -12,70 +12,36 @@
  },
  "seq": 105,
  "nextLineage": 25,
- "journal": {
-  "seq": 105,
-  "op": {
-   "kind": "build",
-   "n": 105,
-   "base": "5e419368f28e0995219bc6cb19651a70f6c7f93f",
-   "pins": [
-    {
-     "pr": 54,
-     "head": "6dcdf952c3a0910f1919e78a9e858bfda8149614"
-    },
-    {
-     "pr": 55,
-     "head": "fdf5e92d30cb2cf5b4dc040be5ac0492148f36c7"
-    }
-   ],
-   "depth": 0,
-   "lineage": 24,
-   "source": {
-    "kind": "pending",
-    "item": {
-     "prs": [
-      54,
-      55
-     ],
-     "depth": 0,
-     "lineage": 24
-    }
+ "journal": null,
+ "active": {
+  "n": 105,
+  "base": "5e419368f28e0995219bc6cb19651a70f6c7f93f",
+  "head": "94c40f2e5a9f9ecde543a7fb0bf26cfad4e25507",
+  "depth": 0,
+  "prs": [
+   54,
+   55
+  ],
+  "lineage": 24,
+  "rerun": null,
+  "rerunAt": null,
+  "cancels": [],
+  "builtAt": "2026-11-06T20:14:42.695Z",
+  "stack": [
+   {
+    "pr": 54,
+    "commit": "4e7da1e3462b0ee3718bae4ff1d5d79f0a32f92f",
+    "parent": "5e419368f28e0995219bc6cb19651a70f6c7f93f",
+    "tree": "5bd8ec2fea59fbf5e798eb2ba49b06f408be2fb7"
    },
-   "rebuild": false
-  },
-  "reserved": true,
-  "at": "2026-11-06T20:14:13.207Z",
-  "checkpoint": {
-   "survivors": [
-    {
-     "pr": 54,
-     "head": "6dcdf952c3a0910f1919e78a9e858bfda8149614"
-    },
-    {
-     "pr": 55,
-     "head": "fdf5e92d30cb2cf5b4dc040be5ac0492148f36c7"
-    }
-   ],
-   "dropped": [],
-   "chainHead": "94c40f2e5a9f9ecde543a7fb0bf26cfad4e25507",
-   "stack": [
-    {
-     "pr": 54,
-     "commit": "4e7da1e3462b0ee3718bae4ff1d5d79f0a32f92f",
-     "parent": "5e419368f28e0995219bc6cb19651a70f6c7f93f",
-     "tree": "5bd8ec2fea59fbf5e798eb2ba49b06f408be2fb7"
-    },
-    {
-     "pr": 55,
-     "commit": "94c40f2e5a9f9ecde543a7fb0bf26cfad4e25507",
-     "parent": "4e7da1e3462b0ee3718bae4ff1d5d79f0a32f92f",
-     "tree": "5e576047d034ea412df0a0f2389245ce1ea631f4"
-    }
-   ]
-  },
-  "tries": 0
+   {
+    "pr": 55,
+    "commit": "94c40f2e5a9f9ecde543a7fb0bf26cfad4e25507",
+    "parent": "4e7da1e3462b0ee3718bae4ff1d5d79f0a32f92f",
+    "tree": "5e576047d034ea412df0a0f2389245ce1ea631f4"
+   }
+  ]
  },
- "active": null,
  "auth": {
   "54": {
    "head": "6dcdf952c3a0910f1919e78a9e858bfda8149614",
@@ -271,6 +237,23 @@
    "id": "d:103",
    "kind": "deleteRef",
    "ref": "queue/103"
+  },
+  {
+   "id": "db:105",
+   "kind": "deleteRef",
+   "ref": "qlander-build/105"
+  },
+  {
+   "id": "c:54:q:105",
+   "kind": "comment",
+   "pr": 54,
+   "body": "Queued in batch 105 at `6dcdf952c3a0910f1919e78a9e858bfda8149614` (`queue/105`, on main `5e419368f28e0995219bc6cb19651a70f6c7f93f`)."
+  },
+  {
+   "id": "c:55:q:105",
+   "kind": "comment",
+   "pr": 55,
+   "body": "Queued in batch 105 at `fdf5e92d30cb2cf5b4dc040be5ac0492148f36c7` (`queue/105`, on main `5e419368f28e0995219bc6cb19651a70f6c7f93f`)."
   }
  ],
  "history": [
