@@ -12,51 +12,32 @@
  },
  "seq": 131,
  "nextLineage": 32,
- "journal": {
-  "seq": 131,
-  "op": {
-   "kind": "build",
-   "n": 131,
-   "base": "f2c11b84c08d7609dd611da30d85f766cd083c72",
-   "pins": [
-    {
-     "pr": 88,
-     "head": "f2ee2041702935ba61dd2c1245b014003902aad5"
-    }
-   ],
-   "depth": 0,
-   "lineage": 31,
-   "source": {
-    "kind": "candidates"
-   },
-   "rebuild": false
-  },
-  "reserved": true,
-  "at": "2026-11-06T22:25:46.283Z",
-  "checkpoint": {
-   "survivors": [
-    {
-     "pr": 88,
-     "head": "f2ee2041702935ba61dd2c1245b014003902aad5"
-    }
-   ],
-   "dropped": [],
-   "chainHead": "f7a3dfe217670ee18d7964c72bd1d4e72519cc41",
-   "stack": [
-    {
-     "pr": 88,
-     "commit": "f7a3dfe217670ee18d7964c72bd1d4e72519cc41",
-     "parent": "f2c11b84c08d7609dd611da30d85f766cd083c72",
-     "tree": "0558b7d36f9db0052b6a84328cdb1f9d1c4916ef",
-     "own": [
-      "f2ee20417029"
-     ]
-    }
-   ]
-  },
-  "tries": 0
+ "journal": null,
+ "active": {
+  "n": 131,
+  "base": "f2c11b84c08d7609dd611da30d85f766cd083c72",
+  "head": "f7a3dfe217670ee18d7964c72bd1d4e72519cc41",
+  "depth": 0,
+  "prs": [
+   88
+  ],
+  "lineage": 31,
+  "rerun": null,
+  "rerunAt": null,
+  "cancels": [],
+  "builtAt": "2026-11-06T22:26:05.403Z",
+  "stack": [
+   {
+    "pr": 88,
+    "commit": "f7a3dfe217670ee18d7964c72bd1d4e72519cc41",
+    "parent": "f2c11b84c08d7609dd611da30d85f766cd083c72",
+    "tree": "0558b7d36f9db0052b6a84328cdb1f9d1c4916ef",
+    "own": [
+     "f2ee20417029"
+    ]
+   }
+  ]
  },
- "active": null,
  "auth": {
   "88": {
    "head": "f2ee2041702935ba61dd2c1245b014003902aad5",
@@ -278,6 +259,17 @@
    "kind": "unlabel",
    "pr": 88,
    "label": "qlander:solo"
+  },
+  {
+   "id": "db:131",
+   "kind": "deleteRef",
+   "ref": "qlander-build/131"
+  },
+  {
+   "id": "c:88:q:131",
+   "kind": "comment",
+   "pr": 88,
+   "body": "Queued in batch 131 at `f2ee2041702935ba61dd2c1245b014003902aad5` (`queue/131`, on main `f2c11b84c08d7609dd611da30d85f766cd083c72`)."
   }
  ],
  "history": [
