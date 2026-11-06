@@ -204,11 +204,6 @@
    "seen": [
     42280564550
    ]
-  },
-  {
-   "id": "p:99",
-   "kind": "pause",
-   "reason": "batch 98: the linear landing was refused 3 times in a row with main and every PR branch where the batch left them: GitHubError: validation (200): Branch 'refs/heads/zc-1' is protected: Required status check \"never-reported\" is expected.."
   }
  ],
  "history": [
