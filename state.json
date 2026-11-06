@@ -168,19 +168,15 @@
  "verify": [],
  "outbox": [
   {
-   "id": "c:44:moved:8874aa70a7411f08d3e4d6a1ee616ebace08be9c",
-   "kind": "comment",
-   "pr": 44,
-   "body": "Removed from the landing queue: head moved from 8874aa70a7411f08d3e4d6a1ee616ebace08be9c to a74df2459d25ddee40207f83739a5e176ffd1457. It must qualify again (fast lane and review on the new head, then `ready`).",
-   "sentAt": "2026-11-06T19:35:59.212Z"
-  },
-  {
    "id": "x:95",
    "kind": "cancelRuns",
    "ref": "queue/95",
    "head": "283d9dcd12b0b5e739d0ad974787ac160638f3c5",
    "until": "2026-11-06T20:05:36.833Z",
-   "giveUpAt": "2026-11-07T01:35:36.833Z"
+   "giveUpAt": "2026-11-07T01:35:36.833Z",
+   "seen": [
+    42280564550
+   ]
   },
   {
    "id": "d:95",
