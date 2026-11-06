@@ -10,38 +10,45 @@
    "job": "Queue tick"
   }
  },
- "seq": 107,
+ "seq": 108,
  "nextLineage": 25,
- "journal": null,
- "active": {
-  "n": 105,
-  "base": "5e419368f28e0995219bc6cb19651a70f6c7f93f",
-  "head": "94c40f2e5a9f9ecde543a7fb0bf26cfad4e25507",
-  "depth": 0,
-  "prs": [
-   54,
-   55
-  ],
-  "lineage": 24,
-  "rerun": null,
-  "rerunAt": null,
-  "cancels": [],
-  "builtAt": "2026-11-06T20:14:42.695Z",
-  "stack": [
-   {
-    "pr": 54,
-    "commit": "4e7da1e3462b0ee3718bae4ff1d5d79f0a32f92f",
-    "parent": "5e419368f28e0995219bc6cb19651a70f6c7f93f",
-    "tree": "5bd8ec2fea59fbf5e798eb2ba49b06f408be2fb7"
+ "journal": {
+  "seq": 108,
+  "op": {
+   "kind": "build",
+   "n": 108,
+   "base": "1531e419b4509e1741274d895f3a4199aa1c1d87",
+   "pins": [
+    {
+     "pr": 54,
+     "head": "6dcdf952c3a0910f1919e78a9e858bfda8149614"
+    },
+    {
+     "pr": 55,
+     "head": "fdf5e92d30cb2cf5b4dc040be5ac0492148f36c7"
+    }
+   ],
+   "depth": 0,
+   "lineage": 24,
+   "source": {
+    "kind": "pending",
+    "item": {
+     "prs": [
+      54,
+      55
+     ],
+     "depth": 0,
+     "lineage": 24
+    }
    },
-   {
-    "pr": 55,
-    "commit": "94c40f2e5a9f9ecde543a7fb0bf26cfad4e25507",
-    "parent": "4e7da1e3462b0ee3718bae4ff1d5d79f0a32f92f",
-    "tree": "5e576047d034ea412df0a0f2389245ce1ea631f4"
-   }
-  ]
+   "rebuild": true
+  },
+  "reserved": true,
+  "at": "2026-11-06T20:21:27.500Z",
+  "checkpoint": null,
+  "tries": 0
  },
+ "active": null,
  "auth": {
   "54": {
    "head": "6dcdf952c3a0910f1919e78a9e858bfda8149614",
@@ -148,7 +155,7 @@
    "runs": 1
   },
   "24": {
-   "runs": 2
+   "runs": 3
   }
  },
  "window": [
@@ -207,6 +214,10 @@
   {
    "at": "2026-11-06T20:14:13.207Z",
    "cost": 1
+  },
+  {
+   "at": "2026-11-06T20:21:27.500Z",
+   "cost": 1
   }
  ],
  "redStreak": 0,
@@ -224,6 +235,11 @@
    "seen": [
     42285711925
    ]
+  },
+  {
+   "id": "d:105",
+   "kind": "deleteRef",
+   "ref": "queue/105"
   }
  ],
  "history": [
@@ -623,6 +639,17 @@
    "head": "57340df073d8a773b87beb9aa33caf5e7791fa1c",
    "note": "revalidation dropped #56",
    "at": "2026-11-06T20:14:13.207Z"
+  },
+  {
+   "n": 105,
+   "outcome": "rebuilt",
+   "prs": [
+    54,
+    55
+   ],
+   "head": "94c40f2e5a9f9ecde543a7fb0bf26cfad4e25507",
+   "note": "main moved from 5e419368f28e0995219bc6cb19651a70f6c7f93f to 1531e419b4509e1741274d895f3a4199aa1c1d87",
+   "at": "2026-11-06T20:21:27.500Z"
   }
  ],
  "epochBranch": "qlander-epoch/queue",
@@ -654,16 +681,6 @@
    "head": "fdf5e92d30cb2cf5b4dc040be5ac0492148f36c7",
    "labelledAt": "2026-11-06T20:07:10Z",
    "since": "2026-11-06T20:07:35.587Z"
-  }
- },
- "held": {
-  "54": {
-   "head": "6dcdf952c3a0910f1919e78a9e858bfda8149614",
-   "since": "2026-11-06T20:18:11.786Z"
-  },
-  "55": {
-   "head": "fdf5e92d30cb2cf5b4dc040be5ac0492148f36c7",
-   "since": "2026-11-06T20:18:11.786Z"
   }
  }
 }
