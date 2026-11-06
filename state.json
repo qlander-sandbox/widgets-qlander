@@ -162,30 +162,7 @@
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-06T20:29:49.364Z",
  "verify": [],
- "outbox": [
-  {
-   "id": "x:103",
-   "kind": "cancelRuns",
-   "ref": "queue/103",
-   "head": "57340df073d8a773b87beb9aa33caf5e7791fa1c",
-   "until": "2026-11-06T20:44:13.207Z",
-   "giveUpAt": "2026-11-07T02:14:13.207Z",
-   "seen": [
-    42285711925
-   ]
-  },
-  {
-   "id": "x:108",
-   "kind": "cancelRuns",
-   "ref": "queue/108",
-   "head": "d5b93dd953ee6d778f017dd4f2c8218aee73e490",
-   "until": "2026-11-06T20:56:21.879Z",
-   "giveUpAt": "2026-11-07T02:26:21.879Z",
-   "seen": [
-    42287712117
-   ]
-  }
- ],
+ "outbox": [],
  "history": [
   {
    "n": 1,
