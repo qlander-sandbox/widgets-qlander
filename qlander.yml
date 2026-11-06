@@ -99,7 +99,7 @@ queue:
     breakerBounces: 3
   budget:
     lineage: 12
-    window: 24
+    window: 500
     windowHours: 24
   timeouts:
     noRunMinutes: 15
