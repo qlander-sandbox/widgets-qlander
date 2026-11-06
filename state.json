@@ -10,11 +10,107 @@
    "job": "Queue tick"
   }
  },
- "seq": 83,
- "nextLineage": 18,
- "journal": null,
+ "seq": 84,
+ "nextLineage": 19,
+ "journal": {
+  "seq": 84,
+  "op": {
+   "kind": "build",
+   "n": 84,
+   "base": "010676465085af9068d8b5f3259dfc3428535b72",
+   "pins": [
+    {
+     "pr": 36,
+     "head": "ae28d6fd9627e472e9c179ec7e0665349c7f4774"
+    },
+    {
+     "pr": 37,
+     "head": "6e33fc6c1465a78cf889da5ff784c2380ac6c162"
+    },
+    {
+     "pr": 38,
+     "head": "70d5dc6724be67ad90b3a769f563dccd64dc8271"
+    },
+    {
+     "pr": 39,
+     "head": "c60eb8ad210e5ebcbc8b5f0deb9859a74cfc3577"
+    }
+   ],
+   "depth": 0,
+   "lineage": 18,
+   "source": {
+    "kind": "candidates"
+   },
+   "rebuild": false
+  },
+  "reserved": true,
+  "at": "2026-11-06T19:07:49.429Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": null,
- "auth": {},
+ "auth": {
+  "36": {
+   "head": "ae28d6fd9627e472e9c179ec7e0665349c7f4774",
+   "baseRepoId": 1446564086,
+   "policy": "v2:4270d7379bfe4917",
+   "policyPr": false,
+   "admittedAt": "2026-11-06T19:07:49.429Z",
+   "labelledAt": "2026-11-06T19:07:18Z",
+   "evidence": [
+    "run 42276643010",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "z-conf-1"
+  },
+  "37": {
+   "head": "6e33fc6c1465a78cf889da5ff784c2380ac6c162",
+   "baseRepoId": 1446564086,
+   "policy": "v2:4270d7379bfe4917",
+   "policyPr": false,
+   "admittedAt": "2026-11-06T19:07:49.429Z",
+   "labelledAt": "2026-11-06T19:07:20Z",
+   "evidence": [
+    "run 42276653650",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "z-conf-2"
+  },
+  "38": {
+   "head": "70d5dc6724be67ad90b3a769f563dccd64dc8271",
+   "baseRepoId": 1446564086,
+   "policy": "v2:4270d7379bfe4917",
+   "policyPr": false,
+   "admittedAt": "2026-11-06T19:07:49.429Z",
+   "labelledAt": "2026-11-06T19:07:21Z",
+   "evidence": [
+    "run 42276664281",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "y-1"
+  },
+  "39": {
+   "head": "c60eb8ad210e5ebcbc8b5f0deb9859a74cfc3577",
+   "baseRepoId": 1446564086,
+   "policy": "v2:4270d7379bfe4917",
+   "policyPr": false,
+   "admittedAt": "2026-11-06T19:07:49.429Z",
+   "labelledAt": "2026-11-06T19:07:23Z",
+   "evidence": [
+    "run 42276673067",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "y-2"
+  }
+ },
  "pending": [],
  "solo": [],
  "operatorSolo": [],
@@ -69,11 +165,18 @@
   },
   "17": {
    "runs": 1
+  },
+  "18": {
+   "runs": 1
   }
  },
  "window": [
   {
    "at": "2026-11-06T18:59:31.778Z",
+   "cost": 1
+  },
+  {
+   "at": "2026-11-06T19:07:49.429Z",
    "cost": 1
   }
  ],
@@ -81,7 +184,20 @@
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-06T19:03:00.862Z",
  "verify": [],
- "outbox": [],
+ "outbox": [
+  {
+   "id": "cmd:35381208163",
+   "kind": "unlabel",
+   "pr": 39,
+   "label": "qlander:go"
+  },
+  {
+   "id": "c:40:force:f7583efb1fbc31c3ee586968bc760111516b9e8a:90039dd55daf",
+   "kind": "comment",
+   "pr": 40,
+   "body": "Labelled `ready` but not queued: this queue lands linear, which moves the PR's head branch `lin-gg` to its squashed commit, and that branch has non_fast_forward in ruleset \"zz-pr-branches-nff\" (26717897), which the queue App cannot bypass. Let the queue App bypass that rule for this branch (bypass mode \"always\"), or push the change from a branch it does not cover. `ready` stays on: the PR is queued once the rule allows it."
+  }
+ ],
  "history": [
   {
    "n": 1,
@@ -379,5 +495,27 @@
     "test"
    ]
   }
- ]
+ ],
+ "eligibleSince": {
+  "36": {
+   "head": "ae28d6fd9627e472e9c179ec7e0665349c7f4774",
+   "labelledAt": "2026-11-06T19:07:18Z",
+   "since": "2026-11-06T19:07:49.429Z"
+  },
+  "37": {
+   "head": "6e33fc6c1465a78cf889da5ff784c2380ac6c162",
+   "labelledAt": "2026-11-06T19:07:20Z",
+   "since": "2026-11-06T19:07:49.429Z"
+  },
+  "38": {
+   "head": "70d5dc6724be67ad90b3a769f563dccd64dc8271",
+   "labelledAt": "2026-11-06T19:07:21Z",
+   "since": "2026-11-06T19:07:49.429Z"
+  },
+  "39": {
+   "head": "c60eb8ad210e5ebcbc8b5f0deb9859a74cfc3577",
+   "labelledAt": "2026-11-06T19:07:23Z",
+   "since": "2026-11-06T19:07:49.429Z"
+  }
+ }
 }
