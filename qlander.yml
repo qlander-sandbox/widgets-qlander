@@ -41,8 +41,6 @@ lease:
   fenceMarginMinutes: 2
 
 queue:
-  landing:
-    mode: linear
   stateBranch: qlander-state # in this repo
   refs: # in the target
     queuePrefix: queue/
@@ -119,7 +117,7 @@ queue:
 # main commits. Off until you enable it; checks-green qualifies a commit
 # whose preLanding jobs all passed on main.
 release:
-  enabled: false
+  enabled: true
   dryRun: true
   branch: release
   stateBranch: qlander-release-state
@@ -140,6 +138,4 @@ watchdog:
 # The release this repo runs, pinned (with its sha256) in
 # .github/qlander-release.txt. Change the pin, never this, to upgrade.
 bundle:
-  # Sandbox test of an unreleased build: the release lives in this repo.
-  repo: qlander-sandbox/widgets-qlander
-  private: true
+  repo: brett/qlander
