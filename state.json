@@ -225,13 +225,7 @@
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-06T22:55:55.204Z",
  "verify": [],
- "outbox": [
-  {
-   "id": "u:90:v:05283fb788dcc830a9abc1582af8ec2b90104448",
-   "kind": "unready",
-   "pr": 90
-  }
- ],
+ "outbox": [],
  "history": [
   {
    "n": 1,
