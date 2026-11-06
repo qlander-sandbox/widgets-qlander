@@ -191,13 +191,6 @@
    "seen": [
     42280564550
    ]
-  },
-  {
-   "id": "c:47:q:101",
-   "kind": "comment",
-   "pr": 47,
-   "body": "Queued in batch 101 at `c018cb2917776281aa4a531006abda3714fb0308` (`queue/101`, on main `6ebea7216b5532989a8bc4949e3d94de59c6b386`).",
-   "sentAt": "2026-11-06T19:50:16.792Z"
   }
  ],
  "history": [
