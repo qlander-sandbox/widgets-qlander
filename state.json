@@ -10,7 +10,7 @@
    "job": "Queue tick"
   }
  },
- "seq": 99,
+ "seq": 100,
  "nextLineage": 23,
  "journal": null,
  "active": null,
@@ -135,17 +135,7 @@
  "redStreak": 0,
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-06T19:46:53.373Z",
- "verify": [
-  {
-   "pr": 46,
-   "pin": "6ebea7216b5532989a8bc4949e3d94de59c6b386",
-   "landedIn": "6ebea7216b5532989a8bc4949e3d94de59c6b386",
-   "since": "2026-11-06T19:46:53.373Z",
-   "ticks": 0,
-   "notified": false,
-   "admitted": "1c557627e0fd9d407b2c69e518cf31600f95acc4"
-  }
- ],
+ "verify": [],
  "outbox": [
   {
    "id": "x:95",
@@ -554,12 +544,5 @@
     "test"
    ]
   }
- ],
- "eligibleSince": {
-  "46": {
-   "head": "1c557627e0fd9d407b2c69e518cf31600f95acc4",
-   "labelledAt": "2026-11-06T19:40:08Z",
-   "since": "2026-11-06T19:40:30.905Z"
-  }
- }
+ ]
 }
