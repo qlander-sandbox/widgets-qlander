@@ -12,33 +12,7 @@
  },
  "seq": 106,
  "nextLineage": 25,
- "journal": {
-  "seq": 106,
-  "op": {
-   "kind": "land",
-   "before": "5e419368f28e0995219bc6cb19651a70f6c7f93f",
-   "after": "94c40f2e5a9f9ecde543a7fb0bf26cfad4e25507",
-   "heads": [
-    {
-     "pr": 54,
-     "ref": "zc-a",
-     "before": "6dcdf952c3a0910f1919e78a9e858bfda8149614",
-     "after": "4e7da1e3462b0ee3718bae4ff1d5d79f0a32f92f"
-    },
-    {
-     "pr": 55,
-     "ref": "zb-b",
-     "before": "fdf5e92d30cb2cf5b4dc040be5ac0492148f36c7",
-     "after": "94c40f2e5a9f9ecde543a7fb0bf26cfad4e25507"
-    }
-   ],
-   "refused": 1
-  },
-  "reserved": false,
-  "at": "2026-11-06T20:17:24.825Z",
-  "checkpoint": null,
-  "tries": 0
- },
+ "journal": null,
  "active": {
   "n": 105,
   "base": "5e419368f28e0995219bc6cb19651a70f6c7f93f",
