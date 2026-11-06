@@ -12,121 +12,9 @@
  },
  "seq": 85,
  "nextLineage": 19,
- "journal": {
-  "seq": 85,
-  "op": {
-   "kind": "land",
-   "before": "010676465085af9068d8b5f3259dfc3428535b72",
-   "after": "e37407984101146414c92b3582b0c95e869ad072",
-   "heads": [
-    {
-     "pr": 36,
-     "ref": "z-conf-1",
-     "before": "ae28d6fd9627e472e9c179ec7e0665349c7f4774",
-     "after": "165a04636b30e590ce7f19d38182c0fa56a4be75"
-    },
-    {
-     "pr": 38,
-     "ref": "y-1",
-     "before": "70d5dc6724be67ad90b3a769f563dccd64dc8271",
-     "after": "9c0d892249ae8a32c85c64c9f42a320e1298baaf"
-    },
-    {
-     "pr": 39,
-     "ref": "y-2",
-     "before": "c60eb8ad210e5ebcbc8b5f0deb9859a74cfc3577",
-     "after": "e37407984101146414c92b3582b0c95e869ad072"
-    }
-   ]
-  },
-  "reserved": false,
-  "at": "2026-11-06T19:11:06.745Z",
-  "checkpoint": null,
-  "tries": 0
- },
- "active": {
-  "n": 84,
-  "base": "010676465085af9068d8b5f3259dfc3428535b72",
-  "head": "e37407984101146414c92b3582b0c95e869ad072",
-  "depth": 0,
-  "prs": [
-   36,
-   38,
-   39
-  ],
-  "lineage": 18,
-  "rerun": null,
-  "rerunAt": null,
-  "cancels": [],
-  "builtAt": "2026-11-06T19:08:26.791Z",
-  "stack": [
-   {
-    "pr": 36,
-    "commit": "165a04636b30e590ce7f19d38182c0fa56a4be75",
-    "parent": "010676465085af9068d8b5f3259dfc3428535b72",
-    "tree": "8125cce8eb48f23d020c05ac21e7355db49cc4a3"
-   },
-   {
-    "pr": 38,
-    "commit": "9c0d892249ae8a32c85c64c9f42a320e1298baaf",
-    "parent": "165a04636b30e590ce7f19d38182c0fa56a4be75",
-    "tree": "e696fda5af957578da1cc1c0275777fd1e6d1788"
-   },
-   {
-    "pr": 39,
-    "commit": "e37407984101146414c92b3582b0c95e869ad072",
-    "parent": "9c0d892249ae8a32c85c64c9f42a320e1298baaf",
-    "tree": "74c9225049593c4e422297dfd72cf3b23f78ace9"
-   }
-  ]
- },
- "auth": {
-  "36": {
-   "head": "ae28d6fd9627e472e9c179ec7e0665349c7f4774",
-   "baseRepoId": 1446564086,
-   "policy": "v2:4270d7379bfe4917",
-   "policyPr": false,
-   "admittedAt": "2026-11-06T19:07:49.429Z",
-   "labelledAt": "2026-11-06T19:07:18Z",
-   "evidence": [
-    "run 42276643010",
-    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
-   ],
-   "reviewRun": null,
-   "author": "brett",
-   "headRef": "z-conf-1"
-  },
-  "38": {
-   "head": "70d5dc6724be67ad90b3a769f563dccd64dc8271",
-   "baseRepoId": 1446564086,
-   "policy": "v2:4270d7379bfe4917",
-   "policyPr": false,
-   "admittedAt": "2026-11-06T19:07:49.429Z",
-   "labelledAt": "2026-11-06T19:07:21Z",
-   "evidence": [
-    "run 42276664281",
-    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
-   ],
-   "reviewRun": null,
-   "author": "brett",
-   "headRef": "y-1"
-  },
-  "39": {
-   "head": "c60eb8ad210e5ebcbc8b5f0deb9859a74cfc3577",
-   "baseRepoId": 1446564086,
-   "policy": "v2:4270d7379bfe4917",
-   "policyPr": false,
-   "admittedAt": "2026-11-06T19:07:49.429Z",
-   "labelledAt": "2026-11-06T19:07:23Z",
-   "evidence": [
-    "run 42276673067",
-    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
-   ],
-   "reviewRun": null,
-   "author": "brett",
-   "headRef": "y-2"
-  }
- },
+ "journal": null,
+ "active": null,
+ "auth": {},
  "pending": [],
  "solo": [],
  "operatorSolo": [],
@@ -198,14 +86,65 @@
  ],
  "redStreak": 0,
  "bounceStreak": 0,
- "lastLandedAt": "2026-11-06T19:03:00.862Z",
- "verify": [],
+ "lastLandedAt": "2026-11-06T19:11:33.360Z",
+ "verify": [
+  {
+   "pr": 36,
+   "pin": "165a04636b30e590ce7f19d38182c0fa56a4be75",
+   "landedIn": "e37407984101146414c92b3582b0c95e869ad072",
+   "since": "2026-11-06T19:11:33.360Z",
+   "ticks": 0,
+   "notified": false,
+   "admitted": "ae28d6fd9627e472e9c179ec7e0665349c7f4774"
+  },
+  {
+   "pr": 38,
+   "pin": "9c0d892249ae8a32c85c64c9f42a320e1298baaf",
+   "landedIn": "e37407984101146414c92b3582b0c95e869ad072",
+   "since": "2026-11-06T19:11:33.360Z",
+   "ticks": 0,
+   "notified": false,
+   "admitted": "70d5dc6724be67ad90b3a769f563dccd64dc8271"
+  },
+  {
+   "pr": 39,
+   "pin": "e37407984101146414c92b3582b0c95e869ad072",
+   "landedIn": "e37407984101146414c92b3582b0c95e869ad072",
+   "since": "2026-11-06T19:11:33.360Z",
+   "ticks": 0,
+   "notified": false,
+   "admitted": "c60eb8ad210e5ebcbc8b5f0deb9859a74cfc3577"
+  }
+ ],
  "outbox": [
   {
    "id": "c:40:force:f7583efb1fbc31c3ee586968bc760111516b9e8a:90039dd55daf",
    "kind": "comment",
    "pr": 40,
    "body": "Labelled `ready` but not queued: this queue lands linear, which moves the PR's head branch `lin-gg` to its squashed commit, and that branch has non_fast_forward in ruleset \"zz-pr-branches-nff\" (26717897), which the queue App cannot bypass. Let the queue App bypass that rule for this branch (bypass mode \"always\"), or push the change from a branch it does not cover. `ready` stays on: the PR is queued once the rule allows it."
+  },
+  {
+   "id": "c:36:landed:84",
+   "kind": "comment",
+   "pr": 36,
+   "body": "Landed in main at `e37407984101146414c92b3582b0c95e869ad072` (batch 84, pin `ae28d6fd9627e472e9c179ec7e0665349c7f4774`, squashed as `165a04636b30e590ce7f19d38182c0fa56a4be75`, which its branch now points at)."
+  },
+  {
+   "id": "c:38:landed:84",
+   "kind": "comment",
+   "pr": 38,
+   "body": "Landed in main at `e37407984101146414c92b3582b0c95e869ad072` (batch 84, pin `70d5dc6724be67ad90b3a769f563dccd64dc8271`, squashed as `9c0d892249ae8a32c85c64c9f42a320e1298baaf`, which its branch now points at)."
+  },
+  {
+   "id": "c:39:landed:84",
+   "kind": "comment",
+   "pr": 39,
+   "body": "Landed in main at `e37407984101146414c92b3582b0c95e869ad072` (batch 84, pin `c60eb8ad210e5ebcbc8b5f0deb9859a74cfc3577`, squashed as `e37407984101146414c92b3582b0c95e869ad072`, which its branch now points at)."
+  },
+  {
+   "id": "d:84",
+   "kind": "deleteRef",
+   "ref": "queue/84"
   }
  ],
  "history": [
@@ -485,6 +424,18 @@
    "head": "58c45e6f4a93f4c4648ccbb154aa35f36ff1f45b",
    "note": "main 21e42240d667d335869618ac73a49e8d692cae40 -> 58c45e6f4a93f4c4648ccbb154aa35f36ff1f45b",
    "at": "2026-11-06T19:03:00.862Z"
+  },
+  {
+   "n": 84,
+   "outcome": "landed",
+   "prs": [
+    36,
+    38,
+    39
+   ],
+   "head": "e37407984101146414c92b3582b0c95e869ad072",
+   "note": "main 010676465085af9068d8b5f3259dfc3428535b72 -> e37407984101146414c92b3582b0c95e869ad072",
+   "at": "2026-11-06T19:11:33.360Z"
   }
  ],
  "epochBranch": "qlander-epoch/queue",
