@@ -12,62 +12,36 @@
  },
  "seq": 95,
  "nextLineage": 22,
- "journal": {
-  "seq": 95,
-  "op": {
-   "kind": "build",
-   "n": 95,
-   "base": "9aaa80f2f32819c3953cdc051faf3c3893704e49",
-   "pins": [
-    {
-     "pr": 44,
-     "head": "8874aa70a7411f08d3e4d6a1ee616ebace08be9c"
-    },
-    {
-     "pr": 45,
-     "head": "975929a6d249fed9aa2e7565cfc7514310db2ace"
-    }
-   ],
-   "depth": 0,
-   "lineage": 21,
-   "source": {
-    "kind": "candidates"
+ "journal": null,
+ "active": {
+  "n": 95,
+  "base": "9aaa80f2f32819c3953cdc051faf3c3893704e49",
+  "head": "283d9dcd12b0b5e739d0ad974787ac160638f3c5",
+  "depth": 0,
+  "prs": [
+   44,
+   45
+  ],
+  "lineage": 21,
+  "rerun": null,
+  "rerunAt": null,
+  "cancels": [],
+  "builtAt": "2026-11-06T19:32:47.200Z",
+  "stack": [
+   {
+    "pr": 44,
+    "commit": "41962d0fa038207d5601a2bf32d33ece19d17e01",
+    "parent": "9aaa80f2f32819c3953cdc051faf3c3893704e49",
+    "tree": "1fc5cf8cd539293a938c5599326291d3ae8cecdb"
    },
-   "rebuild": false
-  },
-  "reserved": true,
-  "at": "2026-11-06T19:32:22.890Z",
-  "checkpoint": {
-   "survivors": [
-    {
-     "pr": 44,
-     "head": "8874aa70a7411f08d3e4d6a1ee616ebace08be9c"
-    },
-    {
-     "pr": 45,
-     "head": "975929a6d249fed9aa2e7565cfc7514310db2ace"
-    }
-   ],
-   "dropped": [],
-   "chainHead": "283d9dcd12b0b5e739d0ad974787ac160638f3c5",
-   "stack": [
-    {
-     "pr": 44,
-     "commit": "41962d0fa038207d5601a2bf32d33ece19d17e01",
-     "parent": "9aaa80f2f32819c3953cdc051faf3c3893704e49",
-     "tree": "1fc5cf8cd539293a938c5599326291d3ae8cecdb"
-    },
-    {
-     "pr": 45,
-     "commit": "283d9dcd12b0b5e739d0ad974787ac160638f3c5",
-     "parent": "41962d0fa038207d5601a2bf32d33ece19d17e01",
-     "tree": "7cfe870f04c5e85189b858e8e8406b7f07bc215e"
-    }
-   ]
-  },
-  "tries": 0
+   {
+    "pr": 45,
+    "commit": "283d9dcd12b0b5e739d0ad974787ac160638f3c5",
+    "parent": "41962d0fa038207d5601a2bf32d33ece19d17e01",
+    "tree": "7cfe870f04c5e85189b858e8e8406b7f07bc215e"
+   }
+  ]
  },
- "active": null,
  "auth": {
   "44": {
    "head": "8874aa70a7411f08d3e4d6a1ee616ebace08be9c",
@@ -216,6 +190,23 @@
    "kind": "unlabel",
    "pr": 45,
    "label": "qlander:go"
+  },
+  {
+   "id": "db:95",
+   "kind": "deleteRef",
+   "ref": "qlander-build/95"
+  },
+  {
+   "id": "c:44:q:95",
+   "kind": "comment",
+   "pr": 44,
+   "body": "Queued in batch 95 at `8874aa70a7411f08d3e4d6a1ee616ebace08be9c` (`queue/95`, on main `9aaa80f2f32819c3953cdc051faf3c3893704e49`)."
+  },
+  {
+   "id": "c:45:q:95",
+   "kind": "comment",
+   "pr": 45,
+   "body": "Queued in batch 95 at `975929a6d249fed9aa2e7565cfc7514310db2ace` (`queue/95`, on main `9aaa80f2f32819c3953cdc051faf3c3893704e49`)."
   }
  ],
  "history": [
