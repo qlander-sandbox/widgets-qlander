@@ -226,20 +226,11 @@
    ]
   },
   {
-   "id": "d:103",
-   "kind": "deleteRef",
-   "ref": "queue/103"
-  },
-  {
-   "id": "db:105",
-   "kind": "deleteRef",
-   "ref": "qlander-build/105"
-  },
-  {
    "id": "c:54:q:105",
    "kind": "comment",
    "pr": 54,
-   "body": "Queued in batch 105 at `6dcdf952c3a0910f1919e78a9e858bfda8149614` (`queue/105`, on main `5e419368f28e0995219bc6cb19651a70f6c7f93f`)."
+   "body": "Queued in batch 105 at `6dcdf952c3a0910f1919e78a9e858bfda8149614` (`queue/105`, on main `5e419368f28e0995219bc6cb19651a70f6c7f93f`).",
+   "sentAt": "2026-11-06T20:14:44.827Z"
   },
   {
    "id": "c:55:q:105",
