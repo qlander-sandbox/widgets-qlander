@@ -10,11 +10,69 @@
    "job": "Queue tick"
   }
  },
- "seq": 80,
- "nextLineage": 17,
- "journal": null,
+ "seq": 81,
+ "nextLineage": 18,
+ "journal": {
+  "seq": 81,
+  "op": {
+   "kind": "build",
+   "n": 81,
+   "base": "21e42240d667d335869618ac73a49e8d692cae40",
+   "pins": [
+    {
+     "pr": 30,
+     "head": "c2fecba014b900d4fc319807f2d57fc2619ef544"
+    },
+    {
+     "pr": 31,
+     "head": "494900b37134ec1c433190a13002bf286510ae51"
+    }
+   ],
+   "depth": 0,
+   "lineage": 17,
+   "source": {
+    "kind": "candidates"
+   },
+   "rebuild": false
+  },
+  "reserved": true,
+  "at": "2026-11-06T18:59:31.778Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": null,
- "auth": {},
+ "auth": {
+  "30": {
+   "head": "c2fecba014b900d4fc319807f2d57fc2619ef544",
+   "baseRepoId": 1446564086,
+   "policy": "v2:4270d7379bfe4917",
+   "policyPr": false,
+   "admittedAt": "2026-11-06T18:59:31.778Z",
+   "labelledAt": "2026-11-06T18:59:07Z",
+   "evidence": [
+    "run 42275552692",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "e2e-a"
+  },
+  "31": {
+   "head": "494900b37134ec1c433190a13002bf286510ae51",
+   "baseRepoId": 1446564086,
+   "policy": "v2:4270d7379bfe4917",
+   "policyPr": false,
+   "admittedAt": "2026-11-06T18:59:31.778Z",
+   "labelledAt": "2026-11-06T18:59:09Z",
+   "evidence": [
+    "run 42275558312",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "e2e-b"
+  }
+ },
  "pending": [],
  "solo": [],
  "operatorSolo": [],
@@ -66,14 +124,29 @@
   },
   "16": {
    "runs": 1
+  },
+  "17": {
+   "runs": 1
   }
  },
- "window": [],
+ "window": [
+  {
+   "at": "2026-11-06T18:59:31.778Z",
+   "cost": 1
+  }
+ ],
  "redStreak": 0,
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-05T17:48:34.395Z",
  "verify": [],
- "outbox": [],
+ "outbox": [
+  {
+   "id": "cmd:35380470201",
+   "kind": "unlabel",
+   "pr": 31,
+   "label": "qlander:go"
+  }
+ ],
  "history": [
   {
    "n": 1,
@@ -360,5 +433,17 @@
     "test"
    ]
   }
- ]
+ ],
+ "eligibleSince": {
+  "30": {
+   "head": "c2fecba014b900d4fc319807f2d57fc2619ef544",
+   "labelledAt": "2026-11-06T18:59:07Z",
+   "since": "2026-11-06T18:59:31.778Z"
+  },
+  "31": {
+   "head": "494900b37134ec1c433190a13002bf286510ae51",
+   "labelledAt": "2026-11-06T18:59:09Z",
+   "since": "2026-11-06T18:59:31.778Z"
+  }
+ }
 }
