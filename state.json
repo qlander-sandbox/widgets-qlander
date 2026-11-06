@@ -10,9 +10,40 @@
    "job": "Queue tick"
   }
  },
- "seq": 84,
+ "seq": 85,
  "nextLineage": 19,
- "journal": null,
+ "journal": {
+  "seq": 85,
+  "op": {
+   "kind": "land",
+   "before": "010676465085af9068d8b5f3259dfc3428535b72",
+   "after": "e37407984101146414c92b3582b0c95e869ad072",
+   "heads": [
+    {
+     "pr": 36,
+     "ref": "z-conf-1",
+     "before": "ae28d6fd9627e472e9c179ec7e0665349c7f4774",
+     "after": "165a04636b30e590ce7f19d38182c0fa56a4be75"
+    },
+    {
+     "pr": 38,
+     "ref": "y-1",
+     "before": "70d5dc6724be67ad90b3a769f563dccd64dc8271",
+     "after": "9c0d892249ae8a32c85c64c9f42a320e1298baaf"
+    },
+    {
+     "pr": 39,
+     "ref": "y-2",
+     "before": "c60eb8ad210e5ebcbc8b5f0deb9859a74cfc3577",
+     "after": "e37407984101146414c92b3582b0c95e869ad072"
+    }
+   ]
+  },
+  "reserved": false,
+  "at": "2026-11-06T19:11:06.745Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": {
   "n": 84,
   "base": "010676465085af9068d8b5f3259dfc3428535b72",
@@ -169,7 +200,14 @@
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-06T19:03:00.862Z",
  "verify": [],
- "outbox": [],
+ "outbox": [
+  {
+   "id": "c:40:force:f7583efb1fbc31c3ee586968bc760111516b9e8a:90039dd55daf",
+   "kind": "comment",
+   "pr": 40,
+   "body": "Labelled `ready` but not queued: this queue lands linear, which moves the PR's head branch `lin-gg` to its squashed commit, and that branch has non_fast_forward in ruleset \"zz-pr-branches-nff\" (26717897), which the queue App cannot bypass. Let the queue App bypass that rule for this branch (bypass mode \"always\"), or push the change from a branch it does not cover. `ready` stays on: the PR is queued once the rule allows it."
+  }
+ ],
  "history": [
   {
    "n": 1,
@@ -472,11 +510,6 @@
   "36": {
    "head": "ae28d6fd9627e472e9c179ec7e0665349c7f4774",
    "labelledAt": "2026-11-06T19:07:18Z",
-   "since": "2026-11-06T19:07:49.429Z"
-  },
-  "37": {
-   "head": "6e33fc6c1465a78cf889da5ff784c2380ac6c162",
-   "labelledAt": "2026-11-06T19:07:20Z",
    "since": "2026-11-06T19:07:49.429Z"
   },
   "38": {
