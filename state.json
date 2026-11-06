@@ -10,50 +10,40 @@
    "job": "Queue tick"
   }
  },
- "seq": 87,
+ "seq": 88,
  "nextLineage": 20,
- "journal": null,
- "active": {
-  "n": 86,
-  "base": "e37407984101146414c92b3582b0c95e869ad072",
-  "head": "5bcabb7dda69cb3977c6573903693aa39ef9f7f2",
-  "depth": 0,
-  "prs": [
-   41,
-   42
-  ],
-  "lineage": 19,
-  "rerun": [
-   {
-    "runId": 42277770088,
-    "attempt": 1
-   }
-  ],
-  "rerunAt": "2026-11-06T19:16:51.932Z",
-  "cancels": [],
-  "builtAt": "2026-11-06T19:13:46.050Z",
-  "stack": [
-   {
-    "pr": 41,
-    "commit": "64ab3edc668489cca13a1c024ddf8247845b9d7f",
-    "parent": "e37407984101146414c92b3582b0c95e869ad072",
-    "tree": "0d63d14726be2dbe838fb28633976dff77d270f1"
+ "journal": {
+  "seq": 88,
+  "op": {
+   "kind": "build",
+   "n": 88,
+   "base": "e37407984101146414c92b3582b0c95e869ad072",
+   "pins": [
+    {
+     "pr": 41,
+     "head": "cd92270ea9dd8a34249cccfe52adb2c0100c8389"
+    }
+   ],
+   "depth": 1,
+   "lineage": 19,
+   "source": {
+    "kind": "pending",
+    "item": {
+     "prs": [
+      41
+     ],
+     "depth": 1,
+     "lineage": 19
+    }
    },
-   {
-    "pr": 42,
-    "commit": "5bcabb7dda69cb3977c6573903693aa39ef9f7f2",
-    "parent": "64ab3edc668489cca13a1c024ddf8247845b9d7f",
-    "tree": "ebc1439ee618292b53ecb0d9aab2a4450669a311"
-   }
-  ],
-  "redJobs": [
-   {
-    "name": "test",
-    "url": "https://github.com/qlander-sandbox/widgets/actions/runs/42277770088/job/128098485486",
-    "id": 128098485486
-   }
-  ]
+   "rebuild": false
+  },
+  "reserved": true,
+  "at": "2026-11-06T19:17:37.336Z",
+  "checkpoint": null,
+  "tries": 0
  },
+ "active": null,
  "auth": {
   "40": {
    "head": "f7583efb1fbc31c3ee586968bc760111516b9e8a",
@@ -101,7 +91,15 @@
    "headRef": "zr-peer"
   }
  },
- "pending": [],
+ "pending": [
+  {
+   "prs": [
+    42
+   ],
+   "depth": 1,
+   "lineage": 19
+  }
+ ],
  "solo": [],
  "operatorSolo": [],
  "lineages": {
@@ -160,7 +158,7 @@
    "runs": 1
   },
   "19": {
-   "runs": 2
+   "runs": 3
   }
  },
  "window": [
@@ -179,13 +177,23 @@
   {
    "at": "2026-11-06T19:16:29.969Z",
    "cost": 1
+  },
+  {
+   "at": "2026-11-06T19:17:37.336Z",
+   "cost": 1
   }
  ],
- "redStreak": 0,
+ "redStreak": 1,
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-06T19:11:33.360Z",
  "verify": [],
- "outbox": [],
+ "outbox": [
+  {
+   "id": "d:86",
+   "kind": "deleteRef",
+   "ref": "queue/86"
+  }
+ ],
  "history": [
   {
    "n": 1,
@@ -475,6 +483,24 @@
    "head": "e37407984101146414c92b3582b0c95e869ad072",
    "note": "main 010676465085af9068d8b5f3259dfc3428535b72 -> e37407984101146414c92b3582b0c95e869ad072",
    "at": "2026-11-06T19:11:33.360Z"
+  },
+  {
+   "n": 86,
+   "outcome": "split",
+   "prs": [
+    41,
+    42
+   ],
+   "head": "5bcabb7dda69cb3977c6573903693aa39ef9f7f2",
+   "note": "required checks failed",
+   "failedJobs": [
+    {
+     "name": "test",
+     "url": "https://github.com/qlander-sandbox/widgets/actions/runs/42277770088/job/128100034866",
+     "id": 128100034866
+    }
+   ],
+   "at": "2026-11-06T19:17:37.336Z"
   }
  ],
  "epochBranch": "qlander-epoch/queue",
