@@ -223,20 +223,7 @@
    "admitted": "f2ee2041702935ba61dd2c1245b014003902aad5"
   }
  ],
- "outbox": [
-  {
-   "id": "c:88:landed:131",
-   "kind": "comment",
-   "pr": 88,
-   "body": "Landed in main at `f7a3dfe217670ee18d7964c72bd1d4e72519cc41` (batch 131, pin `f2ee2041702935ba61dd2c1245b014003902aad5`, squashed as `f7a3dfe217670ee18d7964c72bd1d4e72519cc41`, which its branch now points at).",
-   "sentAt": "2026-11-06T22:29:19.574Z"
-  },
-  {
-   "id": "d:131",
-   "kind": "deleteRef",
-   "ref": "queue/131"
-  }
- ],
+ "outbox": [],
  "history": [
   {
    "n": 1,
