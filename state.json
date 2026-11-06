@@ -10,54 +10,41 @@
    "job": "Queue tick"
   }
  },
- "seq": 95,
+ "seq": 96,
  "nextLineage": 22,
- "journal": null,
- "active": {
-  "n": 95,
-  "base": "9aaa80f2f32819c3953cdc051faf3c3893704e49",
-  "head": "283d9dcd12b0b5e739d0ad974787ac160638f3c5",
-  "depth": 0,
-  "prs": [
-   44,
-   45
-  ],
-  "lineage": 21,
-  "rerun": null,
-  "rerunAt": null,
-  "cancels": [],
-  "builtAt": "2026-11-06T19:32:47.200Z",
-  "stack": [
-   {
-    "pr": 44,
-    "commit": "41962d0fa038207d5601a2bf32d33ece19d17e01",
-    "parent": "9aaa80f2f32819c3953cdc051faf3c3893704e49",
-    "tree": "1fc5cf8cd539293a938c5599326291d3ae8cecdb"
-   },
-   {
-    "pr": 45,
-    "commit": "283d9dcd12b0b5e739d0ad974787ac160638f3c5",
-    "parent": "41962d0fa038207d5601a2bf32d33ece19d17e01",
-    "tree": "7cfe870f04c5e85189b858e8e8406b7f07bc215e"
-   }
-  ]
- },
- "auth": {
-  "44": {
-   "head": "8874aa70a7411f08d3e4d6a1ee616ebace08be9c",
-   "baseRepoId": 1446564086,
-   "policy": "v2:4270d7379bfe4917",
-   "policyPr": false,
-   "admittedAt": "2026-11-06T19:32:22.890Z",
-   "labelledAt": "2026-11-06T19:31:59Z",
-   "evidence": [
-    "run 42280407018",
-    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+ "journal": {
+  "seq": 96,
+  "op": {
+   "kind": "build",
+   "n": 96,
+   "base": "9aaa80f2f32819c3953cdc051faf3c3893704e49",
+   "pins": [
+    {
+     "pr": 45,
+     "head": "975929a6d249fed9aa2e7565cfc7514310db2ace"
+    }
    ],
-   "reviewRun": null,
-   "author": "brett",
-   "headRef": "g4-moved"
+   "depth": 0,
+   "lineage": 21,
+   "source": {
+    "kind": "pending",
+    "item": {
+     "prs": [
+      45
+     ],
+     "depth": 0,
+     "lineage": 21
+    }
+   },
+   "rebuild": false
   },
+  "reserved": true,
+  "at": "2026-11-06T19:35:36.833Z",
+  "checkpoint": null,
+  "tries": 0
+ },
+ "active": null,
+ "auth": {
   "45": {
    "head": "975929a6d249fed9aa2e7565cfc7514310db2ace",
    "baseRepoId": 1446564086,
@@ -139,7 +126,7 @@
    "runs": 1
   },
   "21": {
-   "runs": 1
+   "runs": 2
   }
  },
  "window": [
@@ -178,13 +165,42 @@
   {
    "at": "2026-11-06T19:32:22.890Z",
    "cost": 1
+  },
+  {
+   "at": "2026-11-06T19:35:36.833Z",
+   "cost": 1
   }
  ],
  "redStreak": 0,
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-06T19:30:46.089Z",
  "verify": [],
- "outbox": [],
+ "outbox": [
+  {
+   "id": "u:44:moved:8874aa70a7411f08d3e4d6a1ee616ebace08be9c",
+   "kind": "unready",
+   "pr": 44
+  },
+  {
+   "id": "c:44:moved:8874aa70a7411f08d3e4d6a1ee616ebace08be9c",
+   "kind": "comment",
+   "pr": 44,
+   "body": "Removed from the landing queue: head moved from 8874aa70a7411f08d3e4d6a1ee616ebace08be9c to a74df2459d25ddee40207f83739a5e176ffd1457. It must qualify again (fast lane and review on the new head, then `ready`)."
+  },
+  {
+   "id": "x:95",
+   "kind": "cancelRuns",
+   "ref": "queue/95",
+   "head": "283d9dcd12b0b5e739d0ad974787ac160638f3c5",
+   "until": "2026-11-06T20:05:36.833Z",
+   "giveUpAt": "2026-11-07T01:35:36.833Z"
+  },
+  {
+   "id": "d:95",
+   "kind": "deleteRef",
+   "ref": "queue/95"
+  }
+ ],
  "history": [
   {
    "n": 1,
@@ -529,6 +545,17 @@
    "head": "9aaa80f2f32819c3953cdc051faf3c3893704e49",
    "note": "main f8e32a91c37dc2d79168822507a484f1f7d7ff0d -> 9aaa80f2f32819c3953cdc051faf3c3893704e49",
    "at": "2026-11-06T19:30:46.089Z"
+  },
+  {
+   "n": 95,
+   "outcome": "abandoned",
+   "prs": [
+    44,
+    45
+   ],
+   "head": "283d9dcd12b0b5e739d0ad974787ac160638f3c5",
+   "note": "revalidation dropped #44",
+   "at": "2026-11-06T19:35:36.833Z"
   }
  ],
  "epochBranch": "qlander-epoch/queue",
@@ -551,11 +578,6 @@
   }
  ],
  "eligibleSince": {
-  "44": {
-   "head": "8874aa70a7411f08d3e4d6a1ee616ebace08be9c",
-   "labelledAt": "2026-11-06T19:31:59Z",
-   "since": "2026-11-06T19:32:22.890Z"
-  },
   "45": {
    "head": "975929a6d249fed9aa2e7565cfc7514310db2ace",
    "labelledAt": "2026-11-06T19:32:01Z",
