@@ -10,16 +10,14 @@
    "job": "Queue tick"
   }
  },
- "seq": 160,
+ "seq": 161,
  "nextLineage": 35,
  "journal": null,
  "active": null,
  "auth": {},
  "pending": [],
  "solo": [],
- "operatorSolo": [
-  91
- ],
+ "operatorSolo": [],
  "lineages": {
   "1": {
    "runs": 1
@@ -233,18 +231,14 @@
  "redStreak": 0,
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-06T23:00:25.712Z",
- "verify": [
+ "verify": [],
+ "outbox": [
   {
-   "pr": 91,
-   "pin": "95570092a39e93a6ceec4eecd28f9f9d4461bb80",
-   "landedIn": "95570092a39e93a6ceec4eecd28f9f9d4461bb80",
-   "since": "2026-11-06T23:00:25.712Z",
-   "ticks": 0,
-   "notified": false,
-   "admitted": "bd847eb93f26eee90ad85775e8970280dc4b7c21"
+   "id": "u:91:v:95570092a39e93a6ceec4eecd28f9f9d4461bb80",
+   "kind": "unready",
+   "pr": 91
   }
  ],
- "outbox": [],
  "history": [
   {
    "n": 1,
@@ -828,12 +822,5 @@
   "b98336c65612",
   "274587b94ce8",
   "bd847eb93f26"
- ],
- "eligibleSince": {
-  "91": {
-   "head": "bd847eb93f26eee90ad85775e8970280dc4b7c21",
-   "labelledAt": "2026-11-06T22:56:46Z",
-   "since": "2026-11-06T22:57:04.053Z"
-  }
- }
+ ]
 }
