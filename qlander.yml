@@ -138,4 +138,6 @@ watchdog:
 # The release this repo runs, pinned (with its sha256) in
 # .github/qlander-release.txt. Change the pin, never this, to upgrade.
 bundle:
-  repo: brett/qlander
+  # Sandbox test of an unreleased build: the release lives in this repo.
+  repo: qlander-sandbox/widgets-qlander
+  private: true
