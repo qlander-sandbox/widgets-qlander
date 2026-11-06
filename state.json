@@ -10,14 +10,16 @@
    "job": "Queue tick"
   }
  },
- "seq": 145,
+ "seq": 146,
  "nextLineage": 33,
  "journal": null,
  "active": null,
  "auth": {},
  "pending": [],
  "solo": [],
- "operatorSolo": [],
+ "operatorSolo": [
+  90
+ ],
  "lineages": {
   "1": {
    "runs": 1
@@ -218,7 +220,14 @@
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-06T22:33:35.586Z",
  "verify": [],
- "outbox": [],
+ "outbox": [
+  {
+   "id": "cmd:35397091128",
+   "kind": "unlabel",
+   "pr": 90,
+   "label": "qlander:solo"
+  }
+ ],
  "history": [
   {
    "n": 1,
