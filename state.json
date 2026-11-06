@@ -186,21 +186,11 @@
  "verify": [],
  "outbox": [
   {
-   "id": "cmd:35383118349",
-   "kind": "unlabel",
-   "pr": 45,
-   "label": "qlander:go"
-  },
-  {
-   "id": "db:95",
-   "kind": "deleteRef",
-   "ref": "qlander-build/95"
-  },
-  {
    "id": "c:44:q:95",
    "kind": "comment",
    "pr": 44,
-   "body": "Queued in batch 95 at `8874aa70a7411f08d3e4d6a1ee616ebace08be9c` (`queue/95`, on main `9aaa80f2f32819c3953cdc051faf3c3893704e49`)."
+   "body": "Queued in batch 95 at `8874aa70a7411f08d3e4d6a1ee616ebace08be9c` (`queue/95`, on main `9aaa80f2f32819c3953cdc051faf3c3893704e49`).",
+   "sentAt": "2026-11-06T19:32:49.081Z"
   },
   {
    "id": "c:45:q:95",
