@@ -4,15 +4,9 @@
 #
 # The tick (DESIGN.md §11, §15). Keep this exact path.
 #
-# Two jobs, each with its own App key, environment, state branch, lease and
-# concurrency group:
-#   queue    TARGET_TOKEN, queue-write, qlander-state
-#   release  TARGET_RELEASE_TOKEN, release-write, qlander-release-state
-# Both get STATE_TOKEN, the state App's token, which is the only identity
-# that can move either state branch. Neither job ever sees the other App's
-# key (src/main.ts refuses to start if it does). The release job runs on
-# `schedule` only, so at most one is created per cron interval however
-# many dispatches arrive (DESIGN.md §12.1).
+# One job, queue (TARGET_TOKEN, queue-write, qlander-state); release
+# advance is not enabled (release.enabled). The job also gets STATE_TOKEN,
+# the state App's token, the only identity that can move the state branch.
 #
 # Hard invariant (DESIGN.md §15, checked when the config is loaded): each
 # job's timeout-minutes is at most lease.minutes - lease.fenceMarginMinutes.
@@ -128,88 +122,3 @@ jobs:
             --output "$dir/$relasset" "$releases/assets/${id}"
           (cd "$dir" && echo "${relsum}  ${relasset}" | sha256sum -c -)
           "$bun" "$dir/$relasset" tick queue --config qlander.yml
-
-  release:
-    name: Release advance # recorded in the lease (src/job-names.ts RELEASE_JOB_NAME)
-    # This repo's own main only; and on the cron only, never a dispatch, so at
-    # most one release job is created per cron interval.
-    if: >-
-      github.ref == 'refs/heads/main' && github.repository_id == 1446564233 &&
-      github.event_name == 'schedule'
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    environment: release-write
-    concurrency:
-      group: qlander-release
-      cancel-in-progress: false
-    permissions:
-      contents: read # the release state branch is written with the state App's token, never this one
-      issues: write # the release pause and alert issues and the release state mirror
-      actions: read # whether a previous release job has completed (lease takeover)
-    steps:
-      - name: Check out widgets-qlander
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-        with:
-          persist-credentials: false
-
-      - name: Mint the release App token (widgets only, least privilege)
-        id: target
-        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
-        with:
-          client-id: ${{ secrets.RELEASE_APP_CLIENT_ID }}
-          private-key: ${{ secrets.RELEASE_APP_PRIVATE_KEY }}
-          owner: qlander-sandbox
-          repositories: widgets
-          permission-contents: write
-          permission-workflows: write
-          permission-actions: read
-          permission-checks: read
-          permission-statuses: read
-
-      - name: Mint the state App token (widgets-qlander contents only)
-        id: state
-        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
-        with:
-          client-id: ${{ secrets.STATE_APP_CLIENT_ID }}
-          private-key: ${{ secrets.STATE_APP_PRIVATE_KEY }}
-          owner: qlander-sandbox
-          repositories: widgets-qlander
-          permission-contents: write
-
-      - name: Run one release tick (a dry run unless QLANDER_MODE is "live" and release advance is enabled)
-        env:
-          TARGET_RELEASE_TOKEN: ${{ steps.target.outputs.token }}
-          STATE_TOKEN: ${{ steps.state.outputs.token }}
-          GITHUB_TOKEN: ${{ github.token }}
-          QLANDER_MODE: ${{ vars.QLANDER_MODE }}
-        run: |
-          set -euo pipefail
-          # A pinned Bun release, checked against the committed sha256, in a
-          # directory that did not exist before this step.
-          read -r version asset sum < .github/bun-release.txt
-          dir="$(mktemp -d)"
-          timeout 40 curl --fail --silent --show-error --location --proto '=https' --tlsv1.2 --retry 5 --retry-all-errors --connect-timeout 5 --speed-limit 1024 --speed-time 10 \
-            --output "$dir/$asset" "https://github.com/oven-sh/bun/releases/download/bun-v${version}/${asset}"
-          (cd "$dir" && echo "${sum}  ${asset}" | sha256sum -c -)
-          unzip -q "$dir/$asset" -d "$dir"
-          bun="$dir/${asset%.zip}/bun"
-          # The pinned qlander release, checked against the sha256 committed in
-          # .github/qlander-release.txt before it runs. The checksum is the trust root.
-          read -r relversion relasset relsum < .github/qlander-release.txt
-          [[ "$relasset" =~ ^[A-Za-z0-9][A-Za-z0-9._+-]*\.js$ ]]
-          # A private release of qlander-sandbox/widgets-qlander,
-          # read through the API with this job's own token (contents: read),
-          # passed on stdin so it is never in a command line. curl drops it on
-          # the redirect to the asset's storage host.
-          releases="https://api.github.com/repos/qlander-sandbox/widgets-qlander/releases"
-          auth() { printf 'Authorization: Bearer %s\n' "$GITHUB_TOKEN"; }
-          auth | timeout 10 curl --fail --silent --show-error --location --proto '=https' --tlsv1.2 --retry 5 --retry-all-errors --connect-timeout 5 --speed-limit 1024 --speed-time 10 \
-            --header @- --header "Accept: application/vnd.github+json" \
-            --output "$dir/release.json" "$releases/tags/v${relversion}"
-          id="$(RELEASE="$dir/release.json" ASSET="$relasset" "$bun" -e 'const a = (await Bun.file(process.env.RELEASE).json()).assets.filter((x) => x.name === process.env.ASSET); if (a.length !== 1) throw new Error("the release has no single asset " + process.env.ASSET); console.log(a[0].id)')"
-          [[ "$id" =~ ^[0-9]+$ ]]
-          auth | timeout 20 curl --fail --silent --show-error --location --proto '=https' --tlsv1.2 --retry 5 --retry-all-errors --connect-timeout 5 --speed-limit 1024 --speed-time 10 \
-            --header @- --header "Accept: application/octet-stream" \
-            --output "$dir/$relasset" "$releases/assets/${id}"
-          (cd "$dir" && echo "${relsum}  ${relasset}" | sha256sum -c -)
-          "$bun" "$dir/$relasset" tick release --config qlander.yml

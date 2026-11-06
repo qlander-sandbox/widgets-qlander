@@ -41,6 +41,8 @@ lease:
   fenceMarginMinutes: 2
 
 queue:
+  landing:
+    mode: linear
   stateBranch: qlander-state # in this repo
   refs: # in the target
     queuePrefix: queue/
@@ -117,7 +119,7 @@ queue:
 # main commits. Off until you enable it; checks-green qualifies a commit
 # whose preLanding jobs all passed on main.
 release:
-  enabled: true
+  enabled: false
   dryRun: true
   branch: release
   stateBranch: qlander-release-state
