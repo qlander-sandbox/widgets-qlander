@@ -10,7 +10,7 @@
    "job": "Queue tick"
   }
  },
- "seq": 111,
+ "seq": 112,
  "nextLineage": 25,
  "journal": null,
  "active": null,
@@ -161,17 +161,7 @@
  "redStreak": 0,
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-06T20:29:49.364Z",
- "verify": [
-  {
-   "pr": 54,
-   "pin": "76f4b566d948670b660d61181055c26a0f8df31a",
-   "landedIn": "76f4b566d948670b660d61181055c26a0f8df31a",
-   "since": "2026-11-06T20:29:49.364Z",
-   "ticks": 0,
-   "notified": false,
-   "admitted": "6dcdf952c3a0910f1919e78a9e858bfda8149614"
-  }
- ],
+ "verify": [],
  "outbox": [
   {
    "id": "x:103",
@@ -194,6 +184,12 @@
    "seen": [
     42287712117
    ]
+  },
+  {
+   "id": "c:57:force:d8ba93f61fdb364ea25206fd1b9ca8bb4a157481:2848576ea6dc",
+   "kind": "comment",
+   "pr": 57,
+   "body": "Labelled `ready` but not queued: this queue lands linear, which moves the PR's head branch `zu-1` to its squashed commit, and that branch has update in ruleset \"zz-update\" (26724588), which the queue App cannot bypass. Let the queue App bypass that rule for this branch (bypass mode \"always\"), or push the change from a branch it does not cover. `ready` stays on: the PR is queued once the rule allows it."
   }
  ],
  "history": [
@@ -645,12 +641,5 @@
     "test"
    ]
   }
- ],
- "eligibleSince": {
-  "54": {
-   "head": "6dcdf952c3a0910f1919e78a9e858bfda8149614",
-   "labelledAt": "2026-11-06T20:07:08Z",
-   "since": "2026-11-06T20:07:35.587Z"
-  }
- }
+ ]
 }
