@@ -284,20 +284,7 @@
    "notified": false
   }
  ],
- "outbox": [
-  {
-   "id": "c:507:landed:269",
-   "kind": "comment",
-   "pr": 507,
-   "body": "Landed in main at `8f938261c714186acfe3b176e1926e2f1f003933` (batch 269, pin `d500f2fee0a92c1847524eb53c297094ad1cb48f`).",
-   "sentAt": "2026-11-07T03:41:47.857Z"
-  },
-  {
-   "id": "d:269",
-   "kind": "deleteRef",
-   "ref": "queue/269"
-  }
- ],
+ "outbox": [],
  "history": [
   {
    "n": 1,
