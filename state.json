@@ -259,23 +259,7 @@
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-07T03:41:46.036Z",
  "verify": [],
- "outbox": [
-  {
-   "id": "u:505:v:292e8b5b5bb58b904fddae1cabd2b3a594ed3fc7",
-   "kind": "unready",
-   "pr": 505
-  },
-  {
-   "id": "u:506:v:6075b628ce57d6d2efa53206f4819a0c022ea920",
-   "kind": "unready",
-   "pr": 506
-  },
-  {
-   "id": "u:507:v:d500f2fee0a92c1847524eb53c297094ad1cb48f",
-   "kind": "unready",
-   "pr": 507
-  }
- ],
+ "outbox": [],
  "history": [
   {
    "n": 1,
