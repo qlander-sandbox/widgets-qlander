@@ -10,9 +10,70 @@
    "job": "Queue tick"
   }
  },
- "seq": 226,
+ "seq": 227,
  "nextLineage": 58,
- "journal": null,
+ "journal": {
+  "seq": 227,
+  "op": {
+   "kind": "land",
+   "before": "e8d7a5d523f942bba330014335b041016432644b",
+   "after": "4eedb0610c45355f4bf7a5e51eb3263d489d6c32",
+   "heads": [
+    {
+     "pr": 475,
+     "ref": "lf-f2-1",
+     "before": "d67434f623f40acd60be0d9b3def07daaa5993ef",
+     "after": "39be2489630b6412b6f04a919d18e56dd8b8cd74"
+    },
+    {
+     "pr": 476,
+     "ref": "lf-f2-2",
+     "before": "0fbd4c5bbf89ad76463131fe6e5ce4ac788cedd9",
+     "after": "25bd82d4d0e40f67792000d626331f3edd7a444a"
+    },
+    {
+     "pr": 477,
+     "ref": "lf-f2-3",
+     "before": "3a692b1113e15f2f46bcad7e6ce8f2ab3f618f26",
+     "after": "4aba161b5b0c9698877291c8a9522b37b72bf0b2"
+    },
+    {
+     "pr": 478,
+     "ref": "lf-f2-4",
+     "before": "b52ca44d391d723cd16ae64899a17b381a36f759",
+     "after": "f55a56033d1e4b3c97c64220955d3a657945c115"
+    },
+    {
+     "pr": 479,
+     "ref": "lf-f2-5",
+     "before": "2fc14bf11ecf6993a00bb4f49eeb0edeaeeef8b7",
+     "after": "44f76c408bfa08b848fa0ec8678ebdde989faf82"
+    },
+    {
+     "pr": 480,
+     "ref": "lf-f2-6",
+     "before": "7f9637ecf8a90f3d4f9b0005381a95c2fca1aee2",
+     "after": "a391226f9dfae2a0b85f5a52122b34d019657ad2"
+    },
+    {
+     "pr": 481,
+     "ref": "lf-f2-7",
+     "before": "1e6289ddc7e9f4e4870816758f384ab8e01a3bca",
+     "after": "463ce240f14ac90442b79a2b0f64598f882b9afc"
+    },
+    {
+     "pr": 482,
+     "ref": "lf-f2-8",
+     "before": "390ddd07876a69d7d8d08c5f6227105009ef32a4",
+     "after": "4eedb0610c45355f4bf7a5e51eb3263d489d6c32"
+    }
+   ]
+  },
+  "reserved": false,
+  "at": "2026-11-07T02:06:38.592Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": {
   "n": 226,
   "base": "e8d7a5d523f942bba330014335b041016432644b",
