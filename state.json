@@ -37,7 +37,40 @@
   },
   "reserved": true,
   "at": "2026-11-07T01:20:24.924Z",
-  "checkpoint": null,
+  "checkpoint": {
+   "survivors": [
+    {
+     "pr": 458,
+     "head": "d23e88e7cab69dd748751bd40f7cd396091d01dc"
+    },
+    {
+     "pr": 459,
+     "head": "2b7f506e5a647800d73b7fb1fffb8fce000ca158"
+    }
+   ],
+   "dropped": [],
+   "chainHead": "258adf834bcfb43234126599d61200fa2806c7a4",
+   "stack": [
+    {
+     "pr": 458,
+     "commit": "c32729c8c27b1e65797302eb200142d19230498d",
+     "parent": "61e27035243d40cbba328a21d4280a6db73bd83b",
+     "tree": "0b564ecad41c8d2750f7c122cad2d383c9079078",
+     "own": [
+      "d23e88e7cab6"
+     ]
+    },
+    {
+     "pr": 459,
+     "commit": "258adf834bcfb43234126599d61200fa2806c7a4",
+     "parent": "c32729c8c27b1e65797302eb200142d19230498d",
+     "tree": "323f47be0bab25afc5e28f49003c76f1b0a3ebdf",
+     "own": [
+      "2b7f506e5a64"
+     ]
+    }
+   ]
+  },
   "tries": 0
  },
  "active": null,
