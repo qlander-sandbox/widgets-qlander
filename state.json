@@ -1,15 +1,6 @@
 {
  "v": 5,
- "lease": {
-  "owner": "drive-1794012987933",
-  "until": "2026-11-07T01:04:28.000Z",
-  "acquiredAt": "2026-11-07T00:56:28.000Z",
-  "executor": {
-   "runId": 42320797256,
-   "attempt": 1,
-   "job": "Queue tick"
-  }
- },
+ "lease": null,
  "seq": 190,
  "nextLineage": 49,
  "journal": null,
