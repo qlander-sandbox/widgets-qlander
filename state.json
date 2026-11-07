@@ -12,51 +12,32 @@
  },
  "seq": 185,
  "nextLineage": 47,
- "journal": {
-  "seq": 185,
-  "op": {
-   "kind": "build",
-   "n": 185,
-   "base": "979635aea3f8dc6d10ec9600e79d6a745e792d69",
-   "pins": [
-    {
-     "pr": 435,
-     "head": "074619843aba4612bfa65ca86670035d6c414b00"
-    }
-   ],
-   "depth": 0,
-   "lineage": 46,
-   "source": {
-    "kind": "candidates"
-   },
-   "rebuild": false
-  },
-  "reserved": true,
-  "at": "2026-11-07T00:44:30.145Z",
-  "checkpoint": {
-   "survivors": [
-    {
-     "pr": 435,
-     "head": "074619843aba4612bfa65ca86670035d6c414b00"
-    }
-   ],
-   "dropped": [],
-   "chainHead": "7e66f50024a5776f9569dd00f810fff4742d7766",
-   "stack": [
-    {
-     "pr": 435,
-     "commit": "7e66f50024a5776f9569dd00f810fff4742d7766",
-     "parent": "979635aea3f8dc6d10ec9600e79d6a745e792d69",
-     "tree": "1095db1a5937b73b6207d066aaba5ada360b10fe",
-     "own": [
-      "074619843aba"
-     ]
-    }
-   ]
-  },
-  "tries": 0
+ "journal": null,
+ "active": {
+  "n": 185,
+  "base": "979635aea3f8dc6d10ec9600e79d6a745e792d69",
+  "head": "7e66f50024a5776f9569dd00f810fff4742d7766",
+  "depth": 0,
+  "prs": [
+   435
+  ],
+  "lineage": 46,
+  "rerun": null,
+  "rerunAt": null,
+  "cancels": [],
+  "builtAt": "2026-11-07T00:44:49.858Z",
+  "stack": [
+   {
+    "pr": 435,
+    "commit": "7e66f50024a5776f9569dd00f810fff4742d7766",
+    "parent": "979635aea3f8dc6d10ec9600e79d6a745e792d69",
+    "tree": "1095db1a5937b73b6207d066aaba5ada360b10fe",
+    "own": [
+     "074619843aba"
+    ]
+   }
+  ]
  },
- "active": null,
  "auth": {
   "435": {
    "head": "074619843aba4612bfa65ca86670035d6c414b00",
@@ -389,6 +370,17 @@
    "id": "u:434:v:979635aea3f8dc6d10ec9600e79d6a745e792d69",
    "kind": "unready",
    "pr": 434
+  },
+  {
+   "id": "db:185",
+   "kind": "deleteRef",
+   "ref": "qlander-build/185"
+  },
+  {
+   "id": "c:435:q:185",
+   "kind": "comment",
+   "pr": 435,
+   "body": "Queued in batch 185 at `074619843aba4612bfa65ca86670035d6c414b00` (`queue/185`, on main `979635aea3f8dc6d10ec9600e79d6a745e792d69`)."
   }
  ],
  "history": [
