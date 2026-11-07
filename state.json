@@ -10,44 +10,40 @@
    "job": "Queue tick"
   }
  },
- "seq": 192,
+ "seq": 193,
  "nextLineage": 50,
- "journal": null,
- "active": {
-  "n": 191,
-  "base": "a9c86c51266206552fff2c2a9a96a03bdfec7f40",
-  "head": "47b3c5d4bcb46bf21893b561ea6720169050c353",
-  "depth": 0,
-  "prs": [
-   452,
-   453
-  ],
-  "lineage": 49,
-  "rerun": null,
-  "rerunAt": null,
-  "cancels": [],
-  "builtAt": "2026-11-07T01:06:45.229Z",
-  "stack": [
-   {
-    "pr": 452,
-    "commit": "e34b4c63a576fb752c848e8a04926de4d63ab54e",
-    "parent": "a9c86c51266206552fff2c2a9a96a03bdfec7f40",
-    "tree": "f56b6fccb3c137acd5cc948ef1b68458e1ab61b4",
-    "own": [
-     "391ad5c406e2"
-    ]
+ "journal": {
+  "seq": 193,
+  "op": {
+   "kind": "build",
+   "n": 193,
+   "base": "a9c86c51266206552fff2c2a9a96a03bdfec7f40",
+   "pins": [
+    {
+     "pr": 452,
+     "head": "391ad5c406e2b59be2c254c153b067c8b7d70990"
+    }
+   ],
+   "depth": 0,
+   "lineage": 49,
+   "source": {
+    "kind": "pending",
+    "item": {
+     "prs": [
+      452
+     ],
+     "depth": 0,
+     "lineage": 49
+    }
    },
-   {
-    "pr": 453,
-    "commit": "47b3c5d4bcb46bf21893b561ea6720169050c353",
-    "parent": "e34b4c63a576fb752c848e8a04926de4d63ab54e",
-    "tree": "d78a375e4a96e1379116b24360c81c1d1bda8ddc",
-    "own": [
-     "f35933a96fa1"
-    ]
-   }
-  ]
+   "rebuild": false
+  },
+  "reserved": true,
+  "at": "2026-11-07T01:08:16.986Z",
+  "checkpoint": null,
+  "tries": 0
  },
+ "active": null,
  "auth": {
   "452": {
    "head": "391ad5c406e2b59be2c254c153b067c8b7d70990",
@@ -63,21 +59,6 @@
    "reviewRun": null,
    "author": "brett",
    "headRef": "lf-s-author-9449-1"
-  },
-  "453": {
-   "head": "f35933a96fa17b100054064fd028199e2f4ec46a",
-   "baseRepoId": 1446564086,
-   "policy": "v2:b571606c0d1d3613",
-   "policyPr": false,
-   "admittedAt": "2026-11-07T01:06:20.752Z",
-   "labelledAt": "2026-11-07T01:06:13Z",
-   "evidence": [
-    "run 42322149031",
-    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
-   ],
-   "reviewRun": null,
-   "author": "brett",
-   "headRef": "lf-s-author-9449-2"
   }
  },
  "pending": [],
@@ -229,7 +210,7 @@
    "runs": 1
   },
   "49": {
-   "runs": 1
+   "runs": 2
   }
  },
  "window": [
@@ -392,13 +373,42 @@
   {
    "at": "2026-11-07T01:06:20.752Z",
    "cost": 1
+  },
+  {
+   "at": "2026-11-07T01:08:16.986Z",
+   "cost": 1
   }
  ],
  "redStreak": 0,
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-07T00:56:48.162Z",
  "verify": [],
- "outbox": [],
+ "outbox": [
+  {
+   "id": "u:453:moved:f35933a96fa17b100054064fd028199e2f4ec46a",
+   "kind": "unready",
+   "pr": 453
+  },
+  {
+   "id": "c:453:moved:f35933a96fa17b100054064fd028199e2f4ec46a",
+   "kind": "comment",
+   "pr": 453,
+   "body": "Removed from the landing queue: head moved from f35933a96fa17b100054064fd028199e2f4ec46a to 45e63f572025b1fb7169129aa12e015c1cf37045. It must qualify again (fast lane and review on the new head, then `ready`)."
+  },
+  {
+   "id": "x:191",
+   "kind": "cancelRuns",
+   "ref": "queue/191",
+   "head": "47b3c5d4bcb46bf21893b561ea6720169050c353",
+   "until": "2026-11-07T01:38:16.986Z",
+   "giveUpAt": "2026-11-07T07:08:16.986Z"
+  },
+  {
+   "id": "d:191",
+   "kind": "deleteRef",
+   "ref": "queue/191"
+  }
+ ],
  "history": [
   {
    "n": 1,
@@ -1120,6 +1130,17 @@
    "head": "a9c86c51266206552fff2c2a9a96a03bdfec7f40",
    "note": "main 80589247ae365204e2eeb0c431e5c5197ba29039 -> a9c86c51266206552fff2c2a9a96a03bdfec7f40",
    "at": "2026-11-07T00:56:48.162Z"
+  },
+  {
+   "n": 191,
+   "outcome": "abandoned",
+   "prs": [
+    452,
+    453
+   ],
+   "head": "47b3c5d4bcb46bf21893b561ea6720169050c353",
+   "note": "revalidation dropped #453",
+   "at": "2026-11-07T01:08:16.986Z"
   }
  ],
  "epochBranch": "qlander-epoch/queue",
@@ -1222,11 +1243,6 @@
   "452": {
    "head": "391ad5c406e2b59be2c254c153b067c8b7d70990",
    "labelledAt": "2026-11-07T01:06:11Z",
-   "since": "2026-11-07T01:06:20.752Z"
-  },
-  "453": {
-   "head": "f35933a96fa17b100054064fd028199e2f4ec46a",
-   "labelledAt": "2026-11-07T01:06:13Z",
    "since": "2026-11-07T01:06:20.752Z"
   }
  }
