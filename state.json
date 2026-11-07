@@ -343,20 +343,7 @@
    "admitted": "7e8c98464d2dce5ae3586991cd091a4f694360c2"
   }
  ],
- "outbox": [
-  {
-   "id": "c:408:landed:172",
-   "kind": "comment",
-   "pr": 408,
-   "body": "Landed in main at `32358ec1516541b7e4d2c35d8ca81de5682172f6` (batch 172, pin `7e8c98464d2dce5ae3586991cd091a4f694360c2`, squashed as `32358ec1516541b7e4d2c35d8ca81de5682172f6`, which its branch now points at).",
-   "sentAt": "2026-11-07T00:16:41.223Z"
-  },
-  {
-   "id": "d:172",
-   "kind": "deleteRef",
-   "ref": "queue/172"
-  }
- ],
+ "outbox": [],
  "history": [
   {
    "n": 1,
