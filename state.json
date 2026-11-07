@@ -607,17 +607,11 @@
  "verify": [],
  "outbox": [
   {
-   "id": "c:473:q:223",
-   "kind": "comment",
-   "pr": 473,
-   "body": "Queued in batch 223 at `99fa48c1f99089bb6b86821215347a98e0779643` (`queue/223`, on main `8d95b2b46c337e5eb787da35efd1d38134c9f257`).",
-   "sentAt": "2026-11-07T01:58:44.140Z"
-  },
-  {
    "id": "c:474:q:223",
    "kind": "comment",
    "pr": 474,
-   "body": "Queued in batch 223 at `a6361f2781d3d523c49917d4109c8188c21d0e7a` (`queue/223`, on main `8d95b2b46c337e5eb787da35efd1d38134c9f257`)."
+   "body": "Queued in batch 223 at `a6361f2781d3d523c49917d4109c8188c21d0e7a` (`queue/223`, on main `8d95b2b46c337e5eb787da35efd1d38134c9f257`).",
+   "sentAt": "2026-11-07T01:58:44.140Z"
   }
  ],
  "history": [
