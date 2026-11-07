@@ -361,15 +361,7 @@
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-07T00:48:00.813Z",
  "verify": [],
- "outbox": [
-  {
-   "id": "c:436:q:187",
-   "kind": "comment",
-   "pr": 436,
-   "body": "Queued in batch 187 at `4c7b8aeb591cd014d09ddb502d6dbed30481746b` (`queue/187`, on main `7e66f50024a5776f9569dd00f810fff4742d7766`).",
-   "sentAt": "2026-11-07T00:49:17.643Z"
-  }
- ],
+ "outbox": [],
  "history": [
   {
    "n": 1,
