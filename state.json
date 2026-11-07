@@ -10,11 +10,183 @@
    "job": "Queue tick"
   }
  },
- "seq": 174,
- "nextLineage": 41,
- "journal": null,
+ "seq": 175,
+ "nextLineage": 42,
+ "journal": {
+  "seq": 175,
+  "op": {
+   "kind": "build",
+   "n": 175,
+   "base": "32358ec1516541b7e4d2c35d8ca81de5682172f6",
+   "pins": [
+    {
+     "pr": 409,
+     "head": "60d23fdbd8a4de334af5f9fc13cd6474aa7b4a0f"
+    },
+    {
+     "pr": 410,
+     "head": "b23b2e0af3668fdc8ae4255b0e37ba5ee1d3045a"
+    },
+    {
+     "pr": 411,
+     "head": "8cf1eb6ed9193b4b2c04e1ba7f9105988454f1d1"
+    },
+    {
+     "pr": 412,
+     "head": "bf73a8cf1e8b19178e5ac36c90023e84e98a5968"
+    },
+    {
+     "pr": 413,
+     "head": "5f5671437988928d43d9f067c645559cf0684a18"
+    },
+    {
+     "pr": 414,
+     "head": "5d0f0159aad4a5937279ffe3d5ae79b015ed8f3c"
+    },
+    {
+     "pr": 415,
+     "head": "b9842d58fd7ca07a78218bb908eb2f0a13406663"
+    },
+    {
+     "pr": 416,
+     "head": "78966c5af9ade5b43a300ee2cc35f24fcce091b9"
+    }
+   ],
+   "depth": 0,
+   "lineage": 41,
+   "source": {
+    "kind": "candidates"
+   },
+   "rebuild": false
+  },
+  "reserved": true,
+  "at": "2026-11-07T00:18:36.567Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": null,
- "auth": {},
+ "auth": {
+  "409": {
+   "head": "60d23fdbd8a4de334af5f9fc13cd6474aa7b4a0f",
+   "baseRepoId": 1446564086,
+   "policy": "v2:b571606c0d1d3613",
+   "policyPr": false,
+   "admittedAt": "2026-11-07T00:18:36.567Z",
+   "labelledAt": "2026-11-07T00:18:05Z",
+   "evidence": [
+    "run 42317307609",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lf-w3-1"
+  },
+  "410": {
+   "head": "b23b2e0af3668fdc8ae4255b0e37ba5ee1d3045a",
+   "baseRepoId": 1446564086,
+   "policy": "v2:b571606c0d1d3613",
+   "policyPr": false,
+   "admittedAt": "2026-11-07T00:18:36.567Z",
+   "labelledAt": "2026-11-07T00:18:07Z",
+   "evidence": [
+    "run 42317314184",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lf-w3-2"
+  },
+  "411": {
+   "head": "8cf1eb6ed9193b4b2c04e1ba7f9105988454f1d1",
+   "baseRepoId": 1446564086,
+   "policy": "v2:b571606c0d1d3613",
+   "policyPr": false,
+   "admittedAt": "2026-11-07T00:18:36.567Z",
+   "labelledAt": "2026-11-07T00:18:09Z",
+   "evidence": [
+    "run 42317321201",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lf-w3-3"
+  },
+  "412": {
+   "head": "bf73a8cf1e8b19178e5ac36c90023e84e98a5968",
+   "baseRepoId": 1446564086,
+   "policy": "v2:b571606c0d1d3613",
+   "policyPr": false,
+   "admittedAt": "2026-11-07T00:18:36.567Z",
+   "labelledAt": "2026-11-07T00:18:10Z",
+   "evidence": [
+    "run 42317328614",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lf-w3-4"
+  },
+  "413": {
+   "head": "5f5671437988928d43d9f067c645559cf0684a18",
+   "baseRepoId": 1446564086,
+   "policy": "v2:b571606c0d1d3613",
+   "policyPr": false,
+   "admittedAt": "2026-11-07T00:18:36.567Z",
+   "labelledAt": "2026-11-07T00:18:12Z",
+   "evidence": [
+    "run 42317334749",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lf-w3-5"
+  },
+  "414": {
+   "head": "5d0f0159aad4a5937279ffe3d5ae79b015ed8f3c",
+   "baseRepoId": 1446564086,
+   "policy": "v2:b571606c0d1d3613",
+   "policyPr": false,
+   "admittedAt": "2026-11-07T00:18:36.567Z",
+   "labelledAt": "2026-11-07T00:18:14Z",
+   "evidence": [
+    "run 42317342984",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lf-w3-6"
+  },
+  "415": {
+   "head": "b9842d58fd7ca07a78218bb908eb2f0a13406663",
+   "baseRepoId": 1446564086,
+   "policy": "v2:b571606c0d1d3613",
+   "policyPr": false,
+   "admittedAt": "2026-11-07T00:18:36.567Z",
+   "labelledAt": "2026-11-07T00:18:16Z",
+   "evidence": [
+    "run 42317349400",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lf-w3-7"
+  },
+  "416": {
+   "head": "78966c5af9ade5b43a300ee2cc35f24fcce091b9",
+   "baseRepoId": 1446564086,
+   "policy": "v2:b571606c0d1d3613",
+   "policyPr": false,
+   "admittedAt": "2026-11-07T00:18:36.567Z",
+   "labelledAt": "2026-11-07T00:18:17Z",
+   "evidence": [
+    "run 42317356734",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lf-w3-8"
+  }
+ },
  "pending": [],
  "solo": [],
  "operatorSolo": [],
@@ -137,6 +309,9 @@
    "runs": 1
   },
   "40": {
+   "runs": 1
+  },
+  "41": {
    "runs": 1
   }
  },
@@ -263,6 +438,10 @@
   },
   {
    "at": "2026-11-07T00:12:47.689Z",
+   "cost": 1
+  },
+  {
+   "at": "2026-11-07T00:18:36.567Z",
    "cost": 1
   }
  ],
@@ -959,5 +1138,47 @@
   "9d4a0e892d5a",
   "c48b6ea9e694",
   "7e8c98464d2d"
- ]
+ ],
+ "eligibleSince": {
+  "409": {
+   "head": "60d23fdbd8a4de334af5f9fc13cd6474aa7b4a0f",
+   "labelledAt": "2026-11-07T00:18:05Z",
+   "since": "2026-11-07T00:18:36.567Z"
+  },
+  "410": {
+   "head": "b23b2e0af3668fdc8ae4255b0e37ba5ee1d3045a",
+   "labelledAt": "2026-11-07T00:18:07Z",
+   "since": "2026-11-07T00:18:36.567Z"
+  },
+  "411": {
+   "head": "8cf1eb6ed9193b4b2c04e1ba7f9105988454f1d1",
+   "labelledAt": "2026-11-07T00:18:09Z",
+   "since": "2026-11-07T00:18:36.567Z"
+  },
+  "412": {
+   "head": "bf73a8cf1e8b19178e5ac36c90023e84e98a5968",
+   "labelledAt": "2026-11-07T00:18:10Z",
+   "since": "2026-11-07T00:18:36.567Z"
+  },
+  "413": {
+   "head": "5f5671437988928d43d9f067c645559cf0684a18",
+   "labelledAt": "2026-11-07T00:18:12Z",
+   "since": "2026-11-07T00:18:36.567Z"
+  },
+  "414": {
+   "head": "5d0f0159aad4a5937279ffe3d5ae79b015ed8f3c",
+   "labelledAt": "2026-11-07T00:18:14Z",
+   "since": "2026-11-07T00:18:36.567Z"
+  },
+  "415": {
+   "head": "b9842d58fd7ca07a78218bb908eb2f0a13406663",
+   "labelledAt": "2026-11-07T00:18:16Z",
+   "since": "2026-11-07T00:18:36.567Z"
+  },
+  "416": {
+   "head": "78966c5af9ade5b43a300ee2cc35f24fcce091b9",
+   "labelledAt": "2026-11-07T00:18:17Z",
+   "since": "2026-11-07T00:18:36.567Z"
+  }
+ }
 }
