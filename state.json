@@ -452,13 +452,6 @@
    "seen": [
     42322225739
    ]
-  },
-  {
-   "id": "c:463:q:215",
-   "kind": "comment",
-   "pr": 463,
-   "body": "Queued in batch 215 at `727ecb330f46e0617789b38234c183d7dbf6cd6f` (`queue/215`, on main `af91618147e94024da8c5479ffa2676690dc94d9`).",
-   "sentAt": "2026-11-07T01:27:52.908Z"
   }
  ],
  "history": [
