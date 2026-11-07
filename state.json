@@ -61,7 +61,118 @@
   },
   "reserved": true,
   "at": "2026-11-07T00:18:36.567Z",
-  "checkpoint": null,
+  "checkpoint": {
+   "survivors": [
+    {
+     "pr": 409,
+     "head": "60d23fdbd8a4de334af5f9fc13cd6474aa7b4a0f"
+    },
+    {
+     "pr": 410,
+     "head": "b23b2e0af3668fdc8ae4255b0e37ba5ee1d3045a"
+    },
+    {
+     "pr": 411,
+     "head": "8cf1eb6ed9193b4b2c04e1ba7f9105988454f1d1"
+    },
+    {
+     "pr": 412,
+     "head": "bf73a8cf1e8b19178e5ac36c90023e84e98a5968"
+    },
+    {
+     "pr": 413,
+     "head": "5f5671437988928d43d9f067c645559cf0684a18"
+    },
+    {
+     "pr": 414,
+     "head": "5d0f0159aad4a5937279ffe3d5ae79b015ed8f3c"
+    },
+    {
+     "pr": 415,
+     "head": "b9842d58fd7ca07a78218bb908eb2f0a13406663"
+    },
+    {
+     "pr": 416,
+     "head": "78966c5af9ade5b43a300ee2cc35f24fcce091b9"
+    }
+   ],
+   "dropped": [],
+   "chainHead": "46322019e6bb0a4ef6fb9cb109c7782499672b20",
+   "stack": [
+    {
+     "pr": 409,
+     "commit": "9191b05308013777d22cd0ec7a93b2f2fbc5e21d",
+     "parent": "32358ec1516541b7e4d2c35d8ca81de5682172f6",
+     "tree": "08d203d1df599126bafba0c1a5ced9cf4320e512",
+     "own": [
+      "60d23fdbd8a4"
+     ]
+    },
+    {
+     "pr": 410,
+     "commit": "2561ccaf5be06316f63ebb0976e87530d3c075ff",
+     "parent": "9191b05308013777d22cd0ec7a93b2f2fbc5e21d",
+     "tree": "2e932db5f16213bd17264ccb78f91f3f80f95298",
+     "own": [
+      "b23b2e0af366"
+     ]
+    },
+    {
+     "pr": 411,
+     "commit": "301e2d1686cf8da50696b9b01309a75e3e5db48f",
+     "parent": "2561ccaf5be06316f63ebb0976e87530d3c075ff",
+     "tree": "37862dcc5991d83bf8800f628c910b7417b93cca",
+     "own": [
+      "8cf1eb6ed919"
+     ]
+    },
+    {
+     "pr": 412,
+     "commit": "5ddc0ec3e9450a663f303651a7479eecb9e01cc5",
+     "parent": "301e2d1686cf8da50696b9b01309a75e3e5db48f",
+     "tree": "bdfb68ee33f8324b5e31c208a9d24373513ea1d9",
+     "own": [
+      "bf73a8cf1e8b"
+     ]
+    },
+    {
+     "pr": 413,
+     "commit": "4676f814dff46ee26437bbe6e31a6fe2252d8e46",
+     "parent": "5ddc0ec3e9450a663f303651a7479eecb9e01cc5",
+     "tree": "54733fece93600fedfd61edcdcb1621aebaedf25",
+     "own": [
+      "5f5671437988"
+     ]
+    },
+    {
+     "pr": 414,
+     "commit": "2cf4f3ba4bb5e4a74edac5c1d237889414230a12",
+     "parent": "4676f814dff46ee26437bbe6e31a6fe2252d8e46",
+     "tree": "c767439d0e934dddc13ae7d76bd28d5c0fcd079d",
+     "own": [
+      "5d0f0159aad4"
+     ]
+    },
+    {
+     "pr": 415,
+     "commit": "3ba5f96d97fae2c4a6c6c73e33dcf5ac643562e8",
+     "parent": "2cf4f3ba4bb5e4a74edac5c1d237889414230a12",
+     "tree": "79a518e67c464ad91beca820723c92f08ef7cd04",
+     "own": [
+      "b9842d58fd7c"
+     ]
+    },
+    {
+     "pr": 416,
+     "commit": "46322019e6bb0a4ef6fb9cb109c7782499672b20",
+     "parent": "3ba5f96d97fae2c4a6c6c73e33dcf5ac643562e8",
+     "tree": "5ef9baaa6f2e3aafc360a46b834986ba97ad9ce1",
+     "own": [
+      "78966c5af9ad"
+     ]
+    }
+   ]
+  },
   "tries": 0
  },
  "active": null,
