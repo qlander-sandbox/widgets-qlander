@@ -433,17 +433,11 @@
    ]
   },
   {
-   "id": "c:456:q:203",
-   "kind": "comment",
-   "pr": 456,
-   "body": "Queued in batch 203 at `edc96830a5a07a49e0731e008e21e591d90f97aa` (`queue/203`, on main `6ddb3457abb2adf788110088ceb8b5536152a4e6`).",
-   "sentAt": "2026-11-07T01:16:57.002Z"
-  },
-  {
    "id": "c:457:q:203",
    "kind": "comment",
    "pr": 457,
-   "body": "Queued in batch 203 at `f546c3db3d63c049ffc9944be95a509d60d7664b` (`queue/203`, on main `6ddb3457abb2adf788110088ceb8b5536152a4e6`)."
+   "body": "Queued in batch 203 at `f546c3db3d63c049ffc9944be95a509d60d7664b` (`queue/203`, on main `6ddb3457abb2adf788110088ceb8b5536152a4e6`).",
+   "sentAt": "2026-11-07T01:16:57.002Z"
   }
  ],
  "history": [
