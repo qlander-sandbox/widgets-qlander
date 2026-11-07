@@ -352,17 +352,11 @@
  ],
  "outbox": [
   {
-   "id": "c:412:landed:175",
-   "kind": "comment",
-   "pr": 412,
-   "body": "Landed in main at `46322019e6bb0a4ef6fb9cb109c7782499672b20` (batch 175, pin `bf73a8cf1e8b19178e5ac36c90023e84e98a5968`, squashed as `5ddc0ec3e9450a663f303651a7479eecb9e01cc5`, which its branch now points at).",
-   "sentAt": "2026-11-07T00:22:29.655Z"
-  },
-  {
    "id": "c:413:landed:175",
    "kind": "comment",
    "pr": 413,
-   "body": "Landed in main at `46322019e6bb0a4ef6fb9cb109c7782499672b20` (batch 175, pin `5f5671437988928d43d9f067c645559cf0684a18`, squashed as `4676f814dff46ee26437bbe6e31a6fe2252d8e46`, which its branch now points at)."
+   "body": "Landed in main at `46322019e6bb0a4ef6fb9cb109c7782499672b20` (batch 175, pin `5f5671437988928d43d9f067c645559cf0684a18`, squashed as `4676f814dff46ee26437bbe6e31a6fe2252d8e46`, which its branch now points at).",
+   "sentAt": "2026-11-07T00:22:29.655Z"
   },
   {
    "id": "c:414:landed:175",
