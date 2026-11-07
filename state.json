@@ -480,32 +480,11 @@
  "verify": [],
  "outbox": [
   {
-   "id": "c:98:v:309357d1f4b08807e1dd5dae12aa97889c2e4a8b:closed",
-   "kind": "comment",
-   "pr": 98,
-   "body": "Landed revision `ab2b1d3951ede502b8480e337f6622e371f9993c` in main as `309357d1f4b08807e1dd5dae12aa97889c2e4a8b` (`360c050c2d945f4855280b14cbd36d5e463087dc`), but GitHub closed this PR without marking it merged. Its change is on main; nothing is lost and nothing needs doing.",
-   "sentAt": "2026-11-07T00:08:12.490Z"
-  },
-  {
-   "id": "u:99:v:3e9507f9f575ead2a3a03c107cae0260d0a4ac89",
-   "kind": "unready",
-   "pr": 99
-  },
-  {
-   "id": "u:100:v:360c050c2d945f4855280b14cbd36d5e463087dc",
-   "kind": "unready",
-   "pr": 100
-  },
-  {
-   "id": "db:170",
-   "kind": "deleteRef",
-   "ref": "qlander-build/170"
-  },
-  {
    "id": "c:393:q:170",
    "kind": "comment",
    "pr": 393,
-   "body": "Queued in batch 170 at `258f2baebe8903d203e6dc17beaf6ef10c568681` (`queue/170`, on main `3954866349293b98c9130e1b15659c9966ed8027`)."
+   "body": "Queued in batch 170 at `258f2baebe8903d203e6dc17beaf6ef10c568681` (`queue/170`, on main `3954866349293b98c9130e1b15659c9966ed8027`).",
+   "sentAt": "2026-11-07T00:08:12.490Z"
   },
   {
    "id": "c:394:q:170",
