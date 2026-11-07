@@ -433,11 +433,6 @@
    "seen": [
     42328174055
    ]
-  },
-  {
-   "id": "p:241",
-   "kind": "pause",
-   "reason": "window budget of 24 runs per 24h used"
   }
  ],
  "history": [
