@@ -10,11 +10,69 @@
    "job": "Queue tick"
   }
  },
- "seq": 214,
- "nextLineage": 54,
- "journal": null,
+ "seq": 215,
+ "nextLineage": 55,
+ "journal": {
+  "seq": 215,
+  "op": {
+   "kind": "build",
+   "n": 215,
+   "base": "af91618147e94024da8c5479ffa2676690dc94d9",
+   "pins": [
+    {
+     "pr": 462,
+     "head": "04e0eb7988619fadae0eb61eb64b081f9a3c742b"
+    },
+    {
+     "pr": 463,
+     "head": "727ecb330f46e0617789b38234c183d7dbf6cd6f"
+    }
+   ],
+   "depth": 0,
+   "lineage": 54,
+   "source": {
+    "kind": "candidates"
+   },
+   "rebuild": false
+  },
+  "reserved": true,
+  "at": "2026-11-07T01:27:27.229Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": null,
- "auth": {},
+ "auth": {
+  "462": {
+   "head": "04e0eb7988619fadae0eb61eb64b081f9a3c742b",
+   "baseRepoId": 1446564086,
+   "policy": "v2:b571606c0d1d3613",
+   "policyPr": false,
+   "admittedAt": "2026-11-07T01:27:27.229Z",
+   "labelledAt": "2026-11-07T01:27:15Z",
+   "evidence": [
+    "run 42324125208",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lf-s-lost2stale-14626-1"
+  },
+  "463": {
+   "head": "727ecb330f46e0617789b38234c183d7dbf6cd6f",
+   "baseRepoId": 1446564086,
+   "policy": "v2:b571606c0d1d3613",
+   "policyPr": false,
+   "admittedAt": "2026-11-07T01:27:27.229Z",
+   "labelledAt": "2026-11-07T01:27:17Z",
+   "evidence": [
+    "run 42324130495",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lf-s-lost2stale-14626-2"
+  }
+ },
  "pending": [],
  "solo": [],
  "operatorSolo": [],
@@ -176,6 +234,9 @@
    "runs": 1
   },
   "53": {
+   "runs": 1
+  },
+  "54": {
    "runs": 1
   }
  },
@@ -362,6 +423,10 @@
   },
   {
    "at": "2026-11-07T01:24:20.456Z",
+   "cost": 1
+  },
+  {
+   "at": "2026-11-07T01:27:27.229Z",
    "cost": 1
   }
  ],
@@ -1285,5 +1350,17 @@
   "2b7f506e5a64",
   "e8b0af2739bb",
   "7c8edaa73a16"
- ]
+ ],
+ "eligibleSince": {
+  "462": {
+   "head": "04e0eb7988619fadae0eb61eb64b081f9a3c742b",
+   "labelledAt": "2026-11-07T01:27:15Z",
+   "since": "2026-11-07T01:27:27.229Z"
+  },
+  "463": {
+   "head": "727ecb330f46e0617789b38234c183d7dbf6cd6f",
+   "labelledAt": "2026-11-07T01:27:17Z",
+   "since": "2026-11-07T01:27:27.229Z"
+  }
+ }
 }
