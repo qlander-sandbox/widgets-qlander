@@ -407,7 +407,8 @@
    "id": "c:464:landed:219",
    "kind": "comment",
    "pr": 464,
-   "body": "Landed in main at `8d95b2b46c337e5eb787da35efd1d38134c9f257` (batch 219, pin `8e04ba5a3a9f4db42ff940830d5876d92d6917f2`, squashed as `48f2c9a0c80b955e6fe1536723a0fa3e926b7077`, which its branch now points at)."
+   "body": "Landed in main at `8d95b2b46c337e5eb787da35efd1d38134c9f257` (batch 219, pin `8e04ba5a3a9f4db42ff940830d5876d92d6917f2`, squashed as `48f2c9a0c80b955e6fe1536723a0fa3e926b7077`, which its branch now points at).",
+   "sentAt": "2026-11-07T01:52:54.245Z"
   },
   {
    "id": "c:465:landed:219",
