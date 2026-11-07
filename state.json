@@ -494,15 +494,11 @@
  "verify": [],
  "outbox": [
   {
-   "id": "db:175",
-   "kind": "deleteRef",
-   "ref": "qlander-build/175"
-  },
-  {
    "id": "c:409:q:175",
    "kind": "comment",
    "pr": 409,
-   "body": "Queued in batch 175 at `60d23fdbd8a4de334af5f9fc13cd6474aa7b4a0f` (`queue/175`, on main `32358ec1516541b7e4d2c35d8ca81de5682172f6`)."
+   "body": "Queued in batch 175 at `60d23fdbd8a4de334af5f9fc13cd6474aa7b4a0f` (`queue/175`, on main `32358ec1516541b7e4d2c35d8ca81de5682172f6`).",
+   "sentAt": "2026-11-07T00:19:30.974Z"
   },
   {
    "id": "c:410:q:175",
