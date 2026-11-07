@@ -10,7 +10,7 @@
    "job": "Queue tick"
   }
  },
- "seq": 251,
+ "seq": 252,
  "nextLineage": 63,
  "journal": null,
  "active": null,
@@ -223,27 +223,19 @@
  "redStreak": 0,
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-07T02:59:53.083Z",
- "verify": [
+ "verify": [],
+ "outbox": [
   {
-   "pr": 493,
-   "pin": "1d05f5e867f95e3847bfc0b7809539fa8c3e8ade",
-   "landedIn": "3301413ee2c2a9d302290d9a46a98d9c4070f3ef",
-   "since": "2026-11-07T02:59:53.083Z",
-   "ticks": 0,
-   "notified": false,
-   "admitted": "a77b79f4c8fa7af88c70f1d27c32c62c2877a695"
+   "id": "u:493:v:1d05f5e867f95e3847bfc0b7809539fa8c3e8ade",
+   "kind": "unready",
+   "pr": 493
   },
   {
-   "pr": 494,
-   "pin": "3301413ee2c2a9d302290d9a46a98d9c4070f3ef",
-   "landedIn": "3301413ee2c2a9d302290d9a46a98d9c4070f3ef",
-   "since": "2026-11-07T02:59:53.083Z",
-   "ticks": 0,
-   "notified": false,
-   "admitted": "43c462ea55fa43a30b504df7be37269c2d7efe06"
+   "id": "u:494:v:3301413ee2c2a9d302290d9a46a98d9c4070f3ef",
+   "kind": "unready",
+   "pr": 494
   }
  ],
- "outbox": [],
  "history": [
   {
    "n": 1,
@@ -1201,17 +1193,5 @@
   "6f5684cad011",
   "a77b79f4c8fa",
   "43c462ea55fa"
- ],
- "eligibleSince": {
-  "493": {
-   "head": "a77b79f4c8fa7af88c70f1d27c32c62c2877a695",
-   "labelledAt": "2026-11-07T02:57:35Z",
-   "since": "2026-11-07T02:57:44.692Z"
-  },
-  "494": {
-   "head": "43c462ea55fa43a30b504df7be37269c2d7efe06",
-   "labelledAt": "2026-11-07T02:57:37Z",
-   "since": "2026-11-07T02:57:44.692Z"
-  }
- }
+ ]
 }
