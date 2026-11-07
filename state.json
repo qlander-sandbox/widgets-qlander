@@ -399,18 +399,6 @@
    "seen": [
     42322225739
    ]
-  },
-  {
-   "id": "c:461:landed:211",
-   "kind": "comment",
-   "pr": 461,
-   "body": "Landed in main at `af91618147e94024da8c5479ffa2676690dc94d9` (batch 211, pin `7c8edaa73a16d95d22f32515633454f174114068`, squashed as `af91618147e94024da8c5479ffa2676690dc94d9`, which its branch now points at).",
-   "sentAt": "2026-11-07T01:25:45.644Z"
-  },
-  {
-   "id": "d:211",
-   "kind": "deleteRef",
-   "ref": "queue/211"
   }
  ],
  "history": [
