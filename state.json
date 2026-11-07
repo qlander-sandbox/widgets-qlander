@@ -289,7 +289,8 @@
    "id": "c:505:landed:269",
    "kind": "comment",
    "pr": 505,
-   "body": "Landed in main at `8f938261c714186acfe3b176e1926e2f1f003933` (batch 269, pin `292e8b5b5bb58b904fddae1cabd2b3a594ed3fc7`)."
+   "body": "Landed in main at `8f938261c714186acfe3b176e1926e2f1f003933` (batch 269, pin `292e8b5b5bb58b904fddae1cabd2b3a594ed3fc7`).",
+   "sentAt": "2026-11-07T03:41:47.857Z"
   },
   {
    "id": "c:506:landed:269",
