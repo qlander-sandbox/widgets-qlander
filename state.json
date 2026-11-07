@@ -10,11 +10,69 @@
    "job": "Queue tick"
   }
  },
- "seq": 243,
- "nextLineage": 61,
- "journal": null,
+ "seq": 244,
+ "nextLineage": 62,
+ "journal": {
+  "seq": 244,
+  "op": {
+   "kind": "build",
+   "n": 244,
+   "base": "ee8282a73711e0072b63b587eba14d4c141b8efc",
+   "pins": [
+    {
+     "pr": 491,
+     "head": "b3c226224bb4ab6e2129359752a596c143d81611"
+    },
+    {
+     "pr": 492,
+     "head": "6f5684cad01153f25570d3219ddd73823630d962"
+    }
+   ],
+   "depth": 0,
+   "lineage": 61,
+   "source": {
+    "kind": "candidates"
+   },
+   "rebuild": false
+  },
+  "reserved": true,
+  "at": "2026-11-07T02:52:29.981Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": null,
- "auth": {},
+ "auth": {
+  "491": {
+   "head": "b3c226224bb4ab6e2129359752a596c143d81611",
+   "baseRepoId": 1446564086,
+   "policy": "v2:4270d7379bfe4917",
+   "policyPr": false,
+   "admittedAt": "2026-11-07T02:52:29.981Z",
+   "labelledAt": "2026-11-07T02:52:17Z",
+   "evidence": [
+    "run 42331306485",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lf-f-main-24477-1"
+  },
+  "492": {
+   "head": "6f5684cad01153f25570d3219ddd73823630d962",
+   "baseRepoId": 1446564086,
+   "policy": "v2:4270d7379bfe4917",
+   "policyPr": false,
+   "admittedAt": "2026-11-07T02:52:29.981Z",
+   "labelledAt": "2026-11-07T02:52:18Z",
+   "evidence": [
+    "run 42331309378",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lf-f-main-24477-2"
+  }
+ },
  "pending": [],
  "solo": [],
  "operatorSolo": [],
@@ -198,9 +256,17 @@
   },
   "60": {
    "runs": 1
+  },
+  "61": {
+   "runs": 1
   }
  },
- "window": [],
+ "window": [
+  {
+   "at": "2026-11-07T02:52:29.981Z",
+   "cost": 1
+  }
+ ],
  "redStreak": 0,
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-07T02:20:53.526Z",
@@ -1124,5 +1190,17 @@
     "test"
    ]
   }
- ]
+ ],
+ "eligibleSince": {
+  "491": {
+   "head": "b3c226224bb4ab6e2129359752a596c143d81611",
+   "labelledAt": "2026-11-07T02:52:17Z",
+   "since": "2026-11-07T02:52:29.981Z"
+  },
+  "492": {
+   "head": "6f5684cad01153f25570d3219ddd73823630d962",
+   "labelledAt": "2026-11-07T02:52:18Z",
+   "since": "2026-11-07T02:52:29.981Z"
+  }
+ }
 }
