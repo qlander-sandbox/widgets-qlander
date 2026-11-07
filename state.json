@@ -501,55 +501,11 @@
  "verify": [],
  "outbox": [
   {
-   "id": "u:409:v:9191b05308013777d22cd0ec7a93b2f2fbc5e21d",
-   "kind": "unready",
-   "pr": 409
-  },
-  {
-   "id": "u:410:v:2561ccaf5be06316f63ebb0976e87530d3c075ff",
-   "kind": "unready",
-   "pr": 410
-  },
-  {
-   "id": "u:411:v:301e2d1686cf8da50696b9b01309a75e3e5db48f",
-   "kind": "unready",
-   "pr": 411
-  },
-  {
-   "id": "u:412:v:5ddc0ec3e9450a663f303651a7479eecb9e01cc5",
-   "kind": "unready",
-   "pr": 412
-  },
-  {
-   "id": "u:413:v:4676f814dff46ee26437bbe6e31a6fe2252d8e46",
-   "kind": "unready",
-   "pr": 413
-  },
-  {
-   "id": "u:414:v:2cf4f3ba4bb5e4a74edac5c1d237889414230a12",
-   "kind": "unready",
-   "pr": 414
-  },
-  {
-   "id": "u:415:v:3ba5f96d97fae2c4a6c6c73e33dcf5ac643562e8",
-   "kind": "unready",
-   "pr": 415
-  },
-  {
-   "id": "u:416:v:46322019e6bb0a4ef6fb9cb109c7782499672b20",
-   "kind": "unready",
-   "pr": 416
-  },
-  {
-   "id": "db:177",
-   "kind": "deleteRef",
-   "ref": "qlander-build/177"
-  },
-  {
    "id": "c:417:q:177",
    "kind": "comment",
    "pr": 417,
-   "body": "Queued in batch 177 at `b830db9a49f3e96475c9981c1e14620549610b9c` (`queue/177`, on main `46322019e6bb0a4ef6fb9cb109c7782499672b20`)."
+   "body": "Queued in batch 177 at `b830db9a49f3e96475c9981c1e14620549610b9c` (`queue/177`, on main `46322019e6bb0a4ef6fb9cb109c7782499672b20`).",
+   "sentAt": "2026-11-07T00:25:19.572Z"
   },
   {
    "id": "c:418:q:177",
