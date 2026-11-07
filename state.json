@@ -10,11 +10,69 @@
    "job": "Queue tick"
   }
  },
- "seq": 253,
- "nextLineage": 63,
- "journal": null,
+ "seq": 254,
+ "nextLineage": 64,
+ "journal": {
+  "seq": 254,
+  "op": {
+   "kind": "build",
+   "n": 254,
+   "base": "3301413ee2c2a9d302290d9a46a98d9c4070f3ef",
+   "pins": [
+    {
+     "pr": 495,
+     "head": "5aead856fe95513671cdb21513d9f74ddcb844a6"
+    },
+    {
+     "pr": 496,
+     "head": "ff9f34e65cb4535d55b667fbf870bc5d4fb85450"
+    }
+   ],
+   "depth": 0,
+   "lineage": 63,
+   "source": {
+    "kind": "candidates"
+   },
+   "rebuild": false
+  },
+  "reserved": true,
+  "at": "2026-11-07T03:01:33.439Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": null,
- "auth": {},
+ "auth": {
+  "495": {
+   "head": "5aead856fe95513671cdb21513d9f74ddcb844a6",
+   "baseRepoId": 1446564086,
+   "policy": "v2:4270d7379bfe4917",
+   "policyPr": false,
+   "admittedAt": "2026-11-07T03:01:33.439Z",
+   "labelledAt": "2026-11-07T03:01:24Z",
+   "evidence": [
+    "run 42331996923",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lf-f-lost2-31442-1"
+  },
+  "496": {
+   "head": "ff9f34e65cb4535d55b667fbf870bc5d4fb85450",
+   "baseRepoId": 1446564086,
+   "policy": "v2:4270d7379bfe4917",
+   "policyPr": false,
+   "admittedAt": "2026-11-07T03:01:33.439Z",
+   "labelledAt": "2026-11-07T03:01:26Z",
+   "evidence": [
+    "run 42332002676",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lf-f-lost2-31442-2"
+  }
+ },
  "pending": [],
  "solo": [],
  "operatorSolo": [],
@@ -204,6 +262,9 @@
   },
   "62": {
    "runs": 1
+  },
+  "63": {
+   "runs": 1
   }
  },
  "window": [
@@ -217,6 +278,10 @@
   },
   {
    "at": "2026-11-07T02:57:44.692Z",
+   "cost": 1
+  },
+  {
+   "at": "2026-11-07T03:01:33.439Z",
    "cost": 1
   }
  ],
@@ -1182,5 +1247,17 @@
   "6f5684cad011",
   "a77b79f4c8fa",
   "43c462ea55fa"
- ]
+ ],
+ "eligibleSince": {
+  "495": {
+   "head": "5aead856fe95513671cdb21513d9f74ddcb844a6",
+   "labelledAt": "2026-11-07T03:01:24Z",
+   "since": "2026-11-07T03:01:33.439Z"
+  },
+  "496": {
+   "head": "ff9f34e65cb4535d55b667fbf870bc5d4fb85450",
+   "labelledAt": "2026-11-07T03:01:26Z",
+   "since": "2026-11-07T03:01:33.439Z"
+  }
+ }
 }
