@@ -65,19 +65,7 @@ jobs:
           # .github/qlander-release.txt before it runs. The checksum is the trust root.
           read -r relversion relasset relsum < .github/qlander-release.txt
           [[ "$relasset" =~ ^[A-Za-z0-9][A-Za-z0-9._+-]*\.js$ ]]
-          # A private release of qlander-sandbox/widgets-qlander,
-          # read through the API with this job's own token (contents: read),
-          # passed on stdin so it is never in a command line. curl drops it on
-          # the redirect to the asset's storage host.
-          releases="https://api.github.com/repos/qlander-sandbox/widgets-qlander/releases"
-          auth() { printf 'Authorization: Bearer %s\n' "$GITHUB_TOKEN"; }
-          auth | timeout 10 curl --fail --silent --show-error --location --proto '=https' --tlsv1.2 --retry 5 --retry-all-errors --connect-timeout 5 --speed-limit 1024 --speed-time 10 \
-            --header @- --header "Accept: application/vnd.github+json" \
-            --output "$dir/release.json" "$releases/tags/v${relversion}"
-          id="$(RELEASE="$dir/release.json" ASSET="$relasset" "$bun" -e 'const a = (await Bun.file(process.env.RELEASE).json()).assets.filter((x) => x.name === process.env.ASSET); if (a.length !== 1) throw new Error("the release has no single asset " + process.env.ASSET); console.log(a[0].id)')"
-          [[ "$id" =~ ^[0-9]+$ ]]
-          auth | timeout 20 curl --fail --silent --show-error --location --proto '=https' --tlsv1.2 --retry 5 --retry-all-errors --connect-timeout 5 --speed-limit 1024 --speed-time 10 \
-            --header @- --header "Accept: application/octet-stream" \
-            --output "$dir/$relasset" "$releases/assets/${id}"
+          timeout 20 curl --fail --silent --show-error --location --proto '=https' --tlsv1.2 --retry 5 --retry-all-errors --connect-timeout 5 --speed-limit 1024 --speed-time 10 \
+            --output "$dir/$relasset" "https://github.com/brett/qlander/releases/download/v${relversion}/${relasset}"
           (cd "$dir" && echo "${relsum}  ${relasset}" | sha256sum -c -)
           "$bun" "$dir/$relasset" watchdog --config qlander.yml
