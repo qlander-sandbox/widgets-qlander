@@ -45,7 +45,66 @@
   },
   "reserved": true,
   "at": "2026-11-07T00:34:48.503Z",
-  "checkpoint": null,
+  "checkpoint": {
+   "survivors": [
+    {
+     "pr": 429,
+     "head": "b48bd3fc967e9bae1dd87d58f4927c6b244972cc"
+    },
+    {
+     "pr": 430,
+     "head": "a361b88be68911eaf0c0ea3884d1ce6f608894a3"
+    },
+    {
+     "pr": 431,
+     "head": "a70fd4df8f142dbfbfffce5f4aeb8c87c5a7dc57"
+    },
+    {
+     "pr": 432,
+     "head": "ab70e18eb24498099469d1db7c5e5a9c4ef371b0"
+    }
+   ],
+   "dropped": [],
+   "chainHead": "09692d5e6fddf91671c32079aba3e2c526880431",
+   "stack": [
+    {
+     "pr": 429,
+     "commit": "7bcc6d973a0ab5cdddbf7a7fe68d34356ca8b5e2",
+     "parent": "e5cb2a3a80c818779a6334454bc6a5812b1c06b8",
+     "tree": "55f9e96917ebc364fb4bffe33afc4ab912b3c548",
+     "own": [
+      "b48bd3fc967e"
+     ]
+    },
+    {
+     "pr": 430,
+     "commit": "c2841963512fd38689421e72527d876fee81bdbf",
+     "parent": "7bcc6d973a0ab5cdddbf7a7fe68d34356ca8b5e2",
+     "tree": "4d6de3f11316fb1b42f61e37a42d15db48c4a6c9",
+     "own": [
+      "a361b88be689"
+     ]
+    },
+    {
+     "pr": 431,
+     "commit": "916b86afd9a727ca081d072b53ce65d0ca90db06",
+     "parent": "c2841963512fd38689421e72527d876fee81bdbf",
+     "tree": "35e533fe384ee606ef0d55f41c50ff832c17a478",
+     "own": [
+      "a70fd4df8f14"
+     ]
+    },
+    {
+     "pr": 432,
+     "commit": "09692d5e6fddf91671c32079aba3e2c526880431",
+     "parent": "916b86afd9a727ca081d072b53ce65d0ca90db06",
+     "tree": "dc2305b1c9dbd6ab70a47f106d024782e8c3be57",
+     "own": [
+      "ab70e18eb244"
+     ]
+    }
+   ]
+  },
   "tries": 0
  },
  "active": null,
