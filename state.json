@@ -12,99 +12,9 @@
  },
  "seq": 247,
  "nextLineage": 62,
- "journal": {
-  "seq": 247,
-  "op": {
-   "kind": "land",
-   "before": "03bdbd8ca449390a37b9ead7f745a7a86ed5843e",
-   "after": "f9ac48170d1912edeff3f6b58d94a45bc4635ebd",
-   "heads": [
-    {
-     "pr": 491,
-     "ref": "lf-f-main-24477-1",
-     "before": "b3c226224bb4ab6e2129359752a596c143d81611",
-     "after": "4aa1aa0958c8b1474a22cd06ecdb67781e4ce0c5"
-    },
-    {
-     "pr": 492,
-     "ref": "lf-f-main-24477-2",
-     "before": "6f5684cad01153f25570d3219ddd73823630d962",
-     "after": "f9ac48170d1912edeff3f6b58d94a45bc4635ebd"
-    }
-   ]
-  },
-  "reserved": false,
-  "at": "2026-11-07T02:55:44.078Z",
-  "checkpoint": null,
-  "tries": 0
- },
- "active": {
-  "n": 246,
-  "base": "03bdbd8ca449390a37b9ead7f745a7a86ed5843e",
-  "head": "f9ac48170d1912edeff3f6b58d94a45bc4635ebd",
-  "depth": 0,
-  "prs": [
-   491,
-   492
-  ],
-  "lineage": 61,
-  "rerun": null,
-  "rerunAt": null,
-  "cancels": [],
-  "builtAt": "2026-11-07T02:55:01.016Z",
-  "stack": [
-   {
-    "pr": 491,
-    "commit": "4aa1aa0958c8b1474a22cd06ecdb67781e4ce0c5",
-    "parent": "03bdbd8ca449390a37b9ead7f745a7a86ed5843e",
-    "tree": "19dd82a1feb6d9f8efd019d1a98ac3df9ff05b78",
-    "own": [
-     "b3c226224bb4"
-    ]
-   },
-   {
-    "pr": 492,
-    "commit": "f9ac48170d1912edeff3f6b58d94a45bc4635ebd",
-    "parent": "4aa1aa0958c8b1474a22cd06ecdb67781e4ce0c5",
-    "tree": "fef38e3da093c0ab23c2ac93ec4dd4e9df98c57b",
-    "own": [
-     "6f5684cad011"
-    ]
-   }
-  ]
- },
- "auth": {
-  "491": {
-   "head": "b3c226224bb4ab6e2129359752a596c143d81611",
-   "baseRepoId": 1446564086,
-   "policy": "v2:4270d7379bfe4917",
-   "policyPr": false,
-   "admittedAt": "2026-11-07T02:52:29.981Z",
-   "labelledAt": "2026-11-07T02:52:17Z",
-   "evidence": [
-    "run 42331306485",
-    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
-   ],
-   "reviewRun": null,
-   "author": "brett",
-   "headRef": "lf-f-main-24477-1"
-  },
-  "492": {
-   "head": "6f5684cad01153f25570d3219ddd73823630d962",
-   "baseRepoId": 1446564086,
-   "policy": "v2:4270d7379bfe4917",
-   "policyPr": false,
-   "admittedAt": "2026-11-07T02:52:29.981Z",
-   "labelledAt": "2026-11-07T02:52:18Z",
-   "evidence": [
-    "run 42331309378",
-    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
-   ],
-   "reviewRun": null,
-   "author": "brett",
-   "headRef": "lf-f-main-24477-2"
-  }
- },
+ "journal": null,
+ "active": null,
+ "auth": {},
  "pending": [],
  "solo": [],
  "operatorSolo": [],
@@ -305,9 +215,46 @@
  ],
  "redStreak": 0,
  "bounceStreak": 0,
- "lastLandedAt": "2026-11-07T02:20:53.526Z",
- "verify": [],
- "outbox": [],
+ "lastLandedAt": "2026-11-07T02:56:04.615Z",
+ "verify": [
+  {
+   "pr": 491,
+   "pin": "4aa1aa0958c8b1474a22cd06ecdb67781e4ce0c5",
+   "landedIn": "f9ac48170d1912edeff3f6b58d94a45bc4635ebd",
+   "since": "2026-11-07T02:56:04.615Z",
+   "ticks": 0,
+   "notified": false,
+   "admitted": "b3c226224bb4ab6e2129359752a596c143d81611"
+  },
+  {
+   "pr": 492,
+   "pin": "f9ac48170d1912edeff3f6b58d94a45bc4635ebd",
+   "landedIn": "f9ac48170d1912edeff3f6b58d94a45bc4635ebd",
+   "since": "2026-11-07T02:56:04.615Z",
+   "ticks": 0,
+   "notified": false,
+   "admitted": "6f5684cad01153f25570d3219ddd73823630d962"
+  }
+ ],
+ "outbox": [
+  {
+   "id": "c:491:landed:246",
+   "kind": "comment",
+   "pr": 491,
+   "body": "Landed in main at `f9ac48170d1912edeff3f6b58d94a45bc4635ebd` (batch 246, pin `b3c226224bb4ab6e2129359752a596c143d81611`, squashed as `4aa1aa0958c8b1474a22cd06ecdb67781e4ce0c5`, which its branch now points at)."
+  },
+  {
+   "id": "c:492:landed:246",
+   "kind": "comment",
+   "pr": 492,
+   "body": "Landed in main at `f9ac48170d1912edeff3f6b58d94a45bc4635ebd` (batch 246, pin `6f5684cad01153f25570d3219ddd73823630d962`, squashed as `f9ac48170d1912edeff3f6b58d94a45bc4635ebd`, which its branch now points at)."
+  },
+  {
+   "id": "d:246",
+   "kind": "deleteRef",
+   "ref": "queue/246"
+  }
+ ],
  "history": [
   {
    "n": 1,
@@ -1217,6 +1164,17 @@
    "head": "00306d39fabc084b470ed5149bb7d8ac54d8615d",
    "note": "main moved from ee8282a73711e0072b63b587eba14d4c141b8efc to 03bdbd8ca449390a37b9ead7f745a7a86ed5843e",
    "at": "2026-11-07T02:54:31.679Z"
+  },
+  {
+   "n": 246,
+   "outcome": "landed",
+   "prs": [
+    491,
+    492
+   ],
+   "head": "f9ac48170d1912edeff3f6b58d94a45bc4635ebd",
+   "note": "main 03bdbd8ca449390a37b9ead7f745a7a86ed5843e -> f9ac48170d1912edeff3f6b58d94a45bc4635ebd",
+   "at": "2026-11-07T02:56:04.615Z"
   }
  ],
  "epochBranch": "qlander-epoch/queue",
@@ -1249,5 +1207,9 @@
    "labelledAt": "2026-11-07T02:52:18Z",
    "since": "2026-11-07T02:52:29.981Z"
   }
- }
+ },
+ "squashed": [
+  "b3c226224bb4",
+  "6f5684cad011"
+ ]
 }
