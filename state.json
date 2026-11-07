@@ -336,20 +336,7 @@
    "admitted": "aae595ea5401141affea1a78eb3f5dcfe657d0f4"
   }
  ],
- "outbox": [
-  {
-   "id": "c:400:landed:170",
-   "kind": "comment",
-   "pr": 400,
-   "body": "Landed in main at `4362976f05c9f5949e83562c64525cb905188681` (batch 170, pin `aae595ea5401141affea1a78eb3f5dcfe657d0f4`, squashed as `4362976f05c9f5949e83562c64525cb905188681`, which its branch now points at).",
-   "sentAt": "2026-11-07T00:10:51.354Z"
-  },
-  {
-   "id": "d:170",
-   "kind": "deleteRef",
-   "ref": "queue/170"
-  }
- ],
+ "outbox": [],
  "history": [
   {
    "n": 1,
