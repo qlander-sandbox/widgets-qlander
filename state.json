@@ -10,11 +10,183 @@
    "job": "Queue tick"
   }
  },
- "seq": 176,
- "nextLineage": 42,
- "journal": null,
+ "seq": 177,
+ "nextLineage": 43,
+ "journal": {
+  "seq": 177,
+  "op": {
+   "kind": "build",
+   "n": 177,
+   "base": "46322019e6bb0a4ef6fb9cb109c7782499672b20",
+   "pins": [
+    {
+     "pr": 417,
+     "head": "b830db9a49f3e96475c9981c1e14620549610b9c"
+    },
+    {
+     "pr": 418,
+     "head": "98d7e55e32a7ffad58a34792bc6e6b4e4b3854a8"
+    },
+    {
+     "pr": 419,
+     "head": "af09b81c7e99153d02b8888672d858c878accdcd"
+    },
+    {
+     "pr": 420,
+     "head": "13e3ece32d2650ffe6f0ac0203b6ddfd3ba4d20d"
+    },
+    {
+     "pr": 421,
+     "head": "4d693b1ad2d12857b2f6986bf1e06335555af401"
+    },
+    {
+     "pr": 422,
+     "head": "b0dfbcd83854906716be35fb92353820392b60e4"
+    },
+    {
+     "pr": 423,
+     "head": "a4d95044b700d229f69281a52c326b2732eb50ea"
+    },
+    {
+     "pr": 424,
+     "head": "3e10017ed7fdbdd6fadf159c3225f7841f9926b9"
+    }
+   ],
+   "depth": 0,
+   "lineage": 42,
+   "source": {
+    "kind": "candidates"
+   },
+   "rebuild": false
+  },
+  "reserved": true,
+  "at": "2026-11-07T00:24:18.798Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": null,
- "auth": {},
+ "auth": {
+  "417": {
+   "head": "b830db9a49f3e96475c9981c1e14620549610b9c",
+   "baseRepoId": 1446564086,
+   "policy": "v2:b571606c0d1d3613",
+   "policyPr": false,
+   "admittedAt": "2026-11-07T00:24:18.798Z",
+   "labelledAt": "2026-11-07T00:23:48Z",
+   "evidence": [
+    "run 42317893292",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lf-w4-1"
+  },
+  "418": {
+   "head": "98d7e55e32a7ffad58a34792bc6e6b4e4b3854a8",
+   "baseRepoId": 1446564086,
+   "policy": "v2:b571606c0d1d3613",
+   "policyPr": false,
+   "admittedAt": "2026-11-07T00:24:18.798Z",
+   "labelledAt": "2026-11-07T00:23:50Z",
+   "evidence": [
+    "run 42317900990",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lf-w4-2"
+  },
+  "419": {
+   "head": "af09b81c7e99153d02b8888672d858c878accdcd",
+   "baseRepoId": 1446564086,
+   "policy": "v2:b571606c0d1d3613",
+   "policyPr": false,
+   "admittedAt": "2026-11-07T00:24:18.798Z",
+   "labelledAt": "2026-11-07T00:23:51Z",
+   "evidence": [
+    "run 42317908711",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lf-w4-3"
+  },
+  "420": {
+   "head": "13e3ece32d2650ffe6f0ac0203b6ddfd3ba4d20d",
+   "baseRepoId": 1446564086,
+   "policy": "v2:b571606c0d1d3613",
+   "policyPr": false,
+   "admittedAt": "2026-11-07T00:24:18.798Z",
+   "labelledAt": "2026-11-07T00:23:53Z",
+   "evidence": [
+    "run 42317915474",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lf-w4-4"
+  },
+  "421": {
+   "head": "4d693b1ad2d12857b2f6986bf1e06335555af401",
+   "baseRepoId": 1446564086,
+   "policy": "v2:b571606c0d1d3613",
+   "policyPr": false,
+   "admittedAt": "2026-11-07T00:24:18.798Z",
+   "labelledAt": "2026-11-07T00:23:55Z",
+   "evidence": [
+    "run 42317920764",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lf-w4-5"
+  },
+  "422": {
+   "head": "b0dfbcd83854906716be35fb92353820392b60e4",
+   "baseRepoId": 1446564086,
+   "policy": "v2:b571606c0d1d3613",
+   "policyPr": false,
+   "admittedAt": "2026-11-07T00:24:18.798Z",
+   "labelledAt": "2026-11-07T00:23:56Z",
+   "evidence": [
+    "run 42317926678",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lf-w4-6"
+  },
+  "423": {
+   "head": "a4d95044b700d229f69281a52c326b2732eb50ea",
+   "baseRepoId": 1446564086,
+   "policy": "v2:b571606c0d1d3613",
+   "policyPr": false,
+   "admittedAt": "2026-11-07T00:24:18.798Z",
+   "labelledAt": "2026-11-07T00:23:58Z",
+   "evidence": [
+    "run 42317932298",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lf-w4-7"
+  },
+  "424": {
+   "head": "3e10017ed7fdbdd6fadf159c3225f7841f9926b9",
+   "baseRepoId": 1446564086,
+   "policy": "v2:b571606c0d1d3613",
+   "policyPr": false,
+   "admittedAt": "2026-11-07T00:24:18.798Z",
+   "labelledAt": "2026-11-07T00:24:00Z",
+   "evidence": [
+    "run 42317938722",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lf-w4-8"
+  }
+ },
  "pending": [],
  "solo": [],
  "operatorSolo": [],
@@ -140,6 +312,9 @@
    "runs": 1
   },
   "41": {
+   "runs": 1
+  },
+  "42": {
    "runs": 1
   }
  },
@@ -271,86 +446,58 @@
   {
    "at": "2026-11-07T00:18:36.567Z",
    "cost": 1
+  },
+  {
+   "at": "2026-11-07T00:24:18.798Z",
+   "cost": 1
   }
  ],
  "redStreak": 0,
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-07T00:22:27.815Z",
- "verify": [
+ "verify": [],
+ "outbox": [
   {
-   "pr": 409,
-   "pin": "9191b05308013777d22cd0ec7a93b2f2fbc5e21d",
-   "landedIn": "46322019e6bb0a4ef6fb9cb109c7782499672b20",
-   "since": "2026-11-07T00:22:27.815Z",
-   "ticks": 0,
-   "notified": false,
-   "admitted": "60d23fdbd8a4de334af5f9fc13cd6474aa7b4a0f"
+   "id": "u:409:v:9191b05308013777d22cd0ec7a93b2f2fbc5e21d",
+   "kind": "unready",
+   "pr": 409
   },
   {
-   "pr": 410,
-   "pin": "2561ccaf5be06316f63ebb0976e87530d3c075ff",
-   "landedIn": "46322019e6bb0a4ef6fb9cb109c7782499672b20",
-   "since": "2026-11-07T00:22:27.815Z",
-   "ticks": 0,
-   "notified": false,
-   "admitted": "b23b2e0af3668fdc8ae4255b0e37ba5ee1d3045a"
+   "id": "u:410:v:2561ccaf5be06316f63ebb0976e87530d3c075ff",
+   "kind": "unready",
+   "pr": 410
   },
   {
-   "pr": 411,
-   "pin": "301e2d1686cf8da50696b9b01309a75e3e5db48f",
-   "landedIn": "46322019e6bb0a4ef6fb9cb109c7782499672b20",
-   "since": "2026-11-07T00:22:27.815Z",
-   "ticks": 0,
-   "notified": false,
-   "admitted": "8cf1eb6ed9193b4b2c04e1ba7f9105988454f1d1"
+   "id": "u:411:v:301e2d1686cf8da50696b9b01309a75e3e5db48f",
+   "kind": "unready",
+   "pr": 411
   },
   {
-   "pr": 412,
-   "pin": "5ddc0ec3e9450a663f303651a7479eecb9e01cc5",
-   "landedIn": "46322019e6bb0a4ef6fb9cb109c7782499672b20",
-   "since": "2026-11-07T00:22:27.815Z",
-   "ticks": 0,
-   "notified": false,
-   "admitted": "bf73a8cf1e8b19178e5ac36c90023e84e98a5968"
+   "id": "u:412:v:5ddc0ec3e9450a663f303651a7479eecb9e01cc5",
+   "kind": "unready",
+   "pr": 412
   },
   {
-   "pr": 413,
-   "pin": "4676f814dff46ee26437bbe6e31a6fe2252d8e46",
-   "landedIn": "46322019e6bb0a4ef6fb9cb109c7782499672b20",
-   "since": "2026-11-07T00:22:27.815Z",
-   "ticks": 0,
-   "notified": false,
-   "admitted": "5f5671437988928d43d9f067c645559cf0684a18"
+   "id": "u:413:v:4676f814dff46ee26437bbe6e31a6fe2252d8e46",
+   "kind": "unready",
+   "pr": 413
   },
   {
-   "pr": 414,
-   "pin": "2cf4f3ba4bb5e4a74edac5c1d237889414230a12",
-   "landedIn": "46322019e6bb0a4ef6fb9cb109c7782499672b20",
-   "since": "2026-11-07T00:22:27.815Z",
-   "ticks": 0,
-   "notified": false,
-   "admitted": "5d0f0159aad4a5937279ffe3d5ae79b015ed8f3c"
+   "id": "u:414:v:2cf4f3ba4bb5e4a74edac5c1d237889414230a12",
+   "kind": "unready",
+   "pr": 414
   },
   {
-   "pr": 415,
-   "pin": "3ba5f96d97fae2c4a6c6c73e33dcf5ac643562e8",
-   "landedIn": "46322019e6bb0a4ef6fb9cb109c7782499672b20",
-   "since": "2026-11-07T00:22:27.815Z",
-   "ticks": 0,
-   "notified": false,
-   "admitted": "b9842d58fd7ca07a78218bb908eb2f0a13406663"
+   "id": "u:415:v:3ba5f96d97fae2c4a6c6c73e33dcf5ac643562e8",
+   "kind": "unready",
+   "pr": 415
   },
   {
-   "pr": 416,
-   "pin": "46322019e6bb0a4ef6fb9cb109c7782499672b20",
-   "landedIn": "46322019e6bb0a4ef6fb9cb109c7782499672b20",
-   "since": "2026-11-07T00:22:27.815Z",
-   "ticks": 0,
-   "notified": false,
-   "admitted": "78966c5af9ade5b43a300ee2cc35f24fcce091b9"
+   "id": "u:416:v:46322019e6bb0a4ef6fb9cb109c7782499672b20",
+   "kind": "unready",
+   "pr": 416
   }
  ],
- "outbox": [],
  "history": [
   {
    "n": 1,
@@ -1066,45 +1213,45 @@
   "78966c5af9ad"
  ],
  "eligibleSince": {
-  "409": {
-   "head": "60d23fdbd8a4de334af5f9fc13cd6474aa7b4a0f",
-   "labelledAt": "2026-11-07T00:18:05Z",
-   "since": "2026-11-07T00:18:36.567Z"
+  "417": {
+   "head": "b830db9a49f3e96475c9981c1e14620549610b9c",
+   "labelledAt": "2026-11-07T00:23:48Z",
+   "since": "2026-11-07T00:24:18.798Z"
   },
-  "410": {
-   "head": "b23b2e0af3668fdc8ae4255b0e37ba5ee1d3045a",
-   "labelledAt": "2026-11-07T00:18:07Z",
-   "since": "2026-11-07T00:18:36.567Z"
+  "418": {
+   "head": "98d7e55e32a7ffad58a34792bc6e6b4e4b3854a8",
+   "labelledAt": "2026-11-07T00:23:50Z",
+   "since": "2026-11-07T00:24:18.798Z"
   },
-  "411": {
-   "head": "8cf1eb6ed9193b4b2c04e1ba7f9105988454f1d1",
-   "labelledAt": "2026-11-07T00:18:09Z",
-   "since": "2026-11-07T00:18:36.567Z"
+  "419": {
+   "head": "af09b81c7e99153d02b8888672d858c878accdcd",
+   "labelledAt": "2026-11-07T00:23:51Z",
+   "since": "2026-11-07T00:24:18.798Z"
   },
-  "412": {
-   "head": "bf73a8cf1e8b19178e5ac36c90023e84e98a5968",
-   "labelledAt": "2026-11-07T00:18:10Z",
-   "since": "2026-11-07T00:18:36.567Z"
+  "420": {
+   "head": "13e3ece32d2650ffe6f0ac0203b6ddfd3ba4d20d",
+   "labelledAt": "2026-11-07T00:23:53Z",
+   "since": "2026-11-07T00:24:18.798Z"
   },
-  "413": {
-   "head": "5f5671437988928d43d9f067c645559cf0684a18",
-   "labelledAt": "2026-11-07T00:18:12Z",
-   "since": "2026-11-07T00:18:36.567Z"
+  "421": {
+   "head": "4d693b1ad2d12857b2f6986bf1e06335555af401",
+   "labelledAt": "2026-11-07T00:23:55Z",
+   "since": "2026-11-07T00:24:18.798Z"
   },
-  "414": {
-   "head": "5d0f0159aad4a5937279ffe3d5ae79b015ed8f3c",
-   "labelledAt": "2026-11-07T00:18:14Z",
-   "since": "2026-11-07T00:18:36.567Z"
+  "422": {
+   "head": "b0dfbcd83854906716be35fb92353820392b60e4",
+   "labelledAt": "2026-11-07T00:23:56Z",
+   "since": "2026-11-07T00:24:18.798Z"
   },
-  "415": {
-   "head": "b9842d58fd7ca07a78218bb908eb2f0a13406663",
-   "labelledAt": "2026-11-07T00:18:16Z",
-   "since": "2026-11-07T00:18:36.567Z"
+  "423": {
+   "head": "a4d95044b700d229f69281a52c326b2732eb50ea",
+   "labelledAt": "2026-11-07T00:23:58Z",
+   "since": "2026-11-07T00:24:18.798Z"
   },
-  "416": {
-   "head": "78966c5af9ade5b43a300ee2cc35f24fcce091b9",
-   "labelledAt": "2026-11-07T00:18:17Z",
-   "since": "2026-11-07T00:18:36.567Z"
+  "424": {
+   "head": "3e10017ed7fdbdd6fadf159c3225f7841f9926b9",
+   "labelledAt": "2026-11-07T00:24:00Z",
+   "since": "2026-11-07T00:24:18.798Z"
   }
  }
 }
