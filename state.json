@@ -243,20 +243,7 @@
    "admitted": "43c462ea55fa43a30b504df7be37269c2d7efe06"
   }
  ],
- "outbox": [
-  {
-   "id": "c:494:landed:250",
-   "kind": "comment",
-   "pr": 494,
-   "body": "Landed in main at `3301413ee2c2a9d302290d9a46a98d9c4070f3ef` (batch 250, pin `43c462ea55fa43a30b504df7be37269c2d7efe06`, squashed as `3301413ee2c2a9d302290d9a46a98d9c4070f3ef`, which its branch now points at).",
-   "sentAt": "2026-11-07T02:59:55.423Z"
-  },
-  {
-   "id": "d:250",
-   "kind": "deleteRef",
-   "ref": "queue/250"
-  }
- ],
+ "outbox": [],
  "history": [
   {
    "n": 1,
