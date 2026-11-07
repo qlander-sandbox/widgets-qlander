@@ -10,7 +10,7 @@
    "job": "Queue tick"
   }
  },
- "seq": 241,
+ "seq": 242,
  "nextLineage": 61,
  "journal": null,
  "active": null,
@@ -433,6 +433,11 @@
    "seen": [
     42328174055
    ]
+  },
+  {
+   "id": "p:242",
+   "kind": "pause",
+   "reason": "window budget of 24 runs per 24h used"
   }
  ],
  "history": [
