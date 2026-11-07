@@ -270,48 +270,7 @@
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-07T00:16:39.286Z",
  "verify": [],
- "outbox": [
-  {
-   "id": "u:401:v:d5ca743e3d0002cccdb575c5398c9f87e02b75ed",
-   "kind": "unready",
-   "pr": 401
-  },
-  {
-   "id": "u:402:v:36334ddd67061e4ff7f79e2758a97be7334c6e08",
-   "kind": "unready",
-   "pr": 402
-  },
-  {
-   "id": "u:403:v:c2b6fb76ab96b9b0f9b9e99d57e2d72807f44270",
-   "kind": "unready",
-   "pr": 403
-  },
-  {
-   "id": "u:404:v:656f432bd2214890c1d8601e33fce0d6099344e6",
-   "kind": "unready",
-   "pr": 404
-  },
-  {
-   "id": "u:405:v:b6e45e205269b7bd3864eeaddb3a3aa190dc01e5",
-   "kind": "unready",
-   "pr": 405
-  },
-  {
-   "id": "u:406:v:f94fd49a8af91cf7d66e016084b7570f9712e88f",
-   "kind": "unready",
-   "pr": 406
-  },
-  {
-   "id": "u:407:v:6f5d7fd1f26c16b7f254c101c7aec6710967e862",
-   "kind": "unready",
-   "pr": 407
-  },
-  {
-   "id": "u:408:v:32358ec1516541b7e4d2c35d8ca81de5682172f6",
-   "kind": "unready",
-   "pr": 408
-  }
- ],
+ "outbox": [],
  "history": [
   {
    "n": 1,
