@@ -10,9 +10,46 @@
    "job": "Queue tick"
   }
  },
- "seq": 179,
+ "seq": 180,
  "nextLineage": 44,
- "journal": null,
+ "journal": {
+  "seq": 180,
+  "op": {
+   "kind": "land",
+   "before": "e972c2bff95318e524b3887621bdaebcf3f1a74d",
+   "after": "e5cb2a3a80c818779a6334454bc6a5812b1c06b8",
+   "heads": [
+    {
+     "pr": 425,
+     "ref": "lf-w5-1",
+     "before": "18a05d62112f8fbe581a366181f70b4b1013f43b",
+     "after": "1dbdda569240b48927d3f1b4b2ef6c1853e1bb81"
+    },
+    {
+     "pr": 426,
+     "ref": "lf-w5-2",
+     "before": "388c170f432dcdc101ba1b1a2ab254ace78ea635",
+     "after": "fb53c942e783e4da6ba0171435fecee03793b3b5"
+    },
+    {
+     "pr": 427,
+     "ref": "lf-w5-3",
+     "before": "bcf499f8e966545688ef02b65285e0fc81599115",
+     "after": "e5f74987bf48494af06e76c0b42dc9f6b94d1a6b"
+    },
+    {
+     "pr": 428,
+     "ref": "lf-w5-4",
+     "before": "f46c51171d020b0377bedb5b148002f87fb5a985",
+     "after": "e5cb2a3a80c818779a6334454bc6a5812b1c06b8"
+    }
+   ]
+  },
+  "reserved": false,
+  "at": "2026-11-07T00:32:56.615Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": {
   "n": 179,
   "base": "e972c2bff95318e524b3887621bdaebcf3f1a74d",
