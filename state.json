@@ -10,11 +10,69 @@
    "job": "Queue tick"
   }
  },
- "seq": 230,
- "nextLineage": 59,
- "journal": null,
+ "seq": 231,
+ "nextLineage": 60,
+ "journal": {
+  "seq": 231,
+  "op": {
+   "kind": "build",
+   "n": 231,
+   "base": "b074b5422c460af0bed9a0373b12e5929d2ad43a",
+   "pins": [
+    {
+     "pr": 487,
+     "head": "d30b31d8d42d7f6006dc702d08c3443bd682ac63"
+    },
+    {
+     "pr": 488,
+     "head": "2909d09624b58b38b8b2cbbe4dedcc08f6d3f5e4"
+    }
+   ],
+   "depth": 0,
+   "lineage": 59,
+   "source": {
+    "kind": "candidates"
+   },
+   "rebuild": false
+  },
+  "reserved": true,
+  "at": "2026-11-07T02:13:22.363Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": null,
- "auth": {},
+ "auth": {
+  "487": {
+   "head": "d30b31d8d42d7f6006dc702d08c3443bd682ac63",
+   "baseRepoId": 1446564086,
+   "policy": "v2:b571606c0d1d3613",
+   "policyPr": false,
+   "admittedAt": "2026-11-07T02:13:22.363Z",
+   "labelledAt": "2026-11-07T02:13:12Z",
+   "evidence": [
+    "run 42328102122",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lf-s-author-26871-1"
+  },
+  "488": {
+   "head": "2909d09624b58b38b8b2cbbe4dedcc08f6d3f5e4",
+   "baseRepoId": 1446564086,
+   "policy": "v2:b571606c0d1d3613",
+   "policyPr": false,
+   "admittedAt": "2026-11-07T02:13:22.363Z",
+   "labelledAt": "2026-11-07T02:13:14Z",
+   "evidence": [
+    "run 42328107941",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lf-s-author-26871-2"
+  }
+ },
  "pending": [],
  "solo": [],
  "operatorSolo": [],
@@ -191,6 +249,9 @@
    "runs": 1
   },
   "58": {
+   "runs": 1
+  },
+  "59": {
    "runs": 1
   }
  },
@@ -398,50 +459,38 @@
   {
    "at": "2026-11-07T02:08:45.115Z",
    "cost": 1
+  },
+  {
+   "at": "2026-11-07T02:13:22.363Z",
+   "cost": 1
   }
  ],
  "redStreak": 0,
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-07T02:12:20.629Z",
- "verify": [
+ "verify": [],
+ "outbox": [
   {
-   "pr": 483,
-   "pin": "66e2e900f0d9ad399ea0d15134f8b898e6a89bbc",
-   "landedIn": "b074b5422c460af0bed9a0373b12e5929d2ad43a",
-   "since": "2026-11-07T02:12:20.629Z",
-   "ticks": 0,
-   "notified": false,
-   "admitted": "8c5677203838b005e24d714eb44df4c38016fe9b"
+   "id": "u:483:v:66e2e900f0d9ad399ea0d15134f8b898e6a89bbc",
+   "kind": "unready",
+   "pr": 483
   },
   {
-   "pr": 484,
-   "pin": "ba300c3157599312b9772ed55951b9a53ae17023",
-   "landedIn": "b074b5422c460af0bed9a0373b12e5929d2ad43a",
-   "since": "2026-11-07T02:12:20.629Z",
-   "ticks": 0,
-   "notified": false,
-   "admitted": "2c15b09f1f538e5bd45b21e92ae7d081e71bcfe1"
+   "id": "u:484:v:ba300c3157599312b9772ed55951b9a53ae17023",
+   "kind": "unready",
+   "pr": 484
   },
   {
-   "pr": 485,
-   "pin": "2a6c292d39ed3a83ffe7fd1a1ede4330c28ce60e",
-   "landedIn": "b074b5422c460af0bed9a0373b12e5929d2ad43a",
-   "since": "2026-11-07T02:12:20.629Z",
-   "ticks": 0,
-   "notified": false,
-   "admitted": "dffcac8d8ebebbba219c847b3b38c8d6c5d45fc5"
+   "id": "u:485:v:2a6c292d39ed3a83ffe7fd1a1ede4330c28ce60e",
+   "kind": "unready",
+   "pr": 485
   },
   {
-   "pr": 486,
-   "pin": "b074b5422c460af0bed9a0373b12e5929d2ad43a",
-   "landedIn": "b074b5422c460af0bed9a0373b12e5929d2ad43a",
-   "since": "2026-11-07T02:12:20.629Z",
-   "ticks": 0,
-   "notified": false,
-   "admitted": "1e62ab96b843220a6a04835bdceeb527724f290a"
+   "id": "u:486:v:b074b5422c460af0bed9a0373b12e5929d2ad43a",
+   "kind": "unready",
+   "pr": 486
   }
  ],
- "outbox": [],
  "history": [
   {
    "n": 1,
@@ -1440,25 +1489,15 @@
   "1e62ab96b843"
  ],
  "eligibleSince": {
-  "483": {
-   "head": "8c5677203838b005e24d714eb44df4c38016fe9b",
-   "labelledAt": "2026-11-07T02:08:05Z",
-   "since": "2026-11-07T02:08:45.115Z"
+  "487": {
+   "head": "d30b31d8d42d7f6006dc702d08c3443bd682ac63",
+   "labelledAt": "2026-11-07T02:13:12Z",
+   "since": "2026-11-07T02:13:22.363Z"
   },
-  "484": {
-   "head": "2c15b09f1f538e5bd45b21e92ae7d081e71bcfe1",
-   "labelledAt": "2026-11-07T02:08:06Z",
-   "since": "2026-11-07T02:08:45.115Z"
-  },
-  "485": {
-   "head": "dffcac8d8ebebbba219c847b3b38c8d6c5d45fc5",
-   "labelledAt": "2026-11-07T02:08:08Z",
-   "since": "2026-11-07T02:08:45.115Z"
-  },
-  "486": {
-   "head": "1e62ab96b843220a6a04835bdceeb527724f290a",
-   "labelledAt": "2026-11-07T02:08:10Z",
-   "since": "2026-11-07T02:08:45.115Z"
+  "488": {
+   "head": "2909d09624b58b38b8b2cbbe4dedcc08f6d3f5e4",
+   "labelledAt": "2026-11-07T02:13:14Z",
+   "since": "2026-11-07T02:13:22.363Z"
   }
  }
 }
