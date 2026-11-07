@@ -1,1261 +1,1245 @@
 {
- "v": 5,
- "lease": null,
- "seq": 268,
- "nextLineage": 67,
- "journal": null,
- "active": null,
- "auth": {},
- "pending": [],
- "solo": [],
- "operatorSolo": [],
- "lineages": {
-  "1": {
-   "runs": 1
-  },
-  "2": {
-   "runs": 1
-  },
-  "3": {
-   "runs": 1
-  },
-  "4": {
-   "runs": 1
-  },
-  "5": {
-   "runs": 1
-  },
-  "6": {
-   "runs": 1
-  },
-  "7": {
-   "runs": 1
-  },
-  "8": {
-   "runs": 5
-  },
-  "9": {
-   "runs": 2
-  },
-  "10": {
-   "runs": 2
-  },
-  "11": {
-   "runs": 2
-  },
-  "12": {
-   "runs": 2
-  },
-  "13": {
-   "runs": 1
-  },
-  "14": {
-   "runs": 1
-  },
-  "15": {
-   "runs": 1
-  },
-  "16": {
-   "runs": 1
-  },
-  "17": {
-   "runs": 1
-  },
-  "18": {
-   "runs": 1
-  },
-  "19": {
-   "runs": 5
-  },
-  "20": {
-   "runs": 1
-  },
-  "21": {
-   "runs": 2
-  },
-  "22": {
-   "runs": 1
-  },
-  "23": {
-   "runs": 1
-  },
-  "24": {
-   "runs": 4
-  },
-  "25": {
-   "runs": 1
-  },
-  "26": {
-   "runs": 1
-  },
-  "27": {
-   "runs": 1
-  },
-  "28": {
-   "runs": 1
-  },
-  "29": {
-   "runs": 1
-  },
-  "30": {
-   "runs": 1
-  },
-  "31": {
-   "runs": 1
-  },
-  "32": {
-   "runs": 1
-  },
-  "33": {
-   "runs": 1
-  },
-  "34": {
-   "runs": 1
-  },
-  "35": {
-   "runs": 1
-  },
-  "36": {
-   "runs": 0
-  },
-  "37": {
-   "runs": 1
-  },
-  "38": {
-   "runs": 1
-  },
-  "39": {
-   "runs": 1
-  },
-  "40": {
-   "runs": 1
-  },
-  "41": {
-   "runs": 1
-  },
-  "42": {
-   "runs": 1
-  },
-  "43": {
-   "runs": 1
-  },
-  "44": {
-   "runs": 1
-  },
-  "45": {
-   "runs": 1
-  },
-  "46": {
-   "runs": 1
-  },
-  "47": {
-   "runs": 1
-  },
-  "48": {
-   "runs": 1
-  },
-  "49": {
-   "runs": 2
-  },
-  "50": {
-   "runs": 2
-  },
-  "51": {
-   "runs": 1
-  },
-  "52": {
-   "runs": 1
-  },
-  "53": {
-   "runs": 1
-  },
-  "54": {
-   "runs": 1
-  },
-  "55": {
-   "runs": 1
-  },
-  "56": {
-   "runs": 1
-  },
-  "57": {
-   "runs": 1
-  },
-  "58": {
-   "runs": 1
-  },
-  "59": {
-   "runs": 2
-  },
-  "60": {
-   "runs": 1
-  },
-  "61": {
-   "runs": 2
-  },
-  "62": {
-   "runs": 1
-  },
-  "63": {
-   "runs": 1
-  },
-  "64": {
-   "runs": 1
-  },
-  "65": {
-   "runs": 1
-  },
-  "66": {
-   "runs": 1
-  }
- },
- "window": [
-  {
-   "at": "2026-11-07T02:52:29.981Z",
-   "cost": 1
-  },
-  {
-   "at": "2026-11-07T02:54:31.679Z",
-   "cost": 1
-  },
-  {
-   "at": "2026-11-07T02:57:44.692Z",
-   "cost": 1
-  },
-  {
-   "at": "2026-11-07T03:01:33.439Z",
-   "cost": 1
-  },
-  {
-   "at": "2026-11-07T03:04:31.073Z",
-   "cost": 1
-  },
-  {
-   "at": "2026-11-07T03:07:35.480Z",
-   "cost": 1
-  },
-  {
-   "at": "2026-11-07T03:31:37.183Z",
-   "cost": 1
-  }
- ],
- "redStreak": 0,
- "bounceStreak": 0,
- "lastLandedAt": "2026-11-07T03:35:10.688Z",
- "verify": [],
- "outbox": [],
- "history": [
-  {
-   "n": 1,
-   "outcome": "landed",
-   "prs": [
-    1,
-    2
-   ],
-   "head": "3adc2e90679f3355c2727f53a801c83d77d9b30e",
-   "note": "main 18894eb18591ccb9dfc7dc6883f1aee10711dfb5 -> 3adc2e90679f3355c2727f53a801c83d77d9b30e",
-   "at": "2026-11-05T12:10:35.774Z"
-  },
-  {
-   "n": 6,
-   "outcome": "landed",
-   "prs": [
-    4
-   ],
-   "head": "00634289d90eb27c8a9b40dc84695efa4a63e412",
-   "note": "main 3adc2e90679f3355c2727f53a801c83d77d9b30e -> 00634289d90eb27c8a9b40dc84695efa4a63e412",
-   "at": "2026-11-05T12:19:04.069Z"
-  },
-  {
-   "n": 8,
-   "outcome": "landed",
-   "prs": [
-    5
-   ],
-   "head": "d5177d145d6f6ed3b3fa0b830b258bef3810ad75",
-   "note": "main 00634289d90eb27c8a9b40dc84695efa4a63e412 -> d5177d145d6f6ed3b3fa0b830b258bef3810ad75",
-   "at": "2026-11-05T12:24:17.508Z"
-  },
-  {
-   "n": 10,
-   "outcome": "landed",
-   "prs": [
-    6
-   ],
-   "head": "bc3da35cf9782cc115a19bb62069a0a3caf16f72",
-   "note": "main d5177d145d6f6ed3b3fa0b830b258bef3810ad75 -> bc3da35cf9782cc115a19bb62069a0a3caf16f72",
-   "at": "2026-11-05T12:28:27.774Z"
-  },
-  {
-   "n": 14,
-   "outcome": "landed",
-   "prs": [
-    8
-   ],
-   "head": "dc1ebb8c012f2056d27f8c28059498d927fbbf25",
-   "note": "main bc3da35cf9782cc115a19bb62069a0a3caf16f72 -> dc1ebb8c012f2056d27f8c28059498d927fbbf25",
-   "at": "2026-11-05T12:35:22.462Z"
-  },
-  {
-   "n": 18,
-   "outcome": "landed",
-   "prs": [
-    3
-   ],
-   "head": "4071f45efe0019449633f1b0168ea0eb8179e4fb",
-   "note": "main dc1ebb8c012f2056d27f8c28059498d927fbbf25 -> 4071f45efe0019449633f1b0168ea0eb8179e4fb",
-   "at": "2026-11-05T12:50:34.885Z"
-  },
-  {
-   "n": 21,
-   "outcome": "landed",
-   "prs": [
-    9
-   ],
-   "head": "c93556381c987d057a7860434d8ed0753ff0c3eb",
-   "note": "main 4071f45efe0019449633f1b0168ea0eb8179e4fb -> c93556381c987d057a7860434d8ed0753ff0c3eb",
-   "at": "2026-11-05T12:56:02.639Z"
-  },
-  {
-   "n": 23,
-   "outcome": "split",
-   "prs": [
-    10,
-    11
-   ],
-   "head": "1898c220bd031bc18902c8553a26c81529552faa",
-   "note": "required checks failed",
-   "failedJobs": [
-    {
-     "name": "test",
-     "url": "https://github.com/qlander-sandbox/widgets/actions/runs/42031547621/job/127260467968",
-     "id": 127260467968
+  "v": 5,
+  "lease": null,
+  "seq": 268,
+  "nextLineage": 67,
+  "journal": null,
+  "active": null,
+  "auth": {},
+  "pending": [],
+  "solo": [],
+  "operatorSolo": [],
+  "lineages": {
+    "1": {
+      "runs": 1
+    },
+    "2": {
+      "runs": 1
+    },
+    "3": {
+      "runs": 1
+    },
+    "4": {
+      "runs": 1
+    },
+    "5": {
+      "runs": 1
+    },
+    "6": {
+      "runs": 1
+    },
+    "7": {
+      "runs": 1
+    },
+    "8": {
+      "runs": 5
+    },
+    "9": {
+      "runs": 2
+    },
+    "10": {
+      "runs": 2
+    },
+    "11": {
+      "runs": 2
+    },
+    "12": {
+      "runs": 2
+    },
+    "13": {
+      "runs": 1
+    },
+    "14": {
+      "runs": 1
+    },
+    "15": {
+      "runs": 1
+    },
+    "16": {
+      "runs": 1
+    },
+    "17": {
+      "runs": 1
+    },
+    "18": {
+      "runs": 1
+    },
+    "19": {
+      "runs": 5
+    },
+    "20": {
+      "runs": 1
+    },
+    "21": {
+      "runs": 2
+    },
+    "22": {
+      "runs": 1
+    },
+    "23": {
+      "runs": 1
+    },
+    "24": {
+      "runs": 4
+    },
+    "25": {
+      "runs": 1
+    },
+    "26": {
+      "runs": 1
+    },
+    "27": {
+      "runs": 1
+    },
+    "28": {
+      "runs": 1
+    },
+    "29": {
+      "runs": 1
+    },
+    "30": {
+      "runs": 1
+    },
+    "31": {
+      "runs": 1
+    },
+    "32": {
+      "runs": 1
+    },
+    "33": {
+      "runs": 1
+    },
+    "34": {
+      "runs": 1
+    },
+    "35": {
+      "runs": 1
+    },
+    "36": {
+      "runs": 0
+    },
+    "37": {
+      "runs": 1
+    },
+    "38": {
+      "runs": 1
+    },
+    "39": {
+      "runs": 1
+    },
+    "40": {
+      "runs": 1
+    },
+    "41": {
+      "runs": 1
+    },
+    "42": {
+      "runs": 1
+    },
+    "43": {
+      "runs": 1
+    },
+    "44": {
+      "runs": 1
+    },
+    "45": {
+      "runs": 1
+    },
+    "46": {
+      "runs": 1
+    },
+    "47": {
+      "runs": 1
+    },
+    "48": {
+      "runs": 1
+    },
+    "49": {
+      "runs": 2
+    },
+    "50": {
+      "runs": 2
+    },
+    "51": {
+      "runs": 1
+    },
+    "52": {
+      "runs": 1
+    },
+    "53": {
+      "runs": 1
+    },
+    "54": {
+      "runs": 1
+    },
+    "55": {
+      "runs": 1
+    },
+    "56": {
+      "runs": 1
+    },
+    "57": {
+      "runs": 1
+    },
+    "58": {
+      "runs": 1
+    },
+    "59": {
+      "runs": 2
+    },
+    "60": {
+      "runs": 1
+    },
+    "61": {
+      "runs": 2
+    },
+    "62": {
+      "runs": 1
+    },
+    "63": {
+      "runs": 1
+    },
+    "64": {
+      "runs": 1
+    },
+    "65": {
+      "runs": 1
+    },
+    "66": {
+      "runs": 1
     }
-   ],
-   "at": "2026-11-05T13:01:32.883Z"
   },
-  {
-   "n": 25,
-   "outcome": "landed",
-   "prs": [
-    10
-   ],
-   "head": "25d02858cc7d33252f381efbbec43417487da284",
-   "note": "main c93556381c987d057a7860434d8ed0753ff0c3eb -> 25d02858cc7d33252f381efbbec43417487da284",
-   "at": "2026-11-05T13:05:00.175Z"
-  },
-  {
-   "n": 28,
-   "outcome": "bounced",
-   "prs": [
-    11
-   ],
-   "head": "a3b70483df42fd4099019dc689eb5521e53eb8c9",
-   "note": "required checks failed",
-   "failedJobs": [
+  "window": [
     {
-     "name": "test",
-     "url": "https://github.com/qlander-sandbox/widgets/actions/runs/42032950826/job/127265346642",
-     "id": 127265346642
-    }
-   ],
-   "at": "2026-11-05T13:11:23.251Z"
-  },
-  {
-   "n": 31,
-   "outcome": "abandoned",
-   "prs": [
-    12,
-    13
-   ],
-   "head": "214a9d62945bb6b9340d93f512b2bf4449d8e643",
-   "note": "revalidation dropped #12",
-   "at": "2026-11-05T13:16:19.356Z"
-  },
-  {
-   "n": 32,
-   "outcome": "landed",
-   "prs": [
-    13
-   ],
-   "head": "7d3dbce1280cafb00abcd8a8bec7f23df2e3926a",
-   "note": "main 25d02858cc7d33252f381efbbec43417487da284 -> 7d3dbce1280cafb00abcd8a8bec7f23df2e3926a",
-   "at": "2026-11-05T13:19:56.804Z"
-  },
-  {
-   "n": 35,
-   "outcome": "abandoned",
-   "prs": [
-    14,
-    15
-   ],
-   "head": "9208191c7b09ac3aafcd6eb43cbc6b62bd25a5ce",
-   "note": "operator bounced #14",
-   "at": "2026-11-05T13:25:53.985Z"
-  },
-  {
-   "n": 36,
-   "outcome": "landed",
-   "prs": [
-    15
-   ],
-   "head": "dc9fe4858c3049e9ddaa975572cc4f92d5926a1d",
-   "note": "main 7d3dbce1280cafb00abcd8a8bec7f23df2e3926a -> dc9fe4858c3049e9ddaa975572cc4f92d5926a1d",
-   "at": "2026-11-05T13:29:20.344Z"
-  },
-  {
-   "n": 38,
-   "outcome": "flaky",
-   "prs": [
-    16,
-    17
-   ],
-   "head": "304224a5cb3692bf8cb597353ac2822745018e3a",
-   "note": "the rerun passed; the first attempt failed test",
-   "failedJobs": [
+      "at": "2026-11-07T02:52:29.981Z",
+      "cost": 1
+    },
     {
-     "name": "test",
-     "url": "https://github.com/qlander-sandbox/widgets/actions/runs/42036515361/job/127275968798",
-     "id": 127275968798
-    }
-   ],
-   "runs": [
+      "at": "2026-11-07T02:54:31.679Z",
+      "cost": 1
+    },
     {
-     "runId": 42036515361,
-     "attempt": 1
-    }
-   ],
-   "at": "2026-11-05T13:35:29.896Z"
-  },
-  {
-   "n": 38,
-   "outcome": "landed",
-   "prs": [
-    16,
-    17
-   ],
-   "head": "304224a5cb3692bf8cb597353ac2822745018e3a",
-   "note": "main dc9fe4858c3049e9ddaa975572cc4f92d5926a1d -> 304224a5cb3692bf8cb597353ac2822745018e3a",
-   "at": "2026-11-05T13:35:43.092Z"
-  },
-  {
-   "n": 42,
-   "outcome": "flaky",
-   "prs": [
-    12
-   ],
-   "head": "d9ffcd72e524266ea94f897f5066dfa5e43b1b4c",
-   "note": "the rerun passed; the first attempt failed test",
-   "failedJobs": [
+      "at": "2026-11-07T02:57:44.692Z",
+      "cost": 1
+    },
     {
-     "name": "test",
-     "url": "https://github.com/qlander-sandbox/widgets/actions/runs/42037849907/job/127280550911",
-     "id": 127280550911
-    }
-   ],
-   "runs": [
+      "at": "2026-11-07T03:01:33.439Z",
+      "cost": 1
+    },
     {
-     "runId": 42037849907,
-     "attempt": 1
-    }
-   ],
-   "at": "2026-11-05T13:46:41.959Z"
-  },
-  {
-   "n": 42,
-   "outcome": "landed",
-   "prs": [
-    12
-   ],
-   "head": "d9ffcd72e524266ea94f897f5066dfa5e43b1b4c",
-   "note": "main 304224a5cb3692bf8cb597353ac2822745018e3a -> d9ffcd72e524266ea94f897f5066dfa5e43b1b4c",
-   "at": "2026-11-05T13:46:53.480Z"
-  },
-  {
-   "n": 45,
-   "outcome": "landed",
-   "prs": [
-    18
-   ],
-   "head": "dc2a222b31b5acc8bd574e43944865b40098e9ca",
-   "note": "main d9ffcd72e524266ea94f897f5066dfa5e43b1b4c -> dc2a222b31b5acc8bd574e43944865b40098e9ca",
-   "at": "2026-11-05T13:51:50.112Z"
-  },
-  {
-   "n": 53,
-   "outcome": "landed",
-   "prs": [
-    19
-   ],
-   "head": "a48fc3548d8220f8be442844565a5a566b8b90c7",
-   "note": "main dc2a222b31b5acc8bd574e43944865b40098e9ca -> a48fc3548d8220f8be442844565a5a566b8b90c7",
-   "at": "2026-11-05T14:38:19.739Z"
-  },
-  {
-   "n": 63,
-   "outcome": "landed",
-   "prs": [
-    20
-   ],
-   "head": "773946f3b6331d03ca0e2407e9a64393dea5ab1f",
-   "note": "main a48fc3548d8220f8be442844565a5a566b8b90c7 -> 773946f3b6331d03ca0e2407e9a64393dea5ab1f",
-   "at": "2026-11-05T17:14:19.133Z"
-  },
-  {
-   "n": 68,
-   "outcome": "landed",
-   "prs": [
-    21
-   ],
-   "head": "418519efbe515875c8644b15ac370d509c162033",
-   "note": "main 773946f3b6331d03ca0e2407e9a64393dea5ab1f -> 418519efbe515875c8644b15ac370d509c162033",
-   "at": "2026-11-05T17:48:34.395Z"
-  },
-  {
-   "n": 81,
-   "outcome": "landed",
-   "prs": [
-    30,
-    31
-   ],
-   "head": "58c45e6f4a93f4c4648ccbb154aa35f36ff1f45b",
-   "note": "main 21e42240d667d335869618ac73a49e8d692cae40 -> 58c45e6f4a93f4c4648ccbb154aa35f36ff1f45b",
-   "at": "2026-11-06T19:03:00.862Z"
-  },
-  {
-   "n": 84,
-   "outcome": "landed",
-   "prs": [
-    36,
-    38,
-    39
-   ],
-   "head": "e37407984101146414c92b3582b0c95e869ad072",
-   "note": "main 010676465085af9068d8b5f3259dfc3428535b72 -> e37407984101146414c92b3582b0c95e869ad072",
-   "at": "2026-11-06T19:11:33.360Z"
-  },
-  {
-   "n": 86,
-   "outcome": "split",
-   "prs": [
-    41,
-    42
-   ],
-   "head": "5bcabb7dda69cb3977c6573903693aa39ef9f7f2",
-   "note": "required checks failed",
-   "failedJobs": [
+      "at": "2026-11-07T03:04:31.073Z",
+      "cost": 1
+    },
     {
-     "name": "test",
-     "url": "https://github.com/qlander-sandbox/widgets/actions/runs/42277770088/job/128100034866",
-     "id": 128100034866
-    }
-   ],
-   "at": "2026-11-06T19:17:37.336Z"
-  },
-  {
-   "n": 88,
-   "outcome": "bounced",
-   "prs": [
-    41
-   ],
-   "head": "f3d9ec5b14277121e952e9b38530c8c844bd046f",
-   "note": "required checks failed",
-   "failedJobs": [
+      "at": "2026-11-07T03:07:35.480Z",
+      "cost": 1
+    },
     {
-     "name": "test",
-     "url": "https://github.com/qlander-sandbox/widgets/actions/runs/42278390009/job/128102195018",
-     "id": 128102195018
+      "at": "2026-11-07T03:31:37.183Z",
+      "cost": 1
     }
-   ],
-   "at": "2026-11-06T19:21:54.796Z"
-  },
-  {
-   "n": 90,
-   "outcome": "landed",
-   "prs": [
-    42
-   ],
-   "head": "f8e32a91c37dc2d79168822507a484f1f7d7ff0d",
-   "note": "main e37407984101146414c92b3582b0c95e869ad072 -> f8e32a91c37dc2d79168822507a484f1f7d7ff0d",
-   "at": "2026-11-06T19:25:23.081Z"
-  },
-  {
-   "n": 93,
-   "outcome": "landed",
-   "prs": [
-    40
-   ],
-   "head": "9aaa80f2f32819c3953cdc051faf3c3893704e49",
-   "note": "main f8e32a91c37dc2d79168822507a484f1f7d7ff0d -> 9aaa80f2f32819c3953cdc051faf3c3893704e49",
-   "at": "2026-11-06T19:30:46.089Z"
-  },
-  {
-   "n": 95,
-   "outcome": "abandoned",
-   "prs": [
-    44,
-    45
-   ],
-   "head": "283d9dcd12b0b5e739d0ad974787ac160638f3c5",
-   "note": "revalidation dropped #44",
-   "at": "2026-11-06T19:35:36.833Z"
-  },
-  {
-   "n": 96,
-   "outcome": "landed",
-   "prs": [
-    45
-   ],
-   "head": "00f76ca7c02100f0a98652db37ecb84ec2071358",
-   "note": "main 9aaa80f2f32819c3953cdc051faf3c3893704e49 -> 00f76ca7c02100f0a98652db37ecb84ec2071358",
-   "at": "2026-11-06T19:39:09.498Z"
-  },
-  {
-   "n": 98,
-   "outcome": "landed",
-   "prs": [
-    46
-   ],
-   "head": "6ebea7216b5532989a8bc4949e3d94de59c6b386",
-   "note": "main 00f76ca7c02100f0a98652db37ecb84ec2071358 -> 6ebea7216b5532989a8bc4949e3d94de59c6b386",
-   "at": "2026-11-06T19:46:53.373Z"
-  },
-  {
-   "n": 101,
-   "outcome": "landed",
-   "prs": [
-    47
-   ],
-   "head": "3fe7acbc82a9c321b12777b825b13f920d6da7b6",
-   "note": "main 6ebea7216b5532989a8bc4949e3d94de59c6b386 -> 3fe7acbc82a9c321b12777b825b13f920d6da7b6",
-   "at": "2026-11-06T19:53:24.394Z"
-  },
-  {
-   "n": 103,
-   "outcome": "abandoned",
-   "prs": [
-    54,
-    55,
-    56
-   ],
-   "head": "57340df073d8a773b87beb9aa33caf5e7791fa1c",
-   "note": "revalidation dropped #56",
-   "at": "2026-11-06T20:14:13.207Z"
-  },
-  {
-   "n": 105,
-   "outcome": "rebuilt",
-   "prs": [
-    54,
-    55
-   ],
-   "head": "94c40f2e5a9f9ecde543a7fb0bf26cfad4e25507",
-   "note": "main moved from 5e419368f28e0995219bc6cb19651a70f6c7f93f to 1531e419b4509e1741274d895f3a4199aa1c1d87",
-   "at": "2026-11-06T20:21:27.500Z"
-  },
-  {
-   "n": 108,
-   "outcome": "abandoned",
-   "prs": [
-    54,
-    55
-   ],
-   "head": "d5b93dd953ee6d778f017dd4f2c8218aee73e490",
-   "note": "revalidation dropped #55",
-   "at": "2026-11-06T20:26:21.879Z"
-  },
-  {
-   "n": 110,
-   "outcome": "landed",
-   "prs": [
-    54
-   ],
-   "head": "76f4b566d948670b660d61181055c26a0f8df31a",
-   "note": "main 1531e419b4509e1741274d895f3a4199aa1c1d87 -> 76f4b566d948670b660d61181055c26a0f8df31a",
-   "at": "2026-11-06T20:29:49.364Z"
-  },
-  {
-   "n": 118,
-   "outcome": "landed",
-   "prs": [
-    71,
-    72,
-    73,
-    74,
-    75,
-    76,
-    77,
-    78
-   ],
-   "head": "9ed218425a8e143d22fa2bab28233816004914fe",
-   "note": "main d420c5f540ab48741a51d58bbcc9fad6ffdce5d7 -> 9ed218425a8e143d22fa2bab28233816004914fe",
-   "at": "2026-11-06T22:01:13.804Z"
-  },
-  {
-   "n": 120,
-   "outcome": "landed",
-   "prs": [
-    79,
-    80,
-    81,
-    82
-   ],
-   "head": "0fab477d4a568f316e5e9dac30a140eddfade1cb",
-   "note": "main 9ed218425a8e143d22fa2bab28233816004914fe -> 0fab477d4a568f316e5e9dac30a140eddfade1cb",
-   "at": "2026-11-06T22:06:23.500Z"
-  },
-  {
-   "n": 122,
-   "outcome": "landed",
-   "prs": [
-    83
-   ],
-   "head": "f4b1745e04d0bc2b9628a2fb648059af8102d987",
-   "note": "main 0fab477d4a568f316e5e9dac30a140eddfade1cb -> f4b1745e04d0bc2b9628a2fb648059af8102d987",
-   "at": "2026-11-06T22:10:53.937Z"
-  },
-  {
-   "n": 124,
-   "outcome": "landed",
-   "prs": [
-    84
-   ],
-   "head": "684eea3e3477caf06638640c14c4db75e3b1eee5",
-   "note": "main f4b1745e04d0bc2b9628a2fb648059af8102d987 -> 684eea3e3477caf06638640c14c4db75e3b1eee5",
-   "at": "2026-11-06T22:15:28.715Z"
-  },
-  {
-   "n": 126,
-   "outcome": "landed",
-   "prs": [
-    85
-   ],
-   "head": "bb1211b9666156d466935a499c599d2501e3b065",
-   "note": "main 684eea3e3477caf06638640c14c4db75e3b1eee5 -> bb1211b9666156d466935a499c599d2501e3b065",
-   "at": "2026-11-06T22:19:53.135Z"
-  },
-  {
-   "n": 128,
-   "outcome": "landed",
-   "prs": [
-    86,
-    87
-   ],
-   "head": "f2c11b84c08d7609dd611da30d85f766cd083c72",
-   "note": "main bb1211b9666156d466935a499c599d2501e3b065 -> f2c11b84c08d7609dd611da30d85f766cd083c72",
-   "at": "2026-11-06T22:24:30.724Z"
-  },
-  {
-   "n": 131,
-   "outcome": "landed",
-   "prs": [
-    88
-   ],
-   "head": "f7a3dfe217670ee18d7964c72bd1d4e72519cc41",
-   "note": "main f2c11b84c08d7609dd611da30d85f766cd083c72 -> f7a3dfe217670ee18d7964c72bd1d4e72519cc41",
-   "at": "2026-11-06T22:29:17.475Z"
-  },
-  {
-   "n": 133,
-   "outcome": "landed",
-   "prs": [
-    89
-   ],
-   "head": "50634c77ed51723a54035c3b7ed83726498761d6",
-   "note": "main f7a3dfe217670ee18d7964c72bd1d4e72519cc41 -> 50634c77ed51723a54035c3b7ed83726498761d6",
-   "at": "2026-11-06T22:33:35.586Z"
-  },
-  {
-   "n": 156,
-   "outcome": "landed",
-   "prs": [
-    90
-   ],
-   "head": "05283fb788dcc830a9abc1582af8ec2b90104448",
-   "note": "main 50634c77ed51723a54035c3b7ed83726498761d6 -> 05283fb788dcc830a9abc1582af8ec2b90104448",
-   "at": "2026-11-06T22:55:55.204Z"
-  },
-  {
-   "n": 159,
-   "outcome": "landed",
-   "prs": [
-    91
-   ],
-   "head": "95570092a39e93a6ceec4eecd28f9f9d4461bb80",
-   "note": "main 05283fb788dcc830a9abc1582af8ec2b90104448 -> 95570092a39e93a6ceec4eecd28f9f9d4461bb80",
-   "at": "2026-11-06T23:00:25.712Z"
-  },
-  {
-   "n": 162,
-   "outcome": "landed",
-   "prs": [
-    92
-   ],
-   "head": "6db3f1b8b88553cd7cf65455fc97e58f8c769571",
-   "note": "main 95570092a39e93a6ceec4eecd28f9f9d4461bb80 -> 6db3f1b8b88553cd7cf65455fc97e58f8c769571",
-   "at": "2026-11-06T23:05:08.432Z"
-  },
-  {
-   "n": 164,
-   "outcome": "empty",
-   "prs": [
-    93
-   ],
-   "head": null,
-   "note": "every PR dropped",
-   "at": "2026-11-06T23:06:05.622Z"
-  },
-  {
-   "n": 166,
-   "outcome": "landed",
-   "prs": [
-    93
-   ],
-   "head": "540976916079a91d02a7f38417ec4cdf82d6f297",
-   "note": "main 6db3f1b8b88553cd7cf65455fc97e58f8c769571 -> 540976916079a91d02a7f38417ec4cdf82d6f297",
-   "at": "2026-11-06T23:10:37.372Z"
-  },
-  {
-   "n": 168,
-   "outcome": "landed",
-   "prs": [
-    94,
-    95,
-    96,
-    97,
-    98,
-    99,
-    100
-   ],
-   "head": "360c050c2d945f4855280b14cbd36d5e463087dc",
-   "note": "main 540976916079a91d02a7f38417ec4cdf82d6f297 -> 360c050c2d945f4855280b14cbd36d5e463087dc",
-   "at": "2026-11-06T23:15:56.327Z"
-  },
-  {
-   "n": 170,
-   "outcome": "landed",
-   "prs": [
-    393,
-    394,
-    395,
-    396,
-    397,
-    398,
-    399,
-    400
-   ],
-   "head": "4362976f05c9f5949e83562c64525cb905188681",
-   "note": "main 3954866349293b98c9130e1b15659c9966ed8027 -> 4362976f05c9f5949e83562c64525cb905188681",
-   "at": "2026-11-07T00:10:49.365Z"
-  },
-  {
-   "n": 172,
-   "outcome": "landed",
-   "prs": [
-    401,
-    402,
-    403,
-    404,
-    405,
-    406,
-    407,
-    408
-   ],
-   "head": "32358ec1516541b7e4d2c35d8ca81de5682172f6",
-   "note": "main 4362976f05c9f5949e83562c64525cb905188681 -> 32358ec1516541b7e4d2c35d8ca81de5682172f6",
-   "at": "2026-11-07T00:16:39.286Z"
-  },
-  {
-   "n": 175,
-   "outcome": "landed",
-   "prs": [
-    409,
-    410,
-    411,
-    412,
-    413,
-    414,
-    415,
-    416
-   ],
-   "head": "46322019e6bb0a4ef6fb9cb109c7782499672b20",
-   "note": "main 32358ec1516541b7e4d2c35d8ca81de5682172f6 -> 46322019e6bb0a4ef6fb9cb109c7782499672b20",
-   "at": "2026-11-07T00:22:27.815Z"
-  },
-  {
-   "n": 177,
-   "outcome": "landed",
-   "prs": [
-    417,
-    418,
-    419,
-    420,
-    421,
-    422,
-    423,
-    424
-   ],
-   "head": "e972c2bff95318e524b3887621bdaebcf3f1a74d",
-   "note": "main 46322019e6bb0a4ef6fb9cb109c7782499672b20 -> e972c2bff95318e524b3887621bdaebcf3f1a74d",
-   "at": "2026-11-07T00:28:05.038Z"
-  },
-  {
-   "n": 179,
-   "outcome": "landed",
-   "prs": [
-    425,
-    426,
-    427,
-    428
-   ],
-   "head": "e5cb2a3a80c818779a6334454bc6a5812b1c06b8",
-   "note": "main e972c2bff95318e524b3887621bdaebcf3f1a74d -> e5cb2a3a80c818779a6334454bc6a5812b1c06b8",
-   "at": "2026-11-07T00:33:17.157Z"
-  },
-  {
-   "n": 181,
-   "outcome": "landed",
-   "prs": [
-    429,
-    430,
-    431,
-    432
-   ],
-   "head": "09692d5e6fddf91671c32079aba3e2c526880431",
-   "note": "main e5cb2a3a80c818779a6334454bc6a5812b1c06b8 -> 09692d5e6fddf91671c32079aba3e2c526880431",
-   "at": "2026-11-07T00:38:35.821Z"
-  },
-  {
-   "n": 183,
-   "outcome": "landed",
-   "prs": [
-    433,
-    434
-   ],
-   "head": "979635aea3f8dc6d10ec9600e79d6a745e792d69",
-   "note": "main 09692d5e6fddf91671c32079aba3e2c526880431 -> 979635aea3f8dc6d10ec9600e79d6a745e792d69",
-   "at": "2026-11-07T00:43:23.628Z"
-  },
-  {
-   "n": 185,
-   "outcome": "landed",
-   "prs": [
-    435
-   ],
-   "head": "7e66f50024a5776f9569dd00f810fff4742d7766",
-   "note": "main 979635aea3f8dc6d10ec9600e79d6a745e792d69 -> 7e66f50024a5776f9569dd00f810fff4742d7766",
-   "at": "2026-11-07T00:48:00.813Z"
-  },
-  {
-   "n": 187,
-   "outcome": "landed",
-   "prs": [
-    436
-   ],
-   "head": "80589247ae365204e2eeb0c431e5c5197ba29039",
-   "note": "main 7e66f50024a5776f9569dd00f810fff4742d7766 -> 80589247ae365204e2eeb0c431e5c5197ba29039",
-   "at": "2026-11-07T00:52:28.644Z"
-  },
-  {
-   "n": 189,
-   "outcome": "landed",
-   "prs": [
-    437
-   ],
-   "head": "a9c86c51266206552fff2c2a9a96a03bdfec7f40",
-   "note": "main 80589247ae365204e2eeb0c431e5c5197ba29039 -> a9c86c51266206552fff2c2a9a96a03bdfec7f40",
-   "at": "2026-11-07T00:56:48.162Z"
-  },
-  {
-   "n": 191,
-   "outcome": "abandoned",
-   "prs": [
-    452,
-    453
-   ],
-   "head": "47b3c5d4bcb46bf21893b561ea6720169050c353",
-   "note": "revalidation dropped #453",
-   "at": "2026-11-07T01:08:16.986Z"
-  },
-  {
-   "n": 193,
-   "outcome": "landed",
-   "prs": [
-    452
-   ],
-   "head": "17ca2e9b6a8ddb2b4b51111cbc40a38404c4f75c",
-   "note": "main a9c86c51266206552fff2c2a9a96a03bdfec7f40 -> 17ca2e9b6a8ddb2b4b51111cbc40a38404c4f75c",
-   "at": "2026-11-07T01:09:40.251Z"
-  },
-  {
-   "n": 197,
-   "outcome": "rebuilt",
-   "prs": [
-    454,
-    455
-   ],
-   "head": "f5ead44c7ea6be8d9a8b5fc5e289caf670fec501",
-   "note": "main moved from 17ca2e9b6a8ddb2b4b51111cbc40a38404c4f75c to 07b6630c28a369fc77beafd5cbf8b805499d49cf",
-   "at": "2026-11-07T01:13:16.276Z"
-  },
-  {
-   "n": 199,
-   "outcome": "landed",
-   "prs": [
-    454,
-    455
-   ],
-   "head": "6ddb3457abb2adf788110088ceb8b5536152a4e6",
-   "note": "main 07b6630c28a369fc77beafd5cbf8b805499d49cf -> 6ddb3457abb2adf788110088ceb8b5536152a4e6",
-   "at": "2026-11-07T01:14:42.519Z"
-  },
-  {
-   "n": 203,
-   "outcome": "landed",
-   "prs": [
-    456,
-    457
-   ],
-   "head": "61e27035243d40cbba328a21d4280a6db73bd83b",
-   "note": "main 6ddb3457abb2adf788110088ceb8b5536152a4e6 -> 61e27035243d40cbba328a21d4280a6db73bd83b",
-   "at": "2026-11-07T01:18:46.415Z"
-  },
-  {
-   "n": 207,
-   "outcome": "landed",
-   "prs": [
-    458,
-    459
-   ],
-   "head": "258adf834bcfb43234126599d61200fa2806c7a4",
-   "note": "main 61e27035243d40cbba328a21d4280a6db73bd83b -> 258adf834bcfb43234126599d61200fa2806c7a4",
-   "at": "2026-11-07T01:22:33.822Z"
-  },
-  {
-   "n": 211,
-   "outcome": "landed",
-   "prs": [
-    460,
-    461
-   ],
-   "head": "af91618147e94024da8c5479ffa2676690dc94d9",
-   "note": "main 258adf834bcfb43234126599d61200fa2806c7a4 -> af91618147e94024da8c5479ffa2676690dc94d9",
-   "at": "2026-11-07T01:25:43.486Z"
-  },
-  {
-   "n": 215,
-   "outcome": "landed",
-   "prs": [
-    462,
-    463
-   ],
-   "head": "6df67678f93af40c0e63d2ee4edc71c2b22ca88f",
-   "note": "main af91618147e94024da8c5479ffa2676690dc94d9 -> 6df67678f93af40c0e63d2ee4edc71c2b22ca88f",
-   "at": "2026-11-07T01:29:09.476Z"
-  },
-  {
-   "n": 219,
-   "outcome": "landed",
-   "prs": [
-    464,
-    465
-   ],
-   "head": "8d95b2b46c337e5eb787da35efd1d38134c9f257",
-   "note": "main 6df67678f93af40c0e63d2ee4edc71c2b22ca88f -> 8d95b2b46c337e5eb787da35efd1d38134c9f257",
-   "at": "2026-11-07T01:52:52.023Z"
-  },
-  {
-   "n": 223,
-   "outcome": "landed",
-   "prs": [
-    467,
-    468,
-    469,
-    470,
-    471,
-    472,
-    473,
-    474
-   ],
-   "head": "e8d7a5d523f942bba330014335b041016432644b",
-   "note": "main 8d95b2b46c337e5eb787da35efd1d38134c9f257 -> e8d7a5d523f942bba330014335b041016432644b",
-   "at": "2026-11-07T02:01:34.172Z"
-  },
-  {
-   "n": 226,
-   "outcome": "landed",
-   "prs": [
-    475,
-    476,
-    477,
-    478,
-    479,
-    480,
-    481,
-    482
-   ],
-   "head": "4eedb0610c45355f4bf7a5e51eb3263d489d6c32",
-   "note": "main e8d7a5d523f942bba330014335b041016432644b -> 4eedb0610c45355f4bf7a5e51eb3263d489d6c32",
-   "at": "2026-11-07T02:07:12.897Z"
-  },
-  {
-   "n": 229,
-   "outcome": "landed",
-   "prs": [
-    483,
-    484,
-    485,
-    486
-   ],
-   "head": "b074b5422c460af0bed9a0373b12e5929d2ad43a",
-   "note": "main 4eedb0610c45355f4bf7a5e51eb3263d489d6c32 -> b074b5422c460af0bed9a0373b12e5929d2ad43a",
-   "at": "2026-11-07T02:12:20.629Z"
-  },
-  {
-   "n": 231,
-   "outcome": "abandoned",
-   "prs": [
-    487,
-    488
-   ],
-   "head": "d5f50aad9c53ffb3d933846ff90d6b6002cd4c4d",
-   "note": "revalidation dropped #488",
-   "at": "2026-11-07T02:15:23.151Z"
-  },
-  {
-   "n": 233,
-   "outcome": "landed",
-   "prs": [
-    487
-   ],
-   "head": "1856587852b07056e87488cf8e1da98c209a4193",
-   "note": "main b074b5422c460af0bed9a0373b12e5929d2ad43a -> 1856587852b07056e87488cf8e1da98c209a4193",
-   "at": "2026-11-07T02:16:46.935Z"
-  },
-  {
-   "n": 237,
-   "outcome": "landed",
-   "prs": [
-    489,
-    490
-   ],
-   "head": "ee8282a73711e0072b63b587eba14d4c141b8efc",
-   "note": "main 1856587852b07056e87488cf8e1da98c209a4193 -> ee8282a73711e0072b63b587eba14d4c141b8efc",
-   "at": "2026-11-07T02:20:53.526Z"
-  },
-  {
-   "n": 244,
-   "outcome": "rebuilt",
-   "prs": [
-    491,
-    492
-   ],
-   "head": "00306d39fabc084b470ed5149bb7d8ac54d8615d",
-   "note": "main moved from ee8282a73711e0072b63b587eba14d4c141b8efc to 03bdbd8ca449390a37b9ead7f745a7a86ed5843e",
-   "at": "2026-11-07T02:54:31.679Z"
-  },
-  {
-   "n": 246,
-   "outcome": "landed",
-   "prs": [
-    491,
-    492
-   ],
-   "head": "f9ac48170d1912edeff3f6b58d94a45bc4635ebd",
-   "note": "main 03bdbd8ca449390a37b9ead7f745a7a86ed5843e -> f9ac48170d1912edeff3f6b58d94a45bc4635ebd",
-   "at": "2026-11-07T02:56:04.615Z"
-  },
-  {
-   "n": 250,
-   "outcome": "landed",
-   "prs": [
-    493,
-    494
-   ],
-   "head": "3301413ee2c2a9d302290d9a46a98d9c4070f3ef",
-   "note": "main f9ac48170d1912edeff3f6b58d94a45bc4635ebd -> 3301413ee2c2a9d302290d9a46a98d9c4070f3ef",
-   "at": "2026-11-07T02:59:53.083Z"
-  },
-  {
-   "n": 254,
-   "outcome": "landed",
-   "prs": [
-    495,
-    496
-   ],
-   "head": "13cec0d49e023be587a90c13cc106d3230e7c412",
-   "note": "main 3301413ee2c2a9d302290d9a46a98d9c4070f3ef -> 13cec0d49e023be587a90c13cc106d3230e7c412",
-   "at": "2026-11-07T03:02:55.818Z"
-  },
-  {
-   "n": 258,
-   "outcome": "landed",
-   "prs": [
-    497,
-    498
-   ],
-   "head": "1f5bcddc980fbab3720991bcbb4b3c3149457b1a",
-   "note": "main 13cec0d49e023be587a90c13cc106d3230e7c412 -> 1f5bcddc980fbab3720991bcbb4b3c3149457b1a",
-   "at": "2026-11-07T03:06:10.379Z"
-  },
-  {
-   "n": 262,
-   "outcome": "landed",
-   "prs": [
-    499,
-    500
-   ],
-   "head": "a44891841088832692a19855828abcdef77d8cea",
-   "note": "main 1f5bcddc980fbab3720991bcbb4b3c3149457b1a -> a44891841088832692a19855828abcdef77d8cea",
-   "at": "2026-11-07T03:29:34.804Z"
-  },
-  {
-   "n": 266,
-   "outcome": "landed",
-   "prs": [
-    501,
-    502,
-    503,
-    504
-   ],
-   "head": "c7b1901a99c6fcf6fac311cea6f5cead186aa435",
-   "note": "main a44891841088832692a19855828abcdef77d8cea -> c7b1901a99c6fcf6fac311cea6f5cead186aa435",
-   "at": "2026-11-07T03:35:10.688Z"
-  }
- ],
- "epochBranch": "qlander-epoch/queue",
- "flakes": [
-  {
-   "at": "2026-11-05T13:35:29.896Z",
-   "n": 38,
-   "count": 1,
-   "keys": [
-    "test"
-   ]
-  },
-  {
-   "at": "2026-11-05T13:46:41.959Z",
-   "n": 42,
-   "count": 1,
-   "keys": [
-    "test"
-   ]
-  }
- ],
- "squashed": [
-  "b3c226224bb4",
-  "6f5684cad011",
-  "a77b79f4c8fa",
-  "43c462ea55fa",
-  "5aead856fe95",
-  "ff9f34e65cb4",
-  "cc5434b3b2d2",
-  "0e4a4ee4efe9",
-  "4b787dafa005",
-  "3444b1562534",
-  "daa9528660ac",
-  "2812681c873f",
-  "bd9dabb69477",
-  "b4b0fadd5ad0"
- ]
+  ],
+  "redStreak": 0,
+  "bounceStreak": 0,
+  "lastLandedAt": "2026-11-07T03:35:10.688Z",
+  "verify": [],
+  "outbox": [],
+  "history": [
+    {
+      "n": 1,
+      "outcome": "landed",
+      "prs": [
+        1,
+        2
+      ],
+      "head": "3adc2e90679f3355c2727f53a801c83d77d9b30e",
+      "note": "main 18894eb18591ccb9dfc7dc6883f1aee10711dfb5 -> 3adc2e90679f3355c2727f53a801c83d77d9b30e",
+      "at": "2026-11-05T12:10:35.774Z"
+    },
+    {
+      "n": 6,
+      "outcome": "landed",
+      "prs": [
+        4
+      ],
+      "head": "00634289d90eb27c8a9b40dc84695efa4a63e412",
+      "note": "main 3adc2e90679f3355c2727f53a801c83d77d9b30e -> 00634289d90eb27c8a9b40dc84695efa4a63e412",
+      "at": "2026-11-05T12:19:04.069Z"
+    },
+    {
+      "n": 8,
+      "outcome": "landed",
+      "prs": [
+        5
+      ],
+      "head": "d5177d145d6f6ed3b3fa0b830b258bef3810ad75",
+      "note": "main 00634289d90eb27c8a9b40dc84695efa4a63e412 -> d5177d145d6f6ed3b3fa0b830b258bef3810ad75",
+      "at": "2026-11-05T12:24:17.508Z"
+    },
+    {
+      "n": 10,
+      "outcome": "landed",
+      "prs": [
+        6
+      ],
+      "head": "bc3da35cf9782cc115a19bb62069a0a3caf16f72",
+      "note": "main d5177d145d6f6ed3b3fa0b830b258bef3810ad75 -> bc3da35cf9782cc115a19bb62069a0a3caf16f72",
+      "at": "2026-11-05T12:28:27.774Z"
+    },
+    {
+      "n": 14,
+      "outcome": "landed",
+      "prs": [
+        8
+      ],
+      "head": "dc1ebb8c012f2056d27f8c28059498d927fbbf25",
+      "note": "main bc3da35cf9782cc115a19bb62069a0a3caf16f72 -> dc1ebb8c012f2056d27f8c28059498d927fbbf25",
+      "at": "2026-11-05T12:35:22.462Z"
+    },
+    {
+      "n": 18,
+      "outcome": "landed",
+      "prs": [
+        3
+      ],
+      "head": "4071f45efe0019449633f1b0168ea0eb8179e4fb",
+      "note": "main dc1ebb8c012f2056d27f8c28059498d927fbbf25 -> 4071f45efe0019449633f1b0168ea0eb8179e4fb",
+      "at": "2026-11-05T12:50:34.885Z"
+    },
+    {
+      "n": 21,
+      "outcome": "landed",
+      "prs": [
+        9
+      ],
+      "head": "c93556381c987d057a7860434d8ed0753ff0c3eb",
+      "note": "main 4071f45efe0019449633f1b0168ea0eb8179e4fb -> c93556381c987d057a7860434d8ed0753ff0c3eb",
+      "at": "2026-11-05T12:56:02.639Z"
+    },
+    {
+      "n": 23,
+      "outcome": "split",
+      "prs": [
+        10,
+        11
+      ],
+      "head": "1898c220bd031bc18902c8553a26c81529552faa",
+      "note": "required checks failed",
+      "failedJobs": [
+        {
+          "name": "test",
+          "url": "https://github.com/qlander-sandbox/widgets/actions/runs/42031547621/job/127260467968",
+          "id": 127260467968
+        }
+      ],
+      "at": "2026-11-05T13:01:32.883Z"
+    },
+    {
+      "n": 25,
+      "outcome": "landed",
+      "prs": [
+        10
+      ],
+      "head": "25d02858cc7d33252f381efbbec43417487da284",
+      "note": "main c93556381c987d057a7860434d8ed0753ff0c3eb -> 25d02858cc7d33252f381efbbec43417487da284",
+      "at": "2026-11-05T13:05:00.175Z"
+    },
+    {
+      "n": 28,
+      "outcome": "bounced",
+      "prs": [
+        11
+      ],
+      "head": "a3b70483df42fd4099019dc689eb5521e53eb8c9",
+      "note": "required checks failed",
+      "failedJobs": [
+        {
+          "name": "test",
+          "url": "https://github.com/qlander-sandbox/widgets/actions/runs/42032950826/job/127265346642",
+          "id": 127265346642
+        }
+      ],
+      "at": "2026-11-05T13:11:23.251Z"
+    },
+    {
+      "n": 31,
+      "outcome": "abandoned",
+      "prs": [
+        12,
+        13
+      ],
+      "head": "214a9d62945bb6b9340d93f512b2bf4449d8e643",
+      "note": "revalidation dropped #12",
+      "at": "2026-11-05T13:16:19.356Z"
+    },
+    {
+      "n": 32,
+      "outcome": "landed",
+      "prs": [
+        13
+      ],
+      "head": "7d3dbce1280cafb00abcd8a8bec7f23df2e3926a",
+      "note": "main 25d02858cc7d33252f381efbbec43417487da284 -> 7d3dbce1280cafb00abcd8a8bec7f23df2e3926a",
+      "at": "2026-11-05T13:19:56.804Z"
+    },
+    {
+      "n": 35,
+      "outcome": "abandoned",
+      "prs": [
+        14,
+        15
+      ],
+      "head": "9208191c7b09ac3aafcd6eb43cbc6b62bd25a5ce",
+      "note": "operator bounced #14",
+      "at": "2026-11-05T13:25:53.985Z"
+    },
+    {
+      "n": 36,
+      "outcome": "landed",
+      "prs": [
+        15
+      ],
+      "head": "dc9fe4858c3049e9ddaa975572cc4f92d5926a1d",
+      "note": "main 7d3dbce1280cafb00abcd8a8bec7f23df2e3926a -> dc9fe4858c3049e9ddaa975572cc4f92d5926a1d",
+      "at": "2026-11-05T13:29:20.344Z"
+    },
+    {
+      "n": 38,
+      "outcome": "flaky",
+      "prs": [
+        16,
+        17
+      ],
+      "head": "304224a5cb3692bf8cb597353ac2822745018e3a",
+      "note": "the rerun passed; the first attempt failed test",
+      "failedJobs": [
+        {
+          "name": "test",
+          "url": "https://github.com/qlander-sandbox/widgets/actions/runs/42036515361/job/127275968798",
+          "id": 127275968798
+        }
+      ],
+      "runs": [
+        {
+          "runId": 42036515361,
+          "attempt": 1
+        }
+      ],
+      "at": "2026-11-05T13:35:29.896Z"
+    },
+    {
+      "n": 38,
+      "outcome": "landed",
+      "prs": [
+        16,
+        17
+      ],
+      "head": "304224a5cb3692bf8cb597353ac2822745018e3a",
+      "note": "main dc9fe4858c3049e9ddaa975572cc4f92d5926a1d -> 304224a5cb3692bf8cb597353ac2822745018e3a",
+      "at": "2026-11-05T13:35:43.092Z"
+    },
+    {
+      "n": 42,
+      "outcome": "flaky",
+      "prs": [
+        12
+      ],
+      "head": "d9ffcd72e524266ea94f897f5066dfa5e43b1b4c",
+      "note": "the rerun passed; the first attempt failed test",
+      "failedJobs": [
+        {
+          "name": "test",
+          "url": "https://github.com/qlander-sandbox/widgets/actions/runs/42037849907/job/127280550911",
+          "id": 127280550911
+        }
+      ],
+      "runs": [
+        {
+          "runId": 42037849907,
+          "attempt": 1
+        }
+      ],
+      "at": "2026-11-05T13:46:41.959Z"
+    },
+    {
+      "n": 42,
+      "outcome": "landed",
+      "prs": [
+        12
+      ],
+      "head": "d9ffcd72e524266ea94f897f5066dfa5e43b1b4c",
+      "note": "main 304224a5cb3692bf8cb597353ac2822745018e3a -> d9ffcd72e524266ea94f897f5066dfa5e43b1b4c",
+      "at": "2026-11-05T13:46:53.480Z"
+    },
+    {
+      "n": 45,
+      "outcome": "landed",
+      "prs": [
+        18
+      ],
+      "head": "dc2a222b31b5acc8bd574e43944865b40098e9ca",
+      "note": "main d9ffcd72e524266ea94f897f5066dfa5e43b1b4c -> dc2a222b31b5acc8bd574e43944865b40098e9ca",
+      "at": "2026-11-05T13:51:50.112Z"
+    },
+    {
+      "n": 53,
+      "outcome": "landed",
+      "prs": [
+        19
+      ],
+      "head": "a48fc3548d8220f8be442844565a5a566b8b90c7",
+      "note": "main dc2a222b31b5acc8bd574e43944865b40098e9ca -> a48fc3548d8220f8be442844565a5a566b8b90c7",
+      "at": "2026-11-05T14:38:19.739Z"
+    },
+    {
+      "n": 63,
+      "outcome": "landed",
+      "prs": [
+        20
+      ],
+      "head": "773946f3b6331d03ca0e2407e9a64393dea5ab1f",
+      "note": "main a48fc3548d8220f8be442844565a5a566b8b90c7 -> 773946f3b6331d03ca0e2407e9a64393dea5ab1f",
+      "at": "2026-11-05T17:14:19.133Z"
+    },
+    {
+      "n": 68,
+      "outcome": "landed",
+      "prs": [
+        21
+      ],
+      "head": "418519efbe515875c8644b15ac370d509c162033",
+      "note": "main 773946f3b6331d03ca0e2407e9a64393dea5ab1f -> 418519efbe515875c8644b15ac370d509c162033",
+      "at": "2026-11-05T17:48:34.395Z"
+    },
+    {
+      "n": 81,
+      "outcome": "landed",
+      "prs": [
+        30,
+        31
+      ],
+      "head": "58c45e6f4a93f4c4648ccbb154aa35f36ff1f45b",
+      "note": "main 21e42240d667d335869618ac73a49e8d692cae40 -> 58c45e6f4a93f4c4648ccbb154aa35f36ff1f45b",
+      "at": "2026-11-06T19:03:00.862Z"
+    },
+    {
+      "n": 84,
+      "outcome": "landed",
+      "prs": [
+        36,
+        38,
+        39
+      ],
+      "head": "e37407984101146414c92b3582b0c95e869ad072",
+      "note": "main 010676465085af9068d8b5f3259dfc3428535b72 -> e37407984101146414c92b3582b0c95e869ad072",
+      "at": "2026-11-06T19:11:33.360Z"
+    },
+    {
+      "n": 86,
+      "outcome": "split",
+      "prs": [
+        41,
+        42
+      ],
+      "head": "5bcabb7dda69cb3977c6573903693aa39ef9f7f2",
+      "note": "required checks failed",
+      "failedJobs": [
+        {
+          "name": "test",
+          "url": "https://github.com/qlander-sandbox/widgets/actions/runs/42277770088/job/128100034866",
+          "id": 128100034866
+        }
+      ],
+      "at": "2026-11-06T19:17:37.336Z"
+    },
+    {
+      "n": 88,
+      "outcome": "bounced",
+      "prs": [
+        41
+      ],
+      "head": "f3d9ec5b14277121e952e9b38530c8c844bd046f",
+      "note": "required checks failed",
+      "failedJobs": [
+        {
+          "name": "test",
+          "url": "https://github.com/qlander-sandbox/widgets/actions/runs/42278390009/job/128102195018",
+          "id": 128102195018
+        }
+      ],
+      "at": "2026-11-06T19:21:54.796Z"
+    },
+    {
+      "n": 90,
+      "outcome": "landed",
+      "prs": [
+        42
+      ],
+      "head": "f8e32a91c37dc2d79168822507a484f1f7d7ff0d",
+      "note": "main e37407984101146414c92b3582b0c95e869ad072 -> f8e32a91c37dc2d79168822507a484f1f7d7ff0d",
+      "at": "2026-11-06T19:25:23.081Z"
+    },
+    {
+      "n": 93,
+      "outcome": "landed",
+      "prs": [
+        40
+      ],
+      "head": "9aaa80f2f32819c3953cdc051faf3c3893704e49",
+      "note": "main f8e32a91c37dc2d79168822507a484f1f7d7ff0d -> 9aaa80f2f32819c3953cdc051faf3c3893704e49",
+      "at": "2026-11-06T19:30:46.089Z"
+    },
+    {
+      "n": 95,
+      "outcome": "abandoned",
+      "prs": [
+        44,
+        45
+      ],
+      "head": "283d9dcd12b0b5e739d0ad974787ac160638f3c5",
+      "note": "revalidation dropped #44",
+      "at": "2026-11-06T19:35:36.833Z"
+    },
+    {
+      "n": 96,
+      "outcome": "landed",
+      "prs": [
+        45
+      ],
+      "head": "00f76ca7c02100f0a98652db37ecb84ec2071358",
+      "note": "main 9aaa80f2f32819c3953cdc051faf3c3893704e49 -> 00f76ca7c02100f0a98652db37ecb84ec2071358",
+      "at": "2026-11-06T19:39:09.498Z"
+    },
+    {
+      "n": 98,
+      "outcome": "landed",
+      "prs": [
+        46
+      ],
+      "head": "6ebea7216b5532989a8bc4949e3d94de59c6b386",
+      "note": "main 00f76ca7c02100f0a98652db37ecb84ec2071358 -> 6ebea7216b5532989a8bc4949e3d94de59c6b386",
+      "at": "2026-11-06T19:46:53.373Z"
+    },
+    {
+      "n": 101,
+      "outcome": "landed",
+      "prs": [
+        47
+      ],
+      "head": "3fe7acbc82a9c321b12777b825b13f920d6da7b6",
+      "note": "main 6ebea7216b5532989a8bc4949e3d94de59c6b386 -> 3fe7acbc82a9c321b12777b825b13f920d6da7b6",
+      "at": "2026-11-06T19:53:24.394Z"
+    },
+    {
+      "n": 103,
+      "outcome": "abandoned",
+      "prs": [
+        54,
+        55,
+        56
+      ],
+      "head": "57340df073d8a773b87beb9aa33caf5e7791fa1c",
+      "note": "revalidation dropped #56",
+      "at": "2026-11-06T20:14:13.207Z"
+    },
+    {
+      "n": 105,
+      "outcome": "rebuilt",
+      "prs": [
+        54,
+        55
+      ],
+      "head": "94c40f2e5a9f9ecde543a7fb0bf26cfad4e25507",
+      "note": "main moved from 5e419368f28e0995219bc6cb19651a70f6c7f93f to 1531e419b4509e1741274d895f3a4199aa1c1d87",
+      "at": "2026-11-06T20:21:27.500Z"
+    },
+    {
+      "n": 108,
+      "outcome": "abandoned",
+      "prs": [
+        54,
+        55
+      ],
+      "head": "d5b93dd953ee6d778f017dd4f2c8218aee73e490",
+      "note": "revalidation dropped #55",
+      "at": "2026-11-06T20:26:21.879Z"
+    },
+    {
+      "n": 110,
+      "outcome": "landed",
+      "prs": [
+        54
+      ],
+      "head": "76f4b566d948670b660d61181055c26a0f8df31a",
+      "note": "main 1531e419b4509e1741274d895f3a4199aa1c1d87 -> 76f4b566d948670b660d61181055c26a0f8df31a",
+      "at": "2026-11-06T20:29:49.364Z"
+    },
+    {
+      "n": 118,
+      "outcome": "landed",
+      "prs": [
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78
+      ],
+      "head": "9ed218425a8e143d22fa2bab28233816004914fe",
+      "note": "main d420c5f540ab48741a51d58bbcc9fad6ffdce5d7 -> 9ed218425a8e143d22fa2bab28233816004914fe",
+      "at": "2026-11-06T22:01:13.804Z"
+    },
+    {
+      "n": 120,
+      "outcome": "landed",
+      "prs": [
+        79,
+        80,
+        81,
+        82
+      ],
+      "head": "0fab477d4a568f316e5e9dac30a140eddfade1cb",
+      "note": "main 9ed218425a8e143d22fa2bab28233816004914fe -> 0fab477d4a568f316e5e9dac30a140eddfade1cb",
+      "at": "2026-11-06T22:06:23.500Z"
+    },
+    {
+      "n": 122,
+      "outcome": "landed",
+      "prs": [
+        83
+      ],
+      "head": "f4b1745e04d0bc2b9628a2fb648059af8102d987",
+      "note": "main 0fab477d4a568f316e5e9dac30a140eddfade1cb -> f4b1745e04d0bc2b9628a2fb648059af8102d987",
+      "at": "2026-11-06T22:10:53.937Z"
+    },
+    {
+      "n": 124,
+      "outcome": "landed",
+      "prs": [
+        84
+      ],
+      "head": "684eea3e3477caf06638640c14c4db75e3b1eee5",
+      "note": "main f4b1745e04d0bc2b9628a2fb648059af8102d987 -> 684eea3e3477caf06638640c14c4db75e3b1eee5",
+      "at": "2026-11-06T22:15:28.715Z"
+    },
+    {
+      "n": 126,
+      "outcome": "landed",
+      "prs": [
+        85
+      ],
+      "head": "bb1211b9666156d466935a499c599d2501e3b065",
+      "note": "main 684eea3e3477caf06638640c14c4db75e3b1eee5 -> bb1211b9666156d466935a499c599d2501e3b065",
+      "at": "2026-11-06T22:19:53.135Z"
+    },
+    {
+      "n": 128,
+      "outcome": "landed",
+      "prs": [
+        86,
+        87
+      ],
+      "head": "f2c11b84c08d7609dd611da30d85f766cd083c72",
+      "note": "main bb1211b9666156d466935a499c599d2501e3b065 -> f2c11b84c08d7609dd611da30d85f766cd083c72",
+      "at": "2026-11-06T22:24:30.724Z"
+    },
+    {
+      "n": 131,
+      "outcome": "landed",
+      "prs": [
+        88
+      ],
+      "head": "f7a3dfe217670ee18d7964c72bd1d4e72519cc41",
+      "note": "main f2c11b84c08d7609dd611da30d85f766cd083c72 -> f7a3dfe217670ee18d7964c72bd1d4e72519cc41",
+      "at": "2026-11-06T22:29:17.475Z"
+    },
+    {
+      "n": 133,
+      "outcome": "landed",
+      "prs": [
+        89
+      ],
+      "head": "50634c77ed51723a54035c3b7ed83726498761d6",
+      "note": "main f7a3dfe217670ee18d7964c72bd1d4e72519cc41 -> 50634c77ed51723a54035c3b7ed83726498761d6",
+      "at": "2026-11-06T22:33:35.586Z"
+    },
+    {
+      "n": 156,
+      "outcome": "landed",
+      "prs": [
+        90
+      ],
+      "head": "05283fb788dcc830a9abc1582af8ec2b90104448",
+      "note": "main 50634c77ed51723a54035c3b7ed83726498761d6 -> 05283fb788dcc830a9abc1582af8ec2b90104448",
+      "at": "2026-11-06T22:55:55.204Z"
+    },
+    {
+      "n": 159,
+      "outcome": "landed",
+      "prs": [
+        91
+      ],
+      "head": "95570092a39e93a6ceec4eecd28f9f9d4461bb80",
+      "note": "main 05283fb788dcc830a9abc1582af8ec2b90104448 -> 95570092a39e93a6ceec4eecd28f9f9d4461bb80",
+      "at": "2026-11-06T23:00:25.712Z"
+    },
+    {
+      "n": 162,
+      "outcome": "landed",
+      "prs": [
+        92
+      ],
+      "head": "6db3f1b8b88553cd7cf65455fc97e58f8c769571",
+      "note": "main 95570092a39e93a6ceec4eecd28f9f9d4461bb80 -> 6db3f1b8b88553cd7cf65455fc97e58f8c769571",
+      "at": "2026-11-06T23:05:08.432Z"
+    },
+    {
+      "n": 164,
+      "outcome": "empty",
+      "prs": [
+        93
+      ],
+      "head": null,
+      "note": "every PR dropped",
+      "at": "2026-11-06T23:06:05.622Z"
+    },
+    {
+      "n": 166,
+      "outcome": "landed",
+      "prs": [
+        93
+      ],
+      "head": "540976916079a91d02a7f38417ec4cdf82d6f297",
+      "note": "main 6db3f1b8b88553cd7cf65455fc97e58f8c769571 -> 540976916079a91d02a7f38417ec4cdf82d6f297",
+      "at": "2026-11-06T23:10:37.372Z"
+    },
+    {
+      "n": 168,
+      "outcome": "landed",
+      "prs": [
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100
+      ],
+      "head": "360c050c2d945f4855280b14cbd36d5e463087dc",
+      "note": "main 540976916079a91d02a7f38417ec4cdf82d6f297 -> 360c050c2d945f4855280b14cbd36d5e463087dc",
+      "at": "2026-11-06T23:15:56.327Z"
+    },
+    {
+      "n": 170,
+      "outcome": "landed",
+      "prs": [
+        393,
+        394,
+        395,
+        396,
+        397,
+        398,
+        399,
+        400
+      ],
+      "head": "4362976f05c9f5949e83562c64525cb905188681",
+      "note": "main 3954866349293b98c9130e1b15659c9966ed8027 -> 4362976f05c9f5949e83562c64525cb905188681",
+      "at": "2026-11-07T00:10:49.365Z"
+    },
+    {
+      "n": 172,
+      "outcome": "landed",
+      "prs": [
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407,
+        408
+      ],
+      "head": "32358ec1516541b7e4d2c35d8ca81de5682172f6",
+      "note": "main 4362976f05c9f5949e83562c64525cb905188681 -> 32358ec1516541b7e4d2c35d8ca81de5682172f6",
+      "at": "2026-11-07T00:16:39.286Z"
+    },
+    {
+      "n": 175,
+      "outcome": "landed",
+      "prs": [
+        409,
+        410,
+        411,
+        412,
+        413,
+        414,
+        415,
+        416
+      ],
+      "head": "46322019e6bb0a4ef6fb9cb109c7782499672b20",
+      "note": "main 32358ec1516541b7e4d2c35d8ca81de5682172f6 -> 46322019e6bb0a4ef6fb9cb109c7782499672b20",
+      "at": "2026-11-07T00:22:27.815Z"
+    },
+    {
+      "n": 177,
+      "outcome": "landed",
+      "prs": [
+        417,
+        418,
+        419,
+        420,
+        421,
+        422,
+        423,
+        424
+      ],
+      "head": "e972c2bff95318e524b3887621bdaebcf3f1a74d",
+      "note": "main 46322019e6bb0a4ef6fb9cb109c7782499672b20 -> e972c2bff95318e524b3887621bdaebcf3f1a74d",
+      "at": "2026-11-07T00:28:05.038Z"
+    },
+    {
+      "n": 179,
+      "outcome": "landed",
+      "prs": [
+        425,
+        426,
+        427,
+        428
+      ],
+      "head": "e5cb2a3a80c818779a6334454bc6a5812b1c06b8",
+      "note": "main e972c2bff95318e524b3887621bdaebcf3f1a74d -> e5cb2a3a80c818779a6334454bc6a5812b1c06b8",
+      "at": "2026-11-07T00:33:17.157Z"
+    },
+    {
+      "n": 181,
+      "outcome": "landed",
+      "prs": [
+        429,
+        430,
+        431,
+        432
+      ],
+      "head": "09692d5e6fddf91671c32079aba3e2c526880431",
+      "note": "main e5cb2a3a80c818779a6334454bc6a5812b1c06b8 -> 09692d5e6fddf91671c32079aba3e2c526880431",
+      "at": "2026-11-07T00:38:35.821Z"
+    },
+    {
+      "n": 183,
+      "outcome": "landed",
+      "prs": [
+        433,
+        434
+      ],
+      "head": "979635aea3f8dc6d10ec9600e79d6a745e792d69",
+      "note": "main 09692d5e6fddf91671c32079aba3e2c526880431 -> 979635aea3f8dc6d10ec9600e79d6a745e792d69",
+      "at": "2026-11-07T00:43:23.628Z"
+    },
+    {
+      "n": 185,
+      "outcome": "landed",
+      "prs": [
+        435
+      ],
+      "head": "7e66f50024a5776f9569dd00f810fff4742d7766",
+      "note": "main 979635aea3f8dc6d10ec9600e79d6a745e792d69 -> 7e66f50024a5776f9569dd00f810fff4742d7766",
+      "at": "2026-11-07T00:48:00.813Z"
+    },
+    {
+      "n": 187,
+      "outcome": "landed",
+      "prs": [
+        436
+      ],
+      "head": "80589247ae365204e2eeb0c431e5c5197ba29039",
+      "note": "main 7e66f50024a5776f9569dd00f810fff4742d7766 -> 80589247ae365204e2eeb0c431e5c5197ba29039",
+      "at": "2026-11-07T00:52:28.644Z"
+    },
+    {
+      "n": 189,
+      "outcome": "landed",
+      "prs": [
+        437
+      ],
+      "head": "a9c86c51266206552fff2c2a9a96a03bdfec7f40",
+      "note": "main 80589247ae365204e2eeb0c431e5c5197ba29039 -> a9c86c51266206552fff2c2a9a96a03bdfec7f40",
+      "at": "2026-11-07T00:56:48.162Z"
+    },
+    {
+      "n": 191,
+      "outcome": "abandoned",
+      "prs": [
+        452,
+        453
+      ],
+      "head": "47b3c5d4bcb46bf21893b561ea6720169050c353",
+      "note": "revalidation dropped #453",
+      "at": "2026-11-07T01:08:16.986Z"
+    },
+    {
+      "n": 193,
+      "outcome": "landed",
+      "prs": [
+        452
+      ],
+      "head": "17ca2e9b6a8ddb2b4b51111cbc40a38404c4f75c",
+      "note": "main a9c86c51266206552fff2c2a9a96a03bdfec7f40 -> 17ca2e9b6a8ddb2b4b51111cbc40a38404c4f75c",
+      "at": "2026-11-07T01:09:40.251Z"
+    },
+    {
+      "n": 197,
+      "outcome": "rebuilt",
+      "prs": [
+        454,
+        455
+      ],
+      "head": "f5ead44c7ea6be8d9a8b5fc5e289caf670fec501",
+      "note": "main moved from 17ca2e9b6a8ddb2b4b51111cbc40a38404c4f75c to 07b6630c28a369fc77beafd5cbf8b805499d49cf",
+      "at": "2026-11-07T01:13:16.276Z"
+    },
+    {
+      "n": 199,
+      "outcome": "landed",
+      "prs": [
+        454,
+        455
+      ],
+      "head": "6ddb3457abb2adf788110088ceb8b5536152a4e6",
+      "note": "main 07b6630c28a369fc77beafd5cbf8b805499d49cf -> 6ddb3457abb2adf788110088ceb8b5536152a4e6",
+      "at": "2026-11-07T01:14:42.519Z"
+    },
+    {
+      "n": 203,
+      "outcome": "landed",
+      "prs": [
+        456,
+        457
+      ],
+      "head": "61e27035243d40cbba328a21d4280a6db73bd83b",
+      "note": "main 6ddb3457abb2adf788110088ceb8b5536152a4e6 -> 61e27035243d40cbba328a21d4280a6db73bd83b",
+      "at": "2026-11-07T01:18:46.415Z"
+    },
+    {
+      "n": 207,
+      "outcome": "landed",
+      "prs": [
+        458,
+        459
+      ],
+      "head": "258adf834bcfb43234126599d61200fa2806c7a4",
+      "note": "main 61e27035243d40cbba328a21d4280a6db73bd83b -> 258adf834bcfb43234126599d61200fa2806c7a4",
+      "at": "2026-11-07T01:22:33.822Z"
+    },
+    {
+      "n": 211,
+      "outcome": "landed",
+      "prs": [
+        460,
+        461
+      ],
+      "head": "af91618147e94024da8c5479ffa2676690dc94d9",
+      "note": "main 258adf834bcfb43234126599d61200fa2806c7a4 -> af91618147e94024da8c5479ffa2676690dc94d9",
+      "at": "2026-11-07T01:25:43.486Z"
+    },
+    {
+      "n": 215,
+      "outcome": "landed",
+      "prs": [
+        462,
+        463
+      ],
+      "head": "6df67678f93af40c0e63d2ee4edc71c2b22ca88f",
+      "note": "main af91618147e94024da8c5479ffa2676690dc94d9 -> 6df67678f93af40c0e63d2ee4edc71c2b22ca88f",
+      "at": "2026-11-07T01:29:09.476Z"
+    },
+    {
+      "n": 219,
+      "outcome": "landed",
+      "prs": [
+        464,
+        465
+      ],
+      "head": "8d95b2b46c337e5eb787da35efd1d38134c9f257",
+      "note": "main 6df67678f93af40c0e63d2ee4edc71c2b22ca88f -> 8d95b2b46c337e5eb787da35efd1d38134c9f257",
+      "at": "2026-11-07T01:52:52.023Z"
+    },
+    {
+      "n": 223,
+      "outcome": "landed",
+      "prs": [
+        467,
+        468,
+        469,
+        470,
+        471,
+        472,
+        473,
+        474
+      ],
+      "head": "e8d7a5d523f942bba330014335b041016432644b",
+      "note": "main 8d95b2b46c337e5eb787da35efd1d38134c9f257 -> e8d7a5d523f942bba330014335b041016432644b",
+      "at": "2026-11-07T02:01:34.172Z"
+    },
+    {
+      "n": 226,
+      "outcome": "landed",
+      "prs": [
+        475,
+        476,
+        477,
+        478,
+        479,
+        480,
+        481,
+        482
+      ],
+      "head": "4eedb0610c45355f4bf7a5e51eb3263d489d6c32",
+      "note": "main e8d7a5d523f942bba330014335b041016432644b -> 4eedb0610c45355f4bf7a5e51eb3263d489d6c32",
+      "at": "2026-11-07T02:07:12.897Z"
+    },
+    {
+      "n": 229,
+      "outcome": "landed",
+      "prs": [
+        483,
+        484,
+        485,
+        486
+      ],
+      "head": "b074b5422c460af0bed9a0373b12e5929d2ad43a",
+      "note": "main 4eedb0610c45355f4bf7a5e51eb3263d489d6c32 -> b074b5422c460af0bed9a0373b12e5929d2ad43a",
+      "at": "2026-11-07T02:12:20.629Z"
+    },
+    {
+      "n": 231,
+      "outcome": "abandoned",
+      "prs": [
+        487,
+        488
+      ],
+      "head": "d5f50aad9c53ffb3d933846ff90d6b6002cd4c4d",
+      "note": "revalidation dropped #488",
+      "at": "2026-11-07T02:15:23.151Z"
+    },
+    {
+      "n": 233,
+      "outcome": "landed",
+      "prs": [
+        487
+      ],
+      "head": "1856587852b07056e87488cf8e1da98c209a4193",
+      "note": "main b074b5422c460af0bed9a0373b12e5929d2ad43a -> 1856587852b07056e87488cf8e1da98c209a4193",
+      "at": "2026-11-07T02:16:46.935Z"
+    },
+    {
+      "n": 237,
+      "outcome": "landed",
+      "prs": [
+        489,
+        490
+      ],
+      "head": "ee8282a73711e0072b63b587eba14d4c141b8efc",
+      "note": "main 1856587852b07056e87488cf8e1da98c209a4193 -> ee8282a73711e0072b63b587eba14d4c141b8efc",
+      "at": "2026-11-07T02:20:53.526Z"
+    },
+    {
+      "n": 244,
+      "outcome": "rebuilt",
+      "prs": [
+        491,
+        492
+      ],
+      "head": "00306d39fabc084b470ed5149bb7d8ac54d8615d",
+      "note": "main moved from ee8282a73711e0072b63b587eba14d4c141b8efc to 03bdbd8ca449390a37b9ead7f745a7a86ed5843e",
+      "at": "2026-11-07T02:54:31.679Z"
+    },
+    {
+      "n": 246,
+      "outcome": "landed",
+      "prs": [
+        491,
+        492
+      ],
+      "head": "f9ac48170d1912edeff3f6b58d94a45bc4635ebd",
+      "note": "main 03bdbd8ca449390a37b9ead7f745a7a86ed5843e -> f9ac48170d1912edeff3f6b58d94a45bc4635ebd",
+      "at": "2026-11-07T02:56:04.615Z"
+    },
+    {
+      "n": 250,
+      "outcome": "landed",
+      "prs": [
+        493,
+        494
+      ],
+      "head": "3301413ee2c2a9d302290d9a46a98d9c4070f3ef",
+      "note": "main f9ac48170d1912edeff3f6b58d94a45bc4635ebd -> 3301413ee2c2a9d302290d9a46a98d9c4070f3ef",
+      "at": "2026-11-07T02:59:53.083Z"
+    },
+    {
+      "n": 254,
+      "outcome": "landed",
+      "prs": [
+        495,
+        496
+      ],
+      "head": "13cec0d49e023be587a90c13cc106d3230e7c412",
+      "note": "main 3301413ee2c2a9d302290d9a46a98d9c4070f3ef -> 13cec0d49e023be587a90c13cc106d3230e7c412",
+      "at": "2026-11-07T03:02:55.818Z"
+    },
+    {
+      "n": 258,
+      "outcome": "landed",
+      "prs": [
+        497,
+        498
+      ],
+      "head": "1f5bcddc980fbab3720991bcbb4b3c3149457b1a",
+      "note": "main 13cec0d49e023be587a90c13cc106d3230e7c412 -> 1f5bcddc980fbab3720991bcbb4b3c3149457b1a",
+      "at": "2026-11-07T03:06:10.379Z"
+    },
+    {
+      "n": 262,
+      "outcome": "landed",
+      "prs": [
+        499,
+        500
+      ],
+      "head": "a44891841088832692a19855828abcdef77d8cea",
+      "note": "main 1f5bcddc980fbab3720991bcbb4b3c3149457b1a -> a44891841088832692a19855828abcdef77d8cea",
+      "at": "2026-11-07T03:29:34.804Z"
+    },
+    {
+      "n": 266,
+      "outcome": "landed",
+      "prs": [
+        501,
+        502,
+        503,
+        504
+      ],
+      "head": "c7b1901a99c6fcf6fac311cea6f5cead186aa435",
+      "note": "main a44891841088832692a19855828abcdef77d8cea -> c7b1901a99c6fcf6fac311cea6f5cead186aa435",
+      "at": "2026-11-07T03:35:10.688Z"
+    }
+  ],
+  "epochBranch": "qlander-epoch/queue",
+  "flakes": [
+    {
+      "at": "2026-11-05T13:35:29.896Z",
+      "n": 38,
+      "count": 1,
+      "keys": [
+        "test"
+      ]
+    },
+    {
+      "at": "2026-11-05T13:46:41.959Z",
+      "n": 42,
+      "count": 1,
+      "keys": [
+        "test"
+      ]
+    }
+  ]
 }
