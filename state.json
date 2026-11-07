@@ -12,58 +12,32 @@
  },
  "seq": 233,
  "nextLineage": 60,
- "journal": {
-  "seq": 233,
-  "op": {
-   "kind": "build",
-   "n": 233,
-   "base": "b074b5422c460af0bed9a0373b12e5929d2ad43a",
-   "pins": [
-    {
-     "pr": 487,
-     "head": "d30b31d8d42d7f6006dc702d08c3443bd682ac63"
-    }
-   ],
-   "depth": 0,
-   "lineage": 59,
-   "source": {
-    "kind": "pending",
-    "item": {
-     "prs": [
-      487
-     ],
-     "depth": 0,
-     "lineage": 59
-    }
-   },
-   "rebuild": false
-  },
-  "reserved": true,
-  "at": "2026-11-07T02:15:23.151Z",
-  "checkpoint": {
-   "survivors": [
-    {
-     "pr": 487,
-     "head": "d30b31d8d42d7f6006dc702d08c3443bd682ac63"
-    }
-   ],
-   "dropped": [],
-   "chainHead": "1856587852b07056e87488cf8e1da98c209a4193",
-   "stack": [
-    {
-     "pr": 487,
-     "commit": "1856587852b07056e87488cf8e1da98c209a4193",
-     "parent": "b074b5422c460af0bed9a0373b12e5929d2ad43a",
-     "tree": "e5cf54666331234a372bbfe990ff821daecfdc32",
-     "own": [
-      "d30b31d8d42d"
-     ]
-    }
-   ]
-  },
-  "tries": 0
+ "journal": null,
+ "active": {
+  "n": 233,
+  "base": "b074b5422c460af0bed9a0373b12e5929d2ad43a",
+  "head": "1856587852b07056e87488cf8e1da98c209a4193",
+  "depth": 0,
+  "prs": [
+   487
+  ],
+  "lineage": 59,
+  "rerun": null,
+  "rerunAt": null,
+  "cancels": [],
+  "builtAt": "2026-11-07T02:15:45.608Z",
+  "stack": [
+   {
+    "pr": 487,
+    "commit": "1856587852b07056e87488cf8e1da98c209a4193",
+    "parent": "b074b5422c460af0bed9a0373b12e5929d2ad43a",
+    "tree": "e5cf54666331234a372bbfe990ff821daecfdc32",
+    "own": [
+     "d30b31d8d42d"
+    ]
+   }
+  ]
  },
- "active": null,
  "auth": {
   "487": {
    "head": "d30b31d8d42d7f6006dc702d08c3443bd682ac63",
@@ -505,6 +479,17 @@
    "id": "d:231",
    "kind": "deleteRef",
    "ref": "queue/231"
+  },
+  {
+   "id": "db:233",
+   "kind": "deleteRef",
+   "ref": "qlander-build/233"
+  },
+  {
+   "id": "c:487:q:233",
+   "kind": "comment",
+   "pr": 487,
+   "body": "Queued in batch 233 at `d30b31d8d42d7f6006dc702d08c3443bd682ac63` (`queue/233`, on main `b074b5422c460af0bed9a0373b12e5929d2ad43a`)."
   }
  ],
  "history": [
