@@ -10,44 +10,45 @@
    "job": "Queue tick"
   }
  },
- "seq": 198,
+ "seq": 199,
  "nextLineage": 51,
- "journal": null,
- "active": {
-  "n": 197,
-  "base": "17ca2e9b6a8ddb2b4b51111cbc40a38404c4f75c",
-  "head": "f5ead44c7ea6be8d9a8b5fc5e289caf670fec501",
-  "depth": 0,
-  "prs": [
-   454,
-   455
-  ],
-  "lineage": 50,
-  "rerun": null,
-  "rerunAt": null,
-  "cancels": [],
-  "builtAt": "2026-11-07T01:11:44.830Z",
-  "stack": [
-   {
-    "pr": 454,
-    "commit": "93165dff99626b9dc6e859efc655597920c2249e",
-    "parent": "17ca2e9b6a8ddb2b4b51111cbc40a38404c4f75c",
-    "tree": "e9a913f32157721a2dda9394ba76422db3120ed2",
-    "own": [
-     "b23e42d00985"
-    ]
+ "journal": {
+  "seq": 199,
+  "op": {
+   "kind": "build",
+   "n": 199,
+   "base": "07b6630c28a369fc77beafd5cbf8b805499d49cf",
+   "pins": [
+    {
+     "pr": 454,
+     "head": "b23e42d00985b51787a0cfd22c9a2cdb28c6fce6"
+    },
+    {
+     "pr": 455,
+     "head": "2501837cd916fc5a723aed5829caa5c31f7129cd"
+    }
+   ],
+   "depth": 0,
+   "lineage": 50,
+   "source": {
+    "kind": "pending",
+    "item": {
+     "prs": [
+      454,
+      455
+     ],
+     "depth": 0,
+     "lineage": 50
+    }
    },
-   {
-    "pr": 455,
-    "commit": "f5ead44c7ea6be8d9a8b5fc5e289caf670fec501",
-    "parent": "93165dff99626b9dc6e859efc655597920c2249e",
-    "tree": "eb849cc54fac33e876260089a0e897fabd07dfc0",
-    "own": [
-     "2501837cd916"
-    ]
-   }
-  ]
+   "rebuild": true
+  },
+  "reserved": true,
+  "at": "2026-11-07T01:13:16.276Z",
+  "checkpoint": null,
+  "tries": 0
  },
+ "active": null,
  "auth": {
   "454": {
    "head": "b23e42d00985b51787a0cfd22c9a2cdb28c6fce6",
@@ -232,7 +233,7 @@
    "runs": 2
   },
   "50": {
-   "runs": 1
+   "runs": 2
   }
  },
  "window": [
@@ -403,6 +404,10 @@
   {
    "at": "2026-11-07T01:11:20.006Z",
    "cost": 1
+  },
+  {
+   "at": "2026-11-07T01:13:16.276Z",
+   "cost": 1
   }
  ],
  "redStreak": 0,
@@ -420,6 +425,11 @@
    "seen": [
     42322225739
    ]
+  },
+  {
+   "id": "d:197",
+   "kind": "deleteRef",
+   "ref": "queue/197"
   }
  ],
  "history": [
@@ -1164,6 +1174,17 @@
    "head": "17ca2e9b6a8ddb2b4b51111cbc40a38404c4f75c",
    "note": "main a9c86c51266206552fff2c2a9a96a03bdfec7f40 -> 17ca2e9b6a8ddb2b4b51111cbc40a38404c4f75c",
    "at": "2026-11-07T01:09:40.251Z"
+  },
+  {
+   "n": 197,
+   "outcome": "rebuilt",
+   "prs": [
+    454,
+    455
+   ],
+   "head": "f5ead44c7ea6be8d9a8b5fc5e289caf670fec501",
+   "note": "main moved from 17ca2e9b6a8ddb2b4b51111cbc40a38404c4f75c to 07b6630c28a369fc77beafd5cbf8b805499d49cf",
+   "at": "2026-11-07T01:13:16.276Z"
   }
  ],
  "epochBranch": "qlander-epoch/queue",
