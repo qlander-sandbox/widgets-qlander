@@ -521,15 +521,11 @@
  "verify": [],
  "outbox": [
   {
-   "id": "db:229",
-   "kind": "deleteRef",
-   "ref": "qlander-build/229"
-  },
-  {
    "id": "c:483:q:229",
    "kind": "comment",
    "pr": 483,
-   "body": "Queued in batch 229 at `8c5677203838b005e24d714eb44df4c38016fe9b` (`queue/229`, on main `4eedb0610c45355f4bf7a5e51eb3263d489d6c32`)."
+   "body": "Queued in batch 229 at `8c5677203838b005e24d714eb44df4c38016fe9b` (`queue/229`, on main `4eedb0610c45355f4bf7a5e51eb3263d489d6c32`).",
+   "sentAt": "2026-11-07T02:09:21.427Z"
   },
   {
    "id": "c:484:q:229",
