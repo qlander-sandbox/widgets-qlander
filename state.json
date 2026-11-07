@@ -415,35 +415,11 @@
  "verify": [],
  "outbox": [
   {
-   "id": "u:425:v:1dbdda569240b48927d3f1b4b2ef6c1853e1bb81",
-   "kind": "unready",
-   "pr": 425
-  },
-  {
-   "id": "u:426:v:fb53c942e783e4da6ba0171435fecee03793b3b5",
-   "kind": "unready",
-   "pr": 426
-  },
-  {
-   "id": "u:427:v:e5f74987bf48494af06e76c0b42dc9f6b94d1a6b",
-   "kind": "unready",
-   "pr": 427
-  },
-  {
-   "id": "u:428:v:e5cb2a3a80c818779a6334454bc6a5812b1c06b8",
-   "kind": "unready",
-   "pr": 428
-  },
-  {
-   "id": "db:181",
-   "kind": "deleteRef",
-   "ref": "qlander-build/181"
-  },
-  {
    "id": "c:429:q:181",
    "kind": "comment",
    "pr": 429,
-   "body": "Queued in batch 181 at `b48bd3fc967e9bae1dd87d58f4927c6b244972cc` (`queue/181`, on main `e5cb2a3a80c818779a6334454bc6a5812b1c06b8`)."
+   "body": "Queued in batch 181 at `b48bd3fc967e9bae1dd87d58f4927c6b244972cc` (`queue/181`, on main `e5cb2a3a80c818779a6334454bc6a5812b1c06b8`).",
+   "sentAt": "2026-11-07T00:35:26.129Z"
   },
   {
    "id": "c:430:q:181",
