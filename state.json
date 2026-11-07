@@ -280,15 +280,11 @@
  "verify": [],
  "outbox": [
   {
-   "id": "db:244",
-   "kind": "deleteRef",
-   "ref": "qlander-build/244"
-  },
-  {
    "id": "c:491:q:244",
    "kind": "comment",
    "pr": 491,
-   "body": "Queued in batch 244 at `b3c226224bb4ab6e2129359752a596c143d81611` (`queue/244`, on main `ee8282a73711e0072b63b587eba14d4c141b8efc`)."
+   "body": "Queued in batch 244 at `b3c226224bb4ab6e2129359752a596c143d81611` (`queue/244`, on main `ee8282a73711e0072b63b587eba14d4c141b8efc`).",
+   "sentAt": "2026-11-07T02:52:56.509Z"
   },
   {
    "id": "c:492:q:244",
