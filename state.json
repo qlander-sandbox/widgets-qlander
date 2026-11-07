@@ -312,15 +312,11 @@
  "verify": [],
  "outbox": [
   {
-   "id": "db:262",
-   "kind": "deleteRef",
-   "ref": "qlander-build/262"
-  },
-  {
    "id": "c:499:q:262",
    "kind": "comment",
    "pr": 499,
-   "body": "Queued in batch 262 at `4b787dafa005c16198b4703301a95f851d89a51f` (`queue/262`, on main `1f5bcddc980fbab3720991bcbb4b3c3149457b1a`)."
+   "body": "Queued in batch 262 at `4b787dafa005c16198b4703301a95f851d89a51f` (`queue/262`, on main `1f5bcddc980fbab3720991bcbb4b3c3149457b1a`).",
+   "sentAt": "2026-11-07T03:07:59.585Z"
   },
   {
    "id": "c:500:q:262",
