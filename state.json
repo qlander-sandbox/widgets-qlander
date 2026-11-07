@@ -348,7 +348,8 @@
    "id": "c:401:landed:172",
    "kind": "comment",
    "pr": 401,
-   "body": "Landed in main at `32358ec1516541b7e4d2c35d8ca81de5682172f6` (batch 172, pin `b06c2cf6deac54812bde64b9a05350c86e3315fb`, squashed as `d5ca743e3d0002cccdb575c5398c9f87e02b75ed`, which its branch now points at)."
+   "body": "Landed in main at `32358ec1516541b7e4d2c35d8ca81de5682172f6` (batch 172, pin `b06c2cf6deac54812bde64b9a05350c86e3315fb`, squashed as `d5ca743e3d0002cccdb575c5398c9f87e02b75ed`, which its branch now points at).",
+   "sentAt": "2026-11-07T00:16:41.223Z"
   },
   {
    "id": "c:402:landed:172",
