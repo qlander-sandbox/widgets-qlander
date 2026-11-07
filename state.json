@@ -10,7 +10,7 @@
    "job": "Queue tick"
   }
  },
- "seq": 267,
+ "seq": 268,
  "nextLineage": 67,
  "journal": null,
  "active": null,
@@ -251,45 +251,29 @@
  "redStreak": 0,
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-07T03:35:10.688Z",
- "verify": [
+ "verify": [],
+ "outbox": [
   {
-   "pr": 501,
-   "pin": "6e62db1e7c2bcda1e7ca03e17e2dc1486b6ad93e",
-   "landedIn": "c7b1901a99c6fcf6fac311cea6f5cead186aa435",
-   "since": "2026-11-07T03:35:10.688Z",
-   "ticks": 0,
-   "notified": false,
-   "admitted": "daa9528660ac6f9141214b41a2033b441f663e32"
+   "id": "u:501:v:6e62db1e7c2bcda1e7ca03e17e2dc1486b6ad93e",
+   "kind": "unready",
+   "pr": 501
   },
   {
-   "pr": 502,
-   "pin": "9ed49372b2a3d2d71728e25c467ae4823a6a05b3",
-   "landedIn": "c7b1901a99c6fcf6fac311cea6f5cead186aa435",
-   "since": "2026-11-07T03:35:10.688Z",
-   "ticks": 0,
-   "notified": false,
-   "admitted": "2812681c873f717fc8ce00977865738e7369f95c"
+   "id": "u:502:v:9ed49372b2a3d2d71728e25c467ae4823a6a05b3",
+   "kind": "unready",
+   "pr": 502
   },
   {
-   "pr": 503,
-   "pin": "31c66b9650cfb7db830d1853107ea53288054921",
-   "landedIn": "c7b1901a99c6fcf6fac311cea6f5cead186aa435",
-   "since": "2026-11-07T03:35:10.688Z",
-   "ticks": 0,
-   "notified": false,
-   "admitted": "bd9dabb694771171b4f7627fbf49a66449dd66e3"
+   "id": "u:503:v:31c66b9650cfb7db830d1853107ea53288054921",
+   "kind": "unready",
+   "pr": 503
   },
   {
-   "pr": 504,
-   "pin": "c7b1901a99c6fcf6fac311cea6f5cead186aa435",
-   "landedIn": "c7b1901a99c6fcf6fac311cea6f5cead186aa435",
-   "since": "2026-11-07T03:35:10.688Z",
-   "ticks": 0,
-   "notified": false,
-   "admitted": "b4b0fadd5ad037371e53fe6fe25c017cf5baf86f"
+   "id": "u:504:v:c7b1901a99c6fcf6fac311cea6f5cead186aa435",
+   "kind": "unready",
+   "pr": 504
   }
  ],
- "outbox": [],
  "history": [
   {
    "n": 1,
@@ -1303,27 +1287,5 @@
   "2812681c873f",
   "bd9dabb69477",
   "b4b0fadd5ad0"
- ],
- "eligibleSince": {
-  "501": {
-   "head": "daa9528660ac6f9141214b41a2033b441f663e32",
-   "labelledAt": "2026-11-07T03:31:11Z",
-   "since": "2026-11-07T03:31:37.183Z"
-  },
-  "502": {
-   "head": "2812681c873f717fc8ce00977865738e7369f95c",
-   "labelledAt": "2026-11-07T03:31:12Z",
-   "since": "2026-11-07T03:31:37.183Z"
-  },
-  "503": {
-   "head": "bd9dabb694771171b4f7627fbf49a66449dd66e3",
-   "labelledAt": "2026-11-07T03:31:14Z",
-   "since": "2026-11-07T03:31:37.183Z"
-  },
-  "504": {
-   "head": "b4b0fadd5ad037371e53fe6fe25c017cf5baf86f",
-   "labelledAt": "2026-11-07T03:31:16Z",
-   "since": "2026-11-07T03:31:37.183Z"
-  }
- }
+ ]
 }
