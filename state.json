@@ -305,17 +305,11 @@
  "verify": [],
  "outbox": [
   {
-   "id": "c:497:q:258",
-   "kind": "comment",
-   "pr": 497,
-   "body": "Queued in batch 258 at `cc5434b3b2d21566f04497483ea0b4a871eb9eb9` (`queue/258`, on main `13cec0d49e023be587a90c13cc106d3230e7c412`).",
-   "sentAt": "2026-11-07T03:04:56.533Z"
-  },
-  {
    "id": "c:498:q:258",
    "kind": "comment",
    "pr": 498,
-   "body": "Queued in batch 258 at `0e4a4ee4efe9415d7c81c5df0bab7a5f4fa9526e` (`queue/258`, on main `13cec0d49e023be587a90c13cc106d3230e7c412`)."
+   "body": "Queued in batch 258 at `0e4a4ee4efe9415d7c81c5df0bab7a5f4fa9526e` (`queue/258`, on main `13cec0d49e023be587a90c13cc106d3230e7c412`).",
+   "sentAt": "2026-11-07T03:04:56.533Z"
   }
  ],
  "history": [
