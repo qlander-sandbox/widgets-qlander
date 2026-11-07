@@ -10,11 +10,69 @@
    "job": "Queue tick"
   }
  },
- "seq": 257,
- "nextLineage": 64,
- "journal": null,
+ "seq": 258,
+ "nextLineage": 65,
+ "journal": {
+  "seq": 258,
+  "op": {
+   "kind": "build",
+   "n": 258,
+   "base": "13cec0d49e023be587a90c13cc106d3230e7c412",
+   "pins": [
+    {
+     "pr": 497,
+     "head": "cc5434b3b2d21566f04497483ea0b4a871eb9eb9"
+    },
+    {
+     "pr": 498,
+     "head": "0e4a4ee4efe9415d7c81c5df0bab7a5f4fa9526e"
+    }
+   ],
+   "depth": 0,
+   "lineage": 64,
+   "source": {
+    "kind": "candidates"
+   },
+   "rebuild": false
+  },
+  "reserved": true,
+  "at": "2026-11-07T03:04:31.073Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": null,
- "auth": {},
+ "auth": {
+  "497": {
+   "head": "cc5434b3b2d21566f04497483ea0b4a871eb9eb9",
+   "baseRepoId": 1446564086,
+   "policy": "v2:4270d7379bfe4917",
+   "policyPr": false,
+   "admittedAt": "2026-11-07T03:04:31.073Z",
+   "labelledAt": "2026-11-07T03:04:22Z",
+   "evidence": [
+    "run 42332240353",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lf-f-lost2stale-13104-1"
+  },
+  "498": {
+   "head": "0e4a4ee4efe9415d7c81c5df0bab7a5f4fa9526e",
+   "baseRepoId": 1446564086,
+   "policy": "v2:4270d7379bfe4917",
+   "policyPr": false,
+   "admittedAt": "2026-11-07T03:04:31.073Z",
+   "labelledAt": "2026-11-07T03:04:23Z",
+   "evidence": [
+    "run 42332244881",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lf-f-lost2stale-13104-2"
+  }
+ },
  "pending": [],
  "solo": [],
  "operatorSolo": [],
@@ -207,6 +265,9 @@
   },
   "63": {
    "runs": 1
+  },
+  "64": {
+   "runs": 1
   }
  },
  "window": [
@@ -224,6 +285,10 @@
   },
   {
    "at": "2026-11-07T03:01:33.439Z",
+   "cost": 1
+  },
+  {
+   "at": "2026-11-07T03:04:31.073Z",
    "cost": 1
   }
  ],
@@ -1202,5 +1267,17 @@
   "43c462ea55fa",
   "5aead856fe95",
   "ff9f34e65cb4"
- ]
+ ],
+ "eligibleSince": {
+  "497": {
+   "head": "cc5434b3b2d21566f04497483ea0b4a871eb9eb9",
+   "labelledAt": "2026-11-07T03:04:22Z",
+   "since": "2026-11-07T03:04:31.073Z"
+  },
+  "498": {
+   "head": "0e4a4ee4efe9415d7c81c5df0bab7a5f4fa9526e",
+   "labelledAt": "2026-11-07T03:04:23Z",
+   "since": "2026-11-07T03:04:31.073Z"
+  }
+ }
 }
