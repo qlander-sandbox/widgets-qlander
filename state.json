@@ -10,11 +10,69 @@
    "job": "Queue tick"
   }
  },
- "seq": 249,
- "nextLineage": 62,
- "journal": null,
+ "seq": 250,
+ "nextLineage": 63,
+ "journal": {
+  "seq": 250,
+  "op": {
+   "kind": "build",
+   "n": 250,
+   "base": "f9ac48170d1912edeff3f6b58d94a45bc4635ebd",
+   "pins": [
+    {
+     "pr": 493,
+     "head": "a77b79f4c8fa7af88c70f1d27c32c62c2877a695"
+    },
+    {
+     "pr": 494,
+     "head": "43c462ea55fa43a30b504df7be37269c2d7efe06"
+    }
+   ],
+   "depth": 0,
+   "lineage": 62,
+   "source": {
+    "kind": "candidates"
+   },
+   "rebuild": false
+  },
+  "reserved": true,
+  "at": "2026-11-07T02:57:44.692Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": null,
- "auth": {},
+ "auth": {
+  "493": {
+   "head": "a77b79f4c8fa7af88c70f1d27c32c62c2877a695",
+   "baseRepoId": 1446564086,
+   "policy": "v2:4270d7379bfe4917",
+   "policyPr": false,
+   "admittedAt": "2026-11-07T02:57:44.692Z",
+   "labelledAt": "2026-11-07T02:57:35Z",
+   "evidence": [
+    "run 42331698267",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lf-f-lost1-31649-1"
+  },
+  "494": {
+   "head": "43c462ea55fa43a30b504df7be37269c2d7efe06",
+   "baseRepoId": 1446564086,
+   "policy": "v2:4270d7379bfe4917",
+   "policyPr": false,
+   "admittedAt": "2026-11-07T02:57:44.692Z",
+   "labelledAt": "2026-11-07T02:57:37Z",
+   "evidence": [
+    "run 42331703045",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lf-f-lost1-31649-2"
+  }
+ },
  "pending": [],
  "solo": [],
  "operatorSolo": [],
@@ -201,6 +259,9 @@
   },
   "61": {
    "runs": 2
+  },
+  "62": {
+   "runs": 1
   }
  },
  "window": [
@@ -210,6 +271,10 @@
   },
   {
    "at": "2026-11-07T02:54:31.679Z",
+   "cost": 1
+  },
+  {
+   "at": "2026-11-07T02:57:44.692Z",
    "cost": 1
   }
  ],
@@ -1162,5 +1227,17 @@
  "squashed": [
   "b3c226224bb4",
   "6f5684cad011"
- ]
+ ],
+ "eligibleSince": {
+  "493": {
+   "head": "a77b79f4c8fa7af88c70f1d27c32c62c2877a695",
+   "labelledAt": "2026-11-07T02:57:35Z",
+   "since": "2026-11-07T02:57:44.692Z"
+  },
+  "494": {
+   "head": "43c462ea55fa43a30b504df7be37269c2d7efe06",
+   "labelledAt": "2026-11-07T02:57:37Z",
+   "since": "2026-11-07T02:57:44.692Z"
+  }
+ }
 }
