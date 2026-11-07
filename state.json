@@ -487,55 +487,11 @@
  "verify": [],
  "outbox": [
   {
-   "id": "u:393:v:0dc3ea18eeb651103f6b56879f186db20fa97e0e",
-   "kind": "unready",
-   "pr": 393
-  },
-  {
-   "id": "u:394:v:4afc27fb89e6f8dccdb95009c2fdd26737942005",
-   "kind": "unready",
-   "pr": 394
-  },
-  {
-   "id": "u:395:v:3bc4f9ee9e2454dd2aacd2d00786453efda676cc",
-   "kind": "unready",
-   "pr": 395
-  },
-  {
-   "id": "u:396:v:4c97ff934e8939fc593ba12b59d5976934bc8800",
-   "kind": "unready",
-   "pr": 396
-  },
-  {
-   "id": "u:397:v:ee5bbb677452300c6a6390ee22fdf487e07f0991",
-   "kind": "unready",
-   "pr": 397
-  },
-  {
-   "id": "u:398:v:bda90677015704959de0bac4bbc0590bdce627aa",
-   "kind": "unready",
-   "pr": 398
-  },
-  {
-   "id": "u:399:v:86018b987fe810dcff201969c421b685d71c11e2",
-   "kind": "unready",
-   "pr": 399
-  },
-  {
-   "id": "u:400:v:4362976f05c9f5949e83562c64525cb905188681",
-   "kind": "unready",
-   "pr": 400
-  },
-  {
-   "id": "db:172",
-   "kind": "deleteRef",
-   "ref": "qlander-build/172"
-  },
-  {
    "id": "c:401:q:172",
    "kind": "comment",
    "pr": 401,
-   "body": "Queued in batch 172 at `b06c2cf6deac54812bde64b9a05350c86e3315fb` (`queue/172`, on main `4362976f05c9f5949e83562c64525cb905188681`)."
+   "body": "Queued in batch 172 at `b06c2cf6deac54812bde64b9a05350c86e3315fb` (`queue/172`, on main `4362976f05c9f5949e83562c64525cb905188681`).",
+   "sentAt": "2026-11-07T00:13:46.205Z"
   },
   {
    "id": "c:402:q:172",
