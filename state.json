@@ -473,19 +473,7 @@
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-07T01:29:09.476Z",
  "verify": [],
- "outbox": [
-  {
-   "id": "x:191",
-   "kind": "cancelRuns",
-   "ref": "queue/191",
-   "head": "47b3c5d4bcb46bf21893b561ea6720169050c353",
-   "until": "2026-11-07T01:38:16.986Z",
-   "giveUpAt": "2026-11-07T07:08:16.986Z",
-   "seen": [
-    42322225739
-   ]
-  }
- ],
+ "outbox": [],
  "history": [
   {
    "n": 1,
