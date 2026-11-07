@@ -41,8 +41,6 @@ lease:
   fenceMarginMinutes: 2
 
 queue:
-  landing:
-    mode: linear
   stateBranch: qlander-state # in this repo
   refs: # in the target
     queuePrefix: queue/
