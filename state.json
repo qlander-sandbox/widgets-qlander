@@ -282,15 +282,7 @@
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-07T02:20:53.526Z",
  "verify": [],
- "outbox": [
-  {
-   "id": "c:492:q:246",
-   "kind": "comment",
-   "pr": 492,
-   "body": "Queued in batch 246 at `6f5684cad01153f25570d3219ddd73823630d962` (`queue/246`, on main `03bdbd8ca449390a37b9ead7f745a7a86ed5843e`).",
-   "sentAt": "2026-11-07T02:55:03.659Z"
-  }
- ],
+ "outbox": [],
  "history": [
   {
    "n": 1,
