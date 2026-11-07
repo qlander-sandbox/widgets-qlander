@@ -10,15 +10,54 @@
    "job": "Queue tick"
   }
  },
- "seq": 188,
- "nextLineage": 48,
- "journal": null,
+ "seq": 189,
+ "nextLineage": 49,
+ "journal": {
+  "seq": 189,
+  "op": {
+   "kind": "build",
+   "n": 189,
+   "base": "80589247ae365204e2eeb0c431e5c5197ba29039",
+   "pins": [
+    {
+     "pr": 437,
+     "head": "d1b652ec905e1580d19cf2dde3ac83f1e33b58b1"
+    }
+   ],
+   "depth": 0,
+   "lineage": 48,
+   "source": {
+    "kind": "candidates"
+   },
+   "rebuild": false
+  },
+  "reserved": true,
+  "at": "2026-11-07T00:53:27.845Z",
+  "checkpoint": null,
+  "tries": 0
+ },
  "active": null,
- "auth": {},
+ "auth": {
+  "437": {
+   "head": "d1b652ec905e1580d19cf2dde3ac83f1e33b58b1",
+   "baseRepoId": 1446564086,
+   "policy": "v2:b571606c0d1d3613",
+   "policyPr": false,
+   "admittedAt": "2026-11-07T00:53:27.845Z",
+   "labelledAt": "2026-11-07T00:53:07Z",
+   "evidence": [
+    "run 42320892020",
+    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
+   ],
+   "reviewRun": null,
+   "author": "brett",
+   "headRef": "lf-w10-1"
+  }
+ },
  "pending": [],
  "solo": [],
  "operatorSolo": [
-  436
+  437
  ],
  "lineages": {
   "1": {
@@ -160,6 +199,9 @@
    "runs": 1
   },
   "47": {
+   "runs": 1
+  },
+  "48": {
    "runs": 1
   }
  },
@@ -315,23 +357,29 @@
   {
    "at": "2026-11-07T00:48:57.476Z",
    "cost": 1
+  },
+  {
+   "at": "2026-11-07T00:53:27.845Z",
+   "cost": 1
   }
  ],
  "redStreak": 0,
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-07T00:52:28.644Z",
- "verify": [
+ "verify": [],
+ "outbox": [
   {
-   "pr": 436,
-   "pin": "80589247ae365204e2eeb0c431e5c5197ba29039",
-   "landedIn": "80589247ae365204e2eeb0c431e5c5197ba29039",
-   "since": "2026-11-07T00:52:28.644Z",
-   "ticks": 0,
-   "notified": false,
-   "admitted": "4c7b8aeb591cd014d09ddb502d6dbed30481746b"
+   "id": "cmd:35404528068",
+   "kind": "unlabel",
+   "pr": 437,
+   "label": "qlander:solo"
+  },
+  {
+   "id": "u:436:v:80589247ae365204e2eeb0c431e5c5197ba29039",
+   "kind": "unready",
+   "pr": 436
   }
  ],
- "outbox": [],
  "history": [
   {
    "n": 1,
@@ -1141,10 +1189,10 @@
   "4c7b8aeb591c"
  ],
  "eligibleSince": {
-  "436": {
-   "head": "4c7b8aeb591cd014d09ddb502d6dbed30481746b",
-   "labelledAt": "2026-11-07T00:48:40Z",
-   "since": "2026-11-07T00:48:57.476Z"
+  "437": {
+   "head": "d1b652ec905e1580d19cf2dde3ac83f1e33b58b1",
+   "labelledAt": "2026-11-07T00:53:07Z",
+   "since": "2026-11-07T00:53:27.845Z"
   }
  }
 }
