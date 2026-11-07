@@ -12,78 +12,9 @@
  },
  "seq": 270,
  "nextLineage": 68,
- "journal": {
-  "seq": 270,
-  "op": {
-   "kind": "land",
-   "before": "c7b1901a99c6fcf6fac311cea6f5cead186aa435",
-   "after": "8f938261c714186acfe3b176e1926e2f1f003933"
-  },
-  "reserved": false,
-  "at": "2026-11-07T03:41:31.317Z",
-  "checkpoint": null,
-  "tries": 0
- },
- "active": {
-  "n": 269,
-  "base": "c7b1901a99c6fcf6fac311cea6f5cead186aa435",
-  "head": "8f938261c714186acfe3b176e1926e2f1f003933",
-  "depth": 0,
-  "prs": [
-   505,
-   506,
-   507
-  ],
-  "lineage": 67,
-  "rerun": null,
-  "rerunAt": null,
-  "cancels": [],
-  "builtAt": "2026-11-07T03:38:39.810Z"
- },
- "auth": {
-  "505": {
-   "head": "292e8b5b5bb58b904fddae1cabd2b3a594ed3fc7",
-   "baseRepoId": 1446564086,
-   "policy": "v2:aea7ed1c665b7cd9",
-   "policyPr": false,
-   "admittedAt": "2026-11-07T03:38:16.852Z",
-   "labelledAt": "2026-11-07T03:37:56Z",
-   "evidence": [
-    "run 42334871989",
-    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
-   ],
-   "reviewRun": null,
-   "author": "brett"
-  },
-  "506": {
-   "head": "6075b628ce57d6d2efa53206f4819a0c022ea920",
-   "baseRepoId": 1446564086,
-   "policy": "v2:aea7ed1c665b7cd9",
-   "policyPr": false,
-   "admittedAt": "2026-11-07T03:38:16.852Z",
-   "labelledAt": "2026-11-07T03:37:58Z",
-   "evidence": [
-    "run 42334875962",
-    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
-   ],
-   "reviewRun": null,
-   "author": "brett"
-  },
-  "507": {
-   "head": "d500f2fee0a92c1847524eb53c297094ad1cb48f",
-   "baseRepoId": 1446564086,
-   "policy": "v2:aea7ed1c665b7cd9",
-   "policyPr": false,
-   "admittedAt": "2026-11-07T03:38:16.852Z",
-   "labelledAt": "2026-11-07T03:38:00Z",
-   "evidence": [
-    "run 42334879546",
-    "review evidence not required (queue.admission.review.required is off; ready by a write-access user)"
-   ],
-   "reviewRun": null,
-   "author": "brett"
-  }
- },
+ "journal": null,
+ "active": null,
+ "auth": {},
  "pending": [],
  "solo": [],
  "operatorSolo": [],
@@ -326,9 +257,58 @@
  ],
  "redStreak": 0,
  "bounceStreak": 0,
- "lastLandedAt": "2026-11-07T03:35:10.688Z",
- "verify": [],
- "outbox": [],
+ "lastLandedAt": "2026-11-07T03:41:46.036Z",
+ "verify": [
+  {
+   "pr": 505,
+   "pin": "292e8b5b5bb58b904fddae1cabd2b3a594ed3fc7",
+   "landedIn": "8f938261c714186acfe3b176e1926e2f1f003933",
+   "since": "2026-11-07T03:41:46.036Z",
+   "ticks": 0,
+   "notified": false
+  },
+  {
+   "pr": 506,
+   "pin": "6075b628ce57d6d2efa53206f4819a0c022ea920",
+   "landedIn": "8f938261c714186acfe3b176e1926e2f1f003933",
+   "since": "2026-11-07T03:41:46.036Z",
+   "ticks": 0,
+   "notified": false
+  },
+  {
+   "pr": 507,
+   "pin": "d500f2fee0a92c1847524eb53c297094ad1cb48f",
+   "landedIn": "8f938261c714186acfe3b176e1926e2f1f003933",
+   "since": "2026-11-07T03:41:46.036Z",
+   "ticks": 0,
+   "notified": false
+  }
+ ],
+ "outbox": [
+  {
+   "id": "c:505:landed:269",
+   "kind": "comment",
+   "pr": 505,
+   "body": "Landed in main at `8f938261c714186acfe3b176e1926e2f1f003933` (batch 269, pin `292e8b5b5bb58b904fddae1cabd2b3a594ed3fc7`)."
+  },
+  {
+   "id": "c:506:landed:269",
+   "kind": "comment",
+   "pr": 506,
+   "body": "Landed in main at `8f938261c714186acfe3b176e1926e2f1f003933` (batch 269, pin `6075b628ce57d6d2efa53206f4819a0c022ea920`)."
+  },
+  {
+   "id": "c:507:landed:269",
+   "kind": "comment",
+   "pr": 507,
+   "body": "Landed in main at `8f938261c714186acfe3b176e1926e2f1f003933` (batch 269, pin `d500f2fee0a92c1847524eb53c297094ad1cb48f`)."
+  },
+  {
+   "id": "d:269",
+   "kind": "deleteRef",
+   "ref": "queue/269"
+  }
+ ],
  "history": [
   {
    "n": 1,
@@ -1306,6 +1286,18 @@
    "head": "c7b1901a99c6fcf6fac311cea6f5cead186aa435",
    "note": "main a44891841088832692a19855828abcdef77d8cea -> c7b1901a99c6fcf6fac311cea6f5cead186aa435",
    "at": "2026-11-07T03:35:10.688Z"
+  },
+  {
+   "n": 269,
+   "outcome": "landed",
+   "prs": [
+    505,
+    506,
+    507
+   ],
+   "head": "8f938261c714186acfe3b176e1926e2f1f003933",
+   "note": "main c7b1901a99c6fcf6fac311cea6f5cead186aa435 -> 8f938261c714186acfe3b176e1926e2f1f003933",
+   "at": "2026-11-07T03:41:46.036Z"
   }
  ],
  "epochBranch": "qlander-epoch/queue",
