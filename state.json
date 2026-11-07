@@ -10,7 +10,7 @@
    "job": "Queue tick"
   }
  },
- "seq": 208,
+ "seq": 209,
  "nextLineage": 53,
  "journal": null,
  "active": null,
@@ -361,26 +361,7 @@
  "redStreak": 0,
  "bounceStreak": 0,
  "lastLandedAt": "2026-11-07T01:22:33.822Z",
- "verify": [
-  {
-   "pr": 458,
-   "pin": "c32729c8c27b1e65797302eb200142d19230498d",
-   "landedIn": "258adf834bcfb43234126599d61200fa2806c7a4",
-   "since": "2026-11-07T01:22:33.822Z",
-   "ticks": 0,
-   "notified": false,
-   "admitted": "d23e88e7cab69dd748751bd40f7cd396091d01dc"
-  },
-  {
-   "pr": 459,
-   "pin": "258adf834bcfb43234126599d61200fa2806c7a4",
-   "landedIn": "258adf834bcfb43234126599d61200fa2806c7a4",
-   "since": "2026-11-07T01:22:33.822Z",
-   "ticks": 0,
-   "notified": false,
-   "admitted": "2b7f506e5a647800d73b7fb1fffb8fce000ca158"
-  }
- ],
+ "verify": [],
  "outbox": [
   {
    "id": "x:191",
@@ -392,6 +373,16 @@
    "seen": [
     42322225739
    ]
+  },
+  {
+   "id": "u:458:v:c32729c8c27b1e65797302eb200142d19230498d",
+   "kind": "unready",
+   "pr": 458
+  },
+  {
+   "id": "u:459:v:258adf834bcfb43234126599d61200fa2806c7a4",
+   "kind": "unready",
+   "pr": 459
   }
  ],
  "history": [
@@ -1284,17 +1275,5 @@
   "f546c3db3d63",
   "d23e88e7cab6",
   "2b7f506e5a64"
- ],
- "eligibleSince": {
-  "458": {
-   "head": "d23e88e7cab69dd748751bd40f7cd396091d01dc",
-   "labelledAt": "2026-11-07T01:20:13Z",
-   "since": "2026-11-07T01:20:24.924Z"
-  },
-  "459": {
-   "head": "2b7f506e5a647800d73b7fb1fffb8fce000ca158",
-   "labelledAt": "2026-11-07T01:20:14Z",
-   "since": "2026-11-07T01:20:24.924Z"
-  }
- }
+ ]
 }
