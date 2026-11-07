@@ -480,35 +480,11 @@
  "verify": [],
  "outbox": [
   {
-   "id": "u:94:v:b0f1b98e5bce8510bc9d96c7054dd90cdae9b5ff",
-   "kind": "unready",
-   "pr": 94
-  },
-  {
-   "id": "u:95:v:f82e6edf1c5bbc10d5c18f00cf45bcfd60efd019",
-   "kind": "unready",
-   "pr": 95
-  },
-  {
-   "id": "u:96:v:7fc8bbc15241f9ad5097d72e41833d125c5ae78b",
-   "kind": "unready",
-   "pr": 96
-  },
-  {
-   "id": "u:97:v:a2fd06a869edb655aae9d81eb36ebacdf7fa2662",
-   "kind": "unready",
-   "pr": 97
-  },
-  {
-   "id": "u:98:v:309357d1f4b08807e1dd5dae12aa97889c2e4a8b",
-   "kind": "unready",
-   "pr": 98
-  },
-  {
    "id": "c:98:v:309357d1f4b08807e1dd5dae12aa97889c2e4a8b:closed",
    "kind": "comment",
    "pr": 98,
-   "body": "Landed revision `ab2b1d3951ede502b8480e337f6622e371f9993c` in main as `309357d1f4b08807e1dd5dae12aa97889c2e4a8b` (`360c050c2d945f4855280b14cbd36d5e463087dc`), but GitHub closed this PR without marking it merged. Its change is on main; nothing is lost and nothing needs doing."
+   "body": "Landed revision `ab2b1d3951ede502b8480e337f6622e371f9993c` in main as `309357d1f4b08807e1dd5dae12aa97889c2e4a8b` (`360c050c2d945f4855280b14cbd36d5e463087dc`), but GitHub closed this PR without marking it merged. Its change is on main; nothing is lost and nothing needs doing.",
+   "sentAt": "2026-11-07T00:08:12.490Z"
   },
   {
    "id": "u:99:v:3e9507f9f575ead2a3a03c107cae0260d0a4ac89",
