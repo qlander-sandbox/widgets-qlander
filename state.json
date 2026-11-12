@@ -10,7 +10,7 @@
    "job": "Queue tick"
   }
  },
- "seq": 293,
+ "seq": 294,
  "nextLineage": 68,
  "journal": null,
  "active": null,
@@ -1219,22 +1219,5 @@
   }
  ],
  "epochBranch": "qlander-epoch/queue",
- "flakes": [
-  {
-   "at": "2026-11-05T13:35:29.896Z",
-   "n": 38,
-   "count": 1,
-   "keys": [
-    "test"
-   ]
-  },
-  {
-   "at": "2026-11-05T13:46:41.959Z",
-   "n": 42,
-   "count": 1,
-   "keys": [
-    "test"
-   ]
-  }
- ]
+ "flakes": []
 }
