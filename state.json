@@ -1,15 +1,6 @@
 {
  "v": 5,
- "lease": {
-  "owner": "43643291736.1.ae3eeb7c",
-  "until": "2026-11-14T21:39:56.000Z",
-  "acquiredAt": "2026-11-14T21:31:56.000Z",
-  "executor": {
-   "runId": 43643291736,
-   "attempt": 1,
-   "job": "Queue tick"
-  }
- },
+ "lease": null,
  "seq": 303,
  "nextLineage": 68,
  "journal": null,
